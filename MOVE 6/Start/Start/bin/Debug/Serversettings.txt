@@ -1,0 +1,3 @@
+Starte Client
+Starte Server
+Starte Spiel
