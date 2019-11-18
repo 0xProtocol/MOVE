@@ -1,0 +1,107 @@
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Core\obj\Debug\MOVE.Core.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Core\obj\Debug\MOVE.Core.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Core\obj\Debug\MOVE.Core.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Core\obj\Debug\MOVE.Core.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Core\obj\Debug\MOVE.Core.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.pdb

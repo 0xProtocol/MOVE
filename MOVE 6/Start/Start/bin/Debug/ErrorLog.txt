@@ -1,1 +1,11 @@
-irgendwas
+Message :Auf das verworfene Objekt kann nicht zugegriffen werden.
+Objektname: "PictureBox".<br/>
+StackTrace :   bei System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   bei System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   bei MOVE.Server.Debug.Formular.ServerForms.LogRequestInformation(String message) in C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE 6\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 212.
+   bei MOVE.Core.SessionHandler.HandleSingleSession() in C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE 6\MOVE.Core\SessionHandler.cs:Zeile 32.
+   bei MOVE.Core.ClientHandler.Acceptclients() in C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE 6\MOVE.Core\ClientHandler.cs:Zeile 35.
+Date :18.11.2019 16:41:26
+
+-----------------------------------------------------------------------------
+
