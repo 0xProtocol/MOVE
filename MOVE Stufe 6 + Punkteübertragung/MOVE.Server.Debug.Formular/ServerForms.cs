@@ -434,7 +434,7 @@ namespace MOVE.Server.Debug.Formular
 
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
-            ThreadStart processTaskThreadball = delegate { c.Send(":\\" + "lb" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y) + "|" + Convert.ToString(pbx_downlocal.Location.X) + "|"); };
+            ThreadStart processTaskThreadball = delegate { c.Send(":\\" + "lb" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y) + "|" + Convert.ToString(pbx_downlocal.Location.X)); };
             new Thread(processTaskThreadball).Start();
 
             watch.Stop();
@@ -646,7 +646,7 @@ namespace MOVE.Server.Debug.Formular
                 punkteSpieler++;
                 points2.Text = punkteSpieler.ToString();
             }
-            
+            /*/
             if (punkteGegner == 15)
             {
                 timer1.Enabled = false;
@@ -659,6 +659,7 @@ namespace MOVE.Server.Debug.Formular
                 timer2.Enabled = false;
                 MessageBox.Show("Der Server gewinnt");
             }
+            /*/
             counter++;
 
             var watch = System.Diagnostics.Stopwatch.StartNew();
