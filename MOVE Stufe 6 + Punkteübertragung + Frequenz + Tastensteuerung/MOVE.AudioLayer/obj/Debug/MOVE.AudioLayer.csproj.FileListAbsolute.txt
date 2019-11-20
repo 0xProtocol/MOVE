@@ -118,3 +118,21 @@ C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioL
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojResolveAssemblyReference.cache
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.dll.config
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.Math.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.Statistics.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\NAudio.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.xml
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.Math.xml
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.xml
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\bin\Debug\NAudio.xml
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCompileInputs.cache
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb

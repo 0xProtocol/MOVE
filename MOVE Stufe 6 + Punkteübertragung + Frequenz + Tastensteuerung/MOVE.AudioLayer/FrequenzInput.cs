@@ -15,18 +15,13 @@ namespace MOVE.AudioLayer
         private int rate = 44100;
         private int bufferSamples = 2048;
         public BufferedWaveProvider bwp;
-        int yValue = 500;
         int xValue = 0;
         double maxValue = 0.0;
         int maxIndex = 0;
-        int scale = 0;
-        int leftOffset = 0;
-
-
+        
         public void Start()
         {
             StartMicrofoneRecording();
-            // timer1.Enabled = true;
         }
 
         void AudioDataAvailable(object sender, WaveInEventArgs e)
@@ -82,53 +77,54 @@ namespace MOVE.AudioLayer
 
             maxValue = fftReal.Max();
             maxIndex = fftReal.ToList().IndexOf(maxValue);
-            #region alt
-            /*if (maxValue > 0.01)
-            {
-                lblIndex.Text = Convert.ToString(maxIndex);
-                xValue = maxIndex * 45 - 25 * 45;
-                if (xValue < 0)
-                {
-                    xValue = 0;
-                }
-                if (xValue > 1093)
-                {
-                    xValue = 1093;
-                }
-
-                pbPaddle.Location = new Point(xValue, yValue);
-            }
-            else
-            {
-                lblIndex.Text = "0";
-                pbPaddle.Location = new Point(0, yValue);
-            }*/
-            #endregion
         }
 
-        public int CalculatePaddleLocationX()
+        public int CalculatePaddleLocationX(int setting)
         {
             if (maxValue > 0.01)
             {
-                // lblIndex.Text = Convert.ToString(maxIndex);
-                xValue = maxIndex * 60 - 25 * 60;
-                if (xValue < 0)
+                if (setting == 1)
+                {
+                    xValue = maxIndex * 192 - 2 * 192;
+                }
+                if (setting == 2)
+                {
+                    xValue = maxIndex * 165 - 2 * 165;
+                }
+                if (setting == 3)
+                {
+                    xValue = maxIndex * 165 - 3 * 165;
+                }
+                if (setting == 4)
+                {
+                    xValue = maxIndex * 105 - 4 * 105;
+                }
+                if (setting == 5)
+                {
+                    xValue = maxIndex * 105 - 5 * 105;
+                }
+                if (setting == 6)
+                {
+                    xValue = maxIndex * 83 - 6 * 83;
+                }
+                if (setting == 7)
+                {
+                    xValue = maxIndex * 60 - 25 * 60;
+                }
+
+                /*if (xValue < 0)
                 {
                     xValue = 0;
                 }
                 if (xValue > 1093)
                 {
                     xValue = 1093;
-                }
-
-                //pbPaddle.Location = new Point(xValue, yValue);
+                }*/
                 return xValue;
             }
             else
             {
-                //lblIndex.Text = "0";
                 xValue = 0;
-                //  pbPaddle.Location = new Point(0, yValue);
                 return xValue;
             }
         }

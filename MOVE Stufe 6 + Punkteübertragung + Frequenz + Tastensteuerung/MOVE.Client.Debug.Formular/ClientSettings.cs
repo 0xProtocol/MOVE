@@ -25,7 +25,40 @@ namespace MOVE.Client.Debug.Formular
             string emp = ConfigurationManager.AppSettings["tuning"];
             tbEmpfindlichkeit.Value = Convert.ToInt32(emp);
             string glät = ConfigurationManager.AppSettings["glättung"];
-        tbGlättungsstufe.Value = Convert.ToInt32(glät);
+            tbGlättungsstufe.Value = Convert.ToInt32(glät);
+        }
+
+        public int FrequenzSetting()
+        {
+            if (rBBass.Checked == true)
+            {
+                return 1;
+            }
+            if (rBBartion.Checked == true)
+            {
+                return 2;
+            }
+            if (rBTenor.Checked == true)
+            {
+                return 3;
+            }
+            if (rBMaenneralt.Checked == true)
+            {
+                return 4;
+            }
+            if (rBMezzosopran.Checked == true)
+            {
+                return 5;
+            }
+            if (rBSopran.Checked == true)
+            {
+                return 6;
+            }
+            if (rBPfeifen.Checked == true)
+            {
+                return 7;
+            }
+            return 0;
         }
 
         private void ClientSettings_Load(object sender, EventArgs e)

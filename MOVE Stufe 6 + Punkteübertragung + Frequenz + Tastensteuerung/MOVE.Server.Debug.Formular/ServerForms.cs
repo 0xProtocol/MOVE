@@ -358,15 +358,15 @@ namespace MOVE.Server.Debug.Formular
             {
                 fi.CalculateData();
 
-                positionValue = fi.CalculatePaddleLocationX();
+                positionValue = fi.CalculatePaddleLocationX(7);
 
                 if (positionValue < 12)
                 {
                     positionValue = 12;
                 }
-                if (positionValue > 1300)
+                if (positionValue > 1167)
                 {
-                    positionValue = 1300;
+                    positionValue = 1167;
                 }
 
                 pbx_downlocal.Location = new Point(positionValue, 663);

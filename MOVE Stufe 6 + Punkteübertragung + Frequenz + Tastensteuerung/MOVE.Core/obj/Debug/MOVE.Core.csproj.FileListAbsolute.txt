@@ -112,3 +112,12 @@ C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Core\b
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Core\obj\Debug\MOVE.Core.csprojResolveAssemblyReference.cache
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Core\obj\Debug\MOVE.Core.dll
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\obj\Debug\MOVE.Core.pdb

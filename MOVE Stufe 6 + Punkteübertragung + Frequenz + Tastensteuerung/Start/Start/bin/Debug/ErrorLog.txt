@@ -1,14 +1,15 @@
-Message :Eine vorhandene Verbindung wurde vom Remotehost geschlossen<br/>
-StackTrace :   bei System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
-   bei System.Net.Sockets.Socket.Send(Byte[] buffer)
-   bei MOVE.Server.Debug.Formular.Client.Send(String text) in C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Server.Debug.Formular\Client.cs:Zeile 66.
-Date :20.11.2019 18:35:08
+irgendwasMessage :Normalerweise darf jede Socketadresse (Protokoll, Netzwerkadresse oder Anschluss) nur jeweils einmal verwendet werden<br/>
+StackTrace :   bei System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   bei System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   bei MOVE.Core.TcpService..ctor(Int32 port, IServiceLogger servicelogger, IPAddress adr) in C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\TcpService.cs:Zeile 35.
+Date :20.11.2019 22:40:26
 
 -----------------------------------------------------------------------------
 
-equenz\MOVE.Core\SessionHandler.cs:Zeile 29.
-   bei MOVE.Core.ClientHandler.Acceptclients() in C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Core\ClientHandler.cs:Zeile 35.
-Date :20.11.2019 18:35:06
+Message :Ein ungültiges Argument wurde angegeben<br/>
+StackTrace :   bei System.Net.Sockets.Socket.Listen(Int32 backlog)
+   bei MOVE.Core.TcpService.Start() in C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Core\TcpService.cs:Zeile 61.
+Date :20.11.2019 22:40:26
 
 -----------------------------------------------------------------------------
 

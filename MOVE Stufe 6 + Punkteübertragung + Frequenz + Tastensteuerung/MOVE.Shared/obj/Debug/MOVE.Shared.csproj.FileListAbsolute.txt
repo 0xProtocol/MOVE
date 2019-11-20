@@ -59,3 +59,9 @@ C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Shared
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Shared\obj\Debug\MOVE.Shared.csprojResolveAssemblyReference.cache
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Shared\bin\Debug\MOVE.Shared.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Shared\obj\Debug\MOVE.Shared.csprojAssemblyReference.cache
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Shared\obj\Debug\MOVE.Shared.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
