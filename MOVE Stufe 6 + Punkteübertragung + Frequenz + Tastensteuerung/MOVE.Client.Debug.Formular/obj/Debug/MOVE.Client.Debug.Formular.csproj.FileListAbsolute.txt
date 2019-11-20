@@ -1,0 +1,479 @@
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Form1.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Form1.resources
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\MOVE 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Form1.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Form1.resources
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+F:\Zwischenschritte\MOVE Stufe 3\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Form1.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3.5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Form1.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings2.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientConnection.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE Stufe 3.5 + Glättung\MOVE.Client.Debug.Formular\bin\Debug\System.Windows.Controls.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\System.Windows.Controls.dll
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientConnection.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings2.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 3.8\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\System.Windows.Controls.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE Stufe 4 - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\System.Windows.Controls.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 4\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\System.Windows.Controls.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs)\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\System.Windows.Controls.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\System.Windows.Controls.dll
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\System.Windows.Controls.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4.2 (ohne Tabs) mit dll +ball\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\MOVE Stufe 5.1\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 6\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb

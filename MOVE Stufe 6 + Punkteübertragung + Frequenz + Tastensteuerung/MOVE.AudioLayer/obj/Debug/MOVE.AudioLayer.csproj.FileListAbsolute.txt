@@ -1,0 +1,120 @@
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\Zwischenmeilensteine\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\MOVE 4 (ohne Tabs) mit dll\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.dll.config
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.Math.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.Statistics.dll
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.Math.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.xml
+C:\Users\Y520\Desktop\Diplomarbeit\Meilensteine\MOVE 5\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.dll.config
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.Math.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.Statistics.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.Math.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\Diplomarbeit Meilensteine\Projektschritte\MOVE Stufe 5.1\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.dll.config
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.Math.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.Statistics.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.Math.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\MOVE Stufe 5.1 + dll kopi\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.dll.config
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Math.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Statistics.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\NAudio.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Math.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\NAudio.xml
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCompileInputs.cache
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.dll.config
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Math.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Statistics.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\NAudio.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Math.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\bin\Debug\NAudio.xml
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCompileInputs.cache
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+F:\MOVE Stufe 6 + Punkteübertragung\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.dll.config
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\MOVE.AudioLayer.pdb
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.Math.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.Statistics.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\NAudio.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.Math.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\bin\Debug\NAudio.xml
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb

@@ -1,0 +1,14 @@
+Message :Eine vorhandene Verbindung wurde vom Remotehost geschlossen<br/>
+StackTrace :   bei System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   bei System.Net.Sockets.Socket.Send(Byte[] buffer)
+   bei MOVE.Server.Debug.Formular.Client.Send(String text) in C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Server.Debug.Formular\Client.cs:Zeile 66.
+Date :20.11.2019 18:35:08
+
+-----------------------------------------------------------------------------
+
+equenz\MOVE.Core\SessionHandler.cs:Zeile 29.
+   bei MOVE.Core.ClientHandler.Acceptclients() in C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz\MOVE.Core\ClientHandler.cs:Zeile 35.
+Date :20.11.2019 18:35:06
+
+-----------------------------------------------------------------------------
+
