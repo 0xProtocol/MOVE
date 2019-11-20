@@ -105,3 +105,12 @@ C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE
 C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
 C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.dll
 C:\Users\Y520\Desktop\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.pdb
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\bin\Debug\MOVE.Core.dll
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\bin\Debug\MOVE.Core.pdb
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\bin\Debug\MOVE.Shared.dll
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.dll
+D:\GitHubMove\MOVE\MOVE Stufe 6 + Punkteübertragung\MOVE.Core\obj\Debug\MOVE.Core.pdb
