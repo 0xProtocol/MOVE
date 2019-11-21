@@ -929,3 +929,6 @@ C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastenste
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\Start\Start\obj\Debug\Start.g.resources
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\Start\Start\obj\Debug\Start.Properties.Resources.resources
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung\Start\Start\obj\Debug\Start.csproj.GenerateResource.Cache
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution\Start\Start\bin\Debug\Start.exe.config
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution\Start\Start\obj\Debug\Start.exe
+C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution\Start\Start\obj\Debug\Start.pdb

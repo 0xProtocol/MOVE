@@ -85,6 +85,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ServerSettings.resx">
       <DependentUpon>ServerSettings.cs</DependentUpon>
@@ -118,6 +119,18 @@
       <Project>{e938205a-a89f-410a-8d5d-2275d6912ccf}</Project>
       <Name>MOVE.Shared</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\track-and-status-controls-trackbar-programming-radtrackbar020.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music-notes-transparent-7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\netzwerk2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigheartedUnsungDormouse-size_restricted.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

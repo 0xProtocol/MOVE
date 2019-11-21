@@ -105,5 +105,10 @@ namespace MOVE.Server.Debug.Formular
         {
 
         }
+
+        private void tcIPConfiguration_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
