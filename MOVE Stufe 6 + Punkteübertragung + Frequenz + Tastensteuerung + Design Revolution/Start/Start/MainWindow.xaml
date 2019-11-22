@@ -92,7 +92,7 @@
                 <ImageBrush ImageSource="info.jpg"/>
             </Button.Background>
         </Button>
-        <Image gif:ImageBehavior.AnimatedSource="Teaser.gif" Grid.ColumnSpan="5" HorizontalAlignment="Center" Height="285" Margin="18,126,75,10" VerticalAlignment="Center" Width="569" Grid.RowSpan="3" Grid.Column="3"/>
+        <Image gif:ImageBehavior.AnimatedSource="p.gif" Grid.ColumnSpan="6" HorizontalAlignment="Center" Height="285" Margin="27.016,125,93.076,10" VerticalAlignment="Center" Width="569" Grid.RowSpan="3" Grid.Column="2"/>
         <Image gif:ImageBehavior.AnimatedSource="3psd.jpg" HorizontalAlignment="Center" Height="56" Margin="212.709,8,145,76" VerticalAlignment="Center" Width="50" RenderTransformOrigin="0.717,0.703" Grid.Column="4">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -133,5 +133,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Label x:Name="label" Content="Label" Grid.Column="3" HorizontalAlignment="Left" Margin="18.816,122,0,0" VerticalAlignment="Top" Width="522" Grid.RowSpan="2" Grid.ColumnSpan="5" Background="Black"/>
     </Grid>
 </Window>

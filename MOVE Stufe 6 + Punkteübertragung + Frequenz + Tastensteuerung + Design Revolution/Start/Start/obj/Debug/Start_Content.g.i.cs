@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("top.jfif")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("p.gif")]
 
 

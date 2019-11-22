@@ -198,5 +198,8 @@
   <ItemGroup>
     <Resource Include="letter_c_PNG110.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="p.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

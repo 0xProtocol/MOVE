@@ -356,9 +356,10 @@ namespace MOVE.Server.Debug.Formular
 
             if (rBFrequenz.Checked == true)
             {
+                
                 fi.CalculateData();
 
-                positionValue = fi.CalculatePaddleLocationX(7);
+                positionValue = fi.CalculatePaddleLocationX(ss.FrequenzSetting());
 
                 if (positionValue < 12)
                 {

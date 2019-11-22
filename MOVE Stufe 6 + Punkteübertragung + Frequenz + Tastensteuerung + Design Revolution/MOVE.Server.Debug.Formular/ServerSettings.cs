@@ -27,6 +27,39 @@ namespace MOVE.Server.Debug.Formular
             tbGlättung.Value = Convert.ToInt32(glät);
         }
 
+        public int FrequenzSetting()
+        {
+            if (rBBass.Checked == true)
+            {
+                return 1;
+            }
+            if (rBBartion.Checked == true)
+            {
+                return 2;
+            }
+            if (rBTenor.Checked == true)
+            {
+                return 3;
+            }
+            if (rBMaenneralt.Checked == true)
+            {
+                return 4;
+            }
+            if (rBMezzosopran.Checked == true)
+            {
+                return 5;
+            }
+            if (rBSopran.Checked == true)
+            {
+                return 6;
+            }
+            if (rBPfeifen.Checked == true)
+            {
+                return 7;
+            }
+            return 0;
+        }
+
         private void tbempfindlichkeit_Scroll(object sender, EventArgs e)
         {
 
@@ -107,6 +140,11 @@ namespace MOVE.Server.Debug.Formular
         }
 
         private void tcIPConfiguration_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rBBartion_CheckedChanged(object sender, EventArgs e)
         {
 
         }

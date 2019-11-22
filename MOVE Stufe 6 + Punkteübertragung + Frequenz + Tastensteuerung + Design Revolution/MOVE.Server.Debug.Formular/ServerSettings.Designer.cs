@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cms = new System.Windows.Forms.ContextMenuStrip();
+            this.components = new System.ComponentModel.Container();
+            this.cms = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbx_IPClient = new System.Windows.Forms.TextBox();
@@ -53,33 +54,33 @@
             this.tbempfindlichkeit = new System.Windows.Forms.TrackBar();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tcGameSettings = new System.Windows.Forms.TabPage();
-            this.tcIPConfiguration = new System.Windows.Forms.TabPage();
-            this.tcNetworkDicovery = new System.Windows.Forms.TabPage();
             this.lblGlättungsstufe = new System.Windows.Forms.Label();
             this.lblEmpfindlichkeit = new System.Windows.Forms.Label();
+            this.pbTrackBar = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.rBBass = new System.Windows.Forms.RadioButton();
-            this.rBMaenneralt = new System.Windows.Forms.RadioButton();
-            this.rBTenor = new System.Windows.Forms.RadioButton();
-            this.rBBartion = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rBPfeifen = new System.Windows.Forms.RadioButton();
             this.rBSopran = new System.Windows.Forms.RadioButton();
             this.rBMezzosopran = new System.Windows.Forms.RadioButton();
-            this.pbTrackBar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rBMaenneralt = new System.Windows.Forms.RadioButton();
+            this.rBTenor = new System.Windows.Forms.RadioButton();
+            this.rBBartion = new System.Windows.Forms.RadioButton();
+            this.rBBass = new System.Windows.Forms.RadioButton();
+            this.tcIPConfiguration = new System.Windows.Forms.TabPage();
             this.pbNet2 = new System.Windows.Forms.PictureBox();
+            this.tcNetworkDicovery = new System.Windows.Forms.TabPage();
             this.pbGlasses2 = new System.Windows.Forms.PictureBox();
             this.cms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbempfindlichkeit)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tcGameSettings.SuspendLayout();
-            this.tcIPConfiguration.SuspendLayout();
-            this.tcNetworkDicovery.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).BeginInit();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tcIPConfiguration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNet2)).BeginInit();
+            this.tcNetworkDicovery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +111,7 @@
             // 
             this.tbx_IPClient.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.tbx_IPClient.Location = new System.Drawing.Point(98, 277);
-            this.tbx_IPClient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbx_IPClient.Margin = new System.Windows.Forms.Padding(4);
             this.tbx_IPClient.Name = "tbx_IPClient";
             this.tbx_IPClient.Size = new System.Drawing.Size(302, 46);
             this.tbx_IPClient.TabIndex = 73;
@@ -164,7 +165,7 @@
             // 
             this.tbx_PortServer.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.tbx_PortServer.Location = new System.Drawing.Point(502, 331);
-            this.tbx_PortServer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbx_PortServer.Margin = new System.Windows.Forms.Padding(4);
             this.tbx_PortServer.Name = "tbx_PortServer";
             this.tbx_PortServer.Size = new System.Drawing.Size(302, 46);
             this.tbx_PortServer.TabIndex = 80;
@@ -185,7 +186,7 @@
             // 
             this.tbx_IPServer.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.tbx_IPServer.Location = new System.Drawing.Point(502, 277);
-            this.tbx_IPServer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbx_IPServer.Margin = new System.Windows.Forms.Padding(4);
             this.tbx_IPServer.Name = "tbx_IPServer";
             this.tbx_IPServer.Size = new System.Drawing.Size(302, 46);
             this.tbx_IPServer.TabIndex = 81;
@@ -195,7 +196,7 @@
             // 
             this.tbx_PortClient.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.tbx_PortClient.Location = new System.Drawing.Point(98, 334);
-            this.tbx_PortClient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbx_PortClient.Margin = new System.Windows.Forms.Padding(4);
             this.tbx_PortClient.Name = "tbx_PortClient";
             this.tbx_PortClient.Size = new System.Drawing.Size(302, 46);
             this.tbx_PortClient.TabIndex = 72;
@@ -216,7 +217,7 @@
             // 
             this.btn_ActivateFirewall.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.btn_ActivateFirewall.Location = new System.Drawing.Point(448, 198);
-            this.btn_ActivateFirewall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ActivateFirewall.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ActivateFirewall.Name = "btn_ActivateFirewall";
             this.btn_ActivateFirewall.Size = new System.Drawing.Size(349, 49);
             this.btn_ActivateFirewall.TabIndex = 85;
@@ -228,7 +229,7 @@
             // 
             this.btn_deactivatefirewall.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.btn_deactivatefirewall.Location = new System.Drawing.Point(448, 255);
-            this.btn_deactivatefirewall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_deactivatefirewall.Margin = new System.Windows.Forms.Padding(4);
             this.btn_deactivatefirewall.Name = "btn_deactivatefirewall";
             this.btn_deactivatefirewall.Size = new System.Drawing.Size(349, 49);
             this.btn_deactivatefirewall.TabIndex = 86;
@@ -240,7 +241,7 @@
             // 
             this.btn_Discover.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.btn_Discover.Location = new System.Drawing.Point(448, 312);
-            this.btn_Discover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Discover.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Discover.Name = "btn_Discover";
             this.btn_Discover.Size = new System.Drawing.Size(349, 50);
             this.btn_Discover.TabIndex = 83;
@@ -253,7 +254,7 @@
             this.pbnetwork.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pbnetwork.ForeColor = System.Drawing.Color.Lime;
             this.pbnetwork.Location = new System.Drawing.Point(448, 370);
-            this.pbnetwork.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbnetwork.Margin = new System.Windows.Forms.Padding(4);
             this.pbnetwork.Name = "pbnetwork";
             this.pbnetwork.Size = new System.Drawing.Size(349, 22);
             this.pbnetwork.TabIndex = 89;
@@ -261,7 +262,7 @@
             // tbx_Discovery
             // 
             this.tbx_Discovery.Location = new System.Drawing.Point(8, 370);
-            this.tbx_Discovery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbx_Discovery.Margin = new System.Windows.Forms.Padding(4);
             this.tbx_Discovery.Name = "tbx_Discovery";
             this.tbx_Discovery.Size = new System.Drawing.Size(425, 22);
             this.tbx_Discovery.TabIndex = 84;
@@ -271,7 +272,7 @@
             this.cbQuickSearch.AutoSize = true;
             this.cbQuickSearch.Font = new System.Drawing.Font("Rockwell", 17.8F);
             this.cbQuickSearch.Location = new System.Drawing.Point(223, 155);
-            this.cbQuickSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbQuickSearch.Margin = new System.Windows.Forms.Padding(4);
             this.cbQuickSearch.Name = "cbQuickSearch";
             this.cbQuickSearch.Size = new System.Drawing.Size(215, 39);
             this.cbQuickSearch.TabIndex = 87;
@@ -283,7 +284,7 @@
             this.cbDeepSearch.AutoSize = true;
             this.cbDeepSearch.Font = new System.Drawing.Font("Rockwell", 17.8F);
             this.cbDeepSearch.Location = new System.Drawing.Point(8, 155);
-            this.cbDeepSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDeepSearch.Margin = new System.Windows.Forms.Padding(4);
             this.cbDeepSearch.Name = "cbDeepSearch";
             this.cbDeepSearch.Size = new System.Drawing.Size(207, 39);
             this.cbDeepSearch.TabIndex = 88;
@@ -296,7 +297,7 @@
             this.lsb_discover.FormattingEnabled = true;
             this.lsb_discover.ItemHeight = 16;
             this.lsb_discover.Location = new System.Drawing.Point(8, 198);
-            this.lsb_discover.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lsb_discover.Margin = new System.Windows.Forms.Padding(4);
             this.lsb_discover.Name = "lsb_discover";
             this.lsb_discover.Size = new System.Drawing.Size(425, 164);
             this.lsb_discover.TabIndex = 82;
@@ -306,7 +307,7 @@
             // 
             this.tbGlättung.BackColor = System.Drawing.Color.LightSkyBlue;
             this.tbGlättung.Location = new System.Drawing.Point(14, 236);
-            this.tbGlättung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbGlättung.Margin = new System.Windows.Forms.Padding(4);
             this.tbGlättung.Maximum = 3;
             this.tbGlättung.Minimum = 1;
             this.tbGlättung.Name = "tbGlättung";
@@ -319,7 +320,7 @@
             // 
             this.tbempfindlichkeit.BackColor = System.Drawing.Color.LightSkyBlue;
             this.tbempfindlichkeit.Location = new System.Drawing.Point(16, 59);
-            this.tbempfindlichkeit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbempfindlichkeit.Margin = new System.Windows.Forms.Padding(4);
             this.tbempfindlichkeit.Maximum = 3;
             this.tbempfindlichkeit.Minimum = 1;
             this.tbempfindlichkeit.Name = "tbempfindlichkeit";
@@ -335,7 +336,7 @@
             this.tabControl1.Controls.Add(this.tcIPConfiguration);
             this.tabControl1.Controls.Add(this.tcNetworkDicovery);
             this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
@@ -351,56 +352,13 @@
             this.tcGameSettings.Controls.Add(this.tbempfindlichkeit);
             this.tcGameSettings.Controls.Add(this.tbGlättung);
             this.tcGameSettings.Location = new System.Drawing.Point(4, 25);
-            this.tcGameSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tcGameSettings.Margin = new System.Windows.Forms.Padding(4);
             this.tcGameSettings.Name = "tcGameSettings";
-            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(4);
             this.tcGameSettings.Size = new System.Drawing.Size(812, 414);
             this.tcGameSettings.TabIndex = 0;
             this.tcGameSettings.Text = "Game Settings";
             this.tcGameSettings.Click += new System.EventHandler(this.tcGameSettings_Click);
-            // 
-            // tcIPConfiguration
-            // 
-            this.tcIPConfiguration.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.tcIPConfiguration.Controls.Add(this.pbNet2);
-            this.tcIPConfiguration.Controls.Add(this.tbx_PortServer);
-            this.tcIPConfiguration.Controls.Add(this.tbx_PortClient);
-            this.tcIPConfiguration.Controls.Add(this.tbx_IPClient);
-            this.tcIPConfiguration.Controls.Add(this.lbl_IPServer);
-            this.tcIPConfiguration.Controls.Add(this.lbl_PortServer);
-            this.tcIPConfiguration.Controls.Add(this.lbl_ServerStart);
-            this.tcIPConfiguration.Controls.Add(this.lbl_ClientConnect);
-            this.tcIPConfiguration.Controls.Add(this.lbl_IPClient);
-            this.tcIPConfiguration.Controls.Add(this.lbl_PortClient);
-            this.tcIPConfiguration.Controls.Add(this.tbx_IPServer);
-            this.tcIPConfiguration.Location = new System.Drawing.Point(4, 25);
-            this.tcIPConfiguration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tcIPConfiguration.Name = "tcIPConfiguration";
-            this.tcIPConfiguration.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tcIPConfiguration.Size = new System.Drawing.Size(812, 414);
-            this.tcIPConfiguration.TabIndex = 1;
-            this.tcIPConfiguration.Text = "IP-Configuration";
-            this.tcIPConfiguration.Click += new System.EventHandler(this.tcIPConfiguration_Click);
-            // 
-            // tcNetworkDicovery
-            // 
-            this.tcNetworkDicovery.BackColor = System.Drawing.Color.LawnGreen;
-            this.tcNetworkDicovery.Controls.Add(this.pbGlasses2);
-            this.tcNetworkDicovery.Controls.Add(this.lsb_discover);
-            this.tcNetworkDicovery.Controls.Add(this.btn_Discover);
-            this.tcNetworkDicovery.Controls.Add(this.pbnetwork);
-            this.tcNetworkDicovery.Controls.Add(this.tbx_Discovery);
-            this.tcNetworkDicovery.Controls.Add(this.cbDeepSearch);
-            this.tcNetworkDicovery.Controls.Add(this.btn_ActivateFirewall);
-            this.tcNetworkDicovery.Controls.Add(this.cbQuickSearch);
-            this.tcNetworkDicovery.Controls.Add(this.btn_deactivatefirewall);
-            this.tcNetworkDicovery.Location = new System.Drawing.Point(4, 25);
-            this.tcNetworkDicovery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tcNetworkDicovery.Name = "tcNetworkDicovery";
-            this.tcNetworkDicovery.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tcNetworkDicovery.Size = new System.Drawing.Size(812, 414);
-            this.tcNetworkDicovery.TabIndex = 2;
-            this.tcNetworkDicovery.Text = "NetworkDiscovery";
             // 
             // lblGlättungsstufe
             // 
@@ -426,6 +384,16 @@
             this.lblEmpfindlichkeit.TabIndex = 10;
             this.lblEmpfindlichkeit.Text = "Empfindlichkeit";
             // 
+            // pbTrackBar
+            // 
+            this.pbTrackBar.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.track_and_status_controls_trackbar_programming_radtrackbar020;
+            this.pbTrackBar.Location = new System.Drawing.Point(172, 280);
+            this.pbTrackBar.Name = "pbTrackBar";
+            this.pbTrackBar.Size = new System.Drawing.Size(464, 122);
+            this.pbTrackBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbTrackBar.TabIndex = 9;
+            this.pbTrackBar.TabStop = false;
+            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Silver;
@@ -444,19 +412,53 @@
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Frequenztuning";
             // 
-            // rBBass
+            // pictureBox1
             // 
-            this.rBBass.AutoSize = true;
-            this.rBBass.Checked = true;
-            this.rBBass.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBBass.Location = new System.Drawing.Point(31, 33);
-            this.rBBass.Margin = new System.Windows.Forms.Padding(4);
-            this.rBBass.Name = "rBBass";
-            this.rBBass.Size = new System.Drawing.Size(105, 41);
-            this.rBBass.TabIndex = 1;
-            this.rBBass.TabStop = true;
-            this.rBBass.Text = "Bass";
-            this.rBBass.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.music_notes_transparent_7;
+            this.pictureBox1.Location = new System.Drawing.Point(518, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(271, 350);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // rBPfeifen
+            // 
+            this.rBPfeifen.AutoSize = true;
+            this.rBPfeifen.Checked = true;
+            this.rBPfeifen.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rBPfeifen.Location = new System.Drawing.Point(31, 346);
+            this.rBPfeifen.Margin = new System.Windows.Forms.Padding(4);
+            this.rBPfeifen.Name = "rBPfeifen";
+            this.rBPfeifen.Size = new System.Drawing.Size(144, 41);
+            this.rBPfeifen.TabIndex = 9;
+            this.rBPfeifen.TabStop = true;
+            this.rBPfeifen.Text = "Pfeifen";
+            this.rBPfeifen.UseVisualStyleBackColor = true;
+            // 
+            // rBSopran
+            // 
+            this.rBSopran.AutoSize = true;
+            this.rBSopran.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rBSopran.Location = new System.Drawing.Point(31, 293);
+            this.rBSopran.Margin = new System.Windows.Forms.Padding(4);
+            this.rBSopran.Name = "rBSopran";
+            this.rBSopran.Size = new System.Drawing.Size(147, 41);
+            this.rBSopran.TabIndex = 8;
+            this.rBSopran.Text = "Sopran";
+            this.rBSopran.UseVisualStyleBackColor = true;
+            // 
+            // rBMezzosopran
+            // 
+            this.rBMezzosopran.AutoSize = true;
+            this.rBMezzosopran.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rBMezzosopran.Location = new System.Drawing.Point(31, 240);
+            this.rBMezzosopran.Margin = new System.Windows.Forms.Padding(4);
+            this.rBMezzosopran.Name = "rBMezzosopran";
+            this.rBMezzosopran.Size = new System.Drawing.Size(241, 41);
+            this.rBMezzosopran.TabIndex = 7;
+            this.rBMezzosopran.Text = "Mezzosopran";
+            this.rBMezzosopran.UseVisualStyleBackColor = true;
             // 
             // rBMaenneralt
             // 
@@ -493,62 +495,42 @@
             this.rBBartion.TabIndex = 4;
             this.rBBartion.Text = "Bariton";
             this.rBBartion.UseVisualStyleBackColor = true;
+            this.rBBartion.CheckedChanged += new System.EventHandler(this.rBBartion_CheckedChanged);
             // 
-            // rBPfeifen
+            // rBBass
             // 
-            this.rBPfeifen.AutoSize = true;
-            this.rBPfeifen.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBPfeifen.Location = new System.Drawing.Point(31, 346);
-            this.rBPfeifen.Margin = new System.Windows.Forms.Padding(4);
-            this.rBPfeifen.Name = "rBPfeifen";
-            this.rBPfeifen.Size = new System.Drawing.Size(144, 41);
-            this.rBPfeifen.TabIndex = 9;
-            this.rBPfeifen.Text = "Pfeifen";
-            this.rBPfeifen.UseVisualStyleBackColor = true;
+            this.rBBass.AutoSize = true;
+            this.rBBass.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rBBass.Location = new System.Drawing.Point(31, 33);
+            this.rBBass.Margin = new System.Windows.Forms.Padding(4);
+            this.rBBass.Name = "rBBass";
+            this.rBBass.Size = new System.Drawing.Size(105, 41);
+            this.rBBass.TabIndex = 1;
+            this.rBBass.Text = "Bass";
+            this.rBBass.UseVisualStyleBackColor = true;
             // 
-            // rBSopran
+            // tcIPConfiguration
             // 
-            this.rBSopran.AutoSize = true;
-            this.rBSopran.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBSopran.Location = new System.Drawing.Point(31, 293);
-            this.rBSopran.Margin = new System.Windows.Forms.Padding(4);
-            this.rBSopran.Name = "rBSopran";
-            this.rBSopran.Size = new System.Drawing.Size(147, 41);
-            this.rBSopran.TabIndex = 8;
-            this.rBSopran.Text = "Sopran";
-            this.rBSopran.UseVisualStyleBackColor = true;
-            // 
-            // rBMezzosopran
-            // 
-            this.rBMezzosopran.AutoSize = true;
-            this.rBMezzosopran.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBMezzosopran.Location = new System.Drawing.Point(31, 240);
-            this.rBMezzosopran.Margin = new System.Windows.Forms.Padding(4);
-            this.rBMezzosopran.Name = "rBMezzosopran";
-            this.rBMezzosopran.Size = new System.Drawing.Size(241, 41);
-            this.rBMezzosopran.TabIndex = 7;
-            this.rBMezzosopran.Text = "Mezzosopran";
-            this.rBMezzosopran.UseVisualStyleBackColor = true;
-            // 
-            // pbTrackBar
-            // 
-            this.pbTrackBar.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.track_and_status_controls_trackbar_programming_radtrackbar020;
-            this.pbTrackBar.Location = new System.Drawing.Point(172, 280);
-            this.pbTrackBar.Name = "pbTrackBar";
-            this.pbTrackBar.Size = new System.Drawing.Size(464, 122);
-            this.pbTrackBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbTrackBar.TabIndex = 9;
-            this.pbTrackBar.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.music_notes_transparent_7;
-            this.pictureBox1.Location = new System.Drawing.Point(518, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(271, 350);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.tcIPConfiguration.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.tcIPConfiguration.Controls.Add(this.pbNet2);
+            this.tcIPConfiguration.Controls.Add(this.tbx_PortServer);
+            this.tcIPConfiguration.Controls.Add(this.tbx_PortClient);
+            this.tcIPConfiguration.Controls.Add(this.tbx_IPClient);
+            this.tcIPConfiguration.Controls.Add(this.lbl_IPServer);
+            this.tcIPConfiguration.Controls.Add(this.lbl_PortServer);
+            this.tcIPConfiguration.Controls.Add(this.lbl_ServerStart);
+            this.tcIPConfiguration.Controls.Add(this.lbl_ClientConnect);
+            this.tcIPConfiguration.Controls.Add(this.lbl_IPClient);
+            this.tcIPConfiguration.Controls.Add(this.lbl_PortClient);
+            this.tcIPConfiguration.Controls.Add(this.tbx_IPServer);
+            this.tcIPConfiguration.Location = new System.Drawing.Point(4, 25);
+            this.tcIPConfiguration.Margin = new System.Windows.Forms.Padding(4);
+            this.tcIPConfiguration.Name = "tcIPConfiguration";
+            this.tcIPConfiguration.Padding = new System.Windows.Forms.Padding(4);
+            this.tcIPConfiguration.Size = new System.Drawing.Size(812, 414);
+            this.tcIPConfiguration.TabIndex = 1;
+            this.tcIPConfiguration.Text = "IP-Configuration";
+            this.tcIPConfiguration.Click += new System.EventHandler(this.tcIPConfiguration_Click);
             // 
             // pbNet2
             // 
@@ -559,6 +541,26 @@
             this.pbNet2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pbNet2.TabIndex = 82;
             this.pbNet2.TabStop = false;
+            // 
+            // tcNetworkDicovery
+            // 
+            this.tcNetworkDicovery.BackColor = System.Drawing.Color.LawnGreen;
+            this.tcNetworkDicovery.Controls.Add(this.pbGlasses2);
+            this.tcNetworkDicovery.Controls.Add(this.lsb_discover);
+            this.tcNetworkDicovery.Controls.Add(this.btn_Discover);
+            this.tcNetworkDicovery.Controls.Add(this.pbnetwork);
+            this.tcNetworkDicovery.Controls.Add(this.tbx_Discovery);
+            this.tcNetworkDicovery.Controls.Add(this.cbDeepSearch);
+            this.tcNetworkDicovery.Controls.Add(this.btn_ActivateFirewall);
+            this.tcNetworkDicovery.Controls.Add(this.cbQuickSearch);
+            this.tcNetworkDicovery.Controls.Add(this.btn_deactivatefirewall);
+            this.tcNetworkDicovery.Location = new System.Drawing.Point(4, 25);
+            this.tcNetworkDicovery.Margin = new System.Windows.Forms.Padding(4);
+            this.tcNetworkDicovery.Name = "tcNetworkDicovery";
+            this.tcNetworkDicovery.Padding = new System.Windows.Forms.Padding(4);
+            this.tcNetworkDicovery.Size = new System.Drawing.Size(812, 414);
+            this.tcNetworkDicovery.TabIndex = 2;
+            this.tcNetworkDicovery.Text = "NetworkDiscovery";
             // 
             // pbGlasses2
             // 
@@ -576,7 +578,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 484);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ServerSettings";
             this.Text = "ServerSettings";
             this.Load += new System.EventHandler(this.ServerSettings_Load);
@@ -586,15 +588,15 @@
             this.tabControl1.ResumeLayout(false);
             this.tcGameSettings.ResumeLayout(false);
             this.tcGameSettings.PerformLayout();
-            this.tcIPConfiguration.ResumeLayout(false);
-            this.tcIPConfiguration.PerformLayout();
-            this.tcNetworkDicovery.ResumeLayout(false);
-            this.tcNetworkDicovery.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tcIPConfiguration.ResumeLayout(false);
+            this.tcIPConfiguration.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNet2)).EndInit();
+            this.tcNetworkDicovery.ResumeLayout(false);
+            this.tcNetworkDicovery.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses2)).EndInit();
             this.ResumeLayout(false);
 

@@ -54,9 +54,11 @@
             this.pbnetwork = new System.Windows.Forms.ProgressBar();
             this.tcsettings = new System.Windows.Forms.TabControl();
             this.tcGameSettings = new System.Windows.Forms.TabPage();
+            this.pbTrackBar = new System.Windows.Forms.PictureBox();
             this.lblGlättungsstufe = new System.Windows.Forms.Label();
             this.lblEmpfindlichkeit = new System.Windows.Forms.Label();
             this.tcGameSettingsFreq = new System.Windows.Forms.TabPage();
+            this.pbMelody = new System.Windows.Forms.PictureBox();
             this.rBPfeifen = new System.Windows.Forms.RadioButton();
             this.rBSopran = new System.Windows.Forms.RadioButton();
             this.rBMezzosopran = new System.Windows.Forms.RadioButton();
@@ -65,22 +67,20 @@
             this.rBBartion = new System.Windows.Forms.RadioButton();
             this.rBBass = new System.Windows.Forms.RadioButton();
             this.tcIPConfiguration = new System.Windows.Forms.TabPage();
-            this.tcNetworkDiscovery = new System.Windows.Forms.TabPage();
-            this.pbTrackBar = new System.Windows.Forms.PictureBox();
-            this.pbMelody = new System.Windows.Forms.PictureBox();
             this.pbNet = new System.Windows.Forms.PictureBox();
+            this.tcNetworkDiscovery = new System.Windows.Forms.TabPage();
             this.pbGlasses = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmpfindlichkeit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättungsstufe)).BeginInit();
             this.cms.SuspendLayout();
             this.tcsettings.SuspendLayout();
             this.tcGameSettings.SuspendLayout();
-            this.tcGameSettingsFreq.SuspendLayout();
-            this.tcIPConfiguration.SuspendLayout();
-            this.tcNetworkDiscovery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).BeginInit();
+            this.tcGameSettingsFreq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMelody)).BeginInit();
+            this.tcIPConfiguration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNet)).BeginInit();
+            this.tcNetworkDiscovery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses)).BeginInit();
             this.SuspendLayout();
             // 
@@ -366,6 +366,16 @@
             this.tcGameSettings.Text = "Game Settings";
             this.tcGameSettings.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // pbTrackBar
+            // 
+            this.pbTrackBar.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.track_and_status_controls_trackbar_programming_radtrackbar020;
+            this.pbTrackBar.Location = new System.Drawing.Point(172, 280);
+            this.pbTrackBar.Name = "pbTrackBar";
+            this.pbTrackBar.Size = new System.Drawing.Size(464, 122);
+            this.pbTrackBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbTrackBar.TabIndex = 8;
+            this.pbTrackBar.TabStop = false;
+            // 
             // lblGlättungsstufe
             // 
             this.lblGlättungsstufe.AutoSize = true;
@@ -410,15 +420,27 @@
             this.tcGameSettingsFreq.Text = "Frequenztuning";
             this.tcGameSettingsFreq.Click += new System.EventHandler(this.tcGameSettingsFreq_Click);
             // 
+            // pbMelody
+            // 
+            this.pbMelody.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.music_notes_transparent_7;
+            this.pbMelody.Location = new System.Drawing.Point(518, 33);
+            this.pbMelody.Name = "pbMelody";
+            this.pbMelody.Size = new System.Drawing.Size(271, 350);
+            this.pbMelody.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbMelody.TabIndex = 7;
+            this.pbMelody.TabStop = false;
+            // 
             // rBPfeifen
             // 
             this.rBPfeifen.AutoSize = true;
+            this.rBPfeifen.Checked = true;
             this.rBPfeifen.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rBPfeifen.Location = new System.Drawing.Point(31, 346);
             this.rBPfeifen.Margin = new System.Windows.Forms.Padding(4);
             this.rBPfeifen.Name = "rBPfeifen";
             this.rBPfeifen.Size = new System.Drawing.Size(144, 41);
             this.rBPfeifen.TabIndex = 6;
+            this.rBPfeifen.TabStop = true;
             this.rBPfeifen.Text = "Pfeifen";
             this.rBPfeifen.UseVisualStyleBackColor = true;
             this.rBPfeifen.CheckedChanged += new System.EventHandler(this.rBPfeifen_CheckedChanged);
@@ -490,14 +512,12 @@
             // rBBass
             // 
             this.rBBass.AutoSize = true;
-            this.rBBass.Checked = true;
             this.rBBass.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rBBass.Location = new System.Drawing.Point(31, 33);
             this.rBBass.Margin = new System.Windows.Forms.Padding(4);
             this.rBBass.Name = "rBBass";
             this.rBBass.Size = new System.Drawing.Size(105, 41);
             this.rBBass.TabIndex = 0;
-            this.rBBass.TabStop = true;
             this.rBBass.Text = "Bass";
             this.rBBass.UseVisualStyleBackColor = true;
             this.rBBass.CheckedChanged += new System.EventHandler(this.rBBass_CheckedChanged);
@@ -524,6 +544,16 @@
             this.tcIPConfiguration.TabIndex = 1;
             this.tcIPConfiguration.Text = "IP-Configuration";
             // 
+            // pbNet
+            // 
+            this.pbNet.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.netzwerk2;
+            this.pbNet.Location = new System.Drawing.Point(328, 19);
+            this.pbNet.Name = "pbNet";
+            this.pbNet.Size = new System.Drawing.Size(200, 200);
+            this.pbNet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pbNet.TabIndex = 41;
+            this.pbNet.TabStop = false;
+            // 
             // tcNetworkDiscovery
             // 
             this.tcNetworkDiscovery.BackColor = System.Drawing.Color.LawnGreen;
@@ -544,36 +574,6 @@
             this.tcNetworkDiscovery.TabIndex = 2;
             this.tcNetworkDiscovery.Text = "NetworkDiscovery";
             this.tcNetworkDiscovery.Click += new System.EventHandler(this.tc_Click);
-            // 
-            // pbTrackBar
-            // 
-            this.pbTrackBar.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.track_and_status_controls_trackbar_programming_radtrackbar020;
-            this.pbTrackBar.Location = new System.Drawing.Point(172, 280);
-            this.pbTrackBar.Name = "pbTrackBar";
-            this.pbTrackBar.Size = new System.Drawing.Size(464, 122);
-            this.pbTrackBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbTrackBar.TabIndex = 8;
-            this.pbTrackBar.TabStop = false;
-            // 
-            // pbMelody
-            // 
-            this.pbMelody.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.music_notes_transparent_7;
-            this.pbMelody.Location = new System.Drawing.Point(518, 33);
-            this.pbMelody.Name = "pbMelody";
-            this.pbMelody.Size = new System.Drawing.Size(271, 350);
-            this.pbMelody.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbMelody.TabIndex = 7;
-            this.pbMelody.TabStop = false;
-            // 
-            // pbNet
-            // 
-            this.pbNet.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.netzwerk2;
-            this.pbNet.Location = new System.Drawing.Point(328, 19);
-            this.pbNet.Name = "pbNet";
-            this.pbNet.Size = new System.Drawing.Size(200, 200);
-            this.pbNet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbNet.TabIndex = 41;
-            this.pbNet.TabStop = false;
             // 
             // pbGlasses
             // 
@@ -601,15 +601,15 @@
             this.tcsettings.ResumeLayout(false);
             this.tcGameSettings.ResumeLayout(false);
             this.tcGameSettings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).EndInit();
             this.tcGameSettingsFreq.ResumeLayout(false);
             this.tcGameSettingsFreq.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMelody)).EndInit();
             this.tcIPConfiguration.ResumeLayout(false);
             this.tcIPConfiguration.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNet)).EndInit();
             this.tcNetworkDiscovery.ResumeLayout(false);
             this.tcNetworkDiscovery.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMelody)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses)).EndInit();
             this.ResumeLayout(false);
 
