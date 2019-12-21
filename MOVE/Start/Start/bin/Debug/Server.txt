@@ -1,0 +1,9 @@
+Settings
+Starte Server
+Connect Client
+Move it
+Sound
+Tonfrequenz
+Tastatur
+Menü ausblenden
+exit

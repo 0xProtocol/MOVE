@@ -1,0 +1,15 @@
+Message :Eine Anforderung zum Senden oder Empfangen von Daten wurde verhindert, da der Socket nicht verbunden ist und (beim Senden über einen Datagrammsocket mit einem sendto-Aufruf) keine Adresse angegeben wurde<br/>
+StackTrace :   bei System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   bei System.Net.Sockets.Socket.Send(Byte[] buffer)
+   bei MOVE.Server.Debug.Formular.Client.Send(String text) in C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0\MOVE.Server.Debug.Formular\Client.cs:Zeile 66.
+Date :12.12.2019 10:24:03
+
+-----------------------------------------------------------------------------
+
+----------------
+
+ceptclients() in C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 2.0\MOVE.Core\ClientHandler.cs:Zeile 35.
+Date :12.12.2019 10:21:27
+
+-----------------------------------------------------------------------------
+

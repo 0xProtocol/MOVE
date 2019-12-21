@@ -1,0 +1,17 @@
+Empfindlichkeit eins
+Empflindlichkeit zwei
+Empflindlichkeit drei
+Glättungsstufe eins
+Glättungsstufe zwei
+Glättungsstufe drei
+Bass
+Bariton
+Tenor
+Männeralt
+Mezzosopran
+Sopran
+Pfeifen
+Starte Deepsearch
+Starte Quicksearch
+Activate Firewall
+Deactivate Firewall
