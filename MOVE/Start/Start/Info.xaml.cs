@@ -31,10 +31,8 @@ namespace Start
             InitializeComponent();
             DefaultListenerInfo();
             this.Focus();
-            //this.Activated += Window_Activated;
         }
-        SpeechControl sc = new SpeechControl();
-        public Action CloseAction { get; set; }
+
         public void DefaultListenerInfo()
         {
             _recognizerinfo.SetInputToDefaultAudioDevice();
@@ -62,21 +60,39 @@ namespace Start
         public void CloseWindow()
         {
             this.Close();
-
-            //App.Current.Shutdown();
-
-            //CloseWindow();
-            //Environment.Exit(1);
         }
 
+        public void CancelDefaultListenerInfo()
+        {
+            try
+            {
+                _recognizerinfo.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        public void ActivateDefaultListenerInfo()
+        {
+            try
+            {
+                _recognizerinfo.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         private void Window_Activated(object sender, EventArgs e)
         {
-            sc.ActivateDefaultListenerInfo();
+            ActivateDefaultListenerInfo();
         }
 
         private void Window_Deactivated(object sender, EventArgs e)
         {
-            sc.CancelDefaultListenerInfo();
+            CancelDefaultListenerInfo();
         }
     }
 }

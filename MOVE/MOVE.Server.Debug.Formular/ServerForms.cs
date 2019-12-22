@@ -191,18 +191,15 @@ Deactivate Firewall
                 }
                 if (speech == "Starte Deepsearch")
                 {
-                    //  ss.Discover("1");
+                     ss.Discover("1");
                 }
                 if (speech == "Starte Quicksearch")
                 {
-
-                    //QUICK
+                    ss.Discover("0");
                 }
                 if (speech == "Activate Firewall")
                 {
-
                     ActivateFirewall();
-
                 }
                 if (speech == "Deactivate Firewall")
                 {
@@ -430,66 +427,6 @@ Deactivate Firewall
         {
 
         }
-
-        #region Network Discovery
-        private string getIp()
-        {
-            string ip = string.Empty;
-            IPAddress[] localIP = Dns.GetHostAddresses(Dns.GetHostName());
-
-            foreach (IPAddress address in localIP)
-            {
-                if (address.AddressFamily == AddressFamily.InterNetwork)
-                {
-                    ip = address.ToString();
-                }
-            }
-            return ip;
-        }
-
-        private string getSubnet()
-        {
-            string ip = getIp();
-            string[] split = ip.Split('.');
-            return split[0] + "." + split[1] + "." + split[2];
-        }
-
-        public string GetARPResult()
-        {
-            Process p = null;
-
-            try
-            {
-                p = Process.Start(new ProcessStartInfo("arp", "-a")
-                {
-                    CreateNoWindow = true,
-                    UseShellExecute = false,
-                    RedirectStandardOutput = true
-                });
-
-                output = p.StandardOutput.ReadToEnd();
-
-                p.Close();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("IPInfo: Error Retrieving 'arp -a' Results", ex);
-            }
-            finally
-            {
-                if (p != null)
-                {
-                    p.Close();
-                }
-            }
-
-            return output;
-        }
-
-        private void btn_Discover_Click_1(object sender, EventArgs e)
-        {
-        }
-        #endregion
 
         private void lsb_discover_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -782,6 +719,7 @@ Deactivate Firewall
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
+            ss.Visible = false;
             ss.ShowDialog();
             panel1.BackColor = Color.Orange;
             panel2.BackColor = Color.Orange;

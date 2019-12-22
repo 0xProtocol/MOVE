@@ -56,7 +56,6 @@ namespace MOVE.Server.Debug.Formular
 
         public void CloseWindow()
         {
-           //this.Close();
             this.Hide();
 
         }
