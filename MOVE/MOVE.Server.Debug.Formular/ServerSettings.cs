@@ -130,12 +130,24 @@ namespace MOVE.Server.Debug.Formular
 
         private void ServerSettings_Load(object sender, EventArgs e)
         {
-            tbx_Discovery.Text = nd.getSubnet();
+            nd.getip(lsb_discover);
+            string ip = (Convert.ToString(lsb_discover.Items[1]));
+            Text = ip.ToString();
+            string subnet = (Convert.ToString(lsb_discover.Items[2]));
+            Text = subnet.ToString();
+            tbx_Discovery.Text = ip;
+            textBox1.Text = subnet;
         }
         public void Discover(string value)
         {
+            nd.getSubnet(textBox1);
+            lsb_discover.Items.Clear();
             nd.FillArpResults(tbx_Discovery);
             nd.GetArpResult();
+            if (cbQuickSearch.Checked && cbDeepSearch.Checked)
+            {
+
+            }
             if (value == "0")
             {
                 ThreadStart start = delegate { nd.QuickSearch(tbx_Discovery.Text, lsb_discover, pbnetwork); };
@@ -148,23 +160,22 @@ namespace MOVE.Server.Debug.Formular
                 ThreadStart start = delegate { nd.DeepSearch(tbx_Discovery.Text, lsb_discover, pbnetwork); };
                 t1 = new Thread(new ThreadStart(start));
                 t1.Start();
-
-
             }
         }
+      
         private void btn_Discover_Click(object sender, EventArgs e)
         {
             if (cbQuickSearch.Checked == true)
             {
-                Discover("0");
+                ThreadStart start = delegate {Discover("0"); };
+                t1 = new Thread(new ThreadStart(start));
+                t1.Start();
             }
             if (cbDeepSearch.Checked == true)
             {
-                Discover("1");
-            }
-            else
-            {
-
+                ThreadStart start = delegate { Discover("1"); };
+                t1 = new Thread(new ThreadStart(start));
+                t1.Start();
             }
         }
 

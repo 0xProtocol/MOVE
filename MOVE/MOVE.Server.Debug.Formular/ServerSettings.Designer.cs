@@ -70,6 +70,7 @@
             this.pbNet2 = new System.Windows.Forms.PictureBox();
             this.tcNetworkDicovery = new System.Windows.Forms.TabPage();
             this.pbGlasses2 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.cms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbempfindlichkeit)).BeginInit();
@@ -247,7 +248,7 @@
             // 
             // tbx_Discovery
             // 
-            this.tbx_Discovery.Location = new System.Drawing.Point(6, 301);
+            this.tbx_Discovery.Location = new System.Drawing.Point(6, 284);
             this.tbx_Discovery.Name = "tbx_Discovery";
             this.tbx_Discovery.Size = new System.Drawing.Size(320, 20);
             this.tbx_Discovery.TabIndex = 84;
@@ -256,7 +257,7 @@
             // 
             this.cbQuickSearch.AutoSize = true;
             this.cbQuickSearch.Font = new System.Drawing.Font("Rockwell", 17.8F);
-            this.cbQuickSearch.Location = new System.Drawing.Point(167, 126);
+            this.cbQuickSearch.Location = new System.Drawing.Point(181, 107);
             this.cbQuickSearch.Name = "cbQuickSearch";
             this.cbQuickSearch.Size = new System.Drawing.Size(175, 31);
             this.cbQuickSearch.TabIndex = 87;
@@ -267,7 +268,7 @@
             // 
             this.cbDeepSearch.AutoSize = true;
             this.cbDeepSearch.Font = new System.Drawing.Font("Rockwell", 17.8F);
-            this.cbDeepSearch.Location = new System.Drawing.Point(6, 126);
+            this.cbDeepSearch.Location = new System.Drawing.Point(6, 107);
             this.cbDeepSearch.Name = "cbDeepSearch";
             this.cbDeepSearch.Size = new System.Drawing.Size(169, 31);
             this.cbDeepSearch.TabIndex = 88;
@@ -278,7 +279,7 @@
             // 
             this.lsb_discover.ContextMenuStrip = this.cms;
             this.lsb_discover.FormattingEnabled = true;
-            this.lsb_discover.Location = new System.Drawing.Point(6, 161);
+            this.lsb_discover.Location = new System.Drawing.Point(6, 144);
             this.lsb_discover.Name = "lsb_discover";
             this.lsb_discover.Size = new System.Drawing.Size(320, 134);
             this.lsb_discover.TabIndex = 82;
@@ -331,7 +332,7 @@
             this.tcGameSettings.Controls.Add(this.tbGlättung);
             this.tcGameSettings.Location = new System.Drawing.Point(4, 22);
             this.tcGameSettings.Name = "tcGameSettings";
-            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(3);
             this.tcGameSettings.Size = new System.Drawing.Size(607, 334);
             this.tcGameSettings.TabIndex = 0;
             this.tcGameSettings.Text = "Game Settings";
@@ -367,7 +368,7 @@
             // 
             this.pbTrackBar.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.track_and_status_controls_trackbar_programming_radtrackbar020;
             this.pbTrackBar.Location = new System.Drawing.Point(129, 228);
-            this.pbTrackBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbTrackBar.Margin = new System.Windows.Forms.Padding(2);
             this.pbTrackBar.Name = "pbTrackBar";
             this.pbTrackBar.Size = new System.Drawing.Size(348, 99);
             this.pbTrackBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -386,9 +387,9 @@
             this.tabPage1.Controls.Add(this.rBBartion);
             this.tabPage1.Controls.Add(this.rBBass);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(607, 334);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Frequenztuning";
@@ -397,7 +398,7 @@
             // 
             this.pictureBox1.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.Move;
             this.pictureBox1.Location = new System.Drawing.Point(262, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(320, 312);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -500,7 +501,7 @@
             this.tcIPConfiguration.Controls.Add(this.tbx_IPServer);
             this.tcIPConfiguration.Location = new System.Drawing.Point(4, 22);
             this.tcIPConfiguration.Name = "tcIPConfiguration";
-            this.tcIPConfiguration.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tcIPConfiguration.Padding = new System.Windows.Forms.Padding(3);
             this.tcIPConfiguration.Size = new System.Drawing.Size(607, 334);
             this.tcIPConfiguration.TabIndex = 1;
             this.tcIPConfiguration.Text = "IP-Configuration";
@@ -510,7 +511,7 @@
             // 
             this.pbNet2.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.World2;
             this.pbNet2.Location = new System.Drawing.Point(247, 16);
-            this.pbNet2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbNet2.Margin = new System.Windows.Forms.Padding(2);
             this.pbNet2.Name = "pbNet2";
             this.pbNet2.Size = new System.Drawing.Size(154, 154);
             this.pbNet2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -520,6 +521,7 @@
             // tcNetworkDicovery
             // 
             this.tcNetworkDicovery.BackColor = System.Drawing.Color.LawnGreen;
+            this.tcNetworkDicovery.Controls.Add(this.textBox1);
             this.tcNetworkDicovery.Controls.Add(this.pbGlasses2);
             this.tcNetworkDicovery.Controls.Add(this.lsb_discover);
             this.tcNetworkDicovery.Controls.Add(this.btn_Discover);
@@ -531,7 +533,7 @@
             this.tcNetworkDicovery.Controls.Add(this.btn_deactivatefirewall);
             this.tcNetworkDicovery.Location = new System.Drawing.Point(4, 22);
             this.tcNetworkDicovery.Name = "tcNetworkDicovery";
-            this.tcNetworkDicovery.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tcNetworkDicovery.Padding = new System.Windows.Forms.Padding(3);
             this.tcNetworkDicovery.Size = new System.Drawing.Size(607, 334);
             this.tcNetworkDicovery.TabIndex = 2;
             this.tcNetworkDicovery.Text = "NetworkDiscovery";
@@ -540,11 +542,18 @@
             // 
             this.pbGlasses2.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.lupe_ani1_optlins_aus;
             this.pbGlasses2.Location = new System.Drawing.Point(424, 38);
-            this.pbGlasses2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbGlasses2.Margin = new System.Windows.Forms.Padding(2);
             this.pbGlasses2.Name = "pbGlasses2";
             this.pbGlasses2.Size = new System.Drawing.Size(174, 109);
             this.pbGlasses2.TabIndex = 90;
             this.pbGlasses2.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 308);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(320, 20);
+            this.textBox1.TabIndex = 91;
             // 
             // ServerSettings
             // 
@@ -619,5 +628,6 @@
         public System.Windows.Forms.PictureBox pbGlasses2;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.PictureBox pbNet2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

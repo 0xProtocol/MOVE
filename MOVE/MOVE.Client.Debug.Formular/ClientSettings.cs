@@ -62,8 +62,14 @@ namespace MOVE.Client.Debug.Formular
         }
 
         private void ClientSettings_Load(object sender, EventArgs e)
-        {
-            tbx_Discovery.Text = nd.getSubnet();
+        { 
+            nd.getip(lsb_discover);
+            string ip = (Convert.ToString(lsb_discover.Items[1]));
+            Text = ip.ToString();
+            string subnet = (Convert.ToString(lsb_discover.Items[2]));
+            Text = subnet.ToString();
+            tbx_Discovery.Text = ip;
+            textBox1.Text = subnet;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -85,34 +91,45 @@ namespace MOVE.Client.Debug.Formular
         {
 
         }
-
-        private void btn_Discover_Click(object sender, EventArgs e)
+       
+   public void Discover(string value)
         {
+            nd.getSubnet(textBox1);
+            lsb_discover.Items.Clear();
+            //  nd.FillArpResults(tbx_Discovery);
+
             nd.FillArpResults(tbx_Discovery);
+
             nd.GetArpResult();
             if (cbQuickSearch.Checked && cbDeepSearch.Checked)
             {
-                /*/
-            ThreadStart start = delegate { nd.QuickSearch(tbx_Discovery.Text, lsb_discover, pbnetwork); };
-                t1 = new Thread(new ThreadStart(start));
-                t1.Start();
-
-                ThreadStart start2 = delegate { nd.DeepSearch(tbx_Discovery.Text, lsb_discover, pbnetwork); };
-                t2 = new Thread(new ThreadStart(start2));
-                t2.Start();
-                /*/
 
             }
-            else if (cbQuickSearch.Checked == true)
+            if (value == "0")
             {
                 ThreadStart start = delegate { nd.QuickSearch(tbx_Discovery.Text, lsb_discover, pbnetwork); };
                 t1 = new Thread(new ThreadStart(start));
                 t1.Start();
 
             }
-            else if (cbDeepSearch.Checked == true)
+            else if (value == "1")
             {
                 ThreadStart start = delegate { nd.DeepSearch(tbx_Discovery.Text, lsb_discover, pbnetwork); };
+                t1 = new Thread(new ThreadStart(start));
+                t1.Start();
+            }
+        }
+        private void btn_Discover_Click(object sender, EventArgs e)
+        {
+            if (cbQuickSearch.Checked == true)
+            {
+                ThreadStart start = delegate { Discover("0"); };
+                t1 = new Thread(new ThreadStart(start));
+                t1.Start();
+            }
+            if (cbDeepSearch.Checked == true)
+            {
+                ThreadStart start = delegate { Discover("1"); };
                 t1 = new Thread(new ThreadStart(start));
                 t1.Start();
             }
@@ -223,6 +240,11 @@ namespace MOVE.Client.Debug.Formular
         }
 
         private void rBPfeifen_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -708,3 +708,30 @@ C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung +
 C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
 C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
 C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csprojAssemblyReference.cache
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientForms.resources
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll.config
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe.config
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.exe
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Client.Debug.Formular.pdb
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\NAudio.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\Accord.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.AudioLayer.pdb
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Core.pdb
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\MOVE.Shared.pdb
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\NAudio.xml
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.xml
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\Accord.xml
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\bin\Debug\Accord.Math.Core.xml
+D:\GitHubMove\MOVE\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
