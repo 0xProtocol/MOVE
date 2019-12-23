@@ -18,11 +18,14 @@ namespace MOVE.Client.Debug.Formular
 
         [DllImport("iphlpapi.dll", ExactSpelling = true)]
         public static extern int SendARP(int DestIP, int SrcIP, byte[] pMacAddr, ref uint PhyAddrLen);
+
+
         List<IPAddress> ipAddressList = new List<IPAddress>();
 
         public string output;
         public string networkips;
         public string serverAddr;
+        public string firstvalue;
         int sector1;
         int sector2;
         int sector3;
@@ -35,25 +38,17 @@ namespace MOVE.Client.Debug.Formular
             foreach (NetworkInterface Interface in Interfaces)
             {
                 if (Interface.NetworkInterfaceType == NetworkInterfaceType.Loopback) continue;
-                Console.WriteLine(Interface.Description);
                 UnicastIPAddressInformationCollection UnicastIPInfoCol = Interface.GetIPProperties().UnicastAddresses;
                 foreach (UnicastIPAddressInformation UnicatIPInfo in UnicastIPInfoCol)
                 {
                     string desc = Interface.Description;
                     string ipaddress = Convert.ToString(UnicatIPInfo.Address);
                     string subnetmsk = Convert.ToString(UnicatIPInfo.IPv4Mask);
-                    if (ipaddress.StartsWith("169") == false)
-                    {
-                        if (subnetmsk.StartsWith("0") == false)
-                        {
-                            if (desc.StartsWith("VirtualBox") == false)
-                            {
-                                lst.Items.Add(desc);
-                                lst.Items.Add(ipaddress);
-                                lst.Items.Add(subnetmsk);
-                            }
-                        }
-                    }
+                    if (ipaddress.StartsWith("169")) continue;
+                    if (subnetmsk.StartsWith("0")) continue;
+                    if (desc.StartsWith("VirtualBox")) continue;
+                    lst.Items.Add(desc + " | " + ipaddress + " | " + subnetmsk);
+                    firstvalue = (desc + "|" + ipaddress + "|" + subnetmsk);
                 }
             }
         }
@@ -76,7 +71,6 @@ namespace MOVE.Client.Debug.Formular
         public void FillArpResults(TextBox discovery, ListBox lst)
         {
             serverAddr = discovery.Text;
-            Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
             if (sector1 == 0 && sector2 == 0 && sector3 == 0)
             {
@@ -162,7 +156,9 @@ namespace MOVE.Client.Debug.Formular
                         addr = IPAddress.Parse((dst.ToString()));
                         host = Dns.GetHostEntry(addr);
                         networkips = (dst.ToString());
-                        lst.Items.Add(networkips + " " + host.HostName);
+                        int length = macAddr.Length;
+                        string macAddress = BitConverter.ToString(macAddr, 0, length);
+                        lst.Items.Add(networkips + " | " + host.HostName + " | " + macAddress);
                     }
                     catch
                     {
@@ -174,3 +170,4 @@ namespace MOVE.Client.Debug.Formular
 
     }
 }
+

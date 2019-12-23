@@ -39,24 +39,17 @@ namespace MOVE.Server.Debug.Formular
             foreach (NetworkInterface Interface in Interfaces)
             {
                 if (Interface.NetworkInterfaceType == NetworkInterfaceType.Loopback) continue;
-                Console.WriteLine(Interface.Description);
                 UnicastIPAddressInformationCollection UnicastIPInfoCol = Interface.GetIPProperties().UnicastAddresses;
                 foreach (UnicastIPAddressInformation UnicatIPInfo in UnicastIPInfoCol)
                 {
                     string desc = Interface.Description;
                     string ipaddress = Convert.ToString(UnicatIPInfo.Address);
                     string subnetmsk = Convert.ToString(UnicatIPInfo.IPv4Mask);
-                    if (ipaddress.StartsWith("169") == false)
-                    {
-                        if (subnetmsk.StartsWith("0") == false)
-                        {
-                            if (desc.StartsWith("VirtualBox") == false)
-                            {
-                                lst.Items.Add(desc + " | " + ipaddress + " | " +subnetmsk);
-                                firstvalue = (desc + "|" + ipaddress + "|" + subnetmsk);
-                            }
-                        }
-                    }
+                    if (ipaddress.StartsWith("169")) continue;
+                    if (subnetmsk.StartsWith("0"))  continue;
+                    if (desc.StartsWith("VirtualBox")) continue;
+                    lst.Items.Add(desc + " | " + ipaddress + " | " +subnetmsk);
+                    firstvalue = (desc + "|" + ipaddress + "|" + subnetmsk);
                 }
             }
         }
@@ -79,7 +72,6 @@ namespace MOVE.Server.Debug.Formular
         public void FillArpResults(TextBox discovery, ListBox lst)
         {
             serverAddr = discovery.Text;
-            Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
             if (sector1 == 0 && sector2 == 0 && sector3 == 0)
             {

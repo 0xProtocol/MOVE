@@ -65,12 +65,9 @@ namespace MOVE.Client.Debug.Formular
         {
             lsb_networkadapter.Items.Clear();
             nd.getip(lsb_networkadapter);
-            string ip = (Convert.ToString(lsb_networkadapter.Items[1]));
-            Text = ip.ToString();
-            string subnet = (Convert.ToString(lsb_networkadapter.Items[2]));
-            Text = subnet.ToString();
-            tbx_Discovery.Text = ip;
-            textBox1.Text = subnet;
+            string[] splitzeile = nd.firstvalue.Split('|');
+            tbx_Discovery.Text = splitzeile[1];
+            textBox1.Text = splitzeile[2];
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -160,14 +157,16 @@ namespace MOVE.Client.Debug.Formular
         private void clientToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string split = lsb_discover.GetItemText(lsb_discover.SelectedItem);
-            string[] splitzeile = split.Split(' ');
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
             tbx_IPClient.Text = splitzeile[0];
         }
 
         private void serverToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string split = lsb_discover.GetItemText(lsb_discover.SelectedItem);
-            string[] splitzeile = split.Split(' ');
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
             tbx_IPServer.Text = splitzeile[0];
         }
 
@@ -244,6 +243,27 @@ namespace MOVE.Client.Debug.Formular
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void selectAdapterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string split = lsb_networkadapter.GetItemText(lsb_networkadapter.SelectedItem);
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
+            tbx_Discovery.Text = splitzeile[1];
+            textBox1.Text = splitzeile[2];
+        }
+
+        private void lsb_networkadapter_Click(object sender, EventArgs e)
+        {
+            cms.Items[0].Visible = false; cms.Items[1].Visible = false;
+            cms.Items[2].Visible = true;
+        }
+
+        private void lsb_discover_Click(object sender, EventArgs e)
+        {
+            cms.Items[0].Visible = true; cms.Items[1].Visible = true;
+            cms.Items[2].Visible = false;
         }
     }
 }
