@@ -69,10 +69,10 @@
             this.tcIPConfiguration = new System.Windows.Forms.TabPage();
             this.pbNet2 = new System.Windows.Forms.PictureBox();
             this.tcNetworkDicovery = new System.Windows.Forms.TabPage();
+            this.lsb_networkadapter = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pbGlasses2 = new System.Windows.Forms.PictureBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.lsb_networkadapter = new System.Windows.Forms.ListBox();
+            this.selectAdapterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbempfindlichkeit)).BeginInit();
@@ -92,9 +92,10 @@
             this.cms.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cms.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientToolStripMenuItem,
-            this.serverToolStripMenuItem});
+            this.serverToolStripMenuItem,
+            this.selectAdapterToolStripMenuItem});
             this.cms.Name = "cms";
-            this.cms.Size = new System.Drawing.Size(107, 48);
+            this.cms.Size = new System.Drawing.Size(181, 92);
             // 
             // clientToolStripMenuItem
             // 
@@ -286,6 +287,7 @@
             this.lsb_discover.Name = "lsb_discover";
             this.lsb_discover.Size = new System.Drawing.Size(320, 134);
             this.lsb_discover.TabIndex = 82;
+            this.lsb_discover.Click += new System.EventHandler(this.lsb_discover_Click);
             this.lsb_discover.SelectedIndexChanged += new System.EventHandler(this.lsb_discover_SelectedIndexChanged);
             // 
             // tbGlättung
@@ -542,12 +544,25 @@
             this.tcNetworkDicovery.TabIndex = 2;
             this.tcNetworkDicovery.Text = "NetworkDiscovery";
             // 
+            // lsb_networkadapter
+            // 
+            this.lsb_networkadapter.ContextMenuStrip = this.cms;
+            this.lsb_networkadapter.FormattingEnabled = true;
+            this.lsb_networkadapter.Location = new System.Drawing.Point(6, 6);
+            this.lsb_networkadapter.Name = "lsb_networkadapter";
+            this.lsb_networkadapter.Size = new System.Drawing.Size(350, 95);
+            this.lsb_networkadapter.TabIndex = 92;
+            this.lsb_networkadapter.Click += new System.EventHandler(this.lsb_networkadapter_Click);
+            this.lsb_networkadapter.SelectedIndexChanged += new System.EventHandler(this.lsb_networkadapter_SelectedIndexChanged);
+            this.lsb_networkadapter.DragOver += new System.Windows.Forms.DragEventHandler(this.lsb_networkadapter_DragOver);
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(6, 308);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(320, 20);
             this.textBox1.TabIndex = 91;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pbGlasses2
             // 
@@ -559,19 +574,12 @@
             this.pbGlasses2.TabIndex = 90;
             this.pbGlasses2.TabStop = false;
             // 
-            // backgroundWorker1
+            // selectAdapterToolStripMenuItem
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
-            // 
-            // lsb_networkadapter
-            // 
-            this.lsb_networkadapter.ContextMenuStrip = this.cms;
-            this.lsb_networkadapter.FormattingEnabled = true;
-            this.lsb_networkadapter.Location = new System.Drawing.Point(6, 6);
-            this.lsb_networkadapter.Name = "lsb_networkadapter";
-            this.lsb_networkadapter.Size = new System.Drawing.Size(320, 95);
-            this.lsb_networkadapter.TabIndex = 92;
-            this.lsb_networkadapter.SelectedIndexChanged += new System.EventHandler(this.lsb_networkadapter_SelectedIndexChanged);
+            this.selectAdapterToolStripMenuItem.Name = "selectAdapterToolStripMenuItem";
+            this.selectAdapterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.selectAdapterToolStripMenuItem.Text = "Select Adapter";
+            this.selectAdapterToolStripMenuItem.Click += new System.EventHandler(this.selectAdapterToolStripMenuItem_Click);
             // 
             // ServerSettings
             // 
@@ -647,7 +655,7 @@
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.PictureBox pbNet2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ListBox lsb_networkadapter;
+        private System.Windows.Forms.ToolStripMenuItem selectAdapterToolStripMenuItem;
     }
 }

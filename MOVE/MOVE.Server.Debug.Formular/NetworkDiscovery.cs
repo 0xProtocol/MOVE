@@ -19,11 +19,14 @@ namespace MOVE.Server.Debug.Formular
     {
         [DllImport("iphlpapi.dll", ExactSpelling = true)]
         public static extern int SendARP(int DestIP, int SrcIP, byte[] pMacAddr, ref uint PhyAddrLen);
+
+
         List<IPAddress> ipAddressList = new List<IPAddress>();
 
         public string output;
         public string networkips;
         public string serverAddr;
+        public string firstvalue;
         int sector1;
         int sector2;
         int sector3;
@@ -49,9 +52,8 @@ namespace MOVE.Server.Debug.Formular
                         {
                             if (desc.StartsWith("VirtualBox") == false)
                             {
-                                lst.Items.Add(desc);
-                                lst.Items.Add(ipaddress);
-                                lst.Items.Add(subnetmsk);
+                                lst.Items.Add(desc + " | " + ipaddress + " | " +subnetmsk);
+                                firstvalue = (desc + "|" + ipaddress + "|" + subnetmsk);
                             }
                         }
                     }
@@ -163,7 +165,9 @@ namespace MOVE.Server.Debug.Formular
                         addr = IPAddress.Parse((dst.ToString()));
                         host = Dns.GetHostEntry(addr);
                         networkips = (dst.ToString());
-                        lst.Items.Add(networkips + " " + host.HostName);
+                        int length = macAddr.Length;
+                        string macAddress = BitConverter.ToString(macAddr, 0, length);
+                        lst.Items.Add(networkips + " | " + host.HostName + " | "+ macAddress);
                     }
                     catch
                     {

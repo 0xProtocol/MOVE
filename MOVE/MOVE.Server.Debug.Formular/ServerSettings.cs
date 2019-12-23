@@ -132,12 +132,9 @@ namespace MOVE.Server.Debug.Formular
         {
             lsb_networkadapter.Items.Clear();
             nd.getip(lsb_networkadapter);
-            string ip = (Convert.ToString(lsb_networkadapter.Items[1]));
-            Text = ip.ToString();
-            string subnet = (Convert.ToString(lsb_networkadapter.Items[2]));
-            Text = subnet.ToString();
-            tbx_Discovery.Text = ip;
-            textBox1.Text = subnet;
+            string[] splitzeile = nd.firstvalue.Split('|');
+            tbx_Discovery.Text = splitzeile[1];
+            textBox1.Text = splitzeile[2];
         }
         public void Discover(string value)
         {
@@ -197,7 +194,8 @@ namespace MOVE.Server.Debug.Formular
         private void clientToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string split = lsb_discover.GetItemText(lsb_discover.SelectedItem);
-            string[] splitzeile = split.Split(' ');
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
             tbx_IPClient.Text = splitzeile[0];
         }
 
@@ -210,7 +208,8 @@ namespace MOVE.Server.Debug.Formular
         {
 
             string split = lsb_discover.GetItemText(lsb_discover.SelectedItem);
-            string[] splitzeile = split.Split(' ');
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
             tbx_IPServer.Text = splitzeile[0];
         }
 
@@ -268,6 +267,63 @@ namespace MOVE.Server.Debug.Formular
         private void lsb_networkadapter_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void lsb_networkadapter_DragOver(object sender, DragEventArgs e)
+        {
+          
+        }
+
+        private void lsb_networkadapter_Click(object sender, EventArgs e)
+        {
+            cms.Items[0].Visible = false; cms.Items[1].Visible = false;
+            cms.Items[2].Visible = true;
+        }
+
+        private void lsb_discover_Click(object sender, EventArgs e)
+        {
+            cms.Items[0].Visible = true; cms.Items[1].Visible = true;
+            cms.Items[2].Visible = false;
+        }
+
+        private void toolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void subnetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void selectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+              
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectAdapterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string split = lsb_networkadapter.GetItemText(lsb_networkadapter.SelectedItem);
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
+            tbx_Discovery.Text = splitzeile[1];
+            textBox1.Text = splitzeile[2];
         }
     }
 }
