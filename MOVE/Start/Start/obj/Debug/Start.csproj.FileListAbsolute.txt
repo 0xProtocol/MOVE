@@ -1192,7 +1192,6 @@ D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.pdb
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.AudioLayer.dll
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Client.Debug.Formular.exe
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Server.Debug.Formular.exe
-D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.dll.dll
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\WpfAnimatedGif.dll
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\NAudio.dll
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Accord.Math.dll
@@ -1205,7 +1204,6 @@ D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Client.Debug.Formular.pdb
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Client.Debug.Formular.exe.config
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Server.Debug.Formular.pdb
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Server.Debug.Formular.exe.config
-D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.dll.pdb
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\WpfAnimatedGif.xml
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\NAudio.xml
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Accord.Math.xml

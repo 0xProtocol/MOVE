@@ -36,7 +36,7 @@ namespace Start
         public void DefaultListenerInfo()
         {
             _recognizerinfo.SetInputToDefaultAudioDevice();
-            _recognizerinfo.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"DefaultSettings.txt")))));
+            _recognizerinfo.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsinfo.txt")))));
             _recognizerinfo.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultInfo_SpeechRecognized);
             _recognizerinfo.SpeechDetected += new EventHandler<SpeechDetectedEventArgs>(_recognizerInfo_SpeechRecognized);
             _recognizerinfo.RecognizeAsync(RecognizeMode.Multiple);

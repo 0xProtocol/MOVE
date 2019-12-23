@@ -1,0 +1,8 @@
+Empfindlichkeit leicht
+Empfindlichkeit mittel
+Empfindlichkeit stark
+Glättung leicht
+Glättung mittel
+Glättung stark
+speichern
+exit

@@ -207,4 +207,3 @@ D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCom
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
-D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache

@@ -20,13 +20,12 @@ namespace Start
     public class SpeechControl
     {
         SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
-        SpeechRecognitionEngine startlistening = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
 
         public void DefaultListener()
         {
             _recognizer.SetInputToDefaultAudioDevice();
-            _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"DefaultSettings.txt")))));
+            _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsmainwindow.txt")))));
             _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
             _recognizer.RecognizeAsync(RecognizeMode.Multiple);
         }
@@ -34,9 +33,13 @@ namespace Start
         public void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
-            if (speech == "Los")
+            if (speech == "Starte Server")
             {
-                OpenClientServer();
+                OpenServer();
+            }
+            if(speech=="Starte Client")
+            {
+                OpenClient();
             }
 
             if (speech == "Spielinformation")
@@ -49,26 +52,21 @@ namespace Start
                 OpenSettings();
             }
 
-            if (speech == "Deaktiviere Sprachmodul")
-            {
-                _recognizer.RecognizeAsyncCancel();
-                com.SpeakAsync("deactivated");
-                startlistening.RecognizeAsync(RecognizeMode.Multiple);
-            }
-
             if (speech == "Übungsmodus")
             {
                 OpenÜbung();
             }
         }
 
-
-        public void OpenClientServer()
+        public void OpenServer()
+        {
+            ServerForms sf = new ServerForms();
+            sf.Show();
+        }
+        public void OpenClient()
         {
             ClientForms cf = new ClientForms();
             cf.Show();
-            ServerForms sf = new ServerForms();
-            sf.Show();
         }
 
         public void OpenInformation()

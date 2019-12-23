@@ -1,0 +1,5 @@
+Starte Server
+Starte Client
+Spielinformation
+Settings
+Übungsmodus

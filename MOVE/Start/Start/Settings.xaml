@@ -1,23 +1,34 @@
-﻿<Window x:Class="Start.Settings"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Start"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com" x:Class="Start.Settings"
         mc:Ignorable="d"
          Icon="logo (2).jpeg"
-        Title="Settings" Height="450" Width="800">
+        Title="Settings" Height="450" Width="800" Activated="Window_Activated">
     <Grid Background="Black">
+        <Image gif:ImageBehavior.AnimatedSource="giphy.gif" Opacity="0.505" ScrollViewer.CanContentScroll="True" Margin="384,-19,-15,-38">
+            <Image.Effect>
+                <BlurEffect/>
+            </Image.Effect>
+        </Image>
+        <Image gif:ImageBehavior.AnimatedSource="giphy.gif" Opacity="0.505" ScrollViewer.CanContentScroll="True" Margin="-9,-19,384,-23">
+            <Image.Effect>
+                <BlurEffect/>
+            </Image.Effect>
+        </Image>
         <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="0,73,0,0" VerticalAlignment="Top" Width="167" Background="Black"/>
-        <RadioButton x:Name="rb_einfach" Content="Einfach" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sw"/>
-        <Label Content="Schwierigkeitsgrad" HorizontalAlignment="Left" Margin="0,73,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
-        <RadioButton x:Name="rb_schwer" Content="Schwer" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="sw"/>
+        <RadioButton x:Name="rb_einfach" Content="Leicht" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sw"/>
+        <Label Content="Empfindlichkeit" HorizontalAlignment="Left" Margin="0,73,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
+        <RadioButton x:Name="rb_schwer" Content="Stark" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="sw"/>
         <RadioButton x:Name="rb_mittel" Content="Mittel" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sw"/>
         <Button Content="Save" HorizontalAlignment="Left" Margin="707,389,0,0" VerticalAlignment="Top" Width="75" Background="#FFDDDDDD" Click="Button_Click"/>
         <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="609,73,0,0" VerticalAlignment="Top" Width="167" Background="Black"/>
-        <RadioButton x:Name="rb_modell1" Content="Modell1" HorizontalAlignment="Left" Margin="619,109,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell"/>
-        <Label Content="Modell" HorizontalAlignment="Left" Margin="609,73,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
-        <RadioButton x:Name="rb_modell3" Content="Modell3" HorizontalAlignment="Left" Margin="619,159,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="modell"/>
-        <RadioButton x:Name="rb_modell2" Content="Modell2" HorizontalAlignment="Left" Margin="619,134,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell"/>
+        <RadioButton x:Name="rb_modell1" Content="Leicht" HorizontalAlignment="Left" Margin="619,109,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell"/>
+        <Label Content="Glättung" HorizontalAlignment="Left" Margin="609,73,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
+        <RadioButton x:Name="rb_modell3" Content="Stark" HorizontalAlignment="Left" Margin="619,159,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="modell"/>
+        <RadioButton x:Name="rb_modell2" Content="Mittel" HorizontalAlignment="Left" Margin="619,134,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell"/>
     </Grid>
 </Window>

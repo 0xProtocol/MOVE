@@ -40,12 +40,6 @@ namespace Start
             si.DefaultListener();
         }
 
-        
-        //   string row;
-        //  string[] splitted;
-        //  string splittedrow;
-        //   int wertx = 555;
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Info wininfo = new Info();
@@ -54,10 +48,13 @@ namespace Start
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ClientForms cf = new ClientForms();
-            cf.Show();
             ServerForms sf = new ServerForms();
             sf.Show();
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ClientForms cf = new ClientForms();
+            cf.Show();
         }
 
         private void Window_FocusableChanged(object sender, DependencyPropertyChangedEventArgs e)
@@ -68,25 +65,6 @@ namespace Start
         {
             SinglePlayerForms spf = new SinglePlayerForms();
             spf.Show();
-            /*/ Load();
-             if(splitted[0]=="Einfach")
-             {
-                 MessageBox.Show("Einfach");
-             }
-             if (splitted[0] == "Mittel")
-             {
-                 MessageBox.Show("Mittel");
-             }
-             if (splitted[0] == "Schwer")
-             {
-                 MessageBox.Show("Schwer");
-             }
-             if(splitted[0] == "none"|| splittedrow == "")
-             {
-                 MessageBox.Show("none");
-             }
-             /*/
-
         }
         
 
@@ -116,5 +94,7 @@ namespace Start
         {
             si.CancelDefaultListener();
         }
+
+
     }
 }
