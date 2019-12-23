@@ -69,8 +69,10 @@
             this.tcIPConfiguration = new System.Windows.Forms.TabPage();
             this.pbNet2 = new System.Windows.Forms.PictureBox();
             this.tcNetworkDicovery = new System.Windows.Forms.TabPage();
-            this.pbGlasses2 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pbGlasses2 = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.lsb_networkadapter = new System.Windows.Forms.ListBox();
             this.cms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbempfindlichkeit)).BeginInit();
@@ -245,6 +247,7 @@
             this.pbnetwork.Name = "pbnetwork";
             this.pbnetwork.Size = new System.Drawing.Size(262, 18);
             this.pbnetwork.TabIndex = 89;
+            this.pbnetwork.Click += new System.EventHandler(this.pbnetwork_Click);
             // 
             // tbx_Discovery
             // 
@@ -521,6 +524,7 @@
             // tcNetworkDicovery
             // 
             this.tcNetworkDicovery.BackColor = System.Drawing.Color.LawnGreen;
+            this.tcNetworkDicovery.Controls.Add(this.lsb_networkadapter);
             this.tcNetworkDicovery.Controls.Add(this.textBox1);
             this.tcNetworkDicovery.Controls.Add(this.pbGlasses2);
             this.tcNetworkDicovery.Controls.Add(this.lsb_discover);
@@ -538,6 +542,13 @@
             this.tcNetworkDicovery.TabIndex = 2;
             this.tcNetworkDicovery.Text = "NetworkDiscovery";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 308);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(320, 20);
+            this.textBox1.TabIndex = 91;
+            // 
             // pbGlasses2
             // 
             this.pbGlasses2.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.lupe_ani1_optlins_aus;
@@ -548,12 +559,19 @@
             this.pbGlasses2.TabIndex = 90;
             this.pbGlasses2.TabStop = false;
             // 
-            // textBox1
+            // backgroundWorker1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 308);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(320, 20);
-            this.textBox1.TabIndex = 91;
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
+            // lsb_networkadapter
+            // 
+            this.lsb_networkadapter.ContextMenuStrip = this.cms;
+            this.lsb_networkadapter.FormattingEnabled = true;
+            this.lsb_networkadapter.Location = new System.Drawing.Point(6, 6);
+            this.lsb_networkadapter.Name = "lsb_networkadapter";
+            this.lsb_networkadapter.Size = new System.Drawing.Size(320, 95);
+            this.lsb_networkadapter.TabIndex = 92;
+            this.lsb_networkadapter.SelectedIndexChanged += new System.EventHandler(this.lsb_networkadapter_SelectedIndexChanged);
             // 
             // ServerSettings
             // 
@@ -629,5 +647,7 @@
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.PictureBox pbNet2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ListBox lsb_networkadapter;
     }
 }

@@ -69,8 +69,9 @@
             this.tcIPConfiguration = new System.Windows.Forms.TabPage();
             this.pbNet = new System.Windows.Forms.PictureBox();
             this.tcNetworkDiscovery = new System.Windows.Forms.TabPage();
-            this.pbGlasses = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pbGlasses = new System.Windows.Forms.PictureBox();
+            this.lsb_networkadapter = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmpfindlichkeit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättungsstufe)).BeginInit();
             this.cms.SuspendLayout();
@@ -338,7 +339,7 @@
             this.tcGameSettings.Controls.Add(this.tbGlättungsstufe);
             this.tcGameSettings.Location = new System.Drawing.Point(4, 22);
             this.tcGameSettings.Name = "tcGameSettings";
-            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(3);
             this.tcGameSettings.Size = new System.Drawing.Size(615, 343);
             this.tcGameSettings.TabIndex = 0;
             this.tcGameSettings.Text = "Game Settings";
@@ -348,7 +349,7 @@
             // 
             this.pbTrackBar.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.track_and_status_controls_trackbar_programming_radtrackbar020;
             this.pbTrackBar.Location = new System.Drawing.Point(129, 228);
-            this.pbTrackBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbTrackBar.Margin = new System.Windows.Forms.Padding(2);
             this.pbTrackBar.Name = "pbTrackBar";
             this.pbTrackBar.Size = new System.Drawing.Size(348, 99);
             this.pbTrackBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -394,7 +395,7 @@
             this.tcGameSettingsFreq.Controls.Add(this.rBBass);
             this.tcGameSettingsFreq.Location = new System.Drawing.Point(4, 22);
             this.tcGameSettingsFreq.Name = "tcGameSettingsFreq";
-            this.tcGameSettingsFreq.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tcGameSettingsFreq.Padding = new System.Windows.Forms.Padding(3);
             this.tcGameSettingsFreq.Size = new System.Drawing.Size(615, 343);
             this.tcGameSettingsFreq.TabIndex = 3;
             this.tcGameSettingsFreq.Text = "Frequenztuning";
@@ -404,7 +405,7 @@
             // 
             this.pbMelody.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.Move;
             this.pbMelody.Location = new System.Drawing.Point(262, 15);
-            this.pbMelody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMelody.Margin = new System.Windows.Forms.Padding(2);
             this.pbMelody.Name = "pbMelody";
             this.pbMelody.Size = new System.Drawing.Size(320, 312);
             this.pbMelody.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -512,7 +513,7 @@
             this.tcIPConfiguration.Controls.Add(this.lbl_PortClient);
             this.tcIPConfiguration.Location = new System.Drawing.Point(4, 22);
             this.tcIPConfiguration.Name = "tcIPConfiguration";
-            this.tcIPConfiguration.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tcIPConfiguration.Padding = new System.Windows.Forms.Padding(3);
             this.tcIPConfiguration.Size = new System.Drawing.Size(615, 343);
             this.tcIPConfiguration.TabIndex = 1;
             this.tcIPConfiguration.Text = "IP-Configuration";
@@ -521,7 +522,7 @@
             // 
             this.pbNet.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.World2;
             this.pbNet.Location = new System.Drawing.Point(247, 16);
-            this.pbNet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbNet.Margin = new System.Windows.Forms.Padding(2);
             this.pbNet.Name = "pbNet";
             this.pbNet.Size = new System.Drawing.Size(154, 154);
             this.pbNet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -531,6 +532,7 @@
             // tcNetworkDiscovery
             // 
             this.tcNetworkDiscovery.BackColor = System.Drawing.Color.LawnGreen;
+            this.tcNetworkDiscovery.Controls.Add(this.lsb_networkadapter);
             this.tcNetworkDiscovery.Controls.Add(this.textBox1);
             this.tcNetworkDiscovery.Controls.Add(this.pbGlasses);
             this.tcNetworkDiscovery.Controls.Add(this.cbQuickSearch);
@@ -543,21 +545,11 @@
             this.tcNetworkDiscovery.Controls.Add(this.btn_deactivatefirewall);
             this.tcNetworkDiscovery.Location = new System.Drawing.Point(4, 22);
             this.tcNetworkDiscovery.Name = "tcNetworkDiscovery";
-            this.tcNetworkDiscovery.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tcNetworkDiscovery.Padding = new System.Windows.Forms.Padding(3);
             this.tcNetworkDiscovery.Size = new System.Drawing.Size(615, 343);
             this.tcNetworkDiscovery.TabIndex = 2;
             this.tcNetworkDiscovery.Text = "NetworkDiscovery";
             this.tcNetworkDiscovery.Click += new System.EventHandler(this.tc_Click);
-            // 
-            // pbGlasses
-            // 
-            this.pbGlasses.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.lupe_ani1_optlins_aus1;
-            this.pbGlasses.Location = new System.Drawing.Point(424, 38);
-            this.pbGlasses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pbGlasses.Name = "pbGlasses";
-            this.pbGlasses.Size = new System.Drawing.Size(174, 109);
-            this.pbGlasses.TabIndex = 49;
-            this.pbGlasses.TabStop = false;
             // 
             // textBox1
             // 
@@ -566,6 +558,25 @@
             this.textBox1.Size = new System.Drawing.Size(320, 20);
             this.textBox1.TabIndex = 50;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // pbGlasses
+            // 
+            this.pbGlasses.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.lupe_ani1_optlins_aus1;
+            this.pbGlasses.Location = new System.Drawing.Point(424, 38);
+            this.pbGlasses.Margin = new System.Windows.Forms.Padding(2);
+            this.pbGlasses.Name = "pbGlasses";
+            this.pbGlasses.Size = new System.Drawing.Size(174, 109);
+            this.pbGlasses.TabIndex = 49;
+            this.pbGlasses.TabStop = false;
+            // 
+            // lsb_networkadapter
+            // 
+            this.lsb_networkadapter.ContextMenuStrip = this.cms;
+            this.lsb_networkadapter.FormattingEnabled = true;
+            this.lsb_networkadapter.Location = new System.Drawing.Point(10, 15);
+            this.lsb_networkadapter.Name = "lsb_networkadapter";
+            this.lsb_networkadapter.Size = new System.Drawing.Size(320, 95);
+            this.lsb_networkadapter.TabIndex = 93;
             // 
             // ClientSettings
             // 
@@ -639,5 +650,6 @@
         private System.Windows.Forms.PictureBox pbGlasses;
         private System.Windows.Forms.PictureBox pbTrackBar;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox lsb_networkadapter;
     }
 }

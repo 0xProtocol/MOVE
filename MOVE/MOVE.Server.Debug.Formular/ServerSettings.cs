@@ -130,10 +130,11 @@ namespace MOVE.Server.Debug.Formular
 
         private void ServerSettings_Load(object sender, EventArgs e)
         {
-            nd.getip(lsb_discover);
-            string ip = (Convert.ToString(lsb_discover.Items[1]));
+            lsb_networkadapter.Items.Clear();
+            nd.getip(lsb_networkadapter);
+            string ip = (Convert.ToString(lsb_networkadapter.Items[1]));
             Text = ip.ToString();
-            string subnet = (Convert.ToString(lsb_discover.Items[2]));
+            string subnet = (Convert.ToString(lsb_networkadapter.Items[2]));
             Text = subnet.ToString();
             tbx_Discovery.Text = ip;
             textBox1.Text = subnet;
@@ -142,22 +143,21 @@ namespace MOVE.Server.Debug.Formular
         {
             nd.getSubnet(textBox1);
             lsb_discover.Items.Clear();
-            nd.FillArpResults(tbx_Discovery);
-            nd.GetArpResult();
+            nd.FillArpResults(tbx_Discovery,lsb_discover);
             if (cbQuickSearch.Checked && cbDeepSearch.Checked)
             {
 
             }
             if (value == "0")
             {
-                ThreadStart start = delegate { nd.QuickSearch(tbx_Discovery.Text, lsb_discover, pbnetwork); };
+                ThreadStart start = delegate { nd.QuickSearch(lsb_discover,pbnetwork); };
                 t1 = new Thread(new ThreadStart(start));
                 t1.Start();
 
             }
             else if (value == "1")
             {
-                ThreadStart start = delegate { nd.DeepSearch(tbx_Discovery.Text, lsb_discover, pbnetwork); };
+                ThreadStart start = delegate { nd.DeepSearch(lsb_discover, pbnetwork); };
                 t1 = new Thread(new ThreadStart(start));
                 t1.Start();
             }
@@ -253,6 +253,21 @@ namespace MOVE.Server.Debug.Formular
         private void ServerSettings_Deactivate(object sender, EventArgs e)
         {
             get = "false";
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void pbnetwork_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lsb_networkadapter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
