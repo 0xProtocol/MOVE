@@ -19,4 +19,8 @@ Game Settings
 Frequenztuning
 IP Konfiguration
 Network Discovery
+Der erste Adapter
+Der zweite Adapter
+Der dritte Adapter
+Der vierte Adapter
 exit

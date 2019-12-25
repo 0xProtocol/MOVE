@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Speech.Recognition;
 using System.IO;
+using System.Speech.Synthesis;
 
 namespace MOVE.Client.Debug.Formular
 {
@@ -22,6 +23,7 @@ namespace MOVE.Client.Debug.Formular
         NetworkDiscovery nd = new NetworkDiscovery();
         FirewallSettings fs = new FirewallSettings();
         SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine();
+        SpeechSynthesizer com = new SpeechSynthesizer();
         int counter;
         public ClientSettings()
         {
@@ -112,26 +114,104 @@ namespace MOVE.Client.Debug.Formular
                     rBPfeifen.Checked = true;
                 }
             }
-                if (tcsettings.SelectedTab == tcsettings.TabPages[3])
+            if (tcsettings.SelectedTab == tcsettings.TabPages[3])
+            {
+                if (speech == "Starte Deepsearch")
                 {
-                    if (speech == "Starte Deepsearch")
+                    Discover("1");
+                }
+                if (speech == "Starte Quicksearch")
+                {
+                    Discover("0");
+                }
+                if (speech == "Activate Firewall")
+                {
+                    ActivateFirewall();
+                }
+                if (speech == "Deactivate Firewall")
+                {
+                    DeactivateFirewall();
+                }
+                if (speech == "Der erste Adapter")
+                {
+                    SelectFirstAdapter();
+                }
+                if (speech == "Der zweite Adapter")
+                {
+                    SelectSecondAdapter();
+                }
+                if (speech == "Der dritte Adapter")
+                {
+                    SelectThirdAdapter();
+
+                }
+                if (speech == "Der vierte Adapter")
+                {
+                    SelectFourthAdapter();
+                }
+                if (speech == "Einen Adapter weiter")
+                {
+                    try
                     {
-                        Discover("1");
+                        lsb_networkadapter.SelectedIndex++;
                     }
-                    if (speech == "Starte Quicksearch")
+                    catch (Exception)
                     {
-                        Discover("0");
-                    }
-                    if (speech == "Activate Firewall")
-                    {
-                        ActivateFirewall();
-                    }
-                    if (speech == "Deactivate Firewall")
-                    {
-                        DeactivateFirewall();
+
                     }
                 }
-            if (speech=="Game Settings")
+                if (speech == "Die erste Adresse")
+                {
+                    SelectFirstAddress();
+                }
+                if (speech == "Die zweite Adresse")
+                {
+                    SelectSecondAddress();
+                }
+                if (speech == "Die dritte Adresse")
+                {
+                    SelectThirdAddress();
+                }
+                if (speech == "Die vierte Adresse")
+                {
+                    SelectFourhtAddress();
+                }
+                if (speech == "Die fünfte Adresse")
+                {
+                    SelectFifthAddress();
+                }
+                if (speech == "Eine Adresse weiter")
+                {
+                    try
+                    {
+                        lsb_discover.SelectedIndex++;
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                if (speech == "Fünf Adressen weiter")
+                {
+                    try
+                    {
+                        lsb_discover.SelectedIndex += 5;
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                if (speech == "Adresse für Server")
+                {
+                    GiveSelectedIPinIPConfigurationServer();
+                }
+                if (speech == "Adresse für Client")
+                {
+                    GiveSelectedIPinIPConfigurationClient();
+                }
+            }
+            if (speech == "Game Settings")
             {
                 tcsettings.SelectedIndex = 0;
             }
@@ -147,12 +227,12 @@ namespace MOVE.Client.Debug.Formular
             {
                 tcsettings.SelectedIndex = 3;
             }
-            if (speech == "exit")
-            {
-                CloseWindow();
+                if (speech == "exit")
+                {
+                    CloseWindow();
+                }
             }
-        }
-
+        
         private void ActivateFirewall()
         {
             fs.FirewallOn();
@@ -166,6 +246,158 @@ namespace MOVE.Client.Debug.Formular
         private void CloseWindow()
         {
             this.Hide();
+        }
+
+        private void SelectFirstAdapter()
+        {
+            try
+            {
+
+            lsb_networkadapter.SelectedIndex = 0;
+            lsb_networkadapter.Focus();
+            GiveSelectedAdapterinTextBox();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void SelectSecondAdapter()
+        {
+            try
+            {
+                lsb_networkadapter.SelectedIndex = 1;
+                lsb_networkadapter.Focus();
+                GiveSelectedAdapterinTextBox();
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }
+        private void SelectThirdAdapter()
+        {
+            try
+            {
+                lsb_networkadapter.SelectedIndex = 2;
+                lsb_networkadapter.Focus();
+                GiveSelectedAdapterinTextBox();
+            }
+            catch (Exception)
+            {
+
+               
+            }
+        }
+        private void SelectFourthAdapter()
+        {
+            try
+            {
+                lsb_networkadapter.SelectedIndex = 3;
+                lsb_networkadapter.Focus();
+                GiveSelectedAdapterinTextBox();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void SelectFirstAddress()
+        {
+            try
+            {
+                lsb_discover.SelectedIndex = 0;
+                lsb_discover.Focus();
+                ShowMessageBox();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        private void SelectSecondAddress()
+        {
+            try
+            {
+                lsb_discover.SelectedIndex = 1;
+                lsb_discover.Focus();
+                ShowMessageBox();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        private void SelectThirdAddress()
+        {
+            try
+            {
+                lsb_discover.SelectedIndex = 2;
+                lsb_discover.Focus();
+                ShowMessageBox();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        private void SelectFourhtAddress()
+        {
+            try
+            {
+                lsb_discover.SelectedIndex = 3;
+                lsb_discover.Focus();
+                ShowMessageBox();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        private void SelectFifthAddress()
+        {
+            try
+            {
+                lsb_discover.SelectedIndex = 4;
+                lsb_discover.Focus();
+                ShowMessageBox();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void ShowMessageBox()
+        {
+            com.SpeakAsync("Wollen Sie die Adresse dem Server oder dem Cleient zuweisen?");
+        }
+
+        private void GiveSelectedAdapterinTextBox()
+        {
+            string split = lsb_networkadapter.GetItemText(lsb_networkadapter.SelectedItem);
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
+            tbx_Discovery.Text = splitzeile[1];
+            textBox1.Text = splitzeile[2];
+        }
+
+        private void GiveSelectedIPinIPConfigurationClient()
+        {
+            string split = lsb_discover.GetItemText(lsb_discover.SelectedItem);
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
+            tbx_IPClient.Text = splitzeile[0];
+        }
+        private void GiveSelectedIPinIPConfigurationServer()
+        {
+            string split = lsb_discover.GetItemText(lsb_discover.SelectedItem);
+            string[] seperator = { "| " };
+            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
+            tbx_IPServer.Text = splitzeile[0];
         }
         private void ActivateClientListener()
         {
@@ -321,18 +553,12 @@ namespace MOVE.Client.Debug.Formular
 
         private void clientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string split = lsb_discover.GetItemText(lsb_discover.SelectedItem);
-            string[] seperator = { "| " };
-            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
-            tbx_IPClient.Text = splitzeile[0];
+            GiveSelectedIPinIPConfigurationClient();
         }
 
         private void serverToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string split = lsb_discover.GetItemText(lsb_discover.SelectedItem);
-            string[] seperator = { "| " };
-            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
-            tbx_IPServer.Text = splitzeile[0];
+            GiveSelectedIPinIPConfigurationServer();
         }
 
         private void iPConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -412,11 +638,7 @@ namespace MOVE.Client.Debug.Formular
 
         private void selectAdapterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string split = lsb_networkadapter.GetItemText(lsb_networkadapter.SelectedItem);
-            string[] seperator = { "| " };
-            string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
-            tbx_Discovery.Text = splitzeile[1];
-            textBox1.Text = splitzeile[2];
+            GiveSelectedAdapterinTextBox();
         }
 
         private void lsb_networkadapter_Click(object sender, EventArgs e)

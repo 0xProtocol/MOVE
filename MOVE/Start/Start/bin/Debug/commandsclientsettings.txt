@@ -19,4 +19,18 @@ Game Settings
 Frequenztuning
 IP Konfiguration
 Network Discovery
+Der erste Adapter
+Der zweite Adapter
+Der dritte Adapter
+Der vierte Adapter
+Einen Adapter weiter
+Die erste Adresse
+Die zweite Adresse
+Die dritte Adresse
+Die vierte Adresse
+Die fünfte Adresse
+Eine Adresse weiter
+Fünf Adressen weiter
+Adresse für Server
+Adresse für Client
 exit

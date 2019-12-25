@@ -633,14 +633,6 @@ namespace MOVE.Server.Debug.Formular
             Ball.Left += speed_left;
             Ball.Top += speed_top;
 
-            // Berührung des Balls mit dem unteren Schläger
-            /*if (Ball.Bottom >= pbx_downlocal.Top && Ball.Bottom <= pbx_downlocal.Bottom && Ball.Left >= pbx_downlocal.Left && Ball.Right <= pbx_downlocal.Right)
-            {
-                speed_top += 0;
-                speed_left += 0;
-                speed_top = -speed_top;
-                
-            }*/
 
             if (pbx_downlocal.Bounds.IntersectsWith(Ball.Bounds))
             {
@@ -649,15 +641,7 @@ namespace MOVE.Server.Debug.Formular
                 speed_left -= 0;
                 speed_top = -speed_top;
             }
-            // Berührung des Balls mit dem oberen Schläger
-            /*if (Ball.Top <= pbx_upnetwork.Bottom && Ball.Top >= pbx_upnetwork.Top && Ball.Left >= pbx_upnetwork.Left && Ball.Right <= pbx_upnetwork.Right)
-            {
 
-                speed_top -= 0;
-                speed_left -= 0;
-                speed_top = -speed_top;
-
-            }*/
             if (pbx_upnetwork.Bounds.IntersectsWith(Ball.Bounds))
             {
                 Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 5);

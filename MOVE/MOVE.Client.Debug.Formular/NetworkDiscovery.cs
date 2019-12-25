@@ -44,7 +44,7 @@ namespace MOVE.Client.Debug.Formular
                     string desc = Interface.Description;
                     string ipaddress = Convert.ToString(UnicatIPInfo.Address);
                     string subnetmsk = Convert.ToString(UnicatIPInfo.IPv4Mask);
-                    if (ipaddress.StartsWith("169")) continue;
+                    if (ipaddress.StartsWith("168")) continue;
                     if (subnetmsk.StartsWith("0")) continue;
                     if (desc.StartsWith("VirtualBox")) continue;
                     lst.Items.Add(desc + " | " + ipaddress + " | " + subnetmsk);
