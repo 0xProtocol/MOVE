@@ -15,4 +15,8 @@ Starte Deepsearch
 Starte Quicksearch
 Activate Firewall
 Deactivate Firewall
+Game Settings
+Frequenztuning
+IP Konfiguration
+Network Discovery
 exit

@@ -54,74 +54,98 @@ namespace MOVE.Client.Debug.Formular
         public void DefaultSettings_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
-
-            if (speech == "Empfindlichkeit eins")
+            if (tcsettings.SelectedTab == tcsettings.TabPages[0])
             {
-                tbEmpfindlichkeit.Value = 1;
+                if (speech == "Empfindlichkeit eins")
+                {
+                    tbEmpfindlichkeit.Value = 1;
+                }
+                if (speech == "Empfindlichkeit zwei")
+                {
+                    tbEmpfindlichkeit.Value = 2;
+                }
+                if (speech == "Empfindlichkeit drei")
+                {
+                    tbEmpfindlichkeit.Value = 3;
+                }
+                if (speech == "Glättungsstufe eins")
+                {
+                    tbGlättungsstufe.Value = 1;
+                }
+                if (speech == "Glättungsstufe zwei")
+                {
+                    tbGlättungsstufe.Value = 2;
+                }
+                if (speech == "Glättungsstufe drei")
+                {
+                    tbGlättungsstufe.Value = 3;
+                }
             }
-            if (speech == "Empfindlichkeit zwei")
+            if (tcsettings.SelectedTab == tcsettings.TabPages[1])
             {
-                tbEmpfindlichkeit.Value = 2;
+                if (speech == "Bass")
+                {
+                    rBBass.Checked = true;
+                }
+                if (speech == "Bariton")
+                {
+                    rBBartion.Checked = true;
+                }
+                if (speech == "Tenor")
+                {
+                    rBTenor.Checked = true;
+                }
+                if (speech == "Männeralt")
+                {
+                    rBMaenneralt.Checked = true;
+                }
+                if (speech == "Mezzosopran")
+                {
+                    rBMezzosopran.Checked = true;
+                }
+                if (speech == "Sopran")
+                {
+                    rBSopran.Checked = true;
+                }
+                if (speech == "Pfeifen")
+                {
+                    rBPfeifen.Checked = true;
+                }
             }
-            if (speech == "Empfindlichkeit drei")
+                if (tcsettings.SelectedTab == tcsettings.TabPages[3])
+                {
+                    if (speech == "Starte Deepsearch")
+                    {
+                        Discover("1");
+                    }
+                    if (speech == "Starte Quicksearch")
+                    {
+                        Discover("0");
+                    }
+                    if (speech == "Activate Firewall")
+                    {
+                        ActivateFirewall();
+                    }
+                    if (speech == "Deactivate Firewall")
+                    {
+                        DeactivateFirewall();
+                    }
+                }
+            if (speech=="Game Settings")
             {
-                tbEmpfindlichkeit.Value = 3;
+                tcsettings.SelectedIndex = 0;
             }
-            if (speech == "Glättungsstufe eins")
+            if (speech == "Frequenztuning")
             {
-                tbGlättungsstufe.Value = 1;
+                tcsettings.SelectedIndex = 1;
             }
-            if (speech == "Glättungsstufe zwei")
+            if (speech == "IP Konfiguration")
             {
-                tbGlättungsstufe.Value = 2;
+                tcsettings.SelectedIndex = 2;
             }
-            if (speech == "Glättungsstufe drei")
+            if (speech == "Network Discovery")
             {
-                tbGlättungsstufe.Value = 3;
-            }
-            if (speech == "Bass")
-            {
-                rBBass.Checked = true;
-            }
-            if (speech == "Bariton")
-            {
-                rBBartion.Checked = true;
-            }
-            if (speech == "Tenor")
-            {
-                rBTenor.Checked = true;
-            }
-            if (speech == "Männeralt")
-            {
-                rBMaenneralt.Checked = true;
-            }
-            if (speech == "Mezzosopran")
-            {
-                rBMezzosopran.Checked = true;
-            }
-            if (speech == "Sopran")
-            {
-                rBSopran.Checked = true;
-            }
-            if (speech == "Pfeifen")
-            {
-                rBPfeifen.Checked = true;
-            }
-            if (speech == "Starte Deepsearch")
-            {
-                Discover("1");
-            }
-            if (speech == "Starte Quicksearch")
-            {
-                Discover("0");
-            }
-            if (speech == "Activate Firewall")
-            {
-                ActivateFirewall();
-            }
-            if (speech == "Deactivate Firewall")
-            {
-                DeactivateFirewall();
+                tcsettings.SelectedIndex = 3;
             }
             if (speech == "exit")
             {
@@ -410,7 +434,6 @@ namespace MOVE.Client.Debug.Formular
         private void ClientSettings_Activated(object sender, EventArgs e)
         {
             StartthisListener();
-       //     ClientSettingsListener();
         }
 
         private void ClientSettings_Deactivate(object sender, EventArgs e)

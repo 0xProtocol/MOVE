@@ -29,7 +29,6 @@ namespace MOVE.Server.Debug.Formular
             string glät = ConfigurationManager.AppSettings["glättung"];
             tbGlättung.Value = Convert.ToInt32(glät);
             this.Focus();
-            StartthisListener();
         }
         public void ServerSettingsListener()
         {
@@ -56,30 +55,35 @@ namespace MOVE.Server.Debug.Formular
         {
             string speech = e.Result.Text;
 
+            if (tabControl1.SelectedTab == tabControl1.TabPages[0])
+            {
                 if (speech == "Empfindlichkeit eins")
                 {
-                  tbempfindlichkeit.Value = 1;
+                    tbempfindlichkeit.Value = 1;
                 }
                 if (speech == "Empfindlichkeit zwei")
                 {
-                   tbempfindlichkeit.Value = 2;
+                    tbempfindlichkeit.Value = 2;
                 }
                 if (speech == "Empfindlichkeit drei")
                 {
-                  tbempfindlichkeit.Value = 3;
+                    tbempfindlichkeit.Value = 3;
                 }
                 if (speech == "Glättungsstufe eins")
                 {
-                   tbGlättung.Value = 1;
+                    tbGlättung.Value = 1;
                 }
                 if (speech == "Glättungsstufe zwei")
                 {
-                   tbGlättung.Value = 2;
+                    tbGlättung.Value = 2;
                 }
                 if (speech == "Glättungsstufe drei")
                 {
-                  tbGlättung.Value = 3;
+                    tbGlättung.Value = 3;
                 }
+            }
+            if (tabControl1.SelectedTab == tabControl1.TabPages[1])
+            {
                 if (speech == "Bass")
                 {
                     rBBass.Checked = true;
@@ -90,7 +94,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (speech == "Tenor")
                 {
-                   rBTenor.Checked = true;
+                    rBTenor.Checked = true;
                 }
                 if (speech == "Männeralt")
                 {
@@ -98,7 +102,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (speech == "Mezzosopran")
                 {
-                   rBMezzosopran.Checked = true;
+                    rBMezzosopran.Checked = true;
                 }
                 if (speech == "Sopran")
                 {
@@ -106,8 +110,11 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (speech == "Pfeifen")
                 {
-                   rBPfeifen.Checked = true;
+                    rBPfeifen.Checked = true;
                 }
+            }
+            if (tabControl1.SelectedTab == tabControl1.TabPages[3])
+            {
                 if (speech == "Starte Deepsearch")
                 {
                     Discover("1");
@@ -124,7 +131,25 @@ namespace MOVE.Server.Debug.Formular
                 {
                     DeactivateFirewall();
                 }
-               if (speech == "exit")
+            }
+            if (speech=="Game Settings")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
+            if (speech == "Frequenztuning")
+            {
+                tabControl1.SelectedIndex = 1;
+            }
+            if (speech == "IP Konfiguration")
+            {
+                tabControl1.SelectedIndex = 2;
+            }
+            if (speech == "Network Discovery")
+            {
+                tabControl1.SelectedIndex = 3;
+            }
+
+            if (speech == "exit")
                  {
                 CloseWindow();
                   }

@@ -611,7 +611,7 @@ namespace MOVE.Server.Debug.Formular
         private void btnSettings_Click(object sender, EventArgs e)
         {
             ss.Visible = false;
-            ss.ShowDialog();
+            ss.Show();
             panel1.BackColor = Color.Orange;
             panel2.BackColor = Color.Orange;
             panel3.BackColor = Color.Orange;
