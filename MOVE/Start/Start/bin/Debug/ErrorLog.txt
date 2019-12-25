@@ -1,22 +1,8 @@
-Message :Es konnte keine Verbindung hergestellt werden, da der Zielcomputer die Verbindung verweigerte 127.0.0.1:4711<br/>
-StackTrace :   bei System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
-   bei System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
-   bei MOVE.Server.Debug.Formular.Client.Start() in C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\MOVE.Server.Debug.Formular\Client.cs:Zeile 37.
-Date :21.12.2019 16:49:47
-
------------------------------------------------------------------------------
-
-ointSnapshot, SocketAddress socketAddress)
-   bei System.Net.Sockets.Socket.Bind(EndPoint localEP)
-   bei MOVE.Core.TcpService..ctor(Int32 port, IServiceLogger servicelogger, IPAddress adr) in C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\MOVE.Core\TcpService.cs:Zeile 35.
-Date :21.12.2019 11:04:47
-
------------------------------------------------------------------------------
-
-Message :Ein ungültiges Argument wurde angegeben<br/>
-StackTrace :   bei System.Net.Sockets.Socket.Listen(Int32 backlog)
-   bei MOVE.Core.TcpService.Start() in C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\MOVE.Core\TcpService.cs:Zeile 61.
-Date :21.12.2019 11:04:47
+Message :Eine Anforderung zum Senden oder Empfangen von Daten wurde verhindert, da der Socket nicht verbunden ist und (beim Senden über einen Datagrammsocket mit einem sendto-Aufruf) keine Adresse angegeben wurde<br/>
+StackTrace :   bei System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   bei System.Net.Sockets.Socket.Send(Byte[] buffer)
+   bei MOVE.Server.Debug.Formular.Client.Send(String text) in D:\GitHubMove\MOVE\MOVE\MOVE.Server.Debug.Formular\Client.cs:Zeile 66.
+Date :25.12.2019 12:10:41
 
 -----------------------------------------------------------------------------
 

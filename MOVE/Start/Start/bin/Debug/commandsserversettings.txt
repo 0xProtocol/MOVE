@@ -1,6 +1,6 @@
 Empfindlichkeit eins
-Empflindlichkeit zwei
-Empflindlichkeit drei
+Empfindlichkeit zwei
+Empfindlichkeit drei
 Glättungsstufe eins
 Glättungsstufe zwei
 Glättungsstufe drei
@@ -15,3 +15,4 @@ Starte Deepsearch
 Starte Quicksearch
 Activate Firewall
 Deactivate Firewall
+exit

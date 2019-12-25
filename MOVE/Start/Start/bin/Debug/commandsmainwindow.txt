@@ -3,3 +3,4 @@ Starte Client
 Spielinformation
 Settings
 Übungsmodus
+exit

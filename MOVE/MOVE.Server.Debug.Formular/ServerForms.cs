@@ -42,6 +42,9 @@ namespace MOVE.Server.Debug.Formular
         int WertXnetworkball = 15;
         int punkteGegner = 0;
         int punkteSpieler = 0;
+        int counterstartserver;
+        int counterconnectserver;
+        int counterstartgame;
         Client c;
         Thread scanThread = null;
         private static double audioValueMax = 0;
@@ -60,8 +63,7 @@ namespace MOVE.Server.Debug.Formular
         public int speed_left = 5;
         public int speed_top = 5;
         FrequenzInput fi = new FrequenzInput();
-        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
-        SpeechRecognitionEngine startlistening = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizerserver = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
         FirewallSettings fs = new FirewallSettings();
         NetworkDiscovery nd = new NetworkDiscovery();
@@ -71,8 +73,6 @@ namespace MOVE.Server.Debug.Formular
         public ServerForms()
         {
             InitializeComponent();
-            SettingsListener();
-            // fi.Default();
             logRequestInformation = new Action<string>(LogRequestInformation);
             logServiceInformation = new Action<string>(LogServiceinformation);
             Control.CheckForIllegalCrossThreadCalls = false;
@@ -86,145 +86,93 @@ namespace MOVE.Server.Debug.Formular
             fi.Start();
 
         }
+
         public void ServerListener()
         {
-            _recognizer.SetInputToDefaultAudioDevice();
-            _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"Server.txt")))));
-            _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
-            _recognizer.SpeechDetected += new EventHandler<SpeechDetectedEventArgs>(_recognizer_SpeechRecognized);
-            _recognizer.RecognizeAsync(RecognizeMode.Multiple);
-        }
-        /*/
-         * Empfindlichkeit eins
-Empflindlichkeit zwei
-Empflindlichkeit drei
-Glättungsstufe eins
-Glättungsstufe zwei
-Glättungsstufe drei
-Bass
-Bariton
-Tenor
-Männeralt
-Mezzosopran
-Sopran
-Pfeifen
-Starte Deepsearch
-Starte Quicksearch
-Activate Firewall
-Deactivate Firewall
-/*/
-        public void SettingsListener()
-        {
-            startlistening.SetInputToDefaultAudioDevice();
-            startlistening.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"Serversettings.txt")))));
-            startlistening.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSettings_SpeechRecognized);
-            startlistening.SpeechDetected += new EventHandler<SpeechDetectedEventArgs>(_recognizer_SpeechRecognized);
-            startlistening.RecognizeAsync(RecognizeMode.Multiple);
-
+            _recognizerserver.SetInputToDefaultAudioDevice();
+            _recognizerserver.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserver.txt")))));
+            _recognizerserver.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
+            _recognizerserver.RecognizeAsync(RecognizeMode.Multiple);
         }
 
-        public void DefaultSettings_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        private void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
-            var checkedButton = Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
 
-            if (ss.Get() == "true")
+            if (speech == "Starte Server")
             {
-                if (speech == "Empfindlichkeit eins")
+                if (counterstartserver < 1)
                 {
-                    // if(ServerSettings.ActiveForm!=ServerForms)
-                    //{
-                    ss.tbempfindlichkeit.Value = 1;
-                    // }
-
-
+                    Start();
+                    com.SpeakAsync("Server wurde gestartet");
+                    counterstartserver++;
                 }
-                if (speech == "Empfindlichkeit zwei")
+                else
                 {
-                    ss.tbempfindlichkeit.Value = 2;
-                }
-                if (speech == "Empfindlichkeit drei")
-                {
-                    ss.tbempfindlichkeit.Value = 3;
-                }
-                if (speech == "Glättungsstufe eins")
-                {
-                    ss.tbGlättung.Value = 1;
-                }
-                if (speech == "Glättungsstufe zwei")
-                {
-                    ss.tbGlättung.Value = 2;
-                }
-                if (speech == "Glättungsstufe drei")
-                {
-                    ss.tbGlättung.Value = 3;
-                }
-                if (speech == "Bass")
-                {
-                    // checkedButton.Enabled = false;
-                    // ss.rBPfeifen.Checked = false;
-                    ss.rBBass.Checked = true;
-                }
-                if (speech == "Bariton")
-                {
-                    ss.rBBartion.Checked = true;
-                }
-                if (speech == "Tenor")
-                {
-                    ss.rBTenor.Checked = true;
-                }
-                if (speech == "Männeralt")
-                {
-                    ss.rBMaenneralt.Checked = true;
-                }
-                if (speech == "Mezzosopran")
-                {
-                    ss.rBMezzosopran.Checked = true;
-                }
-                if (speech == "Sopran")
-                {
-                    ss.rBSopran.Checked = true;
-                }
-                if (speech == "Pfeifen")
-                {
-                    ss.rBPfeifen.Checked = true;
-                }
-                if (speech == "Starte Deepsearch")
-                {
-                     ss.Discover("1");
-                }
-                if (speech == "Starte Quicksearch")
-                {
-                    ss.Discover("0");
-                }
-                if (speech == "Activate Firewall")
-                {
-                    ActivateFirewall();
-                }
-                if (speech == "Deactivate Firewall")
-                {
-                    DeactivateFirewall();
+                    com.SpeakAsync("Server wurde bereits gestartet");
                 }
             }
-        }
 
-        public void ActivateFirewall()
-        {
-            fs.FirewallOn();
-        }
+            if (speech == "Verbinde zum Server")
+            {
+                if (counterconnectserver < 1)
+                {
+                    Connect();
+                    com.SpeakAsync("Verbindung zum Server wurde hergestellt");
+                    counterconnectserver++;
+                }
+                else
+                {
+                    com.SpeakAsync("Verbindung zum Server wurde bereits hergestellt");
+                }
+            }
 
-        public void DeactivateFirewall()
-        {
-            fs.FirewallOff();
+            if (speech == "Move it")
+            {
+                if (counterstartgame < 1)
+                {
+                    StartGame();
+                    counterstartgame++;
+                }
+                else
+                {
+                    com.SpeakAsync("Spiel wurde bereits gestartet");
+                }
+            }
+
+            if (speech == "Settings")
+            {
+                Settings();
+            }
+            if (speech == "Sound")
+            {
+                EnableSound();
+            }
+            if (speech == "Tonfrequenz")
+            {
+                EnableFrequenz();
+            }
+            if (speech == "Tastatur")
+            {
+                EnableTastatur();
+                dgv_playfieldclient.Focus();
+            }
+
+            if (speech == "Menü ausblenden")
+            {
+                Disablemenu();
+            }
+            else
+            {
+
+            }
         }
 
         public void CancelServerListener()
         {
             try
             {
-                _recognizer.RecognizeAsyncCancel();
-                //  com.SpeakAsync("deactivated");
-                startlistening.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerserver.RecognizeAsyncCancel();
             }
             catch (Exception ex)
             {
@@ -235,70 +183,13 @@ Deactivate Firewall
         {
             try
             {
-                startlistening.RecognizeAsyncCancel();
-                //  com.SpeakAsync("deactivated");
-                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerserver.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
 
             }
         }
-        private void _recognizer_SpeechRecognized(object sender, SpeechDetectedEventArgs e)
-        {
-
-        }
-
-
-        private void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
-        {
-            string speech = e.Result.Text;
-
-            if (speech == "Starte Server")
-            {
-                Start();
-                com.SpeakAsync("started");
-            }
-
-            if (speech == "Connect Client")
-            {
-                Connect();
-                com.SpeakAsync("started");
-            }
-
-            if (speech == "Move it")
-            {
-                StartGame();
-            }
-
-            if (speech == "Settings")
-            {
-                Settings();
-            }
-            if (speech == "Sound")
-            {
-                EnableSound();
-                com.SpeakAsync("sound");
-            }
-            if (speech == "Tonfrequenz")
-            {
-                EnableFrequenz();
-                com.SpeakAsync("frequenz");
-            }
-            if (speech == "Tastatur")
-            {
-                EnableTastatur();
-                com.SpeakAsync("tastatur");
-            }
-
-            if (speech == "Menü ausblenden")
-            {
-                Disablemenu();
-            }
-
-        }
-
-
         private void Settings()
         {
             ss.Show();

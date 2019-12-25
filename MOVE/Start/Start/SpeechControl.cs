@@ -56,35 +56,45 @@ namespace Start
             {
                 OpenÜbung();
             }
+            
+            if(speech=="exit")
+            {
+                ExitGame();
+            }
         }
 
-        public void OpenServer()
+        private void OpenServer()
         {
             ServerForms sf = new ServerForms();
             sf.Show();
         }
-        public void OpenClient()
+        private void OpenClient()
         {
             ClientForms cf = new ClientForms();
             cf.Show();
         }
 
-        public void OpenInformation()
+        private void OpenInformation()
         {
             Info info = new Info();
             info.ShowDialog();
         }
 
-        public void OpenSettings()
+        private void OpenSettings()
         {
             Settings s = new Settings();
             s.ShowDialog();
         }
 
-        public void OpenÜbung()
+        private void OpenÜbung()
         {
             SinglePlayerForms spf = new SinglePlayerForms();
             spf.ShowDialog();
+        }
+
+        private void ExitGame()
+        {
+            Environment.Exit(1);
         }
 
         public void CancelDefaultListener()

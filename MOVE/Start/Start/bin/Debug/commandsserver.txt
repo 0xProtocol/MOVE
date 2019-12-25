@@ -1,6 +1,6 @@
 Settings
 Starte Server
-Connect Client
+Verbinde zum Server
 Move it
 Sound
 Tonfrequenz

@@ -34,24 +34,103 @@ namespace MOVE.Server.Debug.Formular
         public void ServerSettingsListener()
         {
             _recognizersettings.SetInputToDefaultAudioDevice();
-            _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"Server.txt")))));
-            _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
-            _recognizersettings.SpeechDetected += new EventHandler<SpeechDetectedEventArgs>(_recognizer_SpeechRecognized);
+            _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserversettings.txt")))));
+            _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSettings_SpeechRecognized);
             _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
         }
 
+
+        public void DefaultSettings_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+
+                if (speech == "Empfindlichkeit eins")
+                {
+                  tbempfindlichkeit.Value = 1;
+                }
+                if (speech == "Empfindlichkeit zwei")
+                {
+                   tbempfindlichkeit.Value = 2;
+                }
+                if (speech == "Empfindlichkeit drei")
+                {
+                  tbempfindlichkeit.Value = 3;
+                }
+                if (speech == "Glättungsstufe eins")
+                {
+                   tbGlättung.Value = 1;
+                }
+                if (speech == "Glättungsstufe zwei")
+                {
+                   tbGlättung.Value = 2;
+                }
+                if (speech == "Glättungsstufe drei")
+                {
+                  tbGlättung.Value = 3;
+                }
+                if (speech == "Bass")
+                {
+                    rBBass.Checked = true;
+                }
+                if (speech == "Bariton")
+                {
+                    rBBartion.Checked = true;
+                }
+                if (speech == "Tenor")
+                {
+                   rBTenor.Checked = true;
+                }
+                if (speech == "Männeralt")
+                {
+                    rBMaenneralt.Checked = true;
+                }
+                if (speech == "Mezzosopran")
+                {
+                   rBMezzosopran.Checked = true;
+                }
+                if (speech == "Sopran")
+                {
+                    rBSopran.Checked = true;
+                }
+                if (speech == "Pfeifen")
+                {
+                   rBPfeifen.Checked = true;
+                }
+                if (speech == "Starte Deepsearch")
+                {
+                    Discover("1");
+                }
+                if (speech == "Starte Quicksearch")
+                {
+                    Discover("0");
+                }
+                if (speech == "Activate Firewall")
+                {
+                    ActivateFirewall();
+                }
+                if (speech == "Deactivate Firewall")
+                {
+                    DeactivateFirewall();
+                }
+               if (speech == "exit")
+                 {
+                CloseWindow();
+                  }
+        }
+
+
+        private void ActivateFirewall()
+        {
+            fs.FirewallOn();
+        }
+
+        private void DeactivateFirewall()
+        {
+            fs.FirewallOff();
+        }
         private void _recognizer_SpeechRecognized(object sender, SpeechDetectedEventArgs e)
         {
            
-        }
-
-        private void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
-        {
-            string speech = e.Result.Text;
-            if (speech == "exit")
-            {
-                CloseWindow();
-            }
         }
 
         public void CloseWindow()
