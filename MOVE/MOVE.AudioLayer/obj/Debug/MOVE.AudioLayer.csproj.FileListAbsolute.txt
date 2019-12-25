@@ -203,6 +203,7 @@ D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\bin\Debug\Accord.Math.xml
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\bin\Debug\Accord.Math.Core.xml
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\bin\Debug\NAudio.xml
+D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCompileInputs.cache
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
 D:\GitHubMove\MOVE\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll

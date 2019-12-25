@@ -20,7 +20,7 @@ namespace MOVE.Server.Debug.Formular
         NetworkDiscovery nd = new NetworkDiscovery();
         FirewallSettings fs = new FirewallSettings();
         SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine();
-
+        int counter;
         public ServerSettings()
         {
             InitializeComponent();
@@ -28,8 +28,8 @@ namespace MOVE.Server.Debug.Formular
             tbempfindlichkeit.Value = Convert.ToInt32(emp);
             string glät = ConfigurationManager.AppSettings["glättung"];
             tbGlättung.Value = Convert.ToInt32(glät);
-            ServerSettingsListener();
             this.Focus();
+            StartthisListener();
         }
         public void ServerSettingsListener()
         {
@@ -39,6 +39,18 @@ namespace MOVE.Server.Debug.Formular
             _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
         }
 
+        private void StartthisListener()
+        {
+            if (counter < 1)
+            {
+                ServerSettingsListener();
+                counter++;
+            }
+            else
+            {
+                ActivateServerListener();
+            }
+        }
 
         public void DefaultSettings_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
@@ -209,11 +221,13 @@ namespace MOVE.Server.Debug.Formular
 
         private void ServerSettings_Load(object sender, EventArgs e)
         {
+            
             lsb_networkadapter.Items.Clear();
             nd.getip(lsb_networkadapter);
             string[] splitzeile = nd.firstvalue.Split('|');
             tbx_Discovery.Text = splitzeile[1];
             textBox1.Text = splitzeile[2];
+            
         }
         public void Discover(string value)
         {
@@ -316,21 +330,38 @@ namespace MOVE.Server.Debug.Formular
         {
 
         }
+        public void ActivateServerListener()
+        {
+            try
+            {
+                _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
 
-        string get;
+            }
+        }
+        public void CancelServerListener()
+        {
+            try
+            {
+                _recognizersettings.RecognizeAsyncCancel();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
         private void ServerSettings_Activated(object sender, EventArgs e)
         {
-            get = "true";
+            StartthisListener();
+
         }
 
-        public string Get()
-        {
-            return get;
-        }
 
         private void ServerSettings_Deactivate(object sender, EventArgs e)
         {
-            get = "false";
+            CancelServerListener();
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -403,6 +434,11 @@ namespace MOVE.Server.Debug.Formular
             string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
             tbx_Discovery.Text = splitzeile[1];
             textBox1.Text = splitzeile[2];
+        }
+
+        private void TcNetworkDicovery_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

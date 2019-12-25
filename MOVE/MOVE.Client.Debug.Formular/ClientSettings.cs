@@ -11,6 +11,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Speech.Recognition;
+using System.IO;
 
 namespace MOVE.Client.Debug.Formular
 {
@@ -19,6 +21,8 @@ namespace MOVE.Client.Debug.Formular
         Thread t1;
         NetworkDiscovery nd = new NetworkDiscovery();
         FirewallSettings fs = new FirewallSettings();
+        SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine();
+        int counter;
         public ClientSettings()
         {
             InitializeComponent();
@@ -26,6 +30,141 @@ namespace MOVE.Client.Debug.Formular
             tbEmpfindlichkeit.Value = Convert.ToInt32(emp);
             string glät = ConfigurationManager.AppSettings["glättung"];
             tbGlättungsstufe.Value = Convert.ToInt32(glät);
+        }
+
+        public void ClientSettingsListener()
+        {
+            _recognizersettings.SetInputToDefaultAudioDevice();
+            _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsclientsettings.txt")))));
+            _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSettings_SpeechRecognized);
+            _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+        }
+        private void StartthisListener()
+        {
+            if (counter < 1)
+            {
+                ClientSettingsListener();
+                counter++;
+            }
+            else
+            {
+                ActivateClientListener();
+            }
+        }
+        public void DefaultSettings_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+
+            if (speech == "Empfindlichkeit eins")
+            {
+                tbEmpfindlichkeit.Value = 1;
+            }
+            if (speech == "Empfindlichkeit zwei")
+            {
+                tbEmpfindlichkeit.Value = 2;
+            }
+            if (speech == "Empfindlichkeit drei")
+            {
+                tbEmpfindlichkeit.Value = 3;
+            }
+            if (speech == "Glättungsstufe eins")
+            {
+                tbGlättungsstufe.Value = 1;
+            }
+            if (speech == "Glättungsstufe zwei")
+            {
+                tbGlättungsstufe.Value = 2;
+            }
+            if (speech == "Glättungsstufe drei")
+            {
+                tbGlättungsstufe.Value = 3;
+            }
+            if (speech == "Bass")
+            {
+                rBBass.Checked = true;
+            }
+            if (speech == "Bariton")
+            {
+                rBBartion.Checked = true;
+            }
+            if (speech == "Tenor")
+            {
+                rBTenor.Checked = true;
+            }
+            if (speech == "Männeralt")
+            {
+                rBMaenneralt.Checked = true;
+            }
+            if (speech == "Mezzosopran")
+            {
+                rBMezzosopran.Checked = true;
+            }
+            if (speech == "Sopran")
+            {
+                rBSopran.Checked = true;
+            }
+            if (speech == "Pfeifen")
+            {
+                rBPfeifen.Checked = true;
+            }
+            if (speech == "Starte Deepsearch")
+            {
+                Discover("1");
+            }
+            if (speech == "Starte Quicksearch")
+            {
+                Discover("0");
+            }
+            if (speech == "Activate Firewall")
+            {
+                ActivateFirewall();
+            }
+            if (speech == "Deactivate Firewall")
+            {
+                DeactivateFirewall();
+            }
+            if (speech == "exit")
+            {
+                CloseWindow();
+            }
+        }
+
+        private void ActivateFirewall()
+        {
+            fs.FirewallOn();
+        }
+
+        private void DeactivateFirewall()
+        {
+            fs.FirewallOff();
+        }
+
+        private void CloseWindow()
+        {
+            this.Hide();
+        }
+        private void ActivateClientListener()
+        {
+            try
+            {
+                _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void CancelClientListener()
+        {
+            try
+            {
+                _recognizersettings.RecognizeAsyncCancel();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         public int FrequenzSetting()
@@ -63,11 +202,13 @@ namespace MOVE.Client.Debug.Formular
 
         private void ClientSettings_Load(object sender, EventArgs e)
         {
+            
             lsb_networkadapter.Items.Clear();
             nd.getip(lsb_networkadapter);
             string[] splitzeile = nd.firstvalue.Split('|');
             tbx_Discovery.Text = splitzeile[1];
             textBox1.Text = splitzeile[2];
+            
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -89,8 +230,8 @@ namespace MOVE.Client.Debug.Formular
         {
 
         }
-       
-   public void Discover(string value)
+
+        public void Discover(string value)
         {
             nd.getSubnet(textBox1);
             lsb_discover.Items.Clear();
@@ -264,6 +405,17 @@ namespace MOVE.Client.Debug.Formular
         {
             cms.Items[0].Visible = true; cms.Items[1].Visible = true;
             cms.Items[2].Visible = false;
+        }
+
+        private void ClientSettings_Activated(object sender, EventArgs e)
+        {
+            StartthisListener();
+       //     ClientSettingsListener();
+        }
+
+        private void ClientSettings_Deactivate(object sender, EventArgs e)
+        {
+            CancelClientListener();
         }
     }
 }

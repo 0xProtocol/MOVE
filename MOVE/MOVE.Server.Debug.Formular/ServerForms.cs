@@ -84,7 +84,7 @@ namespace MOVE.Server.Debug.Formular
             waveIn.StartRecording();
             this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             fi.Start();
-
+            ServerListener();
         }
 
         public void ServerListener()
@@ -127,7 +127,7 @@ namespace MOVE.Server.Debug.Formular
                 }
             }
 
-            if (speech == "Move it")
+            if (speech == "Los")
             {
                 if (counterstartgame < 1)
                 {
@@ -167,7 +167,17 @@ namespace MOVE.Server.Debug.Formular
 
             }
         }
+        public void ActivateServerListener()
+        {
+            try
+            {
+                _recognizerserver.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
 
+            }
+        }
         public void CancelServerListener()
         {
             try
@@ -179,17 +189,7 @@ namespace MOVE.Server.Debug.Formular
 
             }
         }
-        public void CancelSettingListener()
-        {
-            try
-            {
-                _recognizerserver.RecognizeAsync(RecognizeMode.Multiple);
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
+       
         private void Settings()
         {
             ss.Show();
@@ -697,35 +697,8 @@ namespace MOVE.Server.Debug.Formular
                 punkteSpieler++;
                 points2.Text = punkteSpieler.ToString();
             }
-            /*
-            if (punkteGegner == 15)
-            {
-                timer1.Enabled = false;
-                timer2.Enabled = false;
-                MessageBox.Show("Der Client gewinnt");
-            }
-            if (punkteSpieler == 15)
-            {
-                timer1.Enabled = false;
-                timer2.Enabled = false;
-                MessageBox.Show("Der Server gewinnt");
-            }*/
             counter++;
 
-            var watch = System.Diagnostics.Stopwatch.StartNew();
-
-            // ThreadStart processTaskThreadball = delegate { c.Send(":\\" + "b" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y)); };
-            //new Thread(processTaskThreadball).Start();
-
-            watch.Stop();
-            var elapsedMs = watch.ElapsedMilliseconds;
-            dw.BallThread(elapsedMs.ToString());
-
-
-
-            //c.Send(":\\" + "b" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y));
-            string s = ":\\" + "b" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y);
-            dw.SendDebug("ball " + s + today + "counter " + counter);
         }
         List<int> auswertungsWerte = new List<int>();
         private void btnWerteAufzeichnen_Click(object sender, EventArgs e)
@@ -769,8 +742,7 @@ namespace MOVE.Server.Debug.Formular
         }
         private void ServerForms_Activated(object sender, EventArgs e)
         {
-            ServerListener();
-
+            ActivateServerListener();
         }
 
         private void ServerForms_Deactivate(object sender, EventArgs e)

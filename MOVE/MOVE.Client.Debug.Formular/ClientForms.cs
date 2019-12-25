@@ -21,6 +21,8 @@ using System.Xaml;
 using System.Windows.Forms.Integration;
 using System.Windows.Controls;
 using MOVE.AudioLayer;
+using System.Speech.Recognition;
+using System.Speech.Synthesis;
 
 namespace MOVE.Client.Debug.Formular
 {
@@ -40,6 +42,9 @@ namespace MOVE.Client.Debug.Formular
         int WertXnetworkball = 15;
         int pointsBlue = 0;
         int pointsGreen = 0;
+        int counterstartserver;
+        int counterconnectserver;
+        int counterstartgame;
         Action<string> logRequestInformation;
         Action<string> logServiceInformation;
         Thread scanThread = null;
@@ -51,6 +56,10 @@ namespace MOVE.Client.Debug.Formular
         public string output;
         SoundInput si = new SoundInput();
         FrequenzInput fi = new FrequenzInput();
+        SpeechRecognitionEngine _recognizerclient = new SpeechRecognitionEngine();
+        SpeechSynthesizer com = new SpeechSynthesizer();
+        ClientSettings cs = new ClientSettings();
+        int paddlexlocal;
         #endregion
 
         public ClientForms()
@@ -61,11 +70,140 @@ namespace MOVE.Client.Debug.Formular
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             si.Loading();
             fi.Start();
-
+            ClientListener();
         }
 
+        public void ClientListener()
+        {
+            _recognizerclient.SetInputToDefaultAudioDevice();
+            _recognizerclient.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsclient.txt")))));
+            _recognizerclient.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
+            _recognizerclient.RecognizeAsync(RecognizeMode.Multiple);
+        }
 
-        int paddlexlocal;
+        private void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+
+            if (speech == "Starte Server")
+            {
+                if (counterstartserver < 1)
+                {
+                    Start();
+                    com.SpeakAsync("Server wurde gestartet");
+                    counterstartserver++;
+                }
+                else
+                {
+                    com.SpeakAsync("Server wurde bereits gestartet");
+                }
+            }
+
+            if (speech == "Verbinde zum Server")
+            {
+                if (counterconnectserver < 1)
+                {
+                    Connect();
+                    com.SpeakAsync("Verbindung zum Server wurde hergestellt");
+                    counterconnectserver++;
+                }
+                else
+                {
+                    com.SpeakAsync("Verbindung zum Server wurde bereits hergestellt");
+                }
+            }
+
+            if (speech == "Los")
+            {
+                if (counterstartgame < 1)
+                {
+                    StartGame();
+                    counterstartgame++;
+                }
+                else
+                {
+                    com.SpeakAsync("Spiel wurde bereits gestartet");
+                }
+            }
+
+            if (speech == "Settings")
+            {
+                Settings();
+            }
+            if (speech == "Sound")
+            {
+                EnableSound();
+            }
+            if (speech == "Tonfrequenz")
+            {
+                EnableFrequenz();
+            }
+            if (speech == "Tastatur")
+            {
+                EnableTastatur();
+                dgv_playfieldclient.Focus();
+            }
+
+            if (speech == "Menü ausblenden")
+            {
+                Disablemenu();
+            }
+            else
+            {
+
+            }
+        }
+        public void ActivateClientListener()
+        {
+            try
+            {
+                _recognizerclient.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        public void CancelClientListener()
+        {
+            try
+            {
+                _recognizerclient.RecognizeAsyncCancel();
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void Settings()
+        {
+            cs.Show();
+        }
+        private void EnableSound()
+        {
+            rBSound.Checked = true;
+            rBFrequenz.Checked = false;
+            rbKeyboard.Checked = false;
+        }
+        private void EnableFrequenz()
+        {
+            rBSound.Checked = false;
+            rBFrequenz.Checked = true;
+            rbKeyboard.Checked = false;
+        }
+        private void EnableTastatur()
+        {
+            rBSound.Checked = false;
+            rBFrequenz.Checked = false;
+            rbKeyboard.Checked = true;
+        }
+        private void Disablemenu()
+        {
+            cbAusblenden.Checked = true;
+        }
+
 
         public void Glaettung(int anzahl)
         {
@@ -116,25 +254,6 @@ namespace MOVE.Client.Debug.Formular
 
         }
 
-        /*private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Right)
-            {
-                WertXlocal += 1;
-                pbx_uplocal.Location = new Point(WertXlocal, 50);
-                c.Send(Convert.ToString(WertXlocal));
-
-            }
-            if (e.KeyCode == Keys.Left)
-            {
-                WertXlocal -= 1;
-                pbx_uplocal.Location = new Point(WertXlocal, 50);
-                c.Send(Convert.ToString(WertXlocal));
-            }
-        }*/
-
-
-
         private void tbx_PortClient_TextChanged(object sender, EventArgs e)
         {
 
@@ -146,24 +265,13 @@ namespace MOVE.Client.Debug.Formular
 
         private void lsb_discover_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //  string value = lsb_discover.SelectedItem.ToString();
-            //string[] split = value.Split(';');
+
         }
-        string today = "Minute:" + System.DateTime.Now.Minute.ToString() + "Second:" + System.DateTime.Now.Second.ToString() + "mm:" + System.DateTime.Now.Millisecond.ToString();
-        private void btn_Start_Click(object sender, EventArgs e)
+
+        private void Start()
         {
-            panel1.BackColor = Color.Green;
-            panel2.BackColor = Color.Green;
-            panel3.BackColor = Color.Green;
-            panel4.BackColor = Color.Green;
-            panel5.BackColor = Color.Green;
-            panel6.BackColor = Color.Green;
-            panel7.BackColor = Color.Green;
-            panel8.BackColor = Color.Green;
             try
             {
-
-
                 int port = Convert.ToInt32(cs.tbx_PortServer.Text);
                 IPAddress ipaddress = IPAddress.Parse(cs.tbx_IPServer.Text);
                 tcp = new TcpService(port, this, ipaddress);
@@ -186,20 +294,10 @@ namespace MOVE.Client.Debug.Formular
             }
         }
 
-        private void btn_Connect_Click(object sender, EventArgs e)
+        private void Connect()
         {
-            panel1.BackColor = Color.Yellow;
-            panel2.BackColor = Color.Yellow;
-            panel3.BackColor = Color.Yellow;
-            panel4.BackColor = Color.Yellow;
-            panel5.BackColor = Color.Yellow;
-            panel6.BackColor = Color.Yellow;
-            panel7.BackColor = Color.Yellow;
-            panel8.BackColor = Color.Yellow;
             try
             {
-
-
                 int port = Convert.ToInt32(cs.tbx_PortClient.Text);
                 IPAddress ipaddress = IPAddress.Parse(cs.tbx_IPClient.Text);
                 c = new Client(port, ipaddress);
@@ -227,6 +325,31 @@ namespace MOVE.Client.Debug.Formular
                 writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
                 writer.Close();
             }
+        }
+        private void btn_Start_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.Green;
+            panel2.BackColor = Color.Green;
+            panel3.BackColor = Color.Green;
+            panel4.BackColor = Color.Green;
+            panel5.BackColor = Color.Green;
+            panel6.BackColor = Color.Green;
+            panel7.BackColor = Color.Green;
+            panel8.BackColor = Color.Green;
+            Start();
+        }
+
+        private void btn_Connect_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.Yellow;
+            panel2.BackColor = Color.Yellow;
+            panel3.BackColor = Color.Yellow;
+            panel4.BackColor = Color.Yellow;
+            panel5.BackColor = Color.Yellow;
+            panel6.BackColor = Color.Yellow;
+            panel7.BackColor = Color.Yellow;
+            panel8.BackColor = Color.Yellow;
+            Connect();
         }
 
         #region Service/Request
@@ -341,10 +464,14 @@ namespace MOVE.Client.Debug.Formular
             panel6.BackColor = Color.Purple;
             panel7.BackColor = Color.Pink;
             panel8.BackColor = Color.Pink;
-            timer2.Enabled = true;
-
+            StartGame();
         }
-        ClientSettings cs = new ClientSettings();
+
+        public void StartGame()
+        {
+            timer2.Enabled = true;
+        }
+
         private void timer2_Tick_1(object sender, EventArgs e)
         {
             if (rBFrequenz.Checked == true)
@@ -610,6 +737,15 @@ namespace MOVE.Client.Debug.Formular
                 ThreadStart processTaskThreadball = delegate { c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); };
                 new Thread(processTaskThreadball).Start();
             }
+        }
+        private void ClientForms_Activated(object sender, EventArgs e)
+        {
+          ActivateClientListener();
+        }
+
+        private void ClientForms_Deactivate(object sender, EventArgs e)
+        {
+            CancelClientListener();
         }
     }
 }

@@ -1,0 +1,10 @@
+Settings
+Starte Server
+Verbinde zum Server
+Move it
+Los
+Sound
+Tonfrequenz
+Tastatur
+Menü ausblenden
+exit

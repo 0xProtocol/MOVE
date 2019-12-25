@@ -16,7 +16,7 @@ namespace MOVE.AudioLayer
         public  double audioValueLast = 0;
         public  int audioCount = 0;
         public  int RATE = 44100;
-        public int BUFFER_SAMPLES = 28;
+        public int BUFFER_SAMPLES = 2800;
          int yValue = 663;
         List<int> savedValues = new List<int>();
         public int positionValue = 0;

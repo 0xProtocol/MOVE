@@ -25,7 +25,6 @@ namespace MOVE.Core
             string[] tmp = commandLine.Split('|');
             string command = tmp[0].ToLower();
             string[] param = null;
-            string ret;
 
             if (tmp.Length > 1)
             {
@@ -60,7 +59,7 @@ namespace MOVE.Core
 
         private static string GetCommandLine(string request)
         {
-            string[] seperator = { ":\\" };
+            string[] seperator = { "move:\\" };
             string[] tmp = request.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
             return tmp[0];
         }

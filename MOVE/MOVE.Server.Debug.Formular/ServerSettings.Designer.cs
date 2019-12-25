@@ -32,6 +32,7 @@
             this.cms = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectAdapterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tbx_IPClient = new System.Windows.Forms.TextBox();
             this.lbl_IPServer = new System.Windows.Forms.Label();
             this.lbl_ServerStart = new System.Windows.Forms.Label();
@@ -72,7 +73,6 @@
             this.lsb_networkadapter = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pbGlasses2 = new System.Windows.Forms.PictureBox();
-            this.selectAdapterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbempfindlichkeit)).BeginInit();
@@ -95,21 +95,28 @@
             this.serverToolStripMenuItem,
             this.selectAdapterToolStripMenuItem});
             this.cms.Name = "cms";
-            this.cms.Size = new System.Drawing.Size(181, 92);
+            this.cms.Size = new System.Drawing.Size(151, 70);
             // 
             // clientToolStripMenuItem
             // 
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
-            this.clientToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.clientToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.clientToolStripMenuItem.Text = "Client";
             this.clientToolStripMenuItem.Click += new System.EventHandler(this.clientToolStripMenuItem_Click);
             // 
             // serverToolStripMenuItem
             // 
             this.serverToolStripMenuItem.Name = "serverToolStripMenuItem";
-            this.serverToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
+            this.serverToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.serverToolStripMenuItem.Text = "Server";
             this.serverToolStripMenuItem.Click += new System.EventHandler(this.serverToolStripMenuItem_Click);
+            // 
+            // selectAdapterToolStripMenuItem
+            // 
+            this.selectAdapterToolStripMenuItem.Name = "selectAdapterToolStripMenuItem";
+            this.selectAdapterToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.selectAdapterToolStripMenuItem.Text = "Select Adapter";
+            this.selectAdapterToolStripMenuItem.Click += new System.EventHandler(this.selectAdapterToolStripMenuItem_Click);
             // 
             // tbx_IPClient
             // 
@@ -543,6 +550,7 @@
             this.tcNetworkDicovery.Size = new System.Drawing.Size(607, 334);
             this.tcNetworkDicovery.TabIndex = 2;
             this.tcNetworkDicovery.Text = "NetworkDiscovery";
+            this.tcNetworkDicovery.Click += new System.EventHandler(this.TcNetworkDicovery_Click_1);
             // 
             // lsb_networkadapter
             // 
@@ -573,13 +581,6 @@
             this.pbGlasses2.Size = new System.Drawing.Size(174, 109);
             this.pbGlasses2.TabIndex = 90;
             this.pbGlasses2.TabStop = false;
-            // 
-            // selectAdapterToolStripMenuItem
-            // 
-            this.selectAdapterToolStripMenuItem.Name = "selectAdapterToolStripMenuItem";
-            this.selectAdapterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.selectAdapterToolStripMenuItem.Text = "Select Adapter";
-            this.selectAdapterToolStripMenuItem.Click += new System.EventHandler(this.selectAdapterToolStripMenuItem_Click);
             // 
             // ServerSettings
             // 
