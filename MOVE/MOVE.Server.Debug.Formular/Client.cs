@@ -12,14 +12,18 @@ namespace MOVE.Server.Debug.Formular
 {
     public class Client
     {
+        #region Klasseninstanzvariablen
+        ErrorLogWriter elw = new ErrorLogWriter();
+        #endregion
+        #region Variablen
         private int _port;
         IPAddress _adr;
         IPEndPoint _ep;
         Socket _clientsocket;
         SocketReader _sr;
         SocketWriter _sw;
-        string _command;
-
+        #endregion
+        #region Konstruktor
         public Client(int port, IPAddress adr)
         {
             _port = port;
@@ -29,7 +33,8 @@ namespace MOVE.Server.Debug.Formular
             _sr = new SocketReader(_clientsocket);
             _sw = new SocketWriter(_clientsocket);
         }
-
+        #endregion
+        #region Methoden
         public void Start()
         {
             try
@@ -38,45 +43,24 @@ namespace MOVE.Server.Debug.Formular
             }
             catch (Exception ex)
             {
-                FileStream fs = new FileStream("ErrorLog.txt", FileMode.Open);
-                StreamWriter writer = new StreamWriter(fs);
-
-                writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
-                    "" + Environment.NewLine + "Date :" + DateTime.Now.ToString());
-                writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
-                writer.Close();
-
+                elw.WriteErrorLog(ex.Message);
             }
 
         }
-
         public void Send(string text)
         {
-            _command = text;
-
-            if (_command == "")
+            try
             {
-                Send(text);
+                byte[] sendmessage = Encoding.ASCII.GetBytes(text);
+                _clientsocket.Send(sendmessage);
             }
-            else
+            catch (Exception ex)
             {
-                try
-                {
-                    byte[] sendmessage = Encoding.ASCII.GetBytes(_command);
-                    _clientsocket.Send(sendmessage);
-                }
-                catch (Exception ex)
-                {
-                    FileStream fs = new FileStream("ErrorLog.txt", FileMode.Open);
-                    StreamWriter writer = new StreamWriter(fs);
 
-                    writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
-                        "" + Environment.NewLine + "Date :" + DateTime.Now.ToString());
-                    writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
-                    writer.Close();
-                }
+                elw.WriteErrorLog(ex.Message);
             }
         }
+
     }
 }
-
+#endregion

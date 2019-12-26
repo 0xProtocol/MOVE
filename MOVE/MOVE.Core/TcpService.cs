@@ -13,20 +13,23 @@ namespace MOVE.Core
 {
     public class TcpService
     {
+        #region Klasseninstanzvariablen
+        ClientHandler _ch;
+        IServiceLogger _servicelogger;
+        ErrorLogWriter elw = new ErrorLogWriter();
+
+        #endregion
+        #region Variablen
         private int _port;
         IPAddress _adr;
         IPEndPoint _ep;
         Socket _serversocket;
-        ClientHandler _ch;
-        IServiceLogger _servicelogger;
-
+        #endregion
+        #region Konstruktor
         public TcpService(int port, IServiceLogger servicelogger, IPAddress adr)
         {
             try
             {
-
-
-
                 _port = port;
                 _servicelogger = servicelogger;
                 _adr = adr;
@@ -42,18 +45,11 @@ namespace MOVE.Core
             }
             catch (Exception ex)
             {
-                string filePath = "ErrorLog.txt";
-
-                using (StreamWriter writer = new StreamWriter(filePath, true))
-                {
-                    writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
-                       "" + Environment.NewLine + "Date :" + DateTime.Now.ToString());
-                    writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
-                }
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
-
+        #endregion
+        #region Methoden
         public void Start()
         {
             try
@@ -63,18 +59,11 @@ namespace MOVE.Core
             }
             catch (Exception ex)
             {
-
-                string filePath = "ErrorLog.txt";
-
-                using (StreamWriter writer = new StreamWriter(filePath, true))
-                {
-                    writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
-                       "" + Environment.NewLine + "Date :" + DateTime.Now.ToString());
-                    writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
-                };
+                elw.WriteErrorLog(ex.Message);
             }
             
         }
     }
 }
+#endregion
 

@@ -112,14 +112,6 @@ namespace MOVE.AudioLayer
                     xValue = maxIndex * 60 - 25 * 60;
                 }
 
-                /*if (xValue < 0)
-                {
-                    xValue = 0;
-                }
-                if (xValue > 1093)
-                {
-                    xValue = 1093;
-                }*/
                 return xValue;
             }
             else

@@ -10,15 +10,19 @@ namespace MOVE.Core
 {
   public  class SessionHandler
     {
+        #region Klasseninstanzvariablen
         Socket _clientsocket;
         IServiceLogger _isl;
-
+       // ErrorLogWriter elw = new ErrorLogWriter();
+        #endregion
+        #region Konstruktor
         public SessionHandler(Socket clientSocket, IServiceLogger servicelogger)
         {
             _clientsocket = clientSocket;
             _isl = servicelogger;
         }
-
+        #endregion
+        #region Methoden
         public void HandleSingleSession()
         {
             while (true)
@@ -32,8 +36,6 @@ namespace MOVE.Core
                 _isl.LogRequestInformation(req);
             }
         }
-
-
         public void Close()
         {
             _clientsocket.Shutdown(SocketShutdown.Both);
@@ -41,4 +43,5 @@ namespace MOVE.Core
         }
     }
 }
+#endregion
 

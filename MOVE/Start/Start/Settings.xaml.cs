@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOVE.Shared;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -24,22 +25,56 @@ namespace Start
     /// </summary>
     public partial class Settings : Window
     {
+        #region Klasseninstanzierungen
         SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
+        ErrorLogWriter elw = new ErrorLogWriter();
+        #endregion
+        #region klassengenerierte Methoden
         public Settings()
         {
             InitializeComponent();
             DefaultListenerSettings();
             this.Focus();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RadioButtonIsChecked();
+            RadioButtonIsChecked2();
+        }
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
 
+        }
 
+        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            ActivateDefaultListenerSettings();
+        }
+
+        private void Window_Deactivated(object sender, EventArgs e)
+        {
+            CancelDefaultListenerSettings();
+        }
+        #endregion
+        #region Speech Recognition
         public void DefaultListenerSettings()
         {
+            try
+            {
             _recognizersettings.SetInputToDefaultAudioDevice();
             _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssettings.txt")))));
             _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultInfo_SpeechRecognized);
             _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
         }
 
         private void DefaultInfo_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
@@ -85,7 +120,8 @@ namespace Start
                 CloseWindow();
             }
         }
-
+        #endregion
+        #region Methoden
         private void CloseWindow()
         {
             this.Close();
@@ -170,22 +206,6 @@ namespace Start
                 ConfigurationManager.RefreshSection("appSettings");
             }
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            RadioButtonIsChecked();
-            RadioButtonIsChecked2();
-        }
-
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
-        {
-
-        }
         public void CancelDefaultListenerSettings()
         {
             try
@@ -194,7 +214,7 @@ namespace Start
             }
             catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
 
@@ -206,17 +226,9 @@ namespace Start
             }
             catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
-        private void Window_Activated(object sender, EventArgs e)
-        {
-            ActivateDefaultListenerSettings();
-        }
-
-        private void Window_Deactivated(object sender, EventArgs e)
-        {
-            CancelDefaultListenerSettings();
-        }
+        #endregion
     }
 }

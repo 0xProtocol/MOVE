@@ -9,6 +9,7 @@ namespace MOVE.Client.Debug.Formular
 {
    public class FirewallSettings
     {
+        #region FirewallOn
         public void FirewallOn()
         {
             Process proc = new Process();
@@ -21,7 +22,8 @@ namespace MOVE.Client.Debug.Formular
             proc.Start();
             proc.WaitForExit();
         }
-
+        #endregion
+        #region FirewallOff
         public void FirewallOff()
         {
             Process proc = new Process();
@@ -36,3 +38,4 @@ namespace MOVE.Client.Debug.Formular
         }
     }
 }
+#endregion

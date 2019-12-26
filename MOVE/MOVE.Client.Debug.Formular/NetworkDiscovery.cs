@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MOVE.Shared;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -16,12 +17,13 @@ namespace MOVE.Client.Debug.Formular
    public class NetworkDiscovery
     {
 
+        #region Import
         [DllImport("iphlpapi.dll", ExactSpelling = true)]
         public static extern int SendARP(int DestIP, int SrcIP, byte[] pMacAddr, ref uint PhyAddrLen);
-
-
+        ErrorLogWriter elw= new ErrorLogWriter();
+        #endregion
+        #region Variablen
         List<IPAddress> ipAddressList = new List<IPAddress>();
-
         public string output;
         public string networkips;
         public string serverAddr;
@@ -30,8 +32,10 @@ namespace MOVE.Client.Debug.Formular
         int sector2;
         int sector3;
         int sector4;
+        public bool isworking;
 
-
+        #endregion
+        #region Methoden
         public void getip(ListBox lst)
         {
             NetworkInterface[] Interfaces = NetworkInterface.GetAllNetworkInterfaces();
@@ -44,7 +48,7 @@ namespace MOVE.Client.Debug.Formular
                     string desc = Interface.Description;
                     string ipaddress = Convert.ToString(UnicatIPInfo.Address);
                     string subnetmsk = Convert.ToString(UnicatIPInfo.IPv4Mask);
-                    if (ipaddress.StartsWith("168")) continue;
+                    if (ipaddress.StartsWith("169")) continue;
                     if (subnetmsk.StartsWith("0")) continue;
                     if (desc.StartsWith("VirtualBox")) continue;
                     lst.Items.Add(desc + " | " + ipaddress + " | " + subnetmsk);
@@ -55,6 +59,7 @@ namespace MOVE.Client.Debug.Formular
 
         public void getSubnet(TextBox subnetmask)
         {
+            isworking = true;
             string subnet = subnetmask.Text;
             string[] tmp = subnet.Split('.');
 
@@ -96,7 +101,8 @@ namespace MOVE.Client.Debug.Formular
                 }
             }
         }
-
+        #endregion
+        #region QuickSearch
         public void QuickSearch(ListBox lst, ProgressBar pb)
         {
             pb.Value = 0;
@@ -109,7 +115,20 @@ namespace MOVE.Client.Debug.Formular
                 Thread.Sleep(25);
 
             }
+            isworking = false;
         }
+        private void SendArpRequestQuickSearch(IPAddress dst, ListBox lst)
+        {
+            byte[] macAddr = new byte[6];
+            uint macAddrLen = (uint)macAddr.Length;
+            int uintAddress = BitConverter.ToInt32(dst.GetAddressBytes(), 0);
+            if (SendARP(uintAddress, 0, macAddr, ref macAddrLen) == 0)
+            {
+                lst.Items.Add(dst.ToString());
+            }
+        }
+        #endregion
+        #region DeepSearch
         public void DeepSearch(ListBox lst, ProgressBar pb)
         {
             pb.Value = 0;
@@ -121,17 +140,7 @@ namespace MOVE.Client.Debug.Formular
                 thread.Start();
                 Thread.Sleep(25);
             }
-        }
-
-        private void SendArpRequestQuickSearch(IPAddress dst, ListBox lst)
-        {
-            byte[] macAddr = new byte[6];
-            uint macAddrLen = (uint)macAddr.Length;
-            int uintAddress = BitConverter.ToInt32(dst.GetAddressBytes(), 0);
-            if (SendARP(uintAddress, 0, macAddr, ref macAddrLen) == 0)
-            {
-                lst.Items.Add(dst.ToString());
-            }
+            isworking = false;
         }
 
         private void SendArpRequestDeepSearch(IPAddress dst, ListBox lst)
@@ -160,9 +169,9 @@ namespace MOVE.Client.Debug.Formular
                         string macAddress = BitConverter.ToString(macAddr, 0, length);
                         lst.Items.Add(networkips + " | " + host.HostName + " | " + macAddress);
                     }
-                    catch
+                    catch(Exception ex)
                     {
-
+                        elw.WriteErrorLog(ex.Message);
                     }
                 }
             }
@@ -170,4 +179,4 @@ namespace MOVE.Client.Debug.Formular
 
     }
 }
-
+#endregion

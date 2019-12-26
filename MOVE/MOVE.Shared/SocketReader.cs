@@ -9,13 +9,16 @@ namespace MOVE.Shared
 {
     public class SocketReader
     {
+        #region Variablen
         private Socket _clientsocket;
-
+        #endregion
+        #region Konstruktor
         public SocketReader(Socket clientsocket)
         {
             _clientsocket = clientsocket;
         }
-
+        #endregion
+        #region Methoden
         public string ReadBufferedString()
         {
             byte[] receiveBuffer = new byte[1024];
@@ -27,3 +30,4 @@ namespace MOVE.Shared
         }
     }
 }
+#endregion

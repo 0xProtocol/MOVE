@@ -156,6 +156,10 @@
       <Project>{f4ad1074-14f2-4c64-9439-c0382223bca2}</Project>
       <Name>MOVE.Server.Debug.Formular</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\MOVE.Shared\MOVE.Shared.csproj">
+      <Project>{e938205a-a89f-410a-8d5d-2275d6912ccf}</Project>
+      <Name>MOVE.Shared</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Start.dll\Start.dll.csproj">
       <Project>{36e9083e-a799-441a-830d-e91c3b6a7bde}</Project>
       <Name>Start.dll</Name>

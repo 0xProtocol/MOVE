@@ -14,17 +14,24 @@ using System.Configuration;
 using System.Speech.Recognition;
 using System.IO;
 using System.Speech.Synthesis;
+using MOVE.Shared;
 
 namespace MOVE.Client.Debug.Formular
 {
     public partial class ClientSettings : Form
     {
-        Thread t1;
+        #region Klasseninstanzvariablen
         NetworkDiscovery nd = new NetworkDiscovery();
         FirewallSettings fs = new FirewallSettings();
         SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
+        ErrorLogWriter elw = new ErrorLogWriter();
+        #endregion
+        #region Variablen
+        Thread discoverythread;
         int counter;
+        #endregion
+        #region klassengenerierte Methoden
         public ClientSettings()
         {
             InitializeComponent();
@@ -33,26 +40,90 @@ namespace MOVE.Client.Debug.Formular
             string glät = ConfigurationManager.AppSettings["glättung"];
             tbGlättungsstufe.Value = Convert.ToInt32(glät);
         }
+        private void ClientSettings_Load(object sender, EventArgs e)
+        {
+            lsb_networkadapter.Items.Clear();
+            nd.getip(lsb_networkadapter);
+            string[] splitzeile = nd.firstvalue.Split('|');
+            tbx_Discovery.Text = splitzeile[1];
+            textBox1.Text = splitzeile[2];
+        }
+        private void btn_Discover_Click(object sender, EventArgs e)
+        {
+            if (nd.isworking == false)
+            {
+                if (cbQuickSearch.Checked == true)
+                {
+                    Discover("0");
+                }
+                if (cbDeepSearch.Checked == true)
+                {
+                    Discover("1");
+                }
+            }
+            else
+            {
+                com.SpeakAsync("Der Vorgang ist bereits gestartet worden, warten Sie bitte!");
+            }
+        }
+        private void ClientSettings_Activated(object sender, EventArgs e)
+        {
+            StartthisListener();
+        }
 
+        private void ClientSettings_Deactivate(object sender, EventArgs e)
+        {
+            CancelClientListener();
+        }
+        private void btn_deactivatefirewall_Click(object sender, EventArgs e)
+        {
+            fs.FirewallOff();
+        }
+
+        private void btn_ActivateFirewall_Click(object sender, EventArgs e)
+        {
+            fs.FirewallOn();
+        }
+        private void clientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GiveSelectedIPinIPConfigurationClient();
+        }
+
+        private void serverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GiveSelectedIPinIPConfigurationServer();
+        }
+        private void selectAdapterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GiveSelectedAdapterinTextBox();
+        }
+        private void lsb_networkadapter_Click(object sender, EventArgs e)
+        {
+            cms.Items[0].Visible = false; cms.Items[1].Visible = false;
+            cms.Items[2].Visible = true;
+        }
+        private void lsb_discover_Click(object sender, EventArgs e)
+        {
+            cms.Items[0].Visible = true; cms.Items[1].Visible = true;
+            cms.Items[2].Visible = false;
+        }
+        #endregion
+        #region Speech Recognition
         public void ClientSettingsListener()
         {
+            try
+            {
             _recognizersettings.SetInputToDefaultAudioDevice();
             _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsclientsettings.txt")))));
             _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSettings_SpeechRecognized);
             _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
-        }
-        private void StartthisListener()
-        {
-            if (counter < 1)
-            {
-                ClientSettingsListener();
-                counter++;
             }
-            else
+            catch (Exception ex)
             {
-                ActivateClientListener();
+                elw.WriteErrorLog(ex.Message);
             }
         }
+
         public void DefaultSettings_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
@@ -118,11 +189,25 @@ namespace MOVE.Client.Debug.Formular
             {
                 if (speech == "Starte Deepsearch")
                 {
-                    Discover("1");
+                    if (nd.isworking == false)
+                    {
+                        Discover("1");
+                    }
+                    else
+                    {
+                        com.SpeakAsync("Warten Sie, Vorgang noch nicht beendet!");
+                    }
                 }
                 if (speech == "Starte Quicksearch")
                 {
-                    Discover("0");
+                    if (nd.isworking == false)
+                    {
+                        Discover("0");
+                    }
+                    else
+                    {
+                        com.SpeakAsync("Warten Sie, Vorgang noch nicht beendet!");
+                    }
                 }
                 if (speech == "Activate Firewall")
                 {
@@ -154,9 +239,11 @@ namespace MOVE.Client.Debug.Formular
                     try
                     {
                         lsb_networkadapter.SelectedIndex++;
+                        GiveSelectedAdapterinTextBox();
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
+                        elw.WriteErrorLog(ex.Message);
 
                     }
                 }
@@ -185,10 +272,11 @@ namespace MOVE.Client.Debug.Formular
                     try
                     {
                         lsb_discover.SelectedIndex++;
+                        ShowMessageBox();
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
-
+                        elw.WriteErrorLog(ex.Message);
                     }
                 }
                 if (speech == "Fünf Adressen weiter")
@@ -196,19 +284,22 @@ namespace MOVE.Client.Debug.Formular
                     try
                     {
                         lsb_discover.SelectedIndex += 5;
+                        ShowMessageBox();
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
-
+                        elw.WriteErrorLog(ex.Message);
                     }
                 }
                 if (speech == "Adresse für Server")
                 {
                     GiveSelectedIPinIPConfigurationServer();
+                    com.SpeakAsync("Adresse wurde dem Server zugewiesen");
                 }
                 if (speech == "Adresse für Client")
                 {
                     GiveSelectedIPinIPConfigurationClient();
+                    com.SpeakAsync("Adresse wurde dem Client zugewiesen");
                 }
             }
             if (speech == "Game Settings")
@@ -232,22 +323,55 @@ namespace MOVE.Client.Debug.Formular
                     CloseWindow();
                 }
             }
-        
+        private void ActivateClientListener()
+        {
+            try
+            {
+                _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+
+        private void CancelClientListener()
+        {
+            try
+            {
+                _recognizersettings.RecognizeAsyncCancel();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+        private void StartthisListener()
+        {
+            if (counter < 1)
+            {
+                ClientSettingsListener();
+                counter++;
+            }
+            else
+            {
+                ActivateClientListener();
+            }
+        }
+        #endregion
+        #region Methoden 
         private void ActivateFirewall()
         {
             fs.FirewallOn();
         }
-
         private void DeactivateFirewall()
         {
             fs.FirewallOff();
         }
-
         private void CloseWindow()
         {
             this.Hide();
         }
-
         private void SelectFirstAdapter()
         {
             try
@@ -257,9 +381,9 @@ namespace MOVE.Client.Debug.Formular
             lsb_networkadapter.Focus();
             GiveSelectedAdapterinTextBox();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
 
@@ -271,9 +395,9 @@ namespace MOVE.Client.Debug.Formular
                 lsb_networkadapter.Focus();
                 GiveSelectedAdapterinTextBox();
             }
-            catch (Exception)
+            catch (Exception ex) 
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
 
         }
@@ -285,10 +409,9 @@ namespace MOVE.Client.Debug.Formular
                 lsb_networkadapter.Focus();
                 GiveSelectedAdapterinTextBox();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-               
+                elw.WriteErrorLog(ex.Message);
             }
         }
         private void SelectFourthAdapter()
@@ -299,9 +422,9 @@ namespace MOVE.Client.Debug.Formular
                 lsb_networkadapter.Focus();
                 GiveSelectedAdapterinTextBox();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
 
@@ -313,9 +436,9 @@ namespace MOVE.Client.Debug.Formular
                 lsb_discover.Focus();
                 ShowMessageBox();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
         private void SelectSecondAddress()
@@ -326,9 +449,9 @@ namespace MOVE.Client.Debug.Formular
                 lsb_discover.Focus();
                 ShowMessageBox();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
         private void SelectThirdAddress()
@@ -339,9 +462,9 @@ namespace MOVE.Client.Debug.Formular
                 lsb_discover.Focus();
                 ShowMessageBox();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
         private void SelectFourhtAddress()
@@ -352,9 +475,9 @@ namespace MOVE.Client.Debug.Formular
                 lsb_discover.Focus();
                 ShowMessageBox();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
         private void SelectFifthAddress()
@@ -365,9 +488,9 @@ namespace MOVE.Client.Debug.Formular
                 lsb_discover.Focus();
                 ShowMessageBox();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
 
@@ -398,29 +521,6 @@ namespace MOVE.Client.Debug.Formular
             string[] seperator = { "| " };
             string[] splitzeile = split.Split(seperator, StringSplitOptions.RemoveEmptyEntries);
             tbx_IPServer.Text = splitzeile[0];
-        }
-        private void ActivateClientListener()
-        {
-            try
-            {
-                _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-
-        private void CancelClientListener()
-        {
-            try
-            {
-                _recognizersettings.RecognizeAsyncCancel();
-            }
-            catch (Exception ex)
-            {
-
-            }
         }
 
         public int FrequenzSetting()
@@ -455,18 +555,38 @@ namespace MOVE.Client.Debug.Formular
             }
             return 0;
         }
-
-        private void ClientSettings_Load(object sender, EventArgs e)
+        public void Discover(string value)
         {
-            
-            lsb_networkadapter.Items.Clear();
-            nd.getip(lsb_networkadapter);
-            string[] splitzeile = nd.firstvalue.Split('|');
-            tbx_Discovery.Text = splitzeile[1];
-            textBox1.Text = splitzeile[2];
-            
-        }
+            try
+            {
+                nd.getSubnet(textBox1);
+                lsb_discover.Items.Clear();
+                nd.FillArpResults(tbx_Discovery, lsb_discover);
+                if (cbQuickSearch.Checked && cbDeepSearch.Checked)
+                {
 
+                }
+                if (value == "0")
+                {
+                    ThreadStart start = delegate { nd.QuickSearch(lsb_discover, pbnetwork); };
+                    discoverythread = new Thread(new ThreadStart(start));
+                    discoverythread.Start();
+
+                }
+                else if (value == "1")
+                {
+                    ThreadStart start = delegate { nd.DeepSearch(lsb_discover, pbnetwork); };
+                    discoverythread = new Thread(new ThreadStart(start));
+                    discoverythread.Start();
+                }
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+        #endregion
+        #region funktionslose Methoden
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -486,45 +606,7 @@ namespace MOVE.Client.Debug.Formular
         {
 
         }
-
-        public void Discover(string value)
-        {
-            nd.getSubnet(textBox1);
-            lsb_discover.Items.Clear();
-            nd.FillArpResults(tbx_Discovery, lsb_discover);
-            if (cbQuickSearch.Checked && cbDeepSearch.Checked)
-            {
-
-            }
-            if (value == "0")
-            {
-                ThreadStart start = delegate { nd.QuickSearch(lsb_discover, pbnetwork); };
-                t1 = new Thread(new ThreadStart(start));
-                t1.Start();
-
-            }
-            else if (value == "1")
-            {
-                ThreadStart start = delegate { nd.DeepSearch(lsb_discover, pbnetwork); };
-                t1 = new Thread(new ThreadStart(start));
-                t1.Start();
-            }
-        }
-        private void btn_Discover_Click(object sender, EventArgs e)
-        {
-            if (cbQuickSearch.Checked == true)
-            {
-                ThreadStart start = delegate { Discover("0"); };
-                t1 = new Thread(new ThreadStart(start));
-                t1.Start();
-            }
-            if (cbDeepSearch.Checked == true)
-            {
-                ThreadStart start = delegate { Discover("1"); };
-                t1 = new Thread(new ThreadStart(start));
-                t1.Start();
-            }
-        }
+   
 
         private void pbnetwork_Click(object sender, EventArgs e)
         {
@@ -536,29 +618,10 @@ namespace MOVE.Client.Debug.Formular
 
         }
 
-        private void btn_deactivatefirewall_Click(object sender, EventArgs e)
-        {
-            fs.FirewallOff();
-        }
-
-        private void btn_ActivateFirewall_Click(object sender, EventArgs e)
-        {
-            fs.FirewallOn();
-        }
 
         private void lsb_discover_MouseDown(object sender, MouseEventArgs e)
         {
 
-        }
-
-        private void clientToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            GiveSelectedIPinIPConfigurationClient();
-        }
-
-        private void serverToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            GiveSelectedIPinIPConfigurationServer();
         }
 
         private void iPConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -635,32 +698,6 @@ namespace MOVE.Client.Debug.Formular
         {
 
         }
-
-        private void selectAdapterToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            GiveSelectedAdapterinTextBox();
-        }
-
-        private void lsb_networkadapter_Click(object sender, EventArgs e)
-        {
-            cms.Items[0].Visible = false; cms.Items[1].Visible = false;
-            cms.Items[2].Visible = true;
-        }
-
-        private void lsb_discover_Click(object sender, EventArgs e)
-        {
-            cms.Items[0].Visible = true; cms.Items[1].Visible = true;
-            cms.Items[2].Visible = false;
-        }
-
-        private void ClientSettings_Activated(object sender, EventArgs e)
-        {
-            StartthisListener();
-        }
-
-        private void ClientSettings_Deactivate(object sender, EventArgs e)
-        {
-            CancelClientListener();
-        }
     }
 }
+#endregion

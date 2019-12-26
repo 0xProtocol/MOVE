@@ -21,6 +21,7 @@ using System.Speech.Synthesis;
 using System.Threading;
 using System.Configuration;
 using MOVE.AudioLayer;
+using MOVE.Shared;
 
 namespace Start
 {
@@ -29,23 +30,26 @@ namespace Start
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Klasseninstanzierungen
         SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
-        SpeechRecognitionEngine startlistening = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
-        Settings s = new Settings();
         SpeechControl si = new SpeechControl();
+        Settings s = new Settings();
+        ErrorLogWriter elw = new ErrorLogWriter();
+        #endregion
+        #region klassengenerierte Methoden
         public MainWindow()
         {
             InitializeComponent();
             si.DefaultListener();
         }
-
+        #endregion
+        #region Methoden
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Info wininfo = new Info();
             wininfo.Show();
         }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             ServerForms sf = new ServerForms();
@@ -57,34 +61,17 @@ namespace Start
             cf.Show();
         }
 
-        private void Window_FocusableChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-        }
-
         private void ButtonÜbung_Click(object sender, RoutedEventArgs e)
         {
             SinglePlayerForms spf = new SinglePlayerForms();
             spf.Show();
         }
         
-
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
         {
             Settings winsettings = new Settings();
             winsettings.Show();
         }
-
-        private void Img_background_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-        private void _recognizer_SpeechRecognized(object sender, SpeechDetectedEventArgs e)
-        {
-
-        }
-
         private void Window_Activated(object sender, EventArgs e)
         {
             si.ActivateDefaultListener();
@@ -94,7 +81,16 @@ namespace Start
         {
             si.CancelDefaultListener();
         }
+        #endregion
+        #region funktionslose Methoden
+        private void Img_background_Loaded(object sender, RoutedEventArgs e)
+        {
 
+        }
+        private void Window_FocusableChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
 
+        }
     }
 }
+#endregion

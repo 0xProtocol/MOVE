@@ -80,3 +80,4 @@ D:\GitHubMove\MOVE\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
 D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CoreCompileInputs.cache
 D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csprojAssemblyReference.cache

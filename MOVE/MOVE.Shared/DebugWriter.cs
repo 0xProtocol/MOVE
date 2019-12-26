@@ -9,7 +9,7 @@ namespace MOVE.Shared
 {
    public class DebugWriter
     {
-
+        #region Methoden
         public void SendDebug(string text)
         { 
             StreamWriter writer = new StreamWriter("DebugLogSend.txt",true);
@@ -49,3 +49,4 @@ namespace MOVE.Shared
         }
     }
 }
+#endregion

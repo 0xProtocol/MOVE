@@ -14,20 +14,32 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MOVE.Client.Debug.Formular;
 using MOVE.Server.Debug.Formular;
+using MOVE.Shared;
 
 namespace Start
 {
     public class SpeechControl
     {
+        #region Klasseninstanzierungen
         SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
-
+        ErrorLogWriter elw = new ErrorLogWriter();
+        #endregion
+        #region Speech Recognition
         public void DefaultListener()
         {
+            try
+            {
+
             _recognizer.SetInputToDefaultAudioDevice();
             _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsmainwindow.txt")))));
             _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
             _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
         }
       
         public void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
@@ -62,7 +74,8 @@ namespace Start
                 ExitGame();
             }
         }
-
+        #endregion
+        #region Methoden
         private void OpenServer()
         {
             ServerForms sf = new ServerForms();
@@ -96,7 +109,6 @@ namespace Start
         {
             Environment.Exit(1);
         }
-
         public void CancelDefaultListener()
         {
             try
@@ -105,7 +117,7 @@ namespace Start
             }
             catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
 
@@ -117,8 +129,9 @@ namespace Start
             }
             catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.Message);
             }
         }
     }
 }
+#endregion

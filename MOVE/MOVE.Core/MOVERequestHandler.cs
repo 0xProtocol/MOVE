@@ -10,15 +10,21 @@ namespace MOVE.Core
 {
    public class MOVERequestHandler
     {
-        public string _request;
+        #region Klasseninstanzvariablen
         IServiceLogger _serviceLogger;
-
+        ErrorLogWriter elw = new ErrorLogWriter();
+        #endregion
+        #region Variablen
+        public string _request;
+        #endregion
+        #region Konstruktor
         public MOVERequestHandler(string request, IServiceLogger servicelogger)
         {
             _request = request;
             _serviceLogger = servicelogger;
         }
-
+        #endregion
+        #region Methoden
         public string PerformAction()
         {
             string commandLine = GetCommandLine(_request);
@@ -46,13 +52,7 @@ namespace MOVE.Core
             }
             catch (Exception ex)
             {
-                FileStream fs = new FileStream("ErrorLog.txt", FileMode.Open);
-                StreamWriter writer = new StreamWriter(fs);
-
-                writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
-                    "" + Environment.NewLine + "Date :" + DateTime.Now.ToString());
-                writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
-                writer.Close();
+                elw.WriteErrorLog(ex.Message);
                 return "0";
             }
         }
@@ -65,3 +65,4 @@ namespace MOVE.Core
         }
     }
 }
+#endregion

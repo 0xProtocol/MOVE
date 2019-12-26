@@ -8,7 +8,9 @@ namespace MOVE.Shared
 {
    public interface IServiceLogger
     {
+        #region Interfaces
         void LogServiceinformation(string message);
         void LogRequestInformation(string message);
     }
 }
+#endregion

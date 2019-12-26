@@ -12,15 +12,19 @@ namespace MOVE.Core
 {
    public class ClientHandler
     {
+        #region Klasseninstanzvariablen
         Socket _serversocket;
         IServiceLogger _isl;
-
+        ErrorLogWriter elw = new ErrorLogWriter();
+        #endregion
+        #region Konstruktor
         public ClientHandler(Socket serversocket, IServiceLogger servicelogger)
         {
             _serversocket = serversocket;
             _isl = servicelogger;
         }
-
+        #endregion
+        #region Methoden
         public void Acceptclients()
         {
             while (true)
@@ -42,15 +46,10 @@ namespace MOVE.Core
                 }
                 catch (Exception ex)
                 {
-                    FileStream fs = new FileStream("ErrorLog.txt", FileMode.Open);
-                    StreamWriter writer = new StreamWriter(fs);
-
-                    writer.WriteLine("Message :" + ex.Message + "<br/>" + Environment.NewLine + "StackTrace :" + ex.StackTrace +
-                        "" + Environment.NewLine + "Date :" + DateTime.Now.ToString());
-                    writer.WriteLine(Environment.NewLine + "-----------------------------------------------------------------------------" + Environment.NewLine);
-                    writer.Close();
+                    elw.WriteErrorLog(ex.Message);
                 }
                 }
         }
     }
 }
+#endregion
