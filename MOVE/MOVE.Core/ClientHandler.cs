@@ -46,7 +46,7 @@ namespace MOVE.Core
                 }
                 catch (Exception ex)
                 {
-                    elw.WriteErrorLog(ex.Message);
+                    elw.WriteErrorLog(ex.ToString());
                 }
                 }
         }

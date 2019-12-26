@@ -12,6 +12,7 @@ namespace MOVE.AudioLayer
 {
     public class SoundInput
     {
+        #region Variablen
         public double audioValueMax = 0;
         public  double audioValueLast = 0;
         public  int audioCount = 0;
@@ -28,7 +29,8 @@ namespace MOVE.AudioLayer
         string ip;
         public int speed_left = 4;
         public int speed_top = 4;
-
+        #endregion
+        #region Methoden
         public void Loading()
         {
             var waveIn = new WaveInEvent();
@@ -62,10 +64,6 @@ namespace MOVE.AudioLayer
             audioValueLast = max;
             audioCount += 1;
         }
-
-     
-        
-
-
     }
 }
+#endregion

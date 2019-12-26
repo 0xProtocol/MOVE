@@ -7,4 +7,5 @@ Sound
 Tonfrequenz
 Tastatur
 Menü ausblenden
+Menü einblenden
 exit

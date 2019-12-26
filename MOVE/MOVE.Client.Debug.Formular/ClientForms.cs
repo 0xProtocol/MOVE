@@ -192,25 +192,13 @@ namespace MOVE.Client.Debug.Formular
                     Glaettung(wertGlaettung);
                 }
 
-                ThreadStart processTaskThreadball = delegate { c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); };
-                new Thread(processTaskThreadball).Start();
-                Thread workerThread = new Thread(() =>
-                {
-                    try
-                    {
-                        new Thread(processTaskThreadball).Start();
-                    }
-                    catch (Exception ex)
-                    {
-                        elw.WriteErrorLog(ex.Message);
-                    }
-
-                });
+                c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
+              
             }
 
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void btn_Start_Click(object sender, EventArgs e)
@@ -299,40 +287,54 @@ namespace MOVE.Client.Debug.Formular
         }
         private void rbKeyboard_KeyDown(object sender, KeyEventArgs e)
         {
+            try
+            {
+
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
                 pbx_uplocal.Location = new Point(WertXlocal, 50);
-                ThreadStart processTaskThreadball = delegate { c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); };
-                new Thread(processTaskThreadball).Start();
+              c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
+
 
             }
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
                 pbx_uplocal.Location = new Point(WertXlocal, 50);
-                ThreadStart processTaskThreadball = delegate { c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); };
-                new Thread(processTaskThreadball).Start();
+                c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
+            }
+            }
+            catch (Exception ex)
+            {
+
+                elw.WriteErrorLog(ex.ToString()); ;
             }
         }
 
         private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
         {
+            try
+            {
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
                 pbx_uplocal.Location = new Point(WertXlocal, 50);
-                ThreadStart processTaskThreadball = delegate { c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); };
-                new Thread(processTaskThreadball).Start();
+                c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); 
 
             }
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
                 pbx_uplocal.Location = new Point(WertXlocal, 50);
-                ThreadStart processTaskThreadball = delegate { c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); };
-                new Thread(processTaskThreadball).Start();
+                c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
             }
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+
         }
         private void ClientForms_Activated(object sender, EventArgs e)
         {
@@ -356,7 +358,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -435,7 +437,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -447,7 +449,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         #endregion
@@ -510,9 +512,9 @@ namespace MOVE.Client.Debug.Formular
                 }
             }
             // Exceptions werden mit dieser MessageBox umgangen
-            catch (IOException IOex)
+            catch (IOException ex)
             {
-                elw.WriteErrorLog(IOex.Message);
+                elw.WriteErrorLog(ex.ToString());
                 MessageBox.Show("Hier ist ein Fehler entstanden!");
             }
             // Anschließend werden streamwriter und fiilestream geschlossen
@@ -538,7 +540,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -559,7 +561,7 @@ namespace MOVE.Client.Debug.Formular
 
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void StartGame()

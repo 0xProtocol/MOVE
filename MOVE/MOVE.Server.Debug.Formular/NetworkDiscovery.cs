@@ -170,7 +170,7 @@ namespace MOVE.Server.Debug.Formular
                     }
                     catch (Exception ex)
                     {
-                        elw.WriteErrorLog(ex.Message);
+                        elw.WriteErrorLog(ex.ToString());
                     }
                 }
             }

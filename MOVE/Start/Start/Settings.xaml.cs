@@ -73,7 +73,7 @@ namespace Start
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -214,7 +214,7 @@ namespace Start
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -226,7 +226,7 @@ namespace Start
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         #endregion

@@ -184,7 +184,7 @@ namespace MOVE.Server.Debug.Formular
         private void btnSettings_Click(object sender, EventArgs e)
         {
             ss.Visible = false;
-            ss.Show();
+            ss.ShowDialog();
             panel1.BackColor = Color.Orange;
             panel2.BackColor = Color.Orange;
             panel3.BackColor = Color.Orange;
@@ -276,22 +276,12 @@ namespace MOVE.Server.Debug.Formular
                 counter++;
                 auswertungsWerte.Add(pbx_downlocal.Location.X);
 
-                ThreadStart processTaskThreadball = delegate { c.Send("move:\\" + "lb" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y) + "|" + Convert.ToString(pbx_downlocal.Location.X) + "|" + Convert.ToString(punkteGegner) + "|" + Convert.ToString(punkteSpieler)); };
-                Thread workerThread = new Thread(() =>
-                {
-                    try
-                    {
-                        new Thread(processTaskThreadball).Start();
-                    }
-                    catch (Exception ex)
-                    {
-                        elw.WriteErrorLog(ex.Message);
-                    }
-                });
+                c.Send("move:\\" + "lb" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y) + "|" + Convert.ToString(pbx_downlocal.Location.X) + "|" + Convert.ToString(punkteGegner) + "|" + Convert.ToString(punkteSpieler));
+
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
@@ -411,7 +401,7 @@ namespace MOVE.Server.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
@@ -481,6 +471,14 @@ namespace MOVE.Server.Debug.Formular
             {
                 Disablemenu();
             }
+            if(speech=="Menü einblenden")
+            {
+                Enablemenu();
+            }
+            if(speech=="exit")
+            {
+                CloseWindow();
+            }
         }
         public void ActivateServerListener()
         {
@@ -490,7 +488,7 @@ namespace MOVE.Server.Debug.Formular
             }
             catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         public void CancelServerListener()
@@ -501,7 +499,7 @@ namespace MOVE.Server.Debug.Formular
             }
             catch (Exception ex)
             {
-
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         #endregion
@@ -535,7 +533,7 @@ namespace MOVE.Server.Debug.Formular
             catch (Exception ex)
             {
 
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void Settings()
@@ -564,6 +562,14 @@ namespace MOVE.Server.Debug.Formular
         {
             cbAusblenden.Checked = true;
         }
+        private void Enablemenu()
+        {
+            cbAusblenden.Checked = false;
+        }
+        private void CloseWindow()
+        {
+            this.Close();
+        }
         public void SaveFunction(string pfad)
         {
             FileStream fs = null;
@@ -581,8 +587,9 @@ namespace MOVE.Server.Debug.Formular
 
             }
             // Exceptions werden mit dieser MessageBox umgangen
-            catch (IOException IOex)
+            catch (IOException ex)
             {
+                elw.WriteErrorLog(ex.ToString());
                 MessageBox.Show("Hier ist ein Fehler entstanden!");
             }
             // Anschließend werden streamwriter und fiilestream geschlossen

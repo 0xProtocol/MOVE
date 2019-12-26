@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MOVE.Shared;
 using NAudio;
 using NAudio.Wave;
 
@@ -12,13 +13,19 @@ namespace MOVE.AudioLayer
 {
     public class FrequenzInput
     {
+        #region Klasseninstanzvariablen
+        ErrorLogWriter ewl = new ErrorLogWriter();
+        #endregion
+        #region Variablen
         private int rate = 44100;
         private int bufferSamples = 2048;
         public BufferedWaveProvider bwp;
         int xValue = 0;
         double maxValue = 0.0;
         int maxIndex = 0;
-        
+        #endregion
+        #region Methoden
+
         public void Start()
         {
             StartMicrofoneRecording();
@@ -31,6 +38,8 @@ namespace MOVE.AudioLayer
 
         public void StartMicrofoneRecording()
         {
+            try
+            {
             WaveIn waveIn = new WaveIn();
             waveIn.DeviceNumber = 0;
             waveIn.WaveFormat = new NAudio.Wave.WaveFormat(rate, 1);
@@ -39,14 +48,11 @@ namespace MOVE.AudioLayer
             bwp = new BufferedWaveProvider(waveIn.WaveFormat);
             bwp.BufferLength = bufferSamples * 2;
             bwp.DiscardOnBufferOverflow = true;
-
-            try
-            {
-                waveIn.StartRecording();
+            waveIn.StartRecording();
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Aufnahme fehlgeschlagen");
+                ewl.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -142,5 +148,5 @@ namespace MOVE.AudioLayer
             return fft;
         }
     }
-} 
-
+}
+#endregion

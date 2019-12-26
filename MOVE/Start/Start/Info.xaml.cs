@@ -59,8 +59,7 @@ namespace Start
             }
             catch (Exception ex)
             {
-
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void DefaultInfo_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
@@ -86,7 +85,7 @@ namespace Start
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -98,7 +97,7 @@ namespace Start
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         #endregion

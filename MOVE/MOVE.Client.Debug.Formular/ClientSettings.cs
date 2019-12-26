@@ -120,7 +120,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -243,7 +243,7 @@ namespace MOVE.Client.Debug.Formular
                     }
                     catch (Exception ex)
                     {
-                        elw.WriteErrorLog(ex.Message);
+                        elw.WriteErrorLog(ex.ToString());
 
                     }
                 }
@@ -276,7 +276,7 @@ namespace MOVE.Client.Debug.Formular
                     }
                     catch (Exception ex)
                     {
-                        elw.WriteErrorLog(ex.Message);
+                        elw.WriteErrorLog(ex.ToString());
                     }
                 }
                 if (speech == "Fünf Adressen weiter")
@@ -288,7 +288,7 @@ namespace MOVE.Client.Debug.Formular
                     }
                     catch (Exception ex)
                     {
-                        elw.WriteErrorLog(ex.Message);
+                        elw.WriteErrorLog(ex.ToString());
                     }
                 }
                 if (speech == "Adresse für Server")
@@ -331,7 +331,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -343,7 +343,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void StartthisListener()
@@ -383,7 +383,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -397,7 +397,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex) 
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
 
         }
@@ -411,7 +411,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void SelectFourthAdapter()
@@ -424,7 +424,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -438,7 +438,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void SelectSecondAddress()
@@ -451,7 +451,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void SelectThirdAddress()
@@ -464,7 +464,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void SelectFourhtAddress()
@@ -477,7 +477,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void SelectFifthAddress()
@@ -490,7 +490,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
@@ -582,7 +582,7 @@ namespace MOVE.Client.Debug.Formular
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         #endregion
