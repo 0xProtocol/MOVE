@@ -84,10 +84,30 @@ namespace MOVE.Server.Debug.Formular
             waveIn.StartRecording();
             this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             fi.Start();
+<<<<<<< Updated upstream
 
+=======
+            ServerListener();
+            getscreenres();
+        }
+        private void dgv_playfieldServer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Right)
+            {
+                WertXlocal += 25;
+                pbx_downlocal.Location = new Point(WertXlocal, 100);
+
+            }
+            if (e.KeyCode == Keys.Left)
+            {
+                WertXlocal -= 25;
+                pbx_downlocal.Location = new Point(WertXlocal, 100);
+            }
+>>>>>>> Stashed changes
         }
         public void ServerListener()
         {
+<<<<<<< Updated upstream
             _recognizer.SetInputToDefaultAudioDevice();
             _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"Server.txt")))));
             _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
@@ -124,6 +144,18 @@ Deactivate Firewall
         }
 
         public void DefaultSettings_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+=======
+            Connect();
+        }
+        private void getscreenres()
+        {
+            string screenHeight = Screen.PrimaryScreen.Bounds.Width.ToString();
+            int s = Convert.ToInt32(screenHeight);
+            double zahl = (4000 / 1920) * s;
+            double player = s / 10;
+        }
+        private void button1_Click(object sender, EventArgs e)
+>>>>>>> Stashed changes
         {
             string speech = e.Result.Text;
             var checkedButton = Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
@@ -238,13 +270,24 @@ Deactivate Firewall
         {
             try
             {
+<<<<<<< Updated upstream
                 startlistening.RecognizeAsyncCancel();
                 //  com.SpeakAsync("deactivated");
                 _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+=======
+                WertXlocal += 25;
+                pbx_downlocal.Location = new Point(WertXlocal, 500);
+
+>>>>>>> Stashed changes
             }
             catch (Exception ex)
             {
+<<<<<<< Updated upstream
 
+=======
+                WertXlocal -= 25;
+                pbx_downlocal.Location = new Point(WertXlocal, 500);
+>>>>>>> Stashed changes
             }
         }
         private void _recognizer_SpeechRecognized(object sender, SpeechDetectedEventArgs e)

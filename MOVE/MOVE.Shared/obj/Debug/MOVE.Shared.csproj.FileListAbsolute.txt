@@ -75,3 +75,11 @@ C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastenste
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 2.0\MOVE.Shared\obj\Debug\MOVE.Shared.csprojResolveAssemblyReference.cache
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 2.0\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 C:\Users\Julian\Desktop\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 2.0\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+<<<<<<< Updated upstream
+=======
+D:\GitHubMove\MOVE\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
+D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CoreCompileInputs.cache
+D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
+D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+>>>>>>> Stashed changes
