@@ -11,13 +11,12 @@ namespace MOVE.Shared
    public class ErrorLogWriter
     {
         #region Methoden
-        public bool WriteErrorLog(string message)
+        public void WriteErrorLog(string message)
         {
-            bool status = false;
             string LogDirectory = "MOVEErrorLog_";
 
             DateTime datetime = DateTime.Now;
-            string logLine = BuildLogLine(datetime, message);
+            string logLine = BuildLogEntry(datetime, message);
             LogDirectory = (LogDirectory + LogFileName(DateTime.Now) + ".txt");
 
             lock (typeof(ErrorLogWriter))
@@ -27,7 +26,6 @@ namespace MOVE.Shared
                 {
                     sw = new StreamWriter(LogDirectory, true);
                     sw.WriteLine(logLine);
-                    status = true;
                 }
                 catch
                 {
@@ -41,10 +39,9 @@ namespace MOVE.Shared
                     }
                 }
             }
-            return status;
         }
 
-        private string BuildLogLine(DateTime datetime, string message)
+        private string BuildLogEntry(DateTime datetime, string message)
         {
             StringBuilder logline = new StringBuilder();
             logline.Append(LogEntry(datetime));

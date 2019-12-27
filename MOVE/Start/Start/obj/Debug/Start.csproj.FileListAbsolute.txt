@@ -1185,10 +1185,8 @@ C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung +
 C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\Start\Start\obj\Debug\Start.csproj.CopyComplete
 C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\Start\Start\obj\Debug\Start.exe
 C:\Users\Y520\Desktop\Diplomarbeit\Programme\MOVE Stufe 6 + Punkteübertragung + Frequenz + Tastensteuerung + Design Revolution 3.0 - Kopie - Kopie\Start\Start\obj\Debug\Start.pdb
-D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Accord.dll.config
-D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.exe.config
-D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.exe
-D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.pdb
+D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Shared.pdb
+D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.g.resources
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.AudioLayer.dll
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Client.Debug.Formular.exe
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Server.Debug.Formular.exe
@@ -1204,12 +1202,12 @@ D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Client.Debug.Formular.pdb
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Client.Debug.Formular.exe.config
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Server.Debug.Formular.pdb
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Server.Debug.Formular.exe.config
-D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Shared.pdb
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\WpfAnimatedGif.xml
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\NAudio.xml
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Accord.Math.xml
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\MOVE.Core.pdb
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Accord.xml
+D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Accord.dll.config
 D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Accord.Math.Core.xml
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.csprojAssemblyReference.cache
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Info.g.cs
@@ -1221,10 +1219,12 @@ D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start_MarkupCompile.lref
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Info.baml
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\MainWindow.baml
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Settings.baml
-D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.g.resources
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.Properties.Resources.resources
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.csproj.GenerateResource.cache
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.csproj.CoreCompileInputs.cache
-D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.csproj.CopyComplete
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.exe
 D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.pdb
+D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.exe.config
+D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.exe
+D:\GitHubMove\MOVE\MOVE\Start\Start\bin\Debug\Start.pdb
+D:\GitHubMove\MOVE\MOVE\Start\Start\obj\Debug\Start.csproj.CopyComplete

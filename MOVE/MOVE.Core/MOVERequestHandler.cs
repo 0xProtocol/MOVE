@@ -45,8 +45,6 @@ namespace MOVE.Core
                         return tmp[1] + "|" + tmp[2] + "|" + tmp[3] + "|" + tmp[4] + "|" + tmp[5];
                     case "l":
                         return "l"+ "|" + tmp[1];
-                    case "b":
-                        return tmp[1] + "|" + tmp[2] + "|" + tmp[3] + "|" + tmp[4] + "|" + tmp[5];
                 }
                 return "0";
             }
