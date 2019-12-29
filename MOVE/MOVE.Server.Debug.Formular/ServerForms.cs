@@ -19,6 +19,7 @@ using System.IO;
 using MOVE.AudioLayer;
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
+using System.Management;
 
 namespace MOVE.Server.Debug.Formular
 {
@@ -69,17 +70,24 @@ namespace MOVE.Server.Debug.Formular
         List<int> auswertungsWerte = new List<int>();
         double player = 0;
         double screenScalingValue = 0;
+        double diagonal = 0;
         #endregion
         #region klassengenerierte Methoden
         public ServerForms()
         {
             InitializeComponent();
             GetScreenScaling();
+            PhysicalSize();
             // pbx_downlocal.Location = new Point(70, 700);
             string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
             int s = Convert.ToInt32(screenHeight);
             double zahl = (7650 / 1080) * s;
-            player = (zahl / 10) * screenScalingValue;
+            player = (((zahl / 10) * screenScalingValue) / 15.334) * diagonal;
+
+            double height = dgv_playfieldclient.Height;
+            height = ((dgv_playfieldclient.Height * screenScalingValue) / 15.334) * diagonal;
+            double width = dgv_playfieldclient.Width;
+            width = ((dgv_playfieldclient.Width * screenScalingValue) / 15.334) * diagonal;
             logRequestInformation = new Action<string>(LogRequestInformation);
             logServiceInformation = new Action<string>(LogServiceinformation);
             Control.CheckForIllegalCrossThreadCalls = false;
@@ -558,11 +566,22 @@ namespace MOVE.Server.Debug.Formular
             }
             else if(dpiX == 120 && dpiY == 120)
             {
-                screenScalingValue = 0.75;
+                screenScalingValue = 0.875;
             }
             else if (dpiX == 144 && dpiY == 144)
             {
-                screenScalingValue = 0.5;
+                screenScalingValue = 0.75;
+            }
+        }
+        private void PhysicalSize()
+        {
+            var searcher = new ManagementObjectSearcher("\\root\\wmi", "SELECT * FROM WmiMonitorBasicDisplayParams");
+
+            foreach (ManagementObject mo in searcher.Get())
+            {
+                double width = (byte)mo["MaxHorizontalImageSize"] / 2.54;
+                double height = (byte)mo["MaxVerticalImageSize"] / 2.54;
+                diagonal = Math.Sqrt(width * width + height * height);
             }
         }
         private void Settings()

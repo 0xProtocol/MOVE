@@ -90,7 +90,6 @@
             // 
             // btn_Start
             // 
-            this.btn_Start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_Start.BackColor = System.Drawing.Color.Yellow;
             this.btn_Start.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Start.Location = new System.Drawing.Point(458, 627);

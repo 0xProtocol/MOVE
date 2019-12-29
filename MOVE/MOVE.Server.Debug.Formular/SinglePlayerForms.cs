@@ -40,12 +40,17 @@ namespace MOVE.Server.Debug.Formular
         int summe = 0;
         public int speed_left = 4;
         public int speed_top = 4;
+        double player = 0;
         #endregion
 
 
         public SinglePlayerForms()
         {
             InitializeComponent();
+            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
+            int s = Convert.ToInt32(screenHeight);
+            double zahl = (7000 / 1080) * s;
+            player = zahl / 10;
             Control.CheckForIllegalCrossThreadCalls = false;
             var waveIn = new WaveInEvent();
             waveIn.DeviceNumber = 0;
@@ -95,7 +100,7 @@ namespace MOVE.Server.Debug.Formular
 
                 // neue Ziele:
                 // 
-                pbx_downlocal.Location = new Point((average - mod) + 15, yValue);
+                pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
                 savedValues.Clear();
             }
         }
@@ -474,6 +479,20 @@ namespace MOVE.Server.Debug.Formular
         private void btnSettings_Click(object sender, EventArgs e)
         {
             ss.ShowDialog();
+            panel1.BackColor = Color.Orange;
+            panel2.BackColor = Color.Orange;
+            panel3.BackColor = Color.Orange;
+            panel4.BackColor = Color.Orange;
+            panel5.BackColor = Color.Orange;
+            panel6.BackColor = Color.Orange;
+            panel7.BackColor = Color.Orange;
+            panel8.BackColor = Color.Orange;
+
+        }
+
+        private void SinglePlayerForms_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
