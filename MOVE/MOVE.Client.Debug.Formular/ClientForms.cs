@@ -60,11 +60,16 @@ namespace MOVE.Client.Debug.Formular
         public string output;
         int paddlexlocal;
         int counter = -2;
+        double player = 0;
         #endregion
         #region klassengenerierte Methoden
         public ClientForms()
         {
             InitializeComponent();
+            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
+            int s = Convert.ToInt32(screenHeight);
+            double zahl = (7000 / 1080) * s;
+            player = zahl / 10;
             logRequestInformation = new Action<string>(LogRequestInformation);
             logServiceInformation = new Action<string>(LogServiceinformation);
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
@@ -136,7 +141,7 @@ namespace MOVE.Client.Debug.Formular
                         positionValue = 1167;
                     }
 
-                    pbx_uplocal.Location = new Point(positionValue + 60, 65);
+                    pbx_uplocal.Location = new Point(positionValue + 60, (int)player);
                 }
 
                 if (rBSound.Checked == true)
@@ -293,7 +298,7 @@ namespace MOVE.Client.Debug.Formular
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
-                pbx_uplocal.Location = new Point(WertXlocal, 50);
+                pbx_uplocal.Location = new Point(WertXlocal, (int)player);
               c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
 
 
@@ -301,7 +306,7 @@ namespace MOVE.Client.Debug.Formular
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
-                pbx_uplocal.Location = new Point(WertXlocal, 50);
+                pbx_uplocal.Location = new Point(WertXlocal, (int)player);
                 c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
             }
             }
@@ -319,14 +324,14 @@ namespace MOVE.Client.Debug.Formular
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
-                pbx_uplocal.Location = new Point(WertXlocal, 50);
+                pbx_uplocal.Location = new Point(WertXlocal, (int)player);
                 c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); 
 
             }
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
-                pbx_uplocal.Location = new Point(WertXlocal, 50);
+                pbx_uplocal.Location = new Point(WertXlocal, (int)player);
                 c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
             }
             }
@@ -496,7 +501,7 @@ namespace MOVE.Client.Debug.Formular
                 si.average = summe / anzahl;
                 si.mod = (si.average % anzahl);
                 paddlexlocal = (si.average - si.mod) + 15;
-                pbx_uplocal.Location = new Point(paddlexlocal + 60, yValue);
+                pbx_uplocal.Location = new Point(paddlexlocal + 60, (int)player);
                 savedValues.Clear();
             }
         }

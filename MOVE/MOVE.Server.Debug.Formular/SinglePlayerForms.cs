@@ -147,12 +147,9 @@ namespace MOVE.Server.Debug.Formular
             if (cbAusblenden.Checked == true)
             {
 
-                lblAnzeige1.Visible = false;
-                lblBallPosition.Visible = false;
                 lblFineTuning.Visible = false;
                 lblGlaettung.Visible = false;
 
-                pause_txt.Visible = false;
                 lblSchwierigkeit.Visible = false;
                 btn_Start.Visible = false;
 
@@ -161,11 +158,8 @@ namespace MOVE.Server.Debug.Formular
             }
             if (cbAusblenden.Checked == false)
             {
-                lblAnzeige1.Visible = true;
-                lblBallPosition.Visible = true;
                 lblFineTuning.Visible = true;
                 lblGlaettung.Visible = true;
-                pause_txt.Visible = true;
                 lblSchwierigkeit.Visible = true;
                 btn_Start.Visible = true;
 
@@ -224,7 +218,6 @@ namespace MOVE.Server.Debug.Formular
             }
             savedValues.Add(positionValue);
             Glaettung(wertGlaettung);
-            lblAnzeige1.Text = "Position: " + Convert.ToString(pbx_downlocal.Location.X);
         }
 
         private void timer1_Tick(object sender, EventArgs e)

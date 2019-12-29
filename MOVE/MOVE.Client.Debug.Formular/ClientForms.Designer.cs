@@ -76,6 +76,7 @@
             // 
             // lbl_Client
             // 
+            this.lbl_Client.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lbl_Client.AutoSize = true;
             this.lbl_Client.BackColor = System.Drawing.Color.Black;
             this.lbl_Client.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F);
@@ -89,11 +90,12 @@
             // 
             // btn_Start
             // 
+            this.btn_Start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_Start.BackColor = System.Drawing.Color.Yellow;
             this.btn_Start.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Start.Location = new System.Drawing.Point(458, 627);
             this.btn_Start.Name = "btn_Start";
-            this.btn_Start.Size = new System.Drawing.Size(202, 36);
+            this.btn_Start.Size = new System.Drawing.Size(187, 36);
             this.btn_Start.TabIndex = 17;
             this.btn_Start.Text = "Start";
             this.btn_Start.UseVisualStyleBackColor = false;
@@ -101,6 +103,7 @@
             // 
             // lsb_Information
             // 
+            this.lsb_Information.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lsb_Information.FormattingEnabled = true;
             this.lsb_Information.Location = new System.Drawing.Point(57, 681);
             this.lsb_Information.Name = "lsb_Information";
@@ -110,6 +113,7 @@
             // 
             // lblSchwierigkeit
             // 
+            this.lblSchwierigkeit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSchwierigkeit.AutoSize = true;
             this.lblSchwierigkeit.BackColor = System.Drawing.SystemColors.Control;
             this.lblSchwierigkeit.Font = new System.Drawing.Font("Courier New", 13.2F, System.Drawing.FontStyle.Bold);
@@ -124,6 +128,7 @@
             // 
             // lblGlaettung
             // 
+            this.lblGlaettung.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblGlaettung.AutoSize = true;
             this.lblGlaettung.BackColor = System.Drawing.SystemColors.Control;
             this.lblGlaettung.Font = new System.Drawing.Font("Courier New", 13.2F, System.Drawing.FontStyle.Bold);
@@ -138,6 +143,7 @@
             // 
             // lblFineTuning
             // 
+            this.lblFineTuning.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblFineTuning.AutoSize = true;
             this.lblFineTuning.BackColor = System.Drawing.SystemColors.Control;
             this.lblFineTuning.Font = new System.Drawing.Font("Courier New", 13.2F, System.Drawing.FontStyle.Bold);
@@ -180,11 +186,12 @@
             // 
             // btnStart
             // 
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnStart.BackColor = System.Drawing.Color.Green;
             this.btnStart.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
-            this.btnStart.Location = new System.Drawing.Point(667, 627);
+            this.btnStart.Location = new System.Drawing.Point(821, 627);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(202, 36);
+            this.btnStart.Size = new System.Drawing.Size(188, 36);
             this.btnStart.TabIndex = 64;
             this.btnStart.Text = "Move it!";
             this.btnStart.UseVisualStyleBackColor = false;
@@ -193,7 +200,7 @@
             // cbAusblenden
             // 
             this.cbAusblenden.AutoSize = true;
-            this.cbAusblenden.Location = new System.Drawing.Point(1274, 631);
+            this.cbAusblenden.Location = new System.Drawing.Point(1277, 681);
             this.cbAusblenden.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbAusblenden.Name = "cbAusblenden";
             this.cbAusblenden.Size = new System.Drawing.Size(112, 17);
@@ -204,6 +211,7 @@
             // 
             // btn_Settings
             // 
+            this.btn_Settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_Settings.BackColor = System.Drawing.Color.Red;
             this.btn_Settings.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Settings.Location = new System.Drawing.Point(57, 627);
@@ -216,6 +224,7 @@
             // 
             // btn_Connect
             // 
+            this.btn_Connect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_Connect.BackColor = System.Drawing.Color.Orange;
             this.btn_Connect.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Connect.Location = new System.Drawing.Point(250, 627);
@@ -228,10 +237,11 @@
             // 
             // rBSound
             // 
+            this.rBSound.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rBSound.AutoSize = true;
             this.rBSound.BackColor = System.Drawing.Color.Blue;
             this.rBSound.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
-            this.rBSound.Location = new System.Drawing.Point(875, 631);
+            this.rBSound.Location = new System.Drawing.Point(1015, 631);
             this.rBSound.Name = "rBSound";
             this.rBSound.Size = new System.Drawing.Size(95, 29);
             this.rBSound.TabIndex = 79;
@@ -241,10 +251,11 @@
             // 
             // rBFrequenz
             // 
+            this.rBFrequenz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rBFrequenz.AutoSize = true;
             this.rBFrequenz.BackColor = System.Drawing.Color.Purple;
             this.rBFrequenz.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
-            this.rBFrequenz.Location = new System.Drawing.Point(975, 631);
+            this.rBFrequenz.Location = new System.Drawing.Point(1115, 631);
             this.rBFrequenz.Name = "rBFrequenz";
             this.rBFrequenz.Size = new System.Drawing.Size(134, 29);
             this.rBFrequenz.TabIndex = 80;
@@ -256,10 +267,11 @@
             // 
             // rbKeyboard
             // 
+            this.rbKeyboard.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.rbKeyboard.AutoSize = true;
             this.rbKeyboard.BackColor = System.Drawing.Color.Pink;
             this.rbKeyboard.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
-            this.rbKeyboard.Location = new System.Drawing.Point(1115, 631);
+            this.rbKeyboard.Location = new System.Drawing.Point(1255, 631);
             this.rbKeyboard.Name = "rbKeyboard";
             this.rbKeyboard.Size = new System.Drawing.Size(134, 29);
             this.rbKeyboard.TabIndex = 84;
@@ -271,6 +283,8 @@
             // 
             // panel8
             // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.Red;
             this.panel8.Location = new System.Drawing.Point(33, 23);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
@@ -280,6 +294,8 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.Red;
             this.panel4.Location = new System.Drawing.Point(9, 10);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
@@ -316,6 +332,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Red;
             this.panel3.Location = new System.Drawing.Point(1402, 12);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
@@ -325,6 +342,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.Location = new System.Drawing.Point(1414, 12);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -334,6 +352,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Location = new System.Drawing.Point(1426, 12);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
