@@ -69,25 +69,11 @@ namespace MOVE.Server.Debug.Formular
         int counter = 0;
         List<int> auswertungsWerte = new List<int>();
         double player = 0;
-        double screenScalingValue = 0;
-        double diagonal = 0;
         #endregion
         #region klassengenerierte Methoden
         public ServerForms()
         {
             InitializeComponent();
-            GetScreenScaling();
-            PhysicalSize();
-            // pbx_downlocal.Location = new Point(70, 700);
-            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
-            int s = Convert.ToInt32(screenHeight);
-            double zahl = (7650 / 1080) * s;
-            player = (((zahl / 10) * screenScalingValue) / 15.334) * diagonal;
-
-            double height = dgv_playfieldclient.Height;
-            height = ((dgv_playfieldclient.Height * screenScalingValue) / 15.334) * diagonal;
-            double width = dgv_playfieldclient.Width;
-            width = ((dgv_playfieldclient.Width * screenScalingValue) / 15.334) * diagonal;
             logRequestInformation = new Action<string>(LogRequestInformation);
             logServiceInformation = new Action<string>(LogServiceinformation);
             Control.CheckForIllegalCrossThreadCalls = false;
@@ -102,27 +88,18 @@ namespace MOVE.Server.Debug.Formular
             ServerListener();
 
         }
-        private void dgv_playfieldServer_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Right)
-            {
-                WertXlocal += 25;
-                pbx_downlocal.Location = new Point(WertXlocal, (int)player);
-
-            }
-            if (e.KeyCode == Keys.Left)
-            {
-                WertXlocal -= 25;
-                pbx_downlocal.Location = new Point(WertXlocal, (int)player);
-            }
-        }
         private void btn_Connect_Click(object sender, EventArgs e)
         {
+            int s = dgv_playfieldclient.Bottom;
+            yourcomputerheightvalue = s - 10;
             Connect();
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
             timer2.Enabled = true;
+
+           
         }
 
         private void cbAusblenden_CheckedChanged(object sender, EventArgs e)
@@ -169,6 +146,7 @@ namespace MOVE.Server.Debug.Formular
         }
         private void btnStart_Click(object sender, EventArgs e)
         {
+            GetNewPanelLocation();
             StartGame();
             panel1.BackColor = Color.Blue;
             panel2.BackColor = Color.Purple;
@@ -307,13 +285,13 @@ namespace MOVE.Server.Debug.Formular
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
-                pbx_downlocal.Location = new Point(WertXlocal, (int)player);
+                pbx_downlocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
 
             }
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
-                pbx_downlocal.Location = new Point(WertXlocal, (int)player);
+                pbx_downlocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
             }
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -522,6 +500,32 @@ namespace MOVE.Server.Debug.Formular
         }
         #endregion
         #region Methoden
+
+        //double screenScalingValue = 0;
+        //double diagonal = 0;
+        double screenheightvalue;
+        double yourcomputerheightvalue;
+        double yourcomputerheightvalue2;
+
+        private double GetScreenResolution()
+        {
+            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
+            screenheightvalue = Convert.ToInt32(screenHeight);
+            yourcomputerheightvalue = ((800D / 1080D) *screenheightvalue);
+            return yourcomputerheightvalue;
+            // double zahl = (7650 / 1080) * screenheightvalue;
+            // player = (((zahl / 10) * screenScalingValue) / 15.334) * diagonal;
+
+            //width
+        }
+        private double GetScreenResolution2()
+        {
+            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
+            screenheightvalue = Convert.ToInt32(screenHeight);
+            yourcomputerheightvalue2 = ((580D / 1080D) * screenheightvalue);
+            return yourcomputerheightvalue2;
+        }
+
         public void Start()
         {
             int port = Convert.ToInt32(ss.tbx_PortServer.Text);
@@ -554,36 +558,44 @@ namespace MOVE.Server.Debug.Formular
                 elw.WriteErrorLog(ex.ToString());
             }
         }
-        private void GetScreenScaling()
+        private void GetNewPanelLocation()
         {
-            float dpiX, dpiY;
-            Graphics graphics = this.CreateGraphics();
-            dpiX = graphics.DpiX;
-            dpiY = graphics.DpiY;
-            if(dpiX == 96 && dpiY == 96)
-            {
-                screenScalingValue = 1;
-            }
-            else if(dpiX == 120 && dpiY == 120)
-            {
-                screenScalingValue = 0.875;
-            }
-            else if (dpiX == 144 && dpiY == 144)
-            {
-                screenScalingValue = 0.75;
-            }
+            int bottomvaluedgv = dgv_playfieldclient.Bottom;
+            yourcomputerheightvalue = bottomvaluedgv - 35;
         }
-        private void PhysicalSize()
-        {
-            var searcher = new ManagementObjectSearcher("\\root\\wmi", "SELECT * FROM WmiMonitorBasicDisplayParams");
+        /*/ 
+      private void GetScreenScaling()
+      {
+          float dpiX, dpiY;
+          Graphics graphics = this.CreateGraphics();
+          dpiX = graphics.DpiX;
+          dpiY = graphics.DpiY;
+          if(dpiX == 96 && dpiY == 96)
+          {
+              screenScalingValue = 1;
+          }
+          else if(dpiX == 120 && dpiY == 120)
+          {
+              screenScalingValue = 0.875;
+          }
+          else if (dpiX == 144 && dpiY == 144)
+          {
+              screenScalingValue = 0.75;
+          }
+      }
+        /*/
+        /*/
+          private void PhysicalSize()
+            {
+                var searcher = new ManagementObjectSearcher("\\root\\wmi", "SELECT * FROM WmiMonitorBasicDisplayParams");
 
-            foreach (ManagementObject mo in searcher.Get())
-            {
-                double width = (byte)mo["MaxHorizontalImageSize"] / 2.54;
-                double height = (byte)mo["MaxVerticalImageSize"] / 2.54;
-                diagonal = Math.Sqrt(width * width + height * height);
-            }
-        }
+                foreach (ManagementObject mo in searcher.Get())
+                {
+                    double width = (byte)mo["MaxHorizontalImageSize"] / 2.54;
+                    double height = (byte)mo["MaxVerticalImageSize"] / 2.54;
+                    diagonal = Math.Sqrt(width * width + height * height);
+                }
+            }  /*/
         private void Settings()
         {
             ss.Show();

@@ -66,10 +66,6 @@ namespace MOVE.Client.Debug.Formular
         public ClientForms()
         {
             InitializeComponent();
-            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
-            int s = Convert.ToInt32(screenHeight);
-            double zahl = (7000 / 1080) * s;
-            player = zahl / 10;
             logRequestInformation = new Action<string>(LogRequestInformation);
             logServiceInformation = new Action<string>(LogServiceinformation);
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
@@ -576,6 +572,21 @@ namespace MOVE.Client.Debug.Formular
         private void StartGame()
         {
             timer2.Enabled = true;
+        }
+
+        double screenheightvalue;
+        double yourcomputerheightvalue;
+
+        private double GetScreenResolution()
+        {
+            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
+            screenheightvalue = Convert.ToInt32(screenHeight);
+            yourcomputerheightvalue = (8000/screenheightvalue);
+            return yourcomputerheightvalue;
+           // double zahl = (7650 / 1080) * screenheightvalue;
+           // player = (((zahl / 10) * screenScalingValue) / 15.334) * diagonal;
+
+            //width
         }
         #endregion
         #region funktionslose Methoden
