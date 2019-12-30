@@ -1,6 +1,0 @@
-Sprachmodul aktiviere
-Deaktiviere Sprachmodul
-Spielinformation
-Los
-Settings
-Übungsmodus
