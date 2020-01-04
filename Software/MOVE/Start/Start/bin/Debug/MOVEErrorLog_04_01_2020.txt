@@ -1,0 +1,68 @@
+04-01-2020 00:18:30 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:19:15 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:25:38 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:28:13 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:48:42 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:50:37 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:52:04 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:55:18 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:57:27 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 00:58:54 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 01:00:41 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 01:12:58 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 01:58:07 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 01:58:53 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 02:49:44 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 02:53:21 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+04-01-2020 02:54:34 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.

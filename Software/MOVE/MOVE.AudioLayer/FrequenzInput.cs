@@ -17,8 +17,8 @@ namespace MOVE.AudioLayer
         ErrorLogWriter ewl = new ErrorLogWriter();
         #endregion
         #region Variablen
-        private int rate = 44100;
-        private int bufferSamples = 2048;
+        int rate = 44100;
+        int bufferSamples = 2048;
         public BufferedWaveProvider bwp;
         int xValue = 0;
         double maxValue = 0.0;
@@ -36,19 +36,19 @@ namespace MOVE.AudioLayer
             bwp.AddSamples(e.Buffer, 0, e.BytesRecorded);
         }
 
-        public void StartMicrofoneRecording()
+        void StartMicrofoneRecording()
         {
             try
             {
-            WaveIn waveIn = new WaveIn();
-            waveIn.DeviceNumber = 0;
-            waveIn.WaveFormat = new NAudio.Wave.WaveFormat(rate, 1);
-            waveIn.BufferMilliseconds = (int)((double)bufferSamples / (double)rate * 1000.0);
-            waveIn.DataAvailable += new EventHandler<WaveInEventArgs>(AudioDataAvailable);
-            bwp = new BufferedWaveProvider(waveIn.WaveFormat);
-            bwp.BufferLength = bufferSamples * 2;
-            bwp.DiscardOnBufferOverflow = true;
-            waveIn.StartRecording();
+                WaveIn waveIn = new WaveIn();
+                waveIn.DeviceNumber = 0;
+                waveIn.WaveFormat = new NAudio.Wave.WaveFormat(rate, 1);
+                waveIn.BufferMilliseconds = (int)((double)bufferSamples / (double)rate * 1000.0);
+                waveIn.DataAvailable += new EventHandler<WaveInEventArgs>(AudioDataAvailable);
+                bwp = new BufferedWaveProvider(waveIn.WaveFormat);
+                bwp.BufferLength = bufferSamples * 2;
+                bwp.DiscardOnBufferOverflow = true;
+                waveIn.StartRecording();
             }
             catch(Exception ex)
             {
@@ -58,7 +58,7 @@ namespace MOVE.AudioLayer
 
         public void CalculateData()
         {
-            var audioBytes = new byte[bufferSamples];
+            byte[] audioBytes = new byte[bufferSamples];
             bwp.Read(audioBytes, 0, bufferSamples);
 
             if (audioBytes.Length == 0)
@@ -82,12 +82,13 @@ namespace MOVE.AudioLayer
             Array.Copy(fft, fftReal, fftReal.Length);
 
             maxValue = fftReal.Max();
-            maxIndex = fftReal.ToList().IndexOf(maxValue);
+            maxIndex = Array.IndexOf(fftReal, maxValue);
+            //maxIndex = fftReal.ToList().IndexOf(maxValue);
         }
 
-        public int CalculatePaddleLocationX(int setting)
+        public int CalculatePaddleLocationX(int setting, double threshold)
         {
-            if (maxValue > 0.01)
+            if (maxValue > threshold)
             {
                 if (setting == 1)
                 {
@@ -115,9 +116,8 @@ namespace MOVE.AudioLayer
                 }
                 if (setting == 7)
                 {
-                    xValue = maxIndex * 60 - 25 * 60;
+                    xValue = maxIndex * 25 - 10 * 25;
                 }
-
                 return xValue;
             }
             else
@@ -127,12 +127,7 @@ namespace MOVE.AudioLayer
             }
         }
 
-        public void SetPaddleLocation(PictureBox pbPaddle)
-        {
-
-        }
-
-        public double[] FFT(double[] data)
+        double[] FFT(double[] data)
         {
             double[] fft = new double[data.Length];
             System.Numerics.Complex[] fftComplex = new System.Numerics.Complex[data.Length];

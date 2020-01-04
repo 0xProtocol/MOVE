@@ -1,30 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MOVE.Shared;
+﻿using MOVE.AudioLayer;
 using MOVE.Core;
-using System.Net;
-using System.Net.NetworkInformation;
-using System.Net.Sockets;
-using System.Diagnostics;
+using MOVE.Shared;
 using NAudio.Wave;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
-using MOVE.AudioLayer;
+using System.Net;
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
-using System.Management;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace MOVE.Server.Debug.Formular
 {
 
-        public partial class ServerForms : Form, IServiceLogger
+    public partial class ServerForms : Form, IServiceLogger
     {
         #region Klasseninstanzvariablen
         TcpService ts;
@@ -46,8 +37,8 @@ namespace MOVE.Server.Debug.Formular
         int WertXnetwork = 15;
         int WertYnetworkball = 15;
         int WertXnetworkball = 15;
-        int punkteGegner = 0;
-        int punkteSpieler = 0;
+        int pointsClient = 0;
+        int pointsServer = 0;
         int counterstartserver;
         int counterconnectserver;
         int counterstartgame;
@@ -200,7 +191,7 @@ namespace MOVE.Server.Debug.Formular
 
                     fi.CalculateData();
 
-                    positionValue = fi.CalculatePaddleLocationX(ss.FrequenzSetting());
+                    positionValue = fi.CalculatePaddleLocationX(ss.FrequenzSetting(), ss.FrequenzThreshold());
 
                     if (positionValue < 12)
                     {
@@ -272,7 +263,7 @@ namespace MOVE.Server.Debug.Formular
                 counter++;
                 auswertungsWerte.Add(pbx_downlocal.Location.X);
 
-                c.Send("move:\\" + "lb" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y) + "|" + Convert.ToString(pbx_downlocal.Location.X) + "|" + Convert.ToString(punkteGegner) + "|" + Convert.ToString(punkteSpieler));
+                c.Send("move:\\" + "lb" + "|" + Convert.ToString(Ball.Location.X) + "|" + Convert.ToString(Ball.Location.Y) + "|" + Convert.ToString(pbx_downlocal.Location.X) + "|" + Convert.ToString(pointsClient) + "|" + Convert.ToString(pointsServer));
 
             }
             catch (Exception ex)
@@ -335,8 +326,8 @@ namespace MOVE.Server.Debug.Formular
                 Ball.Location = new Point(179, 134);
                 Ball.Visible = true;
                 timer1.Enabled = true;
-                punkteGegner++;
-                points1.Text = punkteGegner.ToString();
+                pointsClient++;
+                points1.Text = pointsClient.ToString();
             }
             if (Ball.Top <= dgv_playfieldclient.Top)
             {
@@ -345,8 +336,8 @@ namespace MOVE.Server.Debug.Formular
                 Ball.Location = new Point(179, 334);
                 Ball.Visible = true;
                 timer1.Enabled = true;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
+                pointsServer++;
+                points2.Text = pointsServer.ToString();
             }
             counter++;
 

@@ -551,6 +551,12 @@ namespace MOVE.Server.Debug.Formular
             }
             return 0;
         }
+
+        public double FrequenzThreshold()
+        {
+            return 0.05;
+        }
+
         public void SetBass()
         {
             rBBass.Checked = true;

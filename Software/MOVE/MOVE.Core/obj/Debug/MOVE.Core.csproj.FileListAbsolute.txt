@@ -176,3 +176,12 @@ D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompil
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.dll
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csprojAssemblyReference.cache
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompileInputs.cache
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.pdb

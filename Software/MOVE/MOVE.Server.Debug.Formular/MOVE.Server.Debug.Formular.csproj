@@ -56,7 +56,15 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="FirewallSettings.cs" />
+    <Compile Include="HighscoreForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighscoreForms.Designer.cs">
+      <DependentUpon>HighscoreForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="NetworkDiscovery.cs" />
+    <Compile Include="Score.cs" />
+    <Compile Include="ScoreManager.cs" />
     <Compile Include="ServerForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +85,9 @@
     <Compile Include="SinglePlayerForms.Designer.cs">
       <DependentUpon>SinglePlayerForms.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="HighscoreForms.resx">
+      <DependentUpon>HighscoreForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ServerForms.resx">
       <DependentUpon>ServerForms.cs</DependentUpon>
     </EmbeddedResource>

@@ -24,6 +24,7 @@ namespace MOVE.Server.Debug.Formular
         #region Variablen
         TcpService ts;
         Thread scanThread = null;
+        HighscoreForms hf = new HighscoreForms();
         private static Random rnd = new Random();
         private static double audioValueMax = 0;
         private static double audioValueLast = 0;
@@ -34,13 +35,14 @@ namespace MOVE.Server.Debug.Formular
         List<int> savedValues = new List<int>();
         int positionValue = 0;
         int wertGlaettung = 3;
-        int punkteSpieler;
+        int playerScore;
         int average;
         int mod;
         int summe = 0;
         public int speed_left = 4;
         public int speed_top = 4;
         double player = 0;
+        int lifes = 5;
         #endregion
 
 
@@ -59,7 +61,7 @@ namespace MOVE.Server.Debug.Formular
             waveIn.BufferMilliseconds = (int)((double)BUFFER_SAMPLES / (double)RATE * 1000.0);
             waveIn.StartRecording();
             //this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
-
+            lblLifes.Text = "Leben: " + lifes.ToString();
         }
         private void OnDataAvailable(object sender, WaveInEventArgs args)
         {
@@ -243,12 +245,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject1.Visible = false;
                 singlePlayerObject1.Size = new Size(0, 0);
                 singlePlayerObject1.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject2.Bounds))
             {
@@ -256,12 +256,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject2.Visible = false;
                 singlePlayerObject2.Size = new Size(0, 0);
                 singlePlayerObject2.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject3.Bounds))
             {
@@ -269,12 +267,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject3.Visible = false;
                 singlePlayerObject3.Size = new Size(0, 0);
                 singlePlayerObject3.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject4.Bounds))
             {
@@ -282,12 +278,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject4.Visible = false;
                 singlePlayerObject4.Size = new Size(0, 0);
                 singlePlayerObject4.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject5.Bounds))
             {
@@ -295,12 +289,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject5.Visible = false;
                 singlePlayerObject5.Size = new Size(0, 0);
                 singlePlayerObject5.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject6.Bounds))
             {
@@ -308,12 +300,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject6.Visible = false;
                 singlePlayerObject6.Size = new Size(0, 0);
                 singlePlayerObject6.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject7.Bounds))
             {
@@ -321,12 +311,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject7.Visible = false;
                 singlePlayerObject7.Size = new Size(0, 0);
                 singlePlayerObject7.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject8.Bounds))
             {
@@ -334,12 +322,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject8.Visible = false;
                 singlePlayerObject8.Size = new Size(0, 0);
                 singlePlayerObject8.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject10.Bounds))
             {
@@ -347,12 +333,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject10.Visible = false;
                 singlePlayerObject10.Size = new Size(0, 0);
                 singlePlayerObject10.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject11.Bounds))
             {
@@ -360,12 +344,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject11.Visible = false;
                 singlePlayerObject11.Size = new Size(0, 0);
                 singlePlayerObject11.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject12.Bounds))
             {
@@ -373,12 +355,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject12.Visible = false;
                 singlePlayerObject12.Size = new Size(0, 0);
                 singlePlayerObject12.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject9.Bounds))
             {
@@ -386,12 +366,10 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                punkteSpieler++;
-                points2.Text = punkteSpieler.ToString();
                 singlePlayerObject9.Visible = false;
                 singlePlayerObject9.Size = new Size(0, 0);
                 singlePlayerObject9.Location = new Point(1650, 587);
-
+                UpdateScore();
             }
             if (singlePlayerObject1.Visible == false && singlePlayerObject2.Visible == false && singlePlayerObject3.Visible == false && singlePlayerObject4.Visible == false && singlePlayerObject5.Visible == false && singlePlayerObject6.Visible == false && singlePlayerObject7.Visible == false && singlePlayerObject8.Visible == false && singlePlayerObject9.Visible == false && singlePlayerObject10.Visible == false && singlePlayerObject11.Visible == false && singlePlayerObject12.Visible == false)
             {
@@ -459,21 +437,33 @@ namespace MOVE.Server.Debug.Formular
             {
                 Ball.Visible = false;
                 timer1.Enabled = false;
-                Ball.Location = new Point(179, 134);
-                Ball.Visible = true;
-                timer1.Enabled = true;
+                lifes--;
+                lblLifes.Text = "Leben: " + lifes.ToString();
+                if (lifes != 0)
+                {
+                    Ball.Location = new Point(179, 134);
+                    Ball.Visible = true;
+                    timer1.Enabled = true;
+                }
+                if (lifes == 0)
+                {
+                    hf.SetPlayerScore(playerScore);
+                    hf.ShowDialog();
+                    this.Close();
+                }
             }
             if (Ball.Top <= dgv_playfieldclient.Top)
             {
                 speed_top = -speed_top;
-
             }
         }
 
         private void btn_Start_Click_1(object sender, EventArgs e)
         {
+            btn_Start.Enabled = false;
             timer1.Enabled = true;
             timer2.Enabled = true;
+            lifes = 5;
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
@@ -490,7 +480,18 @@ namespace MOVE.Server.Debug.Formular
 
         }
 
+        private void UpdateScore()
+        {
+            playerScore++;
+            points2.Text = playerScore.ToString();
+        }
+
         private void SinglePlayerForms_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void points2_Click(object sender, EventArgs e)
         {
 
         }

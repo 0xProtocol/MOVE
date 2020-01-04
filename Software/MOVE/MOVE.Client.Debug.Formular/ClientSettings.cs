@@ -555,6 +555,12 @@ namespace MOVE.Client.Debug.Formular
             }
             return 0;
         }
+
+        public double FrequenzThreshold()
+        {
+            return 0.05;
+        }
+
         public void Discover(string value)
         {
             try

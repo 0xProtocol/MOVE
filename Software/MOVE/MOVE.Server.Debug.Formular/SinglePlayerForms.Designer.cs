@@ -63,6 +63,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.singlePlayerObject1 = new System.Windows.Forms.PictureBox();
+            this.lblLifes = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.singlePlayerObject12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.singlePlayerObject11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.singlePlayerObject10)).BeginInit();
@@ -323,6 +324,7 @@
             this.points2.Size = new System.Drawing.Size(85, 85);
             this.points2.TabIndex = 114;
             this.points2.Text = "0";
+            this.points2.Click += new System.EventHandler(this.points2_Click);
             // 
             // timer2
             // 
@@ -446,11 +448,26 @@
             this.singlePlayerObject1.TabIndex = 127;
             this.singlePlayerObject1.TabStop = false;
             // 
+            // lblLifes
+            // 
+            this.lblLifes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLifes.AutoSize = true;
+            this.lblLifes.BackColor = System.Drawing.Color.Transparent;
+            this.lblLifes.Font = new System.Drawing.Font("Courier New", 13.2F, System.Drawing.FontStyle.Bold);
+            this.lblLifes.ForeColor = System.Drawing.Color.Coral;
+            this.lblLifes.Location = new System.Drawing.Point(571, 633);
+            this.lblLifes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLifes.Name = "lblLifes";
+            this.lblLifes.Size = new System.Drawing.Size(87, 21);
+            this.lblLifes.TabIndex = 147;
+            this.lblLifes.Text = "Leben: ";
+            // 
             // SinglePlayerForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1579, 768);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.lblLifes);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
@@ -544,5 +561,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox singlePlayerObject1;
+        private System.Windows.Forms.Label lblLifes;
     }
 }

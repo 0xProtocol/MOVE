@@ -121,20 +121,18 @@ namespace MOVE.Client.Debug.Formular
         {
             try
             {
-
                 if (rBFrequenz.Checked == true)
                 {
-
                     fi.CalculateData();
-                    positionValue = fi.CalculatePaddleLocationX(cs.FrequenzSetting());
+                    positionValue = fi.CalculatePaddleLocationX(cs.FrequenzSetting(), cs.FrequenzThreshold());
 
-                    if (positionValue < 12)
+                    if (positionValue < 0)
                     {
-                        positionValue = 12;
+                        positionValue = 0;
                     }
-                    if (positionValue > 1167)
+                    if (positionValue > 1300)
                     {
-                        positionValue = 1167;
+                        positionValue = 1300;
                     }
 
                     pbx_uplocal.Location = new Point(positionValue + 60, (int)player);
