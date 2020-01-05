@@ -558,7 +558,8 @@ namespace MOVE.Client.Debug.Formular
 
         public double FrequenzThreshold()
         {
-            return 0.05;
+            double threshold = Convert.ToDouble(tbThreshold.Value) / 10;
+            return threshold;
         }
 
         public void Discover(string value)
