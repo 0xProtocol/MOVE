@@ -554,7 +554,8 @@ namespace MOVE.Server.Debug.Formular
 
         public double FrequenzThreshold()
         {
-            return 0.05;
+            double threshold = Convert.ToDouble(tbThreshold.Value) / 10;
+            return threshold;
         }
 
         public void SetBass()
@@ -709,6 +710,11 @@ namespace MOVE.Server.Debug.Formular
         }
 
         private void TcNetworkDicovery_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }

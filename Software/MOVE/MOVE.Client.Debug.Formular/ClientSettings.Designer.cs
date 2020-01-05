@@ -73,6 +73,8 @@
             this.lsb_networkadapter = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pbGlasses = new System.Windows.Forms.PictureBox();
+            this.tbThreshold = new System.Windows.Forms.TrackBar();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmpfindlichkeit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättungsstufe)).BeginInit();
             this.cms.SuspendLayout();
@@ -85,6 +87,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbNet)).BeginInit();
             this.tcNetworkDiscovery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).BeginInit();
             this.SuspendLayout();
             // 
             // tbEmpfindlichkeit
@@ -395,6 +398,8 @@
             // tcGameSettingsFreq
             // 
             this.tcGameSettingsFreq.BackColor = System.Drawing.Color.Silver;
+            this.tcGameSettingsFreq.Controls.Add(this.label1);
+            this.tcGameSettingsFreq.Controls.Add(this.tbThreshold);
             this.tcGameSettingsFreq.Controls.Add(this.pbMelody);
             this.tcGameSettingsFreq.Controls.Add(this.rBPfeifen);
             this.tcGameSettingsFreq.Controls.Add(this.rBSopran);
@@ -414,10 +419,10 @@
             // pbMelody
             // 
             this.pbMelody.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.Move;
-            this.pbMelody.Location = new System.Drawing.Point(262, 15);
+            this.pbMelody.Location = new System.Drawing.Point(410, 5);
             this.pbMelody.Margin = new System.Windows.Forms.Padding(2);
             this.pbMelody.Name = "pbMelody";
-            this.pbMelody.Size = new System.Drawing.Size(320, 312);
+            this.pbMelody.Size = new System.Drawing.Size(200, 200);
             this.pbMelody.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMelody.TabIndex = 7;
             this.pbMelody.TabStop = false;
@@ -589,6 +594,31 @@
             this.pbGlasses.TabIndex = 49;
             this.pbGlasses.TabStop = false;
             // 
+            // tbThreshold
+            // 
+            this.tbThreshold.BackColor = System.Drawing.Color.Silver;
+            this.tbThreshold.LargeChange = 1;
+            this.tbThreshold.Location = new System.Drawing.Point(277, 281);
+            this.tbThreshold.Maximum = 9;
+            this.tbThreshold.Minimum = 1;
+            this.tbThreshold.Name = "tbThreshold";
+            this.tbThreshold.Size = new System.Drawing.Size(335, 45);
+            this.tbThreshold.TabIndex = 8;
+            this.tbThreshold.Value = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 19.8F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(271, 238);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(246, 31);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Aufnahmeschwelle";
+            // 
             // ClientSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -616,6 +646,7 @@
             this.tcNetworkDiscovery.ResumeLayout(false);
             this.tcNetworkDiscovery.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -665,5 +696,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox lsb_networkadapter;
         private System.Windows.Forms.ToolStripMenuItem selectAdapterToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TrackBar tbThreshold;
     }
 }

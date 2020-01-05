@@ -116,7 +116,7 @@ namespace MOVE.AudioLayer
                 }
                 if (setting == 7)
                 {
-                    xValue = maxIndex * 25 - 10 * 25;
+                    xValue = maxIndex * 25 - 15 * 25;
                 }
                 return xValue;
             }
