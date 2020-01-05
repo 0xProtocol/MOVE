@@ -1,0 +1,20 @@
+Client/Server 	8 Seiten
+GitHub		6 Seiten	
+Global Settings	2 Seiten	
+Sprache		14 Seiten	(wenig) -> Geschichte, Einsetzung
+Planner		8 Seiten 	(wenig) -> Backup besser erklären
+Tastensteuerung 	2 Seiten	
+Firewall		2 Seiten	
+Network Discovery 	7 Seiten    
+Logging 		1 Seiten    (mittel) -> mehr theorie
+
+		
+		50 Seiten
+
+Sprache			1 Seiten
+Sicherungskopie Planner 	1 Seite
+Logging 			1 Seiten
+			53  Seiten
+
+
+Tastensteuerung yvalue bei koordinate wäre gut
