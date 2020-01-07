@@ -1,0 +1,11 @@
+Client/Server 		705
+GitHub			627 
+Global Settings		283
+Sprache			2757
+Planner			593
+Tastensteuerung /Firewall	362		
+Network Discovery 		1027
+Logging 			250
+		
+			   6400    Wörter
+
