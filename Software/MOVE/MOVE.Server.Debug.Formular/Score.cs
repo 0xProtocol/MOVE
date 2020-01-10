@@ -10,19 +10,22 @@ namespace MOVE.Server.Debug.Formular
     {
         string _playerName;
         int _points;
+        DateTime _dateTime;
 
         public string PlayerName { get => _playerName; set => _playerName = value; }
         public int Points { get => _points; set => _points = value; }
+        public DateTime DateTime { get => _dateTime; set => _dateTime = value; }
 
-        public Score(string playerName, int points)
+        public Score(string playerName, int points, DateTime dateTime)
         {
             _playerName = playerName;
             _points = points;
+            _dateTime = dateTime;
         }
 
         public override string ToString()
         {
-            return $"{_playerName}; {_points}";
+            return $"{_playerName}; {_points}; {_dateTime}";
         }
     }
 }
