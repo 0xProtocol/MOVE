@@ -42,23 +42,35 @@ namespace MOVE.Server.Debug.Formular
                 MessageBox.Show("Bitte geben Sie einen Spielernamen ein");
                 btnInsert.Enabled = true;
             }
+            else if (tbxName.Text.Contains(';') == true)
+            {
+                MessageBox.Show("Bitte geben Sie einen Spielername ohne ';' ein");
+                btnInsert.Enabled = true;
+            }
             else
             {
-                sm.SaveScoreToDB(tbxName.Text, tbxScore.Text);
+                //sm.SaveScoreToDB(tbxName.Text, tbxScore.Text);
+                sm.SaveScoreToCSV(tbxName.Text, Convert.ToInt32(tbxScore.Text));
                 LoadScore();
             }   
         }
 
         private void LoadScore()
         {
-            sm.LoadScoresFromDB();
+            sm.LoadScoreFromCSV();
             lsvScores.Items.Clear();
             foreach (Score s in sm.GetSortedScoreList())
             {
                 ListViewItem lvi = new ListViewItem(s.PlayerName);
                 lvi.SubItems.Add(s.Points.ToString());
+                lvi.SubItems.Add(s.DateTime.ToString());
                 lsvScores.Items.Add(lvi);
             }
+        }
+
+        private void lsvScores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

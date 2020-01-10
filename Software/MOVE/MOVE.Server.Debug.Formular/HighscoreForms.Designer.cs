@@ -36,6 +36,7 @@
             this.tbxName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnInsert = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -60,7 +61,8 @@
             // 
             this.lsvScores.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.cSpielername,
-            this.cPunkte});
+            this.cPunkte,
+            this.columnHeader1});
             this.lsvScores.HideSelection = false;
             this.lsvScores.Location = new System.Drawing.Point(15, 64);
             this.lsvScores.Name = "lsvScores";
@@ -68,15 +70,17 @@
             this.lsvScores.TabIndex = 6;
             this.lsvScores.UseCompatibleStateImageBehavior = false;
             this.lsvScores.View = System.Windows.Forms.View.Details;
+            this.lsvScores.SelectedIndexChanged += new System.EventHandler(this.lsvScores_SelectedIndexChanged);
             // 
             // cSpielername
             // 
             this.cSpielername.Text = "Spielername";
-            this.cSpielername.Width = 268;
+            this.cSpielername.Width = 269;
             // 
             // cPunkte
             // 
             this.cPunkte.Text = "Punkte";
+            this.cPunkte.Width = 59;
             // 
             // tbxName
             // 
@@ -103,6 +107,11 @@
             this.btnInsert.Text = "Eintragen";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Datum";
+            this.columnHeader1.Width = 129;
             // 
             // HighscoreForms
             // 
@@ -133,5 +142,6 @@
         private System.Windows.Forms.TextBox tbxName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
