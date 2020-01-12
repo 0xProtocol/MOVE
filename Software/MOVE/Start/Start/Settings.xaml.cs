@@ -163,21 +163,21 @@ namespace Start
             if (rb_einfach.IsChecked == true)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                config.AppSettings.Settings["empfindlichkeit"].Value = "1";
+                config.AppSettings.Settings["sensitivity"].Value = "1";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
             }
             if (rb_mittel.IsChecked == true)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                config.AppSettings.Settings["empfindlichkeit"].Value = "2";
+                config.AppSettings.Settings["sensitivity"].Value = "2";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
             }
             if (rb_schwer.IsChecked == true)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                config.AppSettings.Settings["empfindlichkeit"].Value = "3";
+                config.AppSettings.Settings["sensitivity"].Value = "3";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
             }
@@ -187,21 +187,21 @@ namespace Start
             if (rb_modell1.IsChecked == true)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                config.AppSettings.Settings["glättung"].Value = "1";
+                config.AppSettings.Settings["smoothing"].Value = "1";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
             }
             if (rb_modell2.IsChecked == true)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                config.AppSettings.Settings["glättung"].Value = "2";
+                config.AppSettings.Settings["smoothing"].Value = "2";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
             }
             if (rb_modell3.IsChecked == true)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                config.AppSettings.Settings["glättung"].Value = "3";
+                config.AppSettings.Settings["smoothing"].Value = "3";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
             }

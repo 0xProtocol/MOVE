@@ -33,9 +33,9 @@ namespace MOVE.Server.Debug.Formular
         public ServerSettings()
         {
             InitializeComponent();
-            string emp = ConfigurationManager.AppSettings["empfindlichkeit"];
+            string emp = ConfigurationManager.AppSettings["sensitivity"];
             tbempfindlichkeit.Value = Convert.ToInt32(emp);
-            string glät = ConfigurationManager.AppSettings["glättung"];
+            string glät = ConfigurationManager.AppSettings["smoothing"];
             tbGlättung.Value = Convert.ToInt32(glät);
             this.Focus();
         }

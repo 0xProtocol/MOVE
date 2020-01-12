@@ -35,9 +35,9 @@ namespace MOVE.Client.Debug.Formular
         public ClientSettings()
         {
             InitializeComponent();
-            string emp = ConfigurationManager.AppSettings["empfindlichkeit"];
+            string emp = ConfigurationManager.AppSettings["sensitivity"];
             tbEmpfindlichkeit.Value = Convert.ToInt32(emp);
-            string glät = ConfigurationManager.AppSettings["glättung"];
+            string glät = ConfigurationManager.AppSettings["smoothing"];
             tbGlättungsstufe.Value = Convert.ToInt32(glät);
         }
         private void ClientSettings_Load(object sender, EventArgs e)
