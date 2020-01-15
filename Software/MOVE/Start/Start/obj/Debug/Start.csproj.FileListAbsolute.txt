@@ -1353,3 +1353,6 @@ C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.csp
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.csproj.CopyComplete
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.exe
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.pdb
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\bin\Debug\Start.exe.config
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.exe
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.pdb
