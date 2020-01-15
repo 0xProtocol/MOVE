@@ -1,0 +1,12 @@
+15-01-2020 11:12:59 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+15-01-2020 11:13:00 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 474.
+15-01-2020 11:13:02 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateClientListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 426.
