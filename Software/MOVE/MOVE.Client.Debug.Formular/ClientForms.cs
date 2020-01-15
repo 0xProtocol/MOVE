@@ -140,7 +140,7 @@ namespace MOVE.Client.Debug.Formular
 
                 if (rBSound.Checked == true)
                 {
-                    double frac = si.audioValueLast / si.audioValueMax;
+                    double frac = si.soundValueTwo / si.soundValueOne;
                     if (cs.tbEmpfindlichkeit.Value == 1)
                     {
                         positionValue = (int)(((frac * 3) * 668)) - 2;

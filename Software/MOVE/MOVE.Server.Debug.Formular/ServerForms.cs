@@ -42,8 +42,8 @@ namespace MOVE.Server.Debug.Formular
         int counterstartserver;
         int counterconnectserver;
         int counterstartgame;
-        private static double audioValueMax = 0;
-        private static double audioValueLast = 0;
+        private static double soundValueOne = 0;
+        private static double soundValueTwo = 0;
         private static int audioCount = 0;
         private static int RATE = 44100;
         private static int BUFFER_SAMPLES = 2048;
@@ -207,22 +207,22 @@ namespace MOVE.Server.Debug.Formular
 
                 if (rBSound.Checked == true)
                 {
-                    double frac = audioValueLast / audioValueMax;
+                    double fractionValue = soundValueTwo / soundValueOne;
                     if (ss.tbempfindlichkeit.Value == 1)
                     {
-                        positionValue = (int)(((frac * 3) * 668)) - 2;
+                        positionValue = (int)(((fractionValue * 3) * 668)) - 2;
                         lblFineTuning.Text = "Empfindlichkeit: wenig";
 
                     }
                     if (ss.tbempfindlichkeit.Value == 2)
                     {
-                        positionValue = (int)(((frac * 5) * 668)) - 3;
+                        positionValue = (int)(((fractionValue * 5) * 668)) - 3;
                         lblFineTuning.Text = "Empfindlichkeit: mittel";
 
                     }
                     if (ss.tbempfindlichkeit.Value == 3)
                     {
-                        positionValue = (int)(((frac * 8) * 668)) - 5;
+                        positionValue = (int)(((fractionValue * 8) * 668)) - 5;
                         lblFineTuning.Text = "Empfindlichkeit: hoch";
 
                     }
@@ -667,11 +667,11 @@ namespace MOVE.Server.Debug.Formular
             }
 
             // calculate what fraction this peak is of previous peaks
-            if (max > audioValueMax)
+            if (max > soundValueOne)
             {
-                audioValueMax = (double)max;
+                soundValueOne = (double)max;
             }
-            audioValueLast = max;
+            soundValueTwo = max;
             audioCount += 1;
         }
         public void Glaettung(int anzahl)
