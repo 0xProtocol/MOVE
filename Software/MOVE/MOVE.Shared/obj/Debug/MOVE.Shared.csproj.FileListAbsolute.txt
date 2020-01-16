@@ -80,6 +80,7 @@ D:\GitHubMove\MOVE\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
 D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CoreCompileInputs.cache
 D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+<<<<<<< HEAD:Software/MOVE/MOVE.Shared/obj/Debug/MOVE.Shared.csproj.FileListAbsolute.txt
 D:\GitHubMove\MOVE\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csprojAssemblyReference.cache
 C:\Users\Julian\Documents\GitHub\MOVE\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.dll
 C:\Users\Julian\Documents\GitHub\MOVE\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
@@ -97,3 +98,5 @@ C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shar
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CoreCompileInputs.cache
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+=======
+>>>>>>> parent of 442acab... Abschluss:MOVE/MOVE.Shared/obj/Debug/MOVE.Shared.csproj.FileListAbsolute.txt

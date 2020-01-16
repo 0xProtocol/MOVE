@@ -200,7 +200,7 @@ namespace MOVE.Client.Debug.Formular
                 elw.WriteErrorLog(ex.ToString());
             }
         }
-            private void btn_Start_Click(object sender, EventArgs e)
+        private void btn_Start_Click(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Green;
             panel2.BackColor = Color.Green;
@@ -367,7 +367,16 @@ namespace MOVE.Client.Debug.Formular
 
             if (speech == "Starte Server")
             {
-                StarteServer();
+                if (counterstartserver < 1)
+                {
+                    Start();
+                    com.SpeakAsync("Server wurde gestartet");
+                    counterstartserver++;
+                }
+                else
+                {
+                    com.SpeakAsync("Server wurde bereits gestartet");
+                }
             }
 
             if (speech == "Verbinde zum Server")
@@ -419,7 +428,7 @@ namespace MOVE.Client.Debug.Formular
                 Disablemenu();
             }
         }
-        private void ActivateClientListener()
+        public void ActivateClientListener()
         {
             try
             {
@@ -431,7 +440,7 @@ namespace MOVE.Client.Debug.Formular
             }
         }
 
-        private void CancelClientListener()
+        public void CancelClientListener()
         {
             try
             {
@@ -469,19 +478,6 @@ namespace MOVE.Client.Debug.Formular
         private void Disablemenu()
         {
             cbAusblenden.Checked = true;
-        }
-        private void StarteServer()
-        {
-            if (counterstartserver < 1)
-            {
-                Start();
-                com.SpeakAsync("Server wurde gestartet");
-                counterstartserver++;
-            }
-            else
-            {
-                com.SpeakAsync("Server wurde bereits gestartet");
-            }
         }
         public void Glaettung(int anzahl)
         {
