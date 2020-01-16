@@ -33,10 +33,10 @@
             this.lsvScores = new System.Windows.Forms.ListView();
             this.cSpielername = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.cPunkte = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tbxName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnInsert = new System.Windows.Forms.Button();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -75,12 +75,17 @@
             // cSpielername
             // 
             this.cSpielername.Text = "Spielername";
-            this.cSpielername.Width = 269;
+            this.cSpielername.Width = 160;
             // 
             // cPunkte
             // 
             this.cPunkte.Text = "Punkte";
-            this.cPunkte.Width = 59;
+            this.cPunkte.Width = 65;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Datum";
+            this.columnHeader1.Width = 103;
             // 
             // tbxName
             // 
@@ -107,11 +112,6 @@
             this.btnInsert.Text = "Eintragen";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Datum";
-            this.columnHeader1.Width = 129;
             // 
             // HighscoreForms
             // 

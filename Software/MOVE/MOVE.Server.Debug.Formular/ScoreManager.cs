@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using System.Data;
+using System.Data.SqlClient;
 
 namespace MOVE.Server.Debug.Formular
 {
     class ScoreManager
     {
         private static ScoreManager _instance = new ScoreManager();
-        string _connectstring = @"Data Source=-MARKUS\SQLEXPRESS; Initial Catalog=MOVE_Highscore; Integrated Security=True;";
         List<Score> _scoresList = new List<Score>();
+
+        string _connectstring = @"Data Source=-MARKUS\SQLEXPRESS; Initial Catalog=MOVE_Highscore; Integrated Security=True;";
 
         private ScoreManager()
         {

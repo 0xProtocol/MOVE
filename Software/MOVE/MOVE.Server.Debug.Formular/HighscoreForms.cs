@@ -44,16 +44,17 @@ namespace MOVE.Server.Debug.Formular
             }
             else if (tbxName.Text.Contains(';') == true)
             {
-                MessageBox.Show("Bitte geben Sie einen Spielername ohne ';' ein");
+                MessageBox.Show("Bitte geben Sie einen Spielernamen ohne ';' ein");
                 btnInsert.Enabled = true;
             }
             else
             {
-                //sm.SaveScoreToDB(tbxName.Text, tbxScore.Text);
                 sm.SaveScoreToCSV(tbxName.Text, Convert.ToInt32(tbxScore.Text));
                 LoadScore();
             }   
         }
+
+        //sm.SaveScoreToDB(tbxName.Text, tbxScore.Text);
 
         private void LoadScore()
         {
