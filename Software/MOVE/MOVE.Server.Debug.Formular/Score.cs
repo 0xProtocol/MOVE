@@ -12,9 +12,44 @@ namespace MOVE.Server.Debug.Formular
         int _points;
         DateTime _dateTime;
 
-        public string PlayerName { get => _playerName; set => _playerName = value; }
-        public int Points { get => _points; set => _points = value; }
-        public DateTime DateTime { get => _dateTime; set => _dateTime = value; }
+        public string PlayerName
+        {
+            get
+            {
+                return _playerName;
+            }
+
+            set
+            {
+                _playerName = value;
+            }
+        }
+
+        public int Points
+        {
+            get
+            {
+                return _points;
+            }
+
+            set
+            {
+                _points = value;
+            }
+        }
+
+        public DateTime DateTime
+        {
+            get
+            {
+                return _dateTime;
+            }
+
+            set
+            {
+                _dateTime = value;
+            }
+        }
 
         public Score(string playerName, int points, DateTime dateTime)
         {
