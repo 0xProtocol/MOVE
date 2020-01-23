@@ -135,7 +135,7 @@ namespace MOVE.Client.Debug.Formular
                         positionValue = 1300;
                     }
 
-                    pbx_uplocal.Location = new Point(positionValue + 60, (int)player);
+                    pbx_uplocal.Location = new Point(positionValue + 60, 65);
                 }
 
                 if (rBSound.Checked == true)
@@ -260,7 +260,7 @@ namespace MOVE.Client.Debug.Formular
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
-                pbx_uplocal.Location = new Point(WertXlocal, (int)player);
+                pbx_uplocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
               c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
 
 
@@ -268,7 +268,7 @@ namespace MOVE.Client.Debug.Formular
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
-                pbx_uplocal.Location = new Point(WertXlocal, (int)player);
+                pbx_uplocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
                 c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
             }
             }
@@ -286,14 +286,14 @@ namespace MOVE.Client.Debug.Formular
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
-                pbx_uplocal.Location = new Point(WertXlocal, (int)player);
+                pbx_uplocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
                 c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); 
 
             }
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
-                pbx_uplocal.Location = new Point(WertXlocal, (int)player);
+                pbx_uplocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
                 c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
             }
             }
@@ -459,7 +459,7 @@ namespace MOVE.Client.Debug.Formular
                 si.average = summe / anzahl;
                 si.mod = (si.average % anzahl);
                 paddlexlocal = (si.average - si.mod) + 15;
-                pbx_uplocal.Location = new Point(paddlexlocal + 60, (int)player);
+                pbx_uplocal.Location = new Point(paddlexlocal + 60, 65);
                 savedValues.Clear();
             }
         }
@@ -610,7 +610,10 @@ namespace MOVE.Client.Debug.Formular
             StartGame();
         }
 
-       
+        private void dgv_playfieldclient_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 #endregion

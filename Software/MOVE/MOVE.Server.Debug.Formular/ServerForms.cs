@@ -202,7 +202,7 @@ namespace MOVE.Server.Debug.Formular
                         positionValue = 1600;
                     }
 
-                    pbx_downlocal.Location = new Point(positionValue, (int)player);
+                    pbx_downlocal.Location = new Point(positionValue, 703);
                 }
 
                 if (rBSound.Checked == true)
@@ -276,13 +276,13 @@ namespace MOVE.Server.Debug.Formular
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
-                pbx_downlocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
+                pbx_downlocal.Location = new Point(WertXlocal, 703);
 
             }
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
-                pbx_downlocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
+                pbx_downlocal.Location = new Point(WertXlocal, 703);
             }
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -685,7 +685,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 average = summe / anzahl;
                 mod = (average % anzahl);
-                pbx_downlocal.Location = new Point((average - mod) + 75, (int)player);
+                pbx_downlocal.Location = new Point((average - mod) + 75, 703);
                 savedValues.Clear();
             }
         }
