@@ -498,24 +498,6 @@ namespace MOVE.Server.Debug.Formular
         double yourcomputerheightvalue;
         double yourcomputerheightvalue2;
 
-        private double GetScreenResolution()
-        {
-            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
-            screenheightvalue = Convert.ToInt32(screenHeight);
-            yourcomputerheightvalue = ((800D / 1080D) *screenheightvalue);
-            return yourcomputerheightvalue;
-            // double zahl = (7650 / 1080) * screenheightvalue;
-            // player = (((zahl / 10) * screenScalingValue) / 15.334) * diagonal;
-
-            //width
-        }
-        private double GetScreenResolution2()
-        {
-            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
-            screenheightvalue = Convert.ToInt32(screenHeight);
-            yourcomputerheightvalue2 = ((580D / 1080D) * screenheightvalue);
-            return yourcomputerheightvalue2;
-        }
 
         public void Start()
         {
