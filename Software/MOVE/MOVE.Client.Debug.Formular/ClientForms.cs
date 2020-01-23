@@ -202,40 +202,16 @@ namespace MOVE.Client.Debug.Formular
         }
         private void btn_Start_Click(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.Green;
-            panel2.BackColor = Color.Green;
-            panel3.BackColor = Color.Green;
-            panel4.BackColor = Color.Green;
-            panel5.BackColor = Color.Green;
-            panel6.BackColor = Color.Green;
-            panel7.BackColor = Color.Green;
-            panel8.BackColor = Color.Green;
-            Start();
+            
         }
         private void btn_Connect_Click(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.Yellow;
-            panel2.BackColor = Color.Yellow;
-            panel3.BackColor = Color.Yellow;
-            panel4.BackColor = Color.Yellow;
-            panel5.BackColor = Color.Yellow;
-            panel6.BackColor = Color.Yellow;
-            panel7.BackColor = Color.Yellow;
-            panel8.BackColor = Color.Yellow;
-            Connect();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.Blue;
-            panel2.BackColor = Color.Purple;
-            panel3.BackColor = Color.Pink;
-            panel4.BackColor = Color.Blue;
-            panel5.BackColor = Color.Blue;
-            panel6.BackColor = Color.Purple;
-            panel7.BackColor = Color.Pink;
-            panel8.BackColor = Color.Pink;
-            StartGame();
+            
         }
         private void cbAusblenden_CheckedChanged(object sender, EventArgs e)
         {
@@ -274,15 +250,7 @@ namespace MOVE.Client.Debug.Formular
 
         private void btn_Settings_Click(object sender, EventArgs e)
         {
-            cs.ShowDialog();
-            panel1.BackColor = Color.Orange;
-            panel2.BackColor = Color.Orange;
-            panel3.BackColor = Color.Orange;
-            panel4.BackColor = Color.Orange;
-            panel5.BackColor = Color.Orange;
-            panel6.BackColor = Color.Orange;
-            panel7.BackColor = Color.Orange;
-            panel8.BackColor = Color.Orange;
+           
         }
         private void rbKeyboard_KeyDown(object sender, KeyEventArgs e)
         {
@@ -584,144 +552,62 @@ namespace MOVE.Client.Debug.Formular
         }
         #endregion
         #region funktionslose Methoden
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbx_PortClient_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
         }
 
-        private void lsb_discover_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            cs.ShowDialog();
+            panel1.BackColor = Color.Orange;
+            panel2.BackColor = Color.Orange;
+            panel3.BackColor = Color.Orange;
+            panel4.BackColor = Color.Orange;
+            panel5.BackColor = Color.Orange;
+            panel6.BackColor = Color.Orange;
+            panel7.BackColor = Color.Orange;
+            panel8.BackColor = Color.Orange;
         }
 
-
-        private void dgv_playfieldclient_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_Connect_Click_1(object sender, EventArgs e)
         {
-
+            panel1.BackColor = Color.Yellow;
+            panel2.BackColor = Color.Yellow;
+            panel3.BackColor = Color.Yellow;
+            panel4.BackColor = Color.Yellow;
+            panel5.BackColor = Color.Yellow;
+            panel6.BackColor = Color.Yellow;
+            panel7.BackColor = Color.Yellow;
+            panel8.BackColor = Color.Yellow;
+            Connect();
         }
 
-        private void pbx_downnetwork_Click(object sender, EventArgs e)
+        private void btn_Start_Click_1(object sender, EventArgs e)
         {
-
+            panel1.BackColor = Color.Green;
+            panel2.BackColor = Color.Green;
+            panel3.BackColor = Color.Green;
+            panel4.BackColor = Color.Green;
+            panel5.BackColor = Color.Green;
+            panel6.BackColor = Color.Green;
+            panel7.BackColor = Color.Green;
+            panel8.BackColor = Color.Green;
+            Start();
         }
 
-        private void lsb_Information_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
-
-        }
-
-
-        private void tbGlaettung_Scroll(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbFineTuning_Scroll(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblGlaettung_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_ServerStart_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_PortServer_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_IPServer_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbx_IPServer_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbx_PortServer_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbx_Discovery_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_Client_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbx_IPClient_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_PortClient_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_IPClient_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_ClientConnect_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbBallSpeed_Scroll(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSchwierigkeit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbSchwierigkeit_Scroll(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnConnection_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void rBFrequenz_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rBFrequenz_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void rbKeyboard_CheckedChanged(object sender, EventArgs e)
-        {
-
+            panel1.BackColor = Color.Blue;
+            panel2.BackColor = Color.Purple;
+            panel3.BackColor = Color.Pink;
+            panel4.BackColor = Color.Blue;
+            panel5.BackColor = Color.Blue;
+            panel6.BackColor = Color.Purple;
+            panel7.BackColor = Color.Pink;
+            panel8.BackColor = Color.Pink;
+            StartGame();
         }
 
        
