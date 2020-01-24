@@ -66,6 +66,10 @@ namespace MOVE.Client.Debug.Formular
         public ClientForms()
         {
             InitializeComponent();
+            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
+            int s = Convert.ToInt32(screenHeight);
+            double zahl = (7000 / 1080) * s;
+            player = zahl / 10;
             logRequestInformation = new Action<string>(LogRequestInformation);
             logServiceInformation = new Action<string>(LogServiceinformation);
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
@@ -108,7 +112,7 @@ namespace MOVE.Client.Debug.Formular
             else
             {
                 //counter++;
-                pbx_downnetwork.Location = new Point(WertXnetwork, 703);
+                pbx_downnetwork.Location = new Point(WertXnetwork, (int)player);
                 Ball.Location = new Point(WertXnetworkball, WertYnetworkball);
                 points1.Text = pointsGreen.ToString();
                 points2.Text = pointsBlue.ToString();

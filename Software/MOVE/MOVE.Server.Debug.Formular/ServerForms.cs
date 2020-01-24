@@ -67,6 +67,10 @@ namespace MOVE.Server.Debug.Formular
             InitializeComponent();
             logRequestInformation = new Action<string>(LogRequestInformation);
             logServiceInformation = new Action<string>(LogServiceinformation);
+            string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
+            int s = Convert.ToInt32(screenHeight);
+            double zahl = (7000 / 1080) * s;
+            player = zahl / 10;
             Control.CheckForIllegalCrossThreadCalls = false;
             var waveIn = new WaveInEvent();
             waveIn.DeviceNumber = 0;
@@ -202,7 +206,7 @@ namespace MOVE.Server.Debug.Formular
                         positionValue = 1600;
                     }
 
-                    pbx_downlocal.Location = new Point(positionValue, 703);
+                    pbx_downlocal.Location = new Point(positionValue, (int)player);
                 }
 
                 if (rBSound.Checked == true)
@@ -276,13 +280,13 @@ namespace MOVE.Server.Debug.Formular
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
-                pbx_downlocal.Location = new Point(WertXlocal, 703);
+                pbx_downlocal.Location = new Point(WertXlocal, (int)player);
 
             }
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
-                pbx_downlocal.Location = new Point(WertXlocal, 703);
+                pbx_downlocal.Location = new Point(WertXlocal, (int)player);
             }
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -667,7 +671,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 average = summe / anzahl;
                 mod = (average % anzahl);
-                pbx_downlocal.Location = new Point((average - mod) + 75, 703);
+                pbx_downlocal.Location = new Point((average - mod) + 75, (int)player);
                 savedValues.Clear();
             }
         }
