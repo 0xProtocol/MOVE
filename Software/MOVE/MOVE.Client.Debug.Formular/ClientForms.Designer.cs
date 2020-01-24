@@ -274,7 +274,7 @@
             // btn_Start
             // 
             this.btn_Start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_Start.BackColor = System.Drawing.Color.Orange;
+            this.btn_Start.BackColor = System.Drawing.Color.Yellow;
             this.btn_Start.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Start.Location = new System.Drawing.Point(590, 709);
             this.btn_Start.Margin = new System.Windows.Forms.Padding(4);
@@ -288,7 +288,7 @@
             // btn_Connect
             // 
             this.btn_Connect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btn_Connect.BackColor = System.Drawing.Color.Yellow;
+            this.btn_Connect.BackColor = System.Drawing.Color.Orange;
             this.btn_Connect.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Connect.Location = new System.Drawing.Point(333, 709);
             this.btn_Connect.Margin = new System.Windows.Forms.Padding(4);

@@ -36,22 +36,49 @@ namespace MOVE.Server.Debug.Formular
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
+            
+
             btnInsert.Enabled = false;
             if (tbxName.Text == "")
             {
                 MessageBox.Show("Bitte geben Sie einen Spielernamen ein");
                 btnInsert.Enabled = true;
+                panel2.BackColor = Color.Orange;
+                panel3.BackColor = Color.Orange;
+                panel4.BackColor = Color.Orange;
+                panel5.BackColor = Color.Orange;
+                panel6.BackColor = Color.Orange;
+                panel7.BackColor = Color.Orange;
+                panel8.BackColor = Color.Orange;
+                panel9.BackColor = Color.Orange;
             }
             else if (tbxName.Text.Contains(';') == true)
             {
                 MessageBox.Show("Bitte geben Sie einen Spielernamen ohne ';' ein");
                 btnInsert.Enabled = true;
+                panel2.BackColor = Color.Orange;
+                panel3.BackColor = Color.Orange;
+                panel4.BackColor = Color.Orange;
+                panel5.BackColor = Color.Orange;
+                panel6.BackColor = Color.Orange;
+                panel7.BackColor = Color.Orange;
+                panel8.BackColor = Color.Orange;
+                panel9.BackColor = Color.Orange;
             }
             else
             {
                 sm.SaveScoreToCSV(tbxName.Text, Convert.ToInt32(tbxScore.Text));
                 LoadScore();
-            }   
+                panel2.BackColor = Color.Green;
+                panel3.BackColor = Color.Green;
+                panel4.BackColor = Color.Green;
+                panel5.BackColor = Color.Green;
+                panel6.BackColor = Color.Green;
+                panel7.BackColor = Color.Green;
+                panel8.BackColor = Color.Green;
+                panel9.BackColor = Color.Green;
+            }
+            
         }
 
         //sm.SaveScoreToDB(tbxName.Text, tbxScore.Text);
