@@ -75,7 +75,7 @@ namespace MOVE.Client.Debug.Formular
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             si.Loading();
             fi.Start();
-            ClientListener();
+           // ClientListener();
         }
         #region Service/Request
         public void LogServiceinformation(string message)

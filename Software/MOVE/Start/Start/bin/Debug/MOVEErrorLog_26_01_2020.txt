@@ -1,0 +1,116 @@
+26-01-2020 11:37:05 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 11:37:12 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 11:37:14 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 11:38:23 	System.InvalidOperationException: Das angeforderte Datenelement, zum Beispiel Datenschlüssel oder Wert, wurde nicht gefunden.
+   bei System.Speech.Recognition.RecognizerBase.SetInputToDefaultAudioDevice()
+   bei System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice()
+   bei Start.Settings.DefaultListenerSettings() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\Settings.xaml.cs:Zeile 69.
+26-01-2020 11:38:23 	Das angeforderte Datenelement, zum Beispiel Datenschlüssel oder Wert, wurde nicht gefunden.
+26-01-2020 11:38:24 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 11:39:16 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 11:39:20 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 11:39:26 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 11:39:31 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 11:39:42 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 11:42:49 	System.ObjectDisposedException: Auf das verworfene Objekt kann nicht zugegriffen werden.
+Objektname: "PictureBox".
+   bei System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   bei System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   bei MOVE.Server.Debug.Formular.ServerForms.LogRequestInformation(String message) in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 373.
+   bei MOVE.Core.SessionHandler.HandleSingleSession() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Core\SessionHandler.cs:Zeile 36.
+   bei MOVE.Core.ClientHandler.Acceptclients() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Core\ClientHandler.cs:Zeile 39.
+26-01-2020 12:48:54 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 12:48:57 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:48:57 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:48:58 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:49:01 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateClientListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 407.
+26-01-2020 12:49:04 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 12:49:06 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:49:08 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateClientListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 407.
+26-01-2020 12:49:11 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:49:14 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:49:16 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateClientListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 407.
+26-01-2020 12:49:19 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:49:22 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateClientListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 407.
+26-01-2020 12:49:25 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:49:32 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateClientListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 407.
+26-01-2020 12:49:33 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 12:59:43 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 12:59:47 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 13:02:07 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 13:02:45 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 13:03:06 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 13:03:07 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.Info.ActivateDefaultListenerInfo() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\Info.xaml.cs:Zeile 96.

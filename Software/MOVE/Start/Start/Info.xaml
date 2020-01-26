@@ -8,10 +8,7 @@
          Icon="logo (2).jpeg"
         Title="Info" Height="450" Width="800" Background="Black" Activated="Window_Activated" Deactivated="Window_Deactivated">
     <Grid>
-        <TextBlock Foreground="White" RenderTransformOrigin="0.509,4.062" Margin="0" HorizontalAlignment="Center" Width="626" VerticalAlignment="Center" Height="308" Cursor="None" FontSize="20">
-     Dieses Spiel soll die Stimme trainieren und n<LineBreak></LineBreak>dabei muss der Ballon den man selbst steuert den gefährlichen <LineBreak></LineBreak>Stacheln ausweichen. TEXTTEXT
-        TEXTEXTEXTEXTEXT<LineBreak></LineBreak>EXTEXTEXTEXTETXETTEXTETXTEXTETXTEXTTETEXTETXTEXTEXTEXTEXT<LineBreak></LineBreak>EXTEXTE
-        </TextBlock>
+        <TextBlock Foreground="White" RenderTransformOrigin="0.509,4.062" Margin="0" HorizontalAlignment="Center" Width="626" VerticalAlignment="Center" Height="308" Cursor="None" FontSize="20"><Run Text="@ 2018 - 2020 3EIC. Alle Rechte vorbehalten."/><LineBreak/><Run/><LineBreak/><Run Text="Das MOVE Logo und sämtliche verwendete Bilder sind Eigentum von 3EIC. "/><LineBreak/><Run/><LineBreak/><Run Text="Teammitglieder:"/><LineBreak/><Run Text="Julian Rampala"/><LineBreak/><Run Text="Christoph Oprawill"/><LineBreak/><Run Text="Markus Mayer"/><LineBreak/><Run Text=""/></TextBlock>
 
     </Grid>
 </Window>

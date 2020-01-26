@@ -25,7 +25,10 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Image x:Name="img_background" Grid.ColumnSpan="9" Source="sidebar.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Margin="0,0,0,-29" Loaded="Img_background_Loaded">
+        <Image x:Name="img_background" Grid.ColumnSpan="9" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Margin="0,0,0,-29" Loaded="Img_background_Loaded">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="top.png"/>
+            </Image.OpacityMask>
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -37,7 +40,7 @@
         </Image>
         <Image x:Name="img_top" Grid.ColumnSpan="9" HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="792" Source="top.png" StretchDirection="UpOnly" Stretch="Fill" IsHitTestVisible="False">
             <Image.OpacityMask>
-                <ImageBrush ImageSource="top.png" TileMode="FlipX"/>
+                <ImageBrush TileMode="FlipX"/>
             </Image.OpacityMask>
         </Image>
         <Button x:Name="button1" Content="Server" Grid.Column="1" HorizontalAlignment="Center" Margin="18,30,407,84" VerticalAlignment="Center" Width="100" Height="25" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5" MinHeight="3" MinWidth="1" Grid.ColumnSpan="4" Background="#FF1FE400">
@@ -50,7 +53,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="" Grid.Column="4" HorizontalAlignment="Center" Margin="62.709,49,245,63" VerticalAlignment="Center" Width="100" Height="28" Click="ButtonÜbung_Click" RenderTransformOrigin="0.5,0.5">
+        <Button Content="Übung" Grid.Column="4" HorizontalAlignment="Center" Margin="62.709,49,245,63" VerticalAlignment="Center" Width="100" Height="28" Click="ButtonÜbung_Click" RenderTransformOrigin="0.5,0.5" Background="Red">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -59,11 +62,8 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
-            <Button.Background>
-                <ImageBrush ImageSource="Übung.jpg"/>
-            </Button.Background>
         </Button>
-        <Button Content="" Grid.Column="4" HorizontalAlignment="Center" Margin="398.709,49,144,63" VerticalAlignment="Center" Width="100" Height="28" Click="ButtonSettings_Click" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="4">
+        <Button Content="Settings" Grid.Column="4" HorizontalAlignment="Center" Margin="398.709,49,144,63" VerticalAlignment="Center" Width="100" Height="28" Click="ButtonSettings_Click" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="4" Background="#FFFF8900">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -72,11 +72,8 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
-            <Button.Background>
-                <ImageBrush ImageSource="settings.png" Stretch="UniformToFill"/>
-            </Button.Background>
         </Button>
-        <Button x:Name="btn_info" Content="" Grid.Column="7" HorizontalAlignment="Center" Margin="76,49,10,63" VerticalAlignment="Center" Width="100" Height="28" Click="Button_Click" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+        <Button x:Name="btn_info" Content="Info" Grid.Column="7" HorizontalAlignment="Center" Margin="76,49,10,63" VerticalAlignment="Center" Width="100" Height="28" Click="Button_Click" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Background="#FFF4FF00">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -85,9 +82,6 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
-            <Button.Background>
-                <ImageBrush ImageSource="info.jpg"/>
-            </Button.Background>
         </Button>
         <Image gif:ImageBehavior.AnimatedSource="p.gif" Grid.ColumnSpan="6" HorizontalAlignment="Center" Height="285" Margin="27.016,125,93.076,10" VerticalAlignment="Center" Width="569" Grid.RowSpan="3" Grid.Column="2"/>
         <Image gif:ImageBehavior.AnimatedSource="3psd.jpg" HorizontalAlignment="Center" Height="56" Margin="212.709,8,145,76" VerticalAlignment="Center" Width="50" RenderTransformOrigin="0.717,0.703" Grid.Column="4">
@@ -131,6 +125,6 @@
             </Image.RenderTransform>
         </Image>
         <Label x:Name="label" Content="Label" Grid.Column="3" HorizontalAlignment="Left" Margin="18.816,122,0,0" VerticalAlignment="Top" Width="522" Grid.RowSpan="2" Grid.ColumnSpan="5" Background="Black"/>
-        <Button Content="Client&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Center" Margin="17,58,407,57" VerticalAlignment="Center" Width="100" Grid.ColumnSpan="4" Height="25" Background="#FF0046FF" Click="Button_Click_2"/>
+        <Button Content="Client&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Center" Margin="18,60,406.199,54" VerticalAlignment="Center" Width="100" Grid.ColumnSpan="4" Height="26" Background="#FF0046FF" Click="Button_Click_2"/>
     </Grid>
 </Window>

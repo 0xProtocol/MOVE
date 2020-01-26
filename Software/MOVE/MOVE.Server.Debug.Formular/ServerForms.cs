@@ -80,7 +80,7 @@ namespace MOVE.Server.Debug.Formular
             waveIn.StartRecording();
             this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             fi.Start();
-            ServerListener();
+           // ServerListener();
 
         }
         private void btn_Connect_Click(object sender, EventArgs e)
