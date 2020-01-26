@@ -297,7 +297,7 @@ namespace MOVE.Server.Debug.Formular
                     com.SpeakAsync("Adresse wurde dem Client zugewiesen");
                 }
             }
-            if (speech == "Game Settings")
+            if (speech == "Spieleinstellungen")
             {
                 tabControl1.SelectedIndex = 0;
             }
@@ -305,7 +305,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 tabControl1.SelectedIndex = 1;
             }
-            if (speech == "IP Konfiguration")
+            if (speech == "Adresseinstellungen")
             {
                 tabControl1.SelectedIndex = 2;
             }

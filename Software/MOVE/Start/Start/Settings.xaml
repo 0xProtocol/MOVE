@@ -7,7 +7,7 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com" x:Class="Start.Settings"
         mc:Ignorable="d"
          Icon="logo (2).jpeg"
-        Title="Settings" Height="450" Width="800" Activated="Window_Activated">
+        Title="Settings" Height="450" Width="800" Activated="Window_Activated" Deactivated="Window_Deactivated">
     <Grid Background="Black">
         <Image gif:ImageBehavior.AnimatedSource="giphy.gif" Opacity="0.505" ScrollViewer.CanContentScroll="True" Margin="384,-19,-15,-38">
             <Image.Effect>

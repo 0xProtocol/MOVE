@@ -302,7 +302,7 @@ namespace MOVE.Client.Debug.Formular
                     com.SpeakAsync("Adresse wurde dem Client zugewiesen");
                 }
             }
-            if (speech == "Game Settings")
+            if (speech == "Spieleinstellungen")
             {
                 tcsettings.SelectedIndex = 0;
             }
@@ -310,7 +310,7 @@ namespace MOVE.Client.Debug.Formular
             {
                 tcsettings.SelectedIndex = 1;
             }
-            if (speech == "IP Konfiguration")
+            if (speech == "Adresseinstellungen")
             {
                 tcsettings.SelectedIndex = 2;
             }

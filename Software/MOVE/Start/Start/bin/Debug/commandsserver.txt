@@ -2,7 +2,7 @@ Settings
 Starte Server
 Verbinde zum Server
 Move it
-Los
+Starte das Spiel
 Sound
 Tonfrequenz
 Tastatur

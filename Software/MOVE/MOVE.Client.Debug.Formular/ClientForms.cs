@@ -14,7 +14,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MOVE.Core;
 using MOVE.Shared;
-using NAudio.Wave;
 using System.IO;
 using System.Windows.Markup;
 using System.Xaml;
@@ -33,7 +32,7 @@ namespace MOVE.Client.Debug.Formular
         TcpService tcp;
         SoundInput si = new SoundInput();
         FrequenzInput fi = new FrequenzInput();
-        SpeechRecognitionEngine _recognizerclient = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizerclient = new SpeechRecognitionEngine(); // new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         ClientSettings cs = new ClientSettings();
         ErrorLogWriter elw = new ErrorLogWriter();
@@ -75,7 +74,7 @@ namespace MOVE.Client.Debug.Formular
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             si.Loading();
             fi.Start();
-           // ClientListener();
+            ClientListener();
         }
         #region Service/Request
         public void LogServiceinformation(string message)
@@ -365,7 +364,7 @@ namespace MOVE.Client.Debug.Formular
                 }
             }
 
-            if (speech == "Los")
+            if (speech == "Starte das Spiel")
             {
                 if (counterstartgame < 1)
                 {
@@ -453,7 +452,7 @@ namespace MOVE.Client.Debug.Formular
         }
         public void Glaettung(int anzahl)
         {
-            int summe = 0;
+            int  summe = 0;
             if (savedValues.Count == anzahl)
             {
                 for (int i = 0; i < anzahl; i++)

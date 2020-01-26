@@ -29,12 +29,12 @@ namespace Start
         SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
+        int counter = 0;
         #endregion
         #region klassengenerierte Methoden
         public Settings()
         {
             InitializeComponent();
-            DefaultListenerSettings();
             this.Focus();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -62,20 +62,6 @@ namespace Start
         }
         #endregion
         #region Speech Recognition
-        public void DefaultListenerSettings()
-        {
-            try
-            {
-            _recognizersettings.SetInputToDefaultAudioDevice();
-            _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssettings.txt")))));
-            _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultInfo_SpeechRecognized);
-            _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
-            }
-            catch (Exception ex)
-            {
-                elw.WriteErrorLog(ex.ToString());
-            }
-        }
 
         private void DefaultInfo_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
@@ -118,6 +104,7 @@ namespace Start
             if (speech == "exit")
             {
                 CloseWindow();
+                CancelDefaultListenerSettings();
             }
         }
         #endregion
@@ -220,15 +207,37 @@ namespace Start
 
         public void ActivateDefaultListenerSettings()
         {
-            try
+            if (counter < 1)
             {
-                _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+                counter++;
+                try
+                {
+                    _recognizersettings.SetInputToDefaultAudioDevice();
+                    _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssettings.txt")))));
+                    _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultInfo_SpeechRecognized);
+                    _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+                }
+                catch (Exception ex)
+                {
+                    elw.WriteErrorLog(ex.ToString());
+                }
             }
-            catch (Exception ex)
+            else
             {
-                elw.WriteErrorLog(ex.ToString());
+
+
+                try
+                {
+                    _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+                }
+                catch (Exception ex)
+                {
+                    elw.WriteErrorLog(ex.ToString());
+                }
             }
         }
         #endregion
+
+      
     }
 }
