@@ -370,7 +370,7 @@ namespace MOVE.Client.Debug.Formular
         }
         private void CloseWindow()
         {
-            this.Hide();
+            this.Close();
         }
         private void SelectFirstAdapter()
         {

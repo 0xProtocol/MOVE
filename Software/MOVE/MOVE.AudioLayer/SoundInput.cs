@@ -46,7 +46,7 @@ namespace MOVE.AudioLayer
 
             float tempSoundValue = 0;
 
-            for (int index = 0; index < args.BytesRecorded; index += 3)
+            for (int index = 0; index < args.BytesRecorded; index += 2)
             {
                 short sample = (short)((args.Buffer[index + 1] << 8) | args.Buffer[index + 0]);
                 var audioSample = sample / 32668f; 

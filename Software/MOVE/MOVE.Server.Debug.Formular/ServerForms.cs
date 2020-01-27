@@ -313,19 +313,19 @@ namespace MOVE.Server.Debug.Formular
                 speed_top = -speed_top;
                 Console.Beep(2350, 50);
             }
-            if (Ball.Left <= dgv_playfieldclient.Left)
+            if (Ball.Left < dgv_playfieldclient.Left)
             {
                 speed_left = -speed_left;
             }
-            if (Ball.Right >= dgv_playfieldclient.Right - 200)
+            if (Ball.Right > dgv_playfieldclient.Right - 200)
             {
                 speed_left = -speed_left;
             }
-            if (Ball.Top <= dgv_playfieldclient.Top)
+            if (Ball.Top < dgv_playfieldclient.Top)
             {
                 speed_top = -speed_top * (-1);
             }
-            if (Ball.Bottom >= dgv_playfieldclient.Bottom)
+            if (Ball.Bottom > dgv_playfieldclient.Bottom)
             {
                 Ball.Visible = false;
                 timer1.Enabled = false;
@@ -577,7 +577,7 @@ namespace MOVE.Server.Debug.Formular
             }  /*/
         private void Settings()
         {
-            ss.Show();
+            ss.ShowDialog();
         }
         private void EnableSound()
         {

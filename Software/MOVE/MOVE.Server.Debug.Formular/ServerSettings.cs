@@ -366,7 +366,7 @@ namespace MOVE.Server.Debug.Formular
 
         private void CloseWindow()
         {
-            this.Hide();
+            this.Close();
         }
 
         private void SelectFirstAdapter()

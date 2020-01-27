@@ -426,7 +426,7 @@ namespace MOVE.Client.Debug.Formular
         #region Methoden
         private void Settings()
         {
-            cs.Show();
+            cs.ShowDialog();
         }
         private void EnableSound()
         {
