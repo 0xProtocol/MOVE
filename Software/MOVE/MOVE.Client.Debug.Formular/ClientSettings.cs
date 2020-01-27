@@ -30,6 +30,7 @@ namespace MOVE.Client.Debug.Formular
         #region Variablen
         Thread discoverythread;
         int counter;
+        int speechmodulevalue = 1;
         #endregion
         #region klassengenerierte Methoden
         public ClientSettings()
@@ -39,6 +40,8 @@ namespace MOVE.Client.Debug.Formular
             tbEmpfindlichkeit.Value = Convert.ToInt32(emp);
             string glät = ConfigurationManager.AppSettings["smoothing"];
             tbGlättungsstufe.Value = Convert.ToInt32(glät);
+            string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
+            speechmodulevalue = Convert.ToInt32(speechmodule);
         }
         private void ClientSettings_Load(object sender, EventArgs e)
         {
@@ -68,12 +71,26 @@ namespace MOVE.Client.Debug.Formular
         }
         private void ClientSettings_Activated(object sender, EventArgs e)
         {
-            StartthisListener();
+            if (speechmodulevalue == 1)
+            {
+                StartthisListener();
+            }
+            else
+            {
+                //
+            }
         }
 
         private void ClientSettings_Deactivate(object sender, EventArgs e)
         {
-            CancelClientListener();
+            if (speechmodulevalue == 1)
+            {
+                CancelClientListener();
+            }
+            else
+            {
+                //
+            }
         }
         private void btn_deactivatefirewall_Click(object sender, EventArgs e)
         {

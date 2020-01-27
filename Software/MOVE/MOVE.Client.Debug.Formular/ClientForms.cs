@@ -22,6 +22,7 @@ using System.Windows.Controls;
 using MOVE.AudioLayer;
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
+using System.Configuration;
 
 namespace MOVE.Client.Debug.Formular
 {
@@ -60,6 +61,7 @@ namespace MOVE.Client.Debug.Formular
         int paddlexlocal;
         int counter = -2;
         double player = 0;
+        int speechmodulevalue = 1;
         #endregion
         #region klassengenerierte Methoden
         public ClientForms()
@@ -74,7 +76,16 @@ namespace MOVE.Client.Debug.Formular
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             si.Loading();
             fi.Start();
-            ClientListener();
+            string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
+            speechmodulevalue = Convert.ToInt32(speechmodule);
+            if (speechmodulevalue == 1)
+            {
+                ClientListener();
+            }
+            else
+            {
+
+            }
         }
         #region Service/Request
         public void LogServiceinformation(string message)
@@ -308,12 +319,26 @@ namespace MOVE.Client.Debug.Formular
         }
         private void ClientForms_Activated(object sender, EventArgs e)
         {
-            ActivateClientListener();
+            if (speechmodulevalue == 1)
+            {
+                ActivateClientListener();
+            }
+            else
+            {
+                //
+            }
         }
 
         private void ClientForms_Deactivate(object sender, EventArgs e)
         {
-            CancelClientListener();
+            if (speechmodulevalue == 1)
+            {
+                CancelClientListener();
+            }
+            else
+            {
+                //
+            }
         }
         #endregion
         #region Speech Recognition

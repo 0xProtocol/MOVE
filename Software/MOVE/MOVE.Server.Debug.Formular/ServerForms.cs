@@ -4,6 +4,7 @@ using MOVE.Shared;
 using NAudio.Wave;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Drawing;
 using System.IO;
 using System.Net;
@@ -60,6 +61,7 @@ namespace MOVE.Server.Debug.Formular
         int counter = 0;
         List<int> auswertungsWerte = new List<int>();
         double player = 0;
+        int speechmodulevalue = 1;
         #endregion
         #region klassengenerierte Methoden
         public ServerForms()
@@ -80,7 +82,16 @@ namespace MOVE.Server.Debug.Formular
             waveIn.StartRecording();
             this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             fi.Start();
-            ServerListener();
+            string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
+            speechmodulevalue = Convert.ToInt32(speechmodule);
+            if (speechmodulevalue == 1)
+            {
+                ServerListener();
+            }
+            else
+            {
+
+            }
 
         }
         private void btn_Connect_Click(object sender, EventArgs e)
@@ -166,11 +177,25 @@ namespace MOVE.Server.Debug.Formular
         }
         private void ServerForms_Activated(object sender, EventArgs e)
         {
-            ActivateServerListener();
+            if (speechmodulevalue == 1)
+            {
+                ActivateServerListener();
+            }
+            else
+            {
+
+            }
         }
         private void ServerForms_Deactivate(object sender, EventArgs e)
         {
-            CancelServerListener();
+            if (speechmodulevalue == 1)
+            {
+                CancelServerListener();
+            }
+            else
+            {
+
+            }
         }
         private void btnSettings_Click(object sender, EventArgs e)
         {

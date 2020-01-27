@@ -41,6 +41,7 @@ namespace Start
         {
             RadioButtonIsChecked();
             RadioButtonIsChecked2();
+            RadioButtonIsChecked3();
         }
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -117,6 +118,7 @@ namespace Start
         {
             RadioButtonIsChecked();
             RadioButtonIsChecked2();
+            RadioButtonIsChecked3();
         }
         private void SetEmpfindlichkeitleicht()
         {
@@ -189,6 +191,23 @@ namespace Start
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 config.AppSettings.Settings["smoothing"].Value = "3";
+                config.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection("appSettings");
+            }
+        }
+        public void RadioButtonIsChecked3()
+        {
+            if (rb_speechmoduleactivated.IsChecked == true)
+            {
+                var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                config.AppSettings.Settings["speechmodule"].Value = "1";
+                config.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection("appSettings");
+            }
+            if (rb_speechmoduledeactivated.IsChecked == true)
+            {
+                var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                config.AppSettings.Settings["speechmodule"].Value = "0";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
             }

@@ -31,9 +31,9 @@
         <RadioButton x:Name="rb_modell3" Content="Stark" HorizontalAlignment="Left" Margin="619,159,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="modell"/>
         <RadioButton x:Name="rb_modell2" Content="Mittel" HorizontalAlignment="Left" Margin="619,134,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell"/>
         <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="9,278,0,0" VerticalAlignment="Top" Width="167" Background="Black">
-            <RadioButton x:Name="rb_sprachmoduldeaktiviert" Content="deaktiviert" HorizontalAlignment="Left" Margin="4,56,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sw"/>
+            <RadioButton x:Name="rb_speechmoduledeactivated" Content="deaktiviert" HorizontalAlignment="Left" Margin="4,56,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sw"/>
         </GroupBox>
         <Label Content="Sprachmodul" HorizontalAlignment="Left" Margin="13,275,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
-        <RadioButton x:Name="rb_sprachmodulaktiviert" Content="aktiviert" HorizontalAlignment="Left" Margin="18,318,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sw"/>
+        <RadioButton x:Name="rb_speechmoduleactivated" Content="aktiviert" HorizontalAlignment="Left" Margin="18,318,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sw"/>
     </Grid>
 </Window>
