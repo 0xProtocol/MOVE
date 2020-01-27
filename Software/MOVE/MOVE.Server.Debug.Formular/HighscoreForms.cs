@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Speech.Recognition;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,13 +16,43 @@ namespace MOVE.Server.Debug.Formular
     public partial class HighscoreForms : Form
     {
         ScoreManager sm = ScoreManager.GetInstance();
+        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
+        SpeechSynthesizer com = new SpeechSynthesizer();
         public HighscoreForms()
         {
             InitializeComponent();
             LoadScore();
+            DefaultListener();
         }
+        private void DefaultListener()
+        {
+            try
+            {
 
-        public void SetPlayerScore(int playerscore)
+                _recognizer.SetInputToDefaultAudioDevice();
+                _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandshighscoreform.txt")))));
+                _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
+                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+               // elw.WriteErrorLog(ex.Message);
+            }
+        }
+        public void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+            if (speech == "Bestätigen")
+            {
+                Bestätige();
+            }
+            if (speech == "Schließen")
+            {
+                this.Close();
+            }
+
+        }
+            public void SetPlayerScore(int playerscore)
         {
             tbxScore.Text = Convert.ToString(playerscore);
         }
@@ -36,7 +69,10 @@ namespace MOVE.Server.Debug.Formular
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            
+            Bestätige();            
+        }
+        private void Bestätige()
+        {
 
             btnInsert.Enabled = false;
             if (tbxName.Text == "")
@@ -78,9 +114,7 @@ namespace MOVE.Server.Debug.Formular
                 panel8.BackColor = Color.Green;
                 panel9.BackColor = Color.Green;
             }
-            
         }
-
         //sm.SaveScoreToDB(tbxName.Text, tbxScore.Text);
 
         private void LoadScore()
