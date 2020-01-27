@@ -25236,3 +25236,799 @@ Objektname: "PictureBox".
    bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
 26-01-2020 16:13:15 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
    bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:53 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 128.
+26-01-2020 16:47:55 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateClientListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 406.
+26-01-2020 16:47:56 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:57 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:58 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Client.Debug.Formular.ClientForms.timer2_Tick_1(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 197.
+26-01-2020 16:47:59 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 478.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:00 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:01 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:02 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:03 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.
+26-01-2020 16:48:04 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 270.

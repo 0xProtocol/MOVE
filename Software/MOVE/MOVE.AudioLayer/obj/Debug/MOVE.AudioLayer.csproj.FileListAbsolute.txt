@@ -284,4 +284,5 @@ C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.AudioLayer\bin\Debug\NA
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojResolveAssemblyReference.cache
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb
-D:\GitHubMove\MOVE\Software\MOVE\MOVE.AudioLayer\bin\Debug\NAudioright.dll
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.AudioLayer\bin\Debug\NAudio.dll
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.AudioLayer\bin\Debug\NAudio.xml

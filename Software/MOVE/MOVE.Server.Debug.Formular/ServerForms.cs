@@ -302,6 +302,7 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
+                Console.Beep(2350, 50);
             }
 
             if (pbx_upnetwork.Bounds.IntersectsWith(Ball.Bounds))
@@ -310,6 +311,7 @@ namespace MOVE.Server.Debug.Formular
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
+                Console.Beep(2350, 50);
             }
             if (Ball.Left <= dgv_playfieldclient.Left)
             {

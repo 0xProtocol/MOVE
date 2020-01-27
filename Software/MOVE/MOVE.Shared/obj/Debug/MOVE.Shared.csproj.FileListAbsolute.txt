@@ -101,3 +101,6 @@ C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\MOVE.S
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.dll
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.xml
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CopyComplete

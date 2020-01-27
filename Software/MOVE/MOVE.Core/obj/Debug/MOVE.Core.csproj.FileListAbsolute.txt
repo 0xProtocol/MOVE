@@ -192,3 +192,5 @@ C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Sha
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csprojResolveAssemblyReference.cache
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.dll
 C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.pdb
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\bin\Debug\NAudio.dll
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\bin\Debug\NAudio.xml
