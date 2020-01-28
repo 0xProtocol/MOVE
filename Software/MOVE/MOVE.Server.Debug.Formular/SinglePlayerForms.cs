@@ -16,14 +16,16 @@ using System.Net.Sockets;
 using System.Diagnostics;
 using NAudio.Wave;
 using System.IO;
+using System.Speech.Recognition;
+using System.Speech.Synthesis;
 
 namespace MOVE.Server.Debug.Formular
 {
     public partial class SinglePlayerForms : Form
     {
         #region Variablen
-        TcpService ts;
-        Thread scanThread = null;
+        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
+        SpeechSynthesizer com = new SpeechSynthesizer();
         HighscoreForms hf = new HighscoreForms();
         private static Random rnd = new Random();
         private static double audioValueMax = 0;
@@ -62,6 +64,30 @@ namespace MOVE.Server.Debug.Formular
             waveIn.StartRecording();
             //this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             lblLifes.Text = "Leben: " + lifes.ToString();
+            DefaultListener();
+        }
+        public void DefaultListener()
+        {
+            try
+            {
+
+                _recognizer.SetInputToDefaultAudioDevice();
+                _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssingleplayerform.txt")))));
+                _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
+                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+              //  elw.WriteErrorLog(ex.Message);
+            }
+        }
+        public void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+            if(speech=="Start")
+            {
+                Start();
+            }
         }
         private void OnDataAvailable(object sender, WaveInEventArgs args)
         {
@@ -460,6 +486,11 @@ namespace MOVE.Server.Debug.Formular
 
         private void btn_Start_Click_1(object sender, EventArgs e)
         {
+            Start();
+        }
+
+        private void Start()
+        {
             btn_Start.Enabled = false;
             timer1.Enabled = true;
             timer2.Enabled = true;
@@ -494,6 +525,39 @@ namespace MOVE.Server.Debug.Formular
         private void points2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public void CancelDefaultListener()
+        {
+            try
+            {
+                _recognizer.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+                //elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        public void ActivateDefaultListener()
+        {
+            try
+            {
+                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+               // elw.WriteErrorLog(ex.ToString());
+            }
+        }
+        private void SinglePlayerForms_Activated(object sender, EventArgs e)
+        {
+            ActivateDefaultListener();
+        }
+
+        private void SinglePlayerForms_Deactivate(object sender, EventArgs e)
+        {
+            CancelDefaultListener();
         }
     }
 }
