@@ -810,7 +810,6 @@ C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\obj\
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.ClientSettings.resources
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.Properties.Resources.resources
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.GenerateResource.cache
-C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CoreCompileInputs.cache
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.csproj.CopyComplete
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.exe
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Client.Debug.Formular\obj\Debug\MOVE.Client.Debug.Formular.pdb

@@ -262,7 +262,6 @@ C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.AudioLayer\bin\Debug\Accor
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.AudioLayer\bin\Debug\Accord.Statistics.xml
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.AudioLayer\bin\Debug\NAudio.xml
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csprojAssemblyReference.cache
-C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CoreCompileInputs.cache
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.csproj.CopyComplete
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.dll
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.AudioLayer\obj\Debug\MOVE.AudioLayer.pdb

@@ -14,7 +14,6 @@ namespace MOVE.Server.Debug.Formular
     {
         private static ScoreManager _instance = new ScoreManager();
         List<Score> _scoresList = new List<Score>();
-
         string _connectstring = @"Data Source=-MARKUS\SQLEXPRESS; Initial Catalog=MOVE_Highscore; Integrated Security=True;";
 
         private ScoreManager()

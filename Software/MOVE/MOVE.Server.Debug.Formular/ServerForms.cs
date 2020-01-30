@@ -217,21 +217,20 @@ namespace MOVE.Server.Debug.Formular
             {
                 if (rBFrequenz.Checked == true)
                 {
-
-                    fi.CalculateData();
+                    fi.CalculateData(ss.GetCalSate());
 
                     positionValue = fi.CalculatePaddleLocationX(ss.FrequenzSetting(), ss.FrequenzThreshold());
 
-                    if (positionValue < 12)
+                    if (positionValue < 0)
                     {
-                        positionValue = 12;
+                        positionValue = 0;
                     }
-                    if (positionValue > 1600)
+                    if (positionValue > 1350)
                     {
-                        positionValue = 1600;
+                        positionValue = 1350;
                     }
 
-                    pbx_downlocal.Location = new Point(positionValue, (int)player);
+                    pbx_downlocal.Location = new Point(positionValue + 60, (int)player);
                 }
 
                 if (rBSound.Checked == true)
@@ -323,7 +322,7 @@ namespace MOVE.Server.Debug.Formular
 
             if (pbx_downlocal.Bounds.IntersectsWith(Ball.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y - 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y - 5);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;

@@ -1349,7 +1349,6 @@ C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Settings.
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.g.resources
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.Properties.Resources.resources
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.csproj.GenerateResource.cache
-C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.csproj.CoreCompileInputs.cache
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.csproj.CopyComplete
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.exe
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.pdb

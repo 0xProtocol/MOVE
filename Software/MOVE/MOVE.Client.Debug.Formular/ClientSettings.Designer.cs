@@ -59,6 +59,8 @@
             this.lblGlättungsstufe = new System.Windows.Forms.Label();
             this.lblEmpfindlichkeit = new System.Windows.Forms.Label();
             this.tcGameSettingsFreq = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbThreshold = new System.Windows.Forms.TrackBar();
             this.pbMelody = new System.Windows.Forms.PictureBox();
             this.rBPfeifen = new System.Windows.Forms.RadioButton();
             this.rBSopran = new System.Windows.Forms.RadioButton();
@@ -73,8 +75,9 @@
             this.lsb_networkadapter = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pbGlasses = new System.Windows.Forms.PictureBox();
-            this.tbThreshold = new System.Windows.Forms.TrackBar();
-            this.label1 = new System.Windows.Forms.Label();
+            this.rBkalibrieren = new System.Windows.Forms.RadioButton();
+            this.btnStopCal = new System.Windows.Forms.Button();
+            this.btnStartCal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tbEmpfindlichkeit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättungsstufe)).BeginInit();
             this.cms.SuspendLayout();
@@ -82,12 +85,12 @@
             this.tcGameSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).BeginInit();
             this.tcGameSettingsFreq.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMelody)).BeginInit();
             this.tcIPConfiguration.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNet)).BeginInit();
             this.tcNetworkDiscovery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).BeginInit();
             this.SuspendLayout();
             // 
             // tbEmpfindlichkeit
@@ -398,6 +401,9 @@
             // tcGameSettingsFreq
             // 
             this.tcGameSettingsFreq.BackColor = System.Drawing.Color.Silver;
+            this.tcGameSettingsFreq.Controls.Add(this.btnStopCal);
+            this.tcGameSettingsFreq.Controls.Add(this.btnStartCal);
+            this.tcGameSettingsFreq.Controls.Add(this.rBkalibrieren);
             this.tcGameSettingsFreq.Controls.Add(this.label1);
             this.tcGameSettingsFreq.Controls.Add(this.tbThreshold);
             this.tcGameSettingsFreq.Controls.Add(this.pbMelody);
@@ -416,10 +422,35 @@
             this.tcGameSettingsFreq.Text = "Frequenztuning";
             this.tcGameSettingsFreq.Click += new System.EventHandler(this.tcGameSettingsFreq_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 19.8F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(262, 8);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(246, 31);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Aufnahmeschwelle";
+            // 
+            // tbThreshold
+            // 
+            this.tbThreshold.BackColor = System.Drawing.Color.Silver;
+            this.tbThreshold.LargeChange = 1;
+            this.tbThreshold.Location = new System.Drawing.Point(268, 51);
+            this.tbThreshold.Maximum = 9;
+            this.tbThreshold.Minimum = 1;
+            this.tbThreshold.Name = "tbThreshold";
+            this.tbThreshold.Size = new System.Drawing.Size(335, 45);
+            this.tbThreshold.TabIndex = 8;
+            this.tbThreshold.Value = 1;
+            // 
             // pbMelody
             // 
             this.pbMelody.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.Move;
-            this.pbMelody.Location = new System.Drawing.Point(410, 5);
+            this.pbMelody.Location = new System.Drawing.Point(403, 129);
             this.pbMelody.Margin = new System.Windows.Forms.Padding(2);
             this.pbMelody.Name = "pbMelody";
             this.pbMelody.Size = new System.Drawing.Size(200, 200);
@@ -432,11 +463,10 @@
             this.rBPfeifen.AutoSize = true;
             this.rBPfeifen.Checked = true;
             this.rBPfeifen.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBPfeifen.Location = new System.Drawing.Point(23, 281);
+            this.rBPfeifen.Location = new System.Drawing.Point(6, 252);
             this.rBPfeifen.Name = "rBPfeifen";
             this.rBPfeifen.Size = new System.Drawing.Size(116, 35);
             this.rBPfeifen.TabIndex = 6;
-            this.rBPfeifen.TabStop = true;
             this.rBPfeifen.Text = "Pfeifen";
             this.rBPfeifen.UseVisualStyleBackColor = true;
             this.rBPfeifen.CheckedChanged += new System.EventHandler(this.rBPfeifen_CheckedChanged);
@@ -445,7 +475,7 @@
             // 
             this.rBSopran.AutoSize = true;
             this.rBSopran.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBSopran.Location = new System.Drawing.Point(23, 238);
+            this.rBSopran.Location = new System.Drawing.Point(6, 211);
             this.rBSopran.Name = "rBSopran";
             this.rBSopran.Size = new System.Drawing.Size(118, 35);
             this.rBSopran.TabIndex = 5;
@@ -457,7 +487,7 @@
             // 
             this.rBMezzosopran.AutoSize = true;
             this.rBMezzosopran.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBMezzosopran.Location = new System.Drawing.Point(23, 195);
+            this.rBMezzosopran.Location = new System.Drawing.Point(6, 170);
             this.rBMezzosopran.Name = "rBMezzosopran";
             this.rBMezzosopran.Size = new System.Drawing.Size(194, 35);
             this.rBMezzosopran.TabIndex = 4;
@@ -468,7 +498,7 @@
             // 
             this.rBMaenneralt.AutoSize = true;
             this.rBMaenneralt.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBMaenneralt.Location = new System.Drawing.Point(23, 156);
+            this.rBMaenneralt.Location = new System.Drawing.Point(6, 129);
             this.rBMaenneralt.Name = "rBMaenneralt";
             this.rBMaenneralt.Size = new System.Drawing.Size(156, 35);
             this.rBMaenneralt.TabIndex = 3;
@@ -480,7 +510,7 @@
             // 
             this.rBTenor.AutoSize = true;
             this.rBTenor.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBTenor.Location = new System.Drawing.Point(23, 113);
+            this.rBTenor.Location = new System.Drawing.Point(6, 88);
             this.rBTenor.Name = "rBTenor";
             this.rBTenor.Size = new System.Drawing.Size(103, 35);
             this.rBTenor.TabIndex = 2;
@@ -492,7 +522,7 @@
             // 
             this.rBBartion.AutoSize = true;
             this.rBBartion.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBBartion.Location = new System.Drawing.Point(23, 70);
+            this.rBBartion.Location = new System.Drawing.Point(6, 47);
             this.rBBartion.Name = "rBBartion";
             this.rBBartion.Size = new System.Drawing.Size(119, 35);
             this.rBBartion.TabIndex = 1;
@@ -504,7 +534,7 @@
             // 
             this.rBBass.AutoSize = true;
             this.rBBass.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBBass.Location = new System.Drawing.Point(23, 27);
+            this.rBBass.Location = new System.Drawing.Point(6, 6);
             this.rBBass.Name = "rBBass";
             this.rBBass.Size = new System.Drawing.Size(86, 35);
             this.rBBass.TabIndex = 0;
@@ -594,30 +624,38 @@
             this.pbGlasses.TabIndex = 49;
             this.pbGlasses.TabStop = false;
             // 
-            // tbThreshold
+            // rBkalibrieren
             // 
-            this.tbThreshold.BackColor = System.Drawing.Color.Silver;
-            this.tbThreshold.LargeChange = 1;
-            this.tbThreshold.Location = new System.Drawing.Point(277, 281);
-            this.tbThreshold.Maximum = 9;
-            this.tbThreshold.Minimum = 1;
-            this.tbThreshold.Name = "tbThreshold";
-            this.tbThreshold.Size = new System.Drawing.Size(335, 45);
-            this.tbThreshold.TabIndex = 8;
-            this.tbThreshold.Value = 1;
+            this.rBkalibrieren.AutoSize = true;
+            this.rBkalibrieren.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rBkalibrieren.Location = new System.Drawing.Point(6, 293);
+            this.rBkalibrieren.Name = "rBkalibrieren";
+            this.rBkalibrieren.Size = new System.Drawing.Size(149, 35);
+            this.rBkalibrieren.TabIndex = 10;
+            this.rBkalibrieren.Text = "Kalibriert";
+            this.rBkalibrieren.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // btnStopCal
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(271, 238);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 31);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Aufnahmeschwelle";
+            this.btnStopCal.Font = new System.Drawing.Font("Rockwell", 19.8F);
+            this.btnStopCal.Location = new System.Drawing.Point(266, 290);
+            this.btnStopCal.Name = "btnStopCal";
+            this.btnStopCal.Size = new System.Drawing.Size(83, 40);
+            this.btnStopCal.TabIndex = 89;
+            this.btnStopCal.Text = "Stop";
+            this.btnStopCal.UseVisualStyleBackColor = true;
+            this.btnStopCal.Click += new System.EventHandler(this.btnStopCal_Click_1);
+            // 
+            // btnStartCal
+            // 
+            this.btnStartCal.Font = new System.Drawing.Font("Rockwell", 19.8F);
+            this.btnStartCal.Location = new System.Drawing.Point(177, 290);
+            this.btnStartCal.Name = "btnStartCal";
+            this.btnStartCal.Size = new System.Drawing.Size(83, 40);
+            this.btnStartCal.TabIndex = 88;
+            this.btnStartCal.Text = "Start";
+            this.btnStartCal.UseVisualStyleBackColor = true;
+            this.btnStartCal.Click += new System.EventHandler(this.btnStartCal_Click_1);
             // 
             // ClientSettings
             // 
@@ -639,6 +677,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).EndInit();
             this.tcGameSettingsFreq.ResumeLayout(false);
             this.tcGameSettingsFreq.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMelody)).EndInit();
             this.tcIPConfiguration.ResumeLayout(false);
             this.tcIPConfiguration.PerformLayout();
@@ -646,7 +685,6 @@
             this.tcNetworkDiscovery.ResumeLayout(false);
             this.tcNetworkDiscovery.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -698,5 +736,8 @@
         private System.Windows.Forms.ToolStripMenuItem selectAdapterToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TrackBar tbThreshold;
+        private System.Windows.Forms.RadioButton rBkalibrieren;
+        private System.Windows.Forms.Button btnStopCal;
+        private System.Windows.Forms.Button btnStartCal;
     }
 }

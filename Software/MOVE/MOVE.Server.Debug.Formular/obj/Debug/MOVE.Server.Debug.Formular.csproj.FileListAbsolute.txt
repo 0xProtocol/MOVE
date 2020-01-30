@@ -831,7 +831,6 @@ C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\obj\
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\obj\Debug\MOVE.Server.Debug.Formular.ServerSettings.resources
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\obj\Debug\MOVE.Server.Debug.Formular.SinglePlayerForms.resources
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\obj\Debug\MOVE.Server.Debug.Formular.csproj.GenerateResource.cache
-C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\obj\Debug\MOVE.Server.Debug.Formular.csproj.CoreCompileInputs.cache
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\obj\Debug\MOVE.Server.Debug.Formular.csproj.CopyComplete
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\obj\Debug\MOVE.Server.Debug.Formular.exe
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\obj\Debug\MOVE.Server.Debug.Formular.pdb

@@ -18,12 +18,16 @@ namespace MOVE.Server.Debug.Formular
         ScoreManager sm = ScoreManager.GetInstance();
         SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
+        #region Variablen
+        int value = 0;
+        #endregion
         public HighscoreForms()
         {
             InitializeComponent();
             LoadScore();
             DefaultListener();
         }
+        #region Speech Recognition
         private void DefaultListener()
         {
             try
@@ -50,9 +54,45 @@ namespace MOVE.Server.Debug.Formular
             {
                 this.Close();
             }
+            if(speech=="Der erste Spieler")
+            {
+                lsvScores.SelectedItems.Clear();
+                value = 0;
+                lsvScores.Items[value].Selected = true;
+            }
+            if (speech == "Der zweite Spieler")
+            {
+                lsvScores.SelectedItems.Clear();
+                value = 1;
+                lsvScores.Items[value].Selected = true;
+            }
+            if (speech == "Der dritte Spieler")
+            {
+                lsvScores.SelectedItems.Clear();
+                value = 2;
+                lsvScores.Items[value].Selected = true;
+            }
+            if (speech=="Ein Spieler weiter")
+            {
+                if (lsvScores.SelectedItems.Count > 0)
+                {
+                    value = lsvScores.Items.IndexOf(lsvScores.SelectedItems[0]) + 1;
+                }
+                if (value < lsvScores.Items.Count)
+                {
+                    lsvScores.SelectedItems.Clear();
+                    lsvScores.Items[value].Selected = true;
+                }
+                else
+                {
+                    value--;
+                    com.SpeakAsync("Sie sind bereits beim letzten Spieler angekommen");
+                }
+            }
 
         }
-            public void SetPlayerScore(int playerscore)
+        #endregion
+        public void SetPlayerScore(int playerscore)
         {
             tbxScore.Text = Convert.ToString(playerscore);
         }
@@ -132,7 +172,20 @@ namespace MOVE.Server.Debug.Formular
 
         private void lsvScores_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try
+            {
+                tbxName.Text = lsvScores.SelectedItems[0].Text;
+            }
+            catch (Exception)
+            {
 
+            }
+            
+        }
+
+        private void lsvScores_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

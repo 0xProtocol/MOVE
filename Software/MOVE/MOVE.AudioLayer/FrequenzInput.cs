@@ -23,6 +23,8 @@ namespace MOVE.AudioLayer
         int xValue = 0;
         double maxValue = 0.0;
         int maxIndex = 0;
+        List<int> maxIndexList = new List<int>();
+        int calValue = 0;
         #endregion
         #region Methoden
 
@@ -56,7 +58,7 @@ namespace MOVE.AudioLayer
             }
         }
 
-        public void CalculateData()
+        public void CalculateData(int cal)
         {
             byte[] audioBytes = new byte[bufferSamples];
             bwp.Read(audioBytes, 0, bufferSamples);
@@ -84,6 +86,19 @@ namespace MOVE.AudioLayer
             maxValue = fftReal.Max();
             maxIndex = Array.IndexOf(fftReal, maxValue);
             //maxIndex = fftReal.ToList().IndexOf(maxValue);
+
+            if (cal == 1)
+            {
+                maxIndexList.Add(maxIndex);
+            }
+            if (cal == 2)
+            {
+                if (maxIndexList.Count != 0)
+                {
+                    calValue = Convert.ToInt32(maxIndexList.Average());
+                    maxIndexList.Clear();
+                }
+            }
         }
 
         public int CalculatePaddleLocationX(int setting, double threshold)
@@ -117,6 +132,10 @@ namespace MOVE.AudioLayer
                 if (setting == 7)
                 {
                     xValue = maxIndex * 25 - 15 * 25;
+                }
+                if (setting == 8)
+                {
+                    xValue = maxIndex * 80 - calValue * 80;
                 }
                 return xValue;
             }

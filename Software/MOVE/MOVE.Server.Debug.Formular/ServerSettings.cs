@@ -29,6 +29,7 @@ namespace MOVE.Server.Debug.Formular
         Thread discoverythread;
         int counter;
         int speechmodulevalue = 1;
+        int calState = 0;
         #endregion
         #region klassengenerierte Methoden
         public ServerSettings()
@@ -568,6 +569,10 @@ namespace MOVE.Server.Debug.Formular
             {
                 return 7;
             }
+            if (rBkalibrieren.Checked == true)
+            {
+                return 8;
+            }
             return 0;
         }
 
@@ -575,6 +580,22 @@ namespace MOVE.Server.Debug.Formular
         {
             double threshold = Convert.ToDouble(tbThreshold.Value) / 10;
             return threshold;
+        }
+
+        private void btnStartCal_Click(object sender, EventArgs e)
+        {
+            calState = 1;
+        }
+
+        private void btnStopCal_Click(object sender, EventArgs e)
+        {
+            calState = 2;
+            rBkalibrieren.Checked = true;
+        }
+
+        public int GetCalSate()
+        {
+            return calState;
         }
 
         public void SetBass()
