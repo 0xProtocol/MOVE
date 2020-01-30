@@ -643,6 +643,16 @@ namespace MOVE.Client.Debug.Formular
         {
 
         }
+
+        private void rBSound_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbKeyboard_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 #endregion

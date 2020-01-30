@@ -521,7 +521,27 @@ namespace MOVE.Server.Debug.Formular
         {
 
         }
+        private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                if (e.KeyCode == Keys.Right)
+                {
+                    timer2.Enabled = false;
+                    pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
+                }
+                if (e.KeyCode == Keys.Left)
+                {
+                    timer2.Enabled = false;
+                    pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
+                }
+            }
+            catch (Exception ex)
+            {
+                //elw.WriteErrorLog(ex.ToString());
+            }
 
+        }
         private void points2_Click(object sender, EventArgs e)
         {
 
@@ -558,6 +578,33 @@ namespace MOVE.Server.Debug.Formular
         private void SinglePlayerForms_Deactivate(object sender, EventArgs e)
         {
             CancelDefaultListener();
+        }
+
+        private void dgv_playfieldclient_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            try
+            {
+
+                if (e.KeyCode == Keys.Right)
+                {
+                    timer2.Enabled = false;
+                    pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
+                }
+                if (e.KeyCode == Keys.Left)
+                {
+                    timer2.Enabled = false;
+                    pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                //elw.WriteErrorLog(ex.ToString()); ;
+            }
+        }
+
+        private void rbKeyboard_CheckedChanged(object sender, EventArgs e)
+        {
         }
     }
 }
