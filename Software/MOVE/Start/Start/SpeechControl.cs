@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -17,24 +18,46 @@ using MOVE.Server.Debug.Formular;
 using MOVE.Shared;
 
 namespace Start
-{
+{ 
+ 
     public class SpeechControl
     {
-        #region Klasseninstanzierungen
-        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
+      #region Klasseninstanzierungen
+        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
+        SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
+        public int languagecounter;
         #region Speech Recognition
-        public void DefaultListener()
+        public void DefaultListenerGerman()
         {
             try
             {
-
-            _recognizer.SetInputToDefaultAudioDevice();
-            _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsmainwindow.txt")))));
-            _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
-            _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizergerman.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsmainwindow.txt")));
+                gb.Culture = new CultureInfo("de-DE");
+                Grammar g = new Grammar(gb);
+                _recognizergerman.LoadGrammar(g);
+                _recognizergerman.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultGerman_SpeechRecognized);
+                _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+        public void DefaultListenerEnglish()
+        {
+            try
+            {
+                _recognizerenglish.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsmainwindow.txt")));
+                gb.Culture = new CultureInfo("en-GB"); 
+                Grammar g = new Grammar(gb);
+                _recognizerenglish.LoadGrammar(g);
+                _recognizerenglish.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultEnglish_SpeechRecognized);
+                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
@@ -42,7 +65,7 @@ namespace Start
             }
         }
       
-        public void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        public void DefaultGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
             if (speech == "Starte Server")
@@ -59,7 +82,7 @@ namespace Start
                 OpenInformation();
             }
 
-            if (speech == "Settings")
+            if (speech == "Spieleinstellungen")
             {
                 OpenSettings();
             }
@@ -69,7 +92,39 @@ namespace Start
                 OpenÜbung();
             }
             
-            if(speech=="exit")
+            if(speech== "Abbrechen")
+            {
+                ExitGame();
+            }
+        }
+        public void DefaultEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+            if (speech == "Start Server")
+            {
+                OpenServer();
+            }
+            if (speech == "Start Client")
+            {
+                OpenClient();
+            }
+
+            if (speech == "Information")
+            {
+                OpenInformation();
+            }
+
+            if (speech == "Settings")
+            {
+                OpenSettings();
+            }
+
+            if (speech == "Practice Mode")
+            {
+                OpenÜbung();
+            }
+
+            if (speech == "Exit the game")
             {
                 ExitGame();
             }
@@ -109,11 +164,11 @@ namespace Start
         {
             Environment.Exit(1);
         }
-        public void CancelDefaultListener()
+        public void CancelDefaultGermanListener()
         {
             try
             {
-                _recognizer.RecognizeAsyncStop();
+                _recognizergerman.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -121,11 +176,34 @@ namespace Start
             }
         }
 
-        public void ActivateDefaultListener()
+        public void ActivateDefaultGermanListener()
         {
             try
             {
-                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+        public void CancelDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerenglish.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        public void ActivateDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {

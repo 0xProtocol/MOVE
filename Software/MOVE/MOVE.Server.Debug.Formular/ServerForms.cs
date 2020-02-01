@@ -22,7 +22,7 @@ namespace MOVE.Server.Debug.Formular
         TcpService ts;
         Client c;
         FrequenzInput fi = new FrequenzInput();
-        SpeechRecognitionEngine _recognizerserver = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizerserver = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         FirewallSettings fs = new FirewallSettings();
         NetworkDiscovery nd = new NetworkDiscovery();

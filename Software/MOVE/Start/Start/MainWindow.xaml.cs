@@ -31,17 +31,30 @@ namespace Start
     public partial class MainWindow : Window
     {
         #region Klasseninstanzierungen
-        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
         SpeechSynthesizer com = new SpeechSynthesizer();
         SpeechControl si = new SpeechControl();
         Settings s = new Settings();
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
+        #region 
+        int speechvalue;
+        #endregion
         #region klassengenerierte Methoden
         public MainWindow()
         {
             InitializeComponent();
-            si.DefaultListener();
+            string speechmodule = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(speechmodule);
+
+            if (speechvalue == 0)
+            {
+                si.DefaultListenerGerman();
+            }
+            if(speechvalue==1)
+            {
+                si.DefaultListenerEnglish();
+            }
+            this.Focus();
         }
         #endregion
         #region Methoden
@@ -74,12 +87,26 @@ namespace Start
         }
         private void Window_Activated(object sender, EventArgs e)
         {
-            si.ActivateDefaultListener();
+            if(speechvalue==0)
+            {
+                si.ActivateDefaultGermanListener();
+            }
+            else if (speechvalue==1)
+            {
+                si.ActivateDefaultEnglishListener();
+            }
         }
 
         private void Window_Deactivated(object sender, EventArgs e)
         {
-            si.CancelDefaultListener();
+            if (speechvalue == 0)
+            {
+                si.CancelDefaultGermanListener();
+            }
+            else if (speechvalue == 1)
+            {
+                si.CancelDefaultEnglishListener();
+            }
         }
         #endregion
         #region funktionslose Methoden

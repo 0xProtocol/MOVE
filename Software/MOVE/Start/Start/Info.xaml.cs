@@ -27,7 +27,7 @@ namespace Start
     public partial class Info : Window
     {
         #region Klasseninstanzierungen
-        SpeechRecognitionEngine _recognizerinfo = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizerinfo = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
         #region klassengenerierte Methoden

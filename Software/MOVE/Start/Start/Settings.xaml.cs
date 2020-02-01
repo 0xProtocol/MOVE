@@ -26,15 +26,19 @@ namespace Start
     public partial class Settings : Window
     {
         #region Klasseninstanzierungen
-        SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
         SpeechSynthesizer com = new SpeechSynthesizer();
+        SpeechControl si = new SpeechControl();
         ErrorLogWriter elw = new ErrorLogWriter();
         int counter = 0;
+        int speechvalue;
         #endregion
         #region klassengenerierte Methoden
         public Settings()
         {
             InitializeComponent();
+            string speechmodule = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(speechmodule);
             this.Focus();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -42,6 +46,7 @@ namespace Start
             RadioButtonIsChecked();
             RadioButtonIsChecked2();
             RadioButtonIsChecked3();
+            RadioButtonIsChecked4();
         }
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -119,6 +124,7 @@ namespace Start
             RadioButtonIsChecked();
             RadioButtonIsChecked2();
             RadioButtonIsChecked3();
+            RadioButtonIsChecked4();
         }
         private void SetEmpfindlichkeitleicht()
         {
@@ -210,6 +216,45 @@ namespace Start
                 config.AppSettings.Settings["speechmodule"].Value = "0";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
+            }
+        }
+        public void RadioButtonIsChecked4()
+        {
+            if (rb_speechmoduleenglish.IsChecked == true && speechvalue==0)
+            {
+                var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                config.AppSettings.Settings["language"].Value = "1";
+                config.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection("appSettings");
+                if (si.languagecounter == 0)
+                {
+                    si.CancelDefaultGermanListener();
+                    si.DefaultListenerEnglish();
+                    si.languagecounter++;
+                }
+                else if (si.languagecounter >= 1)
+                {
+                    si.CancelDefaultGermanListener();
+                    si.ActivateDefaultEnglishListener();
+                }
+            }
+            if (rb_speechmodulegerman.IsChecked == true && speechvalue == 1)
+            {
+                var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                config.AppSettings.Settings["language"].Value = "0";
+                config.Save(ConfigurationSaveMode.Modified);
+                ConfigurationManager.RefreshSection("appSettings");
+                if (si.languagecounter == 0)
+                {
+                    si.CancelDefaultEnglishListener();
+                    si.DefaultListenerGerman();
+                    si.languagecounter++;
+                }
+                else if (si.languagecounter >= 1)
+                {
+                    si.CancelDefaultEnglishListener();
+                    si.ActivateDefaultGermanListener();
+                }
             }
         }
         public void CancelDefaultListenerSettings()

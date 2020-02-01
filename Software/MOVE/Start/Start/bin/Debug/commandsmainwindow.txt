@@ -1,6 +1,12 @@
 Starte Server
 Starte Client
 Spielinformation
-Settings
+Spieleinstellungen
 Übungsmodus
-exit
+Abbrechen
+Start Server
+Start Client
+Information
+Settings
+Practice Mode
+Exit the game
