@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Speech.Recognition;
@@ -27,46 +29,101 @@ namespace Start
     public partial class Info : Window
     {
         #region Klasseninstanzierungen
-        SpeechRecognitionEngine _recognizerinfo = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
+        int speechvalue;
         #region klassengenerierte Methoden
         public Info()
         {
             InitializeComponent();
-            DefaultListenerInfo();
+            string speechmodule = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(speechmodule);
+            if (speechvalue == 0)
+            {
+                DefaultListenerGerman();
+            }
+            if (speechvalue == 1)
+            {
+                DefaultListenerEnglish();
+            }
             this.Focus();
         }
         private void Window_Activated(object sender, EventArgs e)
         {
-            ActivateDefaultListenerInfo();
+            if (speechvalue == 0)
+            {
+                ActivateDefaultGermanListener();
+            }
+            else if (speechvalue == 1)
+            {
+                ActivateDefaultEnglishListener();
+            }
         }
-
-        private void Window_Deactivated(object sender, EventArgs e)
+            private void Window_Deactivated(object sender, EventArgs e)
         {
-            CancelDefaultListenerInfo();
-        }
+                if (speechvalue == 0)
+                {
+                    CancelDefaultGermanListener();
+                }
+                else if (speechvalue == 1)
+                {
+                   CancelDefaultEnglishListener();
+                }
+            }
         #endregion
         #region Speech Recognition
-        public void DefaultListenerInfo()
+        public void DefaultListenerGerman()
         {
             try
             {
-            _recognizerinfo.SetInputToDefaultAudioDevice();
-            _recognizerinfo.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsinfo.txt")))));
-            _recognizerinfo.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultInfo_SpeechRecognized);
-            _recognizerinfo.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizergerman.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsinfo.txt")));
+                gb.Culture = new CultureInfo("de-DE");
+                Grammar g = new Grammar(gb);
+                _recognizergerman.LoadGrammar(g);
+                _recognizergerman.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultInfoGerman_SpeechRecognized);
+                _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.ToString());
+                elw.WriteErrorLog(ex.Message);
             }
         }
-        private void DefaultInfo_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+
+        public void DefaultListenerEnglish()
+        {
+            try
+            {
+                _recognizerenglish.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsinfo.txt")));
+                gb.Culture = new CultureInfo("en-GB");
+                Grammar g = new Grammar(gb);
+                _recognizerenglish.LoadGrammar(g);
+                _recognizerenglish.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultInfoEnglish_SpeechRecognized);
+                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+
+        private void DefaultInfoGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
 
             string speech = e.Result.Text;
-            if (speech == "exit")
+            if (speech == "Abbrechen")
+            {
+                CloseWindow();
+            }
+        }
+        private void DefaultInfoEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+
+            string speech = e.Result.Text;
+            if (speech == "Exit")
             {
                 CloseWindow();
             }
@@ -77,11 +134,11 @@ namespace Start
         {
             this.Close();
         }
-        public void CancelDefaultListenerInfo()
+        public void CancelDefaultGermanListener()
         {
             try
             {
-                _recognizerinfo.RecognizeAsyncStop();
+                _recognizergerman.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -89,11 +146,34 @@ namespace Start
             }
         }
 
-        public void ActivateDefaultListenerInfo()
+        public void ActivateDefaultGermanListener()
         {
             try
             {
-                _recognizerinfo.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+        public void CancelDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerenglish.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        public void ActivateDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
@@ -101,6 +181,6 @@ namespace Start
             }
         }
         #endregion
-        
+
     }
 }

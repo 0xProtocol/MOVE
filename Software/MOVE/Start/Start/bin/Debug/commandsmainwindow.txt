@@ -1,6 +1,6 @@
 Starte Server
 Starte Client
-Spielinformation
+Informationen
 Spieleinstellungen
 Übungsmodus
 Abbrechen

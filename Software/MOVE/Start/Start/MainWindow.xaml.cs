@@ -49,6 +49,7 @@ namespace Start
             if (speechvalue == 0)
             {
                 si.DefaultListenerGerman();
+                logolabel.Foreground= new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#660066"));
             }
             if(speechvalue==1)
             {

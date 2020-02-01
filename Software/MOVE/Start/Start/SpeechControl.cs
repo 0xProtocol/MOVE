@@ -76,7 +76,7 @@ namespace Start
                 OpenClient();
             }
 
-            if (speech == "Spielinformation")
+            if (speech == "Informationen")
             {
                 OpenInformation();
             }
