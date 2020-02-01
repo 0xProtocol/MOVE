@@ -226,17 +226,8 @@ namespace Start
                 config.AppSettings.Settings["language"].Value = "1";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
-                if (si.languagecounter == 0)
-                {
-                    si.CancelDefaultGermanListener();
-                    si.DefaultListenerEnglish();
-                    si.languagecounter++;
-                }
-                else if (si.languagecounter >= 1)
-                {
-                    si.CancelDefaultGermanListener();
-                    si.ActivateDefaultEnglishListener();
-                }
+                Application.Current.Shutdown();
+                System.Windows.Forms.Application.Restart();
             }
             if (rb_speechmodulegerman.IsChecked == true && speechvalue == 1)
             {
@@ -244,17 +235,8 @@ namespace Start
                 config.AppSettings.Settings["language"].Value = "0";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
-                if (si.languagecounter == 0)
-                {
-                    si.CancelDefaultEnglishListener();
-                    si.DefaultListenerGerman();
-                    si.languagecounter++;
-                }
-                else if (si.languagecounter >= 1)
-                {
-                    si.CancelDefaultEnglishListener();
-                    si.ActivateDefaultGermanListener();
-                }
+                Application.Current.Shutdown();
+                System.Windows.Forms.Application.Restart();
             }
         }
         public void CancelDefaultListenerSettings()

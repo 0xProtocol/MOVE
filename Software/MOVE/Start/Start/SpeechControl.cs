@@ -28,7 +28,6 @@ namespace Start
         SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
-        public int languagecounter;
         #region Speech Recognition
         public void DefaultListenerGerman()
         {
