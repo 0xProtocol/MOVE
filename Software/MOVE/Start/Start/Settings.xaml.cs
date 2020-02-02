@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -26,7 +27,8 @@ namespace Start
     public partial class Settings : Window
     {
         #region Klasseninstanzierungen
-        SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         SpeechControl si = new SpeechControl();
         ErrorLogWriter elw = new ErrorLogWriter();
@@ -59,17 +61,31 @@ namespace Start
         }
         private void Window_Activated(object sender, EventArgs e)
         {
-            ActivateDefaultListenerSettings();
+            if (speechvalue == 0)
+            {
+                ActivateDefaultListenerSettingsGerman();
+            }
+            else if (speechvalue == 1)
+            {
+                ActivateDefaultListenerSettingsEnglish();
+            }
         }
 
         private void Window_Deactivated(object sender, EventArgs e)
         {
-            CancelDefaultListenerSettings();
+            if (speechvalue == 0)
+            {
+                CancelDefaultListenerSettingsGerman();
+            }
+            else if (speechvalue == 1)
+            {
+                CancelDefaultListenerSettingsEnglish();
+            }
         }
         #endregion
         #region Speech Recognition
 
-        private void DefaultInfo_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        private void DefaultSettingsGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
 
@@ -105,12 +121,91 @@ namespace Start
             if (speech == "speichern")
             {
                Save();
+               
                com.SpeakAsync("Die Einstellungen wurden gespeichert");
+            }
+            if (speech == "Sprachmodul aktivieren")
+            {
+                Setspeechmoduleactive();
+            }
+            if (speech == "Deaktiviere Sprachmodul")
+            {
+                Setspeechmoduledeactive();
+            }
+            if (speech == "Stelle Sprache auf Deutsch")
+            {
+                SetLanguageGerman();
+            }
+            if (speech == "Stelle Sprache auf Englisch")
+            {
+                SetLanguageEnglish();
+            }
+            if (speech == "Abbrechen")
+            {
+                CloseWindow();
+                CancelDefaultListenerSettingsGerman();
+            }
+        }
+
+        private void DefaultSettingsEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+
+            if (speech == "sensitivity one")
+            {
+                SetEmpfindlichkeitleicht();
+            }
+
+            if (speech == "sensitivity two")
+            {
+                SetEmpfindlichkeitmittel();
+            }
+
+            if (speech == "sensitivity three")
+            {
+                SetEmpfindlichkeitschwer();
+            }
+
+            if (speech == "smoothing one")
+            {
+                SetGlättungleicht();
+            }
+
+            if (speech == "Gsmoothing two")
+            {
+                SetGlättungmittel();
+            }
+
+            if (speech == "smoothing three")
+            {
+                SetGlättungschwer();
+            }
+            if (speech == "save")
+            {
+                Save();
+
+                com.SpeakAsync("The settings were saved");
+            }
+            if (speech == "speechmodule active")
+            {
+                Setspeechmoduleactive();
+            }
+            if (speech == "deactivate speechmodule")
+            {
+                Setspeechmoduledeactive();
+            }
+            if (speech == "set language to german")
+            {
+                SetLanguageGerman();
+            }
+            if (speech == "set language to english")
+            {
+                SetLanguageEnglish();
             }
             if (speech == "exit")
             {
                 CloseWindow();
-                CancelDefaultListenerSettings();
+                CancelDefaultListenerSettingsGerman();
             }
         }
         #endregion
@@ -151,6 +246,22 @@ namespace Start
         private void SetGlättungschwer()
         {
             rb_modell3.IsChecked = true;
+        }
+        private void Setspeechmoduleactive()
+        {
+            rb_speechmoduleactivated.IsChecked= true;
+        }
+        private void Setspeechmoduledeactive()
+        {
+            rb_speechmoduledeactivated.IsChecked = true;
+        }
+        private void SetLanguageEnglish()
+        {
+            rb_speechmoduleenglish.IsChecked = true;
+        }
+        private void SetLanguageGerman()
+        {
+            rb_speechmodulegerman.IsChecked = true;
         }
 
         public void RadioButtonIsChecked()
@@ -239,11 +350,11 @@ namespace Start
                 System.Windows.Forms.Application.Restart();
             }
         }
-        public void CancelDefaultListenerSettings()
+        public void CancelDefaultListenerSettingsGerman()
         {
             try
             {
-                _recognizersettings.RecognizeAsyncStop();
+                _recognizergerman.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -251,17 +362,20 @@ namespace Start
             }
         }
 
-        public void ActivateDefaultListenerSettings()
+        public void ActivateDefaultListenerSettingsGerman()
         {
             if (counter < 1)
             {
                 counter++;
                 try
                 {
-                    _recognizersettings.SetInputToDefaultAudioDevice();
-                    _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssettings.txt")))));
-                    _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultInfo_SpeechRecognized);
-                    _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+                    _recognizergerman.SetInputToDefaultAudioDevice();
+                    GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssettings.txt")));
+                    gb.Culture = new CultureInfo("de-DE");
+                    Grammar g = new Grammar(gb);
+                    _recognizergerman.LoadGrammar(g);
+                    _recognizergerman.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSettingsGerman_SpeechRecognized);
+                    _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
                 }
                 catch (Exception ex)
                 {
@@ -274,7 +388,53 @@ namespace Start
 
                 try
                 {
-                    _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+                    _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
+                }
+                catch (Exception ex)
+                {
+                    elw.WriteErrorLog(ex.ToString());
+                }
+            }
+        }
+        public void CancelDefaultListenerSettingsEnglish()
+        {
+            try
+            {
+                _recognizerenglish.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        public void ActivateDefaultListenerSettingsEnglish()
+        {
+            if (counter < 1)
+            {
+                counter++;
+                try
+                {
+                    _recognizerenglish.SetInputToDefaultAudioDevice();
+                    GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssettings.txt")));
+                    gb.Culture = new CultureInfo("en-GB");
+                    Grammar g = new Grammar(gb);
+                    _recognizerenglish.LoadGrammar(g);
+                    _recognizerenglish.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSettingsEnglish_SpeechRecognized);
+                    _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
+                }
+                catch (Exception ex)
+                {
+                    elw.WriteErrorLog(ex.ToString());
+                }
+            }
+            else
+            {
+
+
+                try
+                {
+                    _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
                 }
                 catch (Exception ex)
                 {
@@ -284,6 +444,6 @@ namespace Start
         }
         #endregion
 
-      
+
     }
 }
