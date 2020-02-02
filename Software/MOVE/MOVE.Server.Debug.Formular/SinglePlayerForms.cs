@@ -18,15 +18,19 @@ using NAudio.Wave;
 using System.IO;
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
+using System.Globalization;
+using System.Configuration;
 
 namespace MOVE.Server.Debug.Formular
 {
     public partial class SinglePlayerForms : Form
     {
         #region Variablen
-        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         HighscoreForms hf = new HighscoreForms();
+        ErrorLogWriter elw = new ErrorLogWriter();
         private static Random rnd = new Random();
         private static double audioValueMax = 0;
         private static double audioValueLast = 0;
@@ -45,10 +49,12 @@ namespace MOVE.Server.Debug.Formular
         public int speed_top = 4;
         double player = 0;
         int lifes = 5;
+        int speechmodulevalue;
+        int speechvalue;
         #endregion
 
 
-        public SinglePlayerForms()
+        public  SinglePlayerForms()
         {
             InitializeComponent();
             string screenHeight = Screen.PrimaryScreen.Bounds.Height.ToString();
@@ -64,32 +70,140 @@ namespace MOVE.Server.Debug.Formular
             waveIn.StartRecording();
             //this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             lblLifes.Text = "Leben: " + lifes.ToString();
-            DefaultListener();
+            string language = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(language);
+            string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
+            speechmodulevalue = Convert.ToInt32(speechmodule);
+            if (speechmodulevalue == 1)
+            {
+                if (speechvalue == 0)
+                {
+                    DefaultListenerGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DefaultListenerEnglish();
+                }
+            }
+            else
+            {
+
+            }
         }
-        public void DefaultListener()
+        public void DefaultListenerGerman()
         {
             try
             {
-
-                _recognizer.SetInputToDefaultAudioDevice();
-                _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssingleplayerform.txt")))));
-                _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
-                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizergerman.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssingleplayerform.txt")));
+                gb.Culture = new CultureInfo("de-DE");
+                Grammar g = new Grammar(gb);
+                _recognizergerman.LoadGrammar(g);
+                _recognizergerman.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSinglePlayerFormGerman_SpeechRecognized);
+                _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
-              //  elw.WriteErrorLog(ex.Message);
+                elw.WriteErrorLog(ex.Message);
             }
         }
-        public void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+
+        public void DefaultListenerEnglish()
+        {
+            try
+            {
+                _recognizerenglish.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssingleplayerformEnglish.txt")));
+                gb.Culture = new CultureInfo("en-GB");
+                Grammar g = new Grammar(gb);
+                _recognizerenglish.LoadGrammar(g);
+                _recognizerenglish.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSinglePlayerFormEnglish_SpeechRecognized);
+                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+        public void DefaultSinglePlayerFormGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
             if(speech=="Start")
             {
                 Start();
             }
+            if(speech=="Spieleinstellungen")
+            {
+                Settings();
+            }
+            if(speech=="Sound")
+            {
+                rBSound.Checked = true;
+                rBFrequenz.Checked = false;
+                rbKeyboard.Checked = false;
+            }
+            if (speech == "Frequenz")
+            {
+                rBSound.Checked = false;
+                rBFrequenz.Checked = true;
+                rbKeyboard.Checked = false;
+            }
+            if (speech == "Tastatur")
+            {
+                rBSound.Checked = false;
+                rBFrequenz.Checked = false;
+                rbKeyboard.Checked = true;
+            }
+            if(speech=="Menü ausblenden")
+            {
+                cbAusblenden.Checked = true;
+            }
+            if (speech == "Menü einblenden")
+            {
+                cbAusblenden.Checked = false;
+            }
+
         }
-        private void OnDataAvailable(object sender, WaveInEventArgs args)
+    
+    public void DefaultSinglePlayerFormEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+    {
+            string speech = e.Result.Text;
+            if (speech == "start")
+            {
+                Start();
+            }
+            if (speech == "settings")
+            {
+                Settings();
+            }
+            if (speech == "sound")
+            {
+                rBSound.Checked = true;
+                rBFrequenz.Checked = false;
+                rbKeyboard.Checked = false;
+            }
+            if (speech == "frequency")
+            {
+                rBSound.Checked = false;
+                rBFrequenz.Checked = true;
+                rbKeyboard.Checked = false;
+            }
+            if (speech == "keyboard")
+            {
+                rBSound.Checked = false;
+                rBFrequenz.Checked = false;
+                rbKeyboard.Checked = true;
+            }
+            if (speech == "disable menu")
+            {
+                cbAusblenden.Checked = true;
+            }
+            if (speech == "activate menu")
+            {
+                cbAusblenden.Checked = false;
+            }
+        }
+    private void OnDataAvailable(object sender, WaveInEventArgs args)
         {
 
             float max = 0;
@@ -136,21 +250,6 @@ namespace MOVE.Server.Debug.Formular
         private void Form1_Load(object sender, EventArgs e)
         {
         }
-
-        /*private void dgv_playfieldServer_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Right)
-            {
-                WertXlocal += 1;
-                pbx_downlocal.Location = new Point(WertXlocal, 400);
-
-            }
-            if (e.KeyCode == Keys.Left)
-            {
-                WertXlocal -= 1;
-                pbx_downlocal.Location = new Point(WertXlocal, 400);
-            }
-        }*/
 
         private void dgv_playfieldclient_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -496,8 +595,7 @@ namespace MOVE.Server.Debug.Formular
             timer2.Enabled = true;
             lifes = 5;
         }
-
-        private void btnSettings_Click(object sender, EventArgs e)
+        private void Settings()
         {
             ss.ShowDialog();
             panel1.BackColor = Color.Orange;
@@ -508,6 +606,11 @@ namespace MOVE.Server.Debug.Formular
             panel6.BackColor = Color.Orange;
             panel7.BackColor = Color.Orange;
             panel8.BackColor = Color.Orange;
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            Settings();
 
         }
 
@@ -547,37 +650,74 @@ namespace MOVE.Server.Debug.Formular
 
         }
 
-        public void CancelDefaultListener()
+        public void CancelDefaultGermanListener()
         {
             try
             {
-                _recognizer.RecognizeAsyncStop();
+                _recognizergerman.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
-                //elw.WriteErrorLog(ex.ToString());
+                elw.WriteErrorLog(ex.ToString());
             }
         }
 
-        public void ActivateDefaultListener()
+        public void ActivateDefaultGermanListener()
         {
             try
             {
-                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
-               // elw.WriteErrorLog(ex.ToString());
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+        public void CancelDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerenglish.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        public void ActivateDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
             }
         }
         private void SinglePlayerForms_Activated(object sender, EventArgs e)
         {
-            ActivateDefaultListener();
+            if (speechvalue == 0)
+            {
+                ActivateDefaultGermanListener();
+            }
+            else if (speechvalue == 1)
+            {
+                ActivateDefaultEnglishListener();
+            }
         }
 
         private void SinglePlayerForms_Deactivate(object sender, EventArgs e)
         {
-            CancelDefaultListener();
+            if (speechvalue == 0)
+            {
+                CancelDefaultGermanListener();
+            }
+            else if (speechvalue == 1)
+            {
+                CancelDefaultEnglishListener();
+            }
         }
 
         private void dgv_playfieldclient_KeyDown_1(object sender, KeyEventArgs e)
@@ -599,7 +739,7 @@ namespace MOVE.Server.Debug.Formular
             catch (Exception ex)
             {
 
-                //elw.WriteErrorLog(ex.ToString()); ;
+                elw.WriteErrorLog(ex.ToString()); ;
             }
         }
 

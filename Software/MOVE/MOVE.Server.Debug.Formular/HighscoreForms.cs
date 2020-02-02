@@ -40,7 +40,7 @@ namespace MOVE.Server.Debug.Formular
             }
             catch (Exception ex)
             {
-               // elw.WriteErrorLog(ex.Message);
+              // elw.WriteErrorLog(ex.Message);
             }
         }
         public void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
