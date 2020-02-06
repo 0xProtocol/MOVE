@@ -1,0 +1,226 @@
+06-02-2020 10:20:04 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultEnglishListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 205.
+06-02-2020 10:20:09 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 504.
+06-02-2020 10:20:14 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultEnglishListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 692.
+06-02-2020 10:21:00 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 182.
+06-02-2020 10:21:04 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 669.
+06-02-2020 10:22:34 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.Info.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\Info.xaml.cs:Zeile 153.
+06-02-2020 10:26:33 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 182.
+06-02-2020 10:36:02 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 182.
+06-02-2020 10:38:13 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 669.
+06-02-2020 10:38:57 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 669.
+06-02-2020 10:39:39 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateServerListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 504.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:47 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:39:48 	System.NullReferenceException: Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+   bei MOVE.Server.Debug.Formular.ServerForms.timer2_Tick(Object sender, EventArgs e) in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 294.
+06-02-2020 10:50:20 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 182.
+06-02-2020 10:51:01 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 670.
+06-02-2020 10:51:51 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 182.
+06-02-2020 10:52:11 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 182.
+06-02-2020 10:52:53 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultEnglishListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 205.
+06-02-2020 10:53:41 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultEnglishListener() in D:\GitHubMove\MOVE\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 693.

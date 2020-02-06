@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Speech.Recognition;
@@ -16,34 +18,71 @@ namespace MOVE.Server.Debug.Formular
     public partial class HighscoreForms : Form
     {
         ScoreManager sm = ScoreManager.GetInstance();
-        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         #region Variablen
         int value = 0;
+        int speechmodulevalue;
+        int speechvalue;
         #endregion
         public HighscoreForms()
         {
             InitializeComponent();
             LoadScore();
-            DefaultListener();
+            string language = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(language);
+            string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
+            speechmodulevalue = Convert.ToInt32(speechmodule);
+            if (speechmodulevalue == 1)
+            {
+                if (speechvalue == 0)
+                {
+                    DefaultListenerGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DefaultListenerEnglish();
+                }
+            }
         }
         #region Speech Recognition
-        private void DefaultListener()
+        public void DefaultListenerGerman()
         {
             try
             {
-
-                _recognizer.SetInputToDefaultAudioDevice();
-                _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandshighscoreform.txt")))));
-                _recognizer.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
-                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizergerman.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandshighscoreform.txt")));
+                gb.Culture = new CultureInfo("de-DE");
+                Grammar g = new Grammar(gb);
+                _recognizergerman.LoadGrammar(g);
+                _recognizergerman.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultGerman_SpeechRecognized);
+                _recognizergerman.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
-              // elw.WriteErrorLog(ex.Message);
+                //elw.WriteErrorLog(ex.Message);
             }
         }
-        public void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+
+        public void DefaultListenerEnglish()
+        {
+            try
+            {
+                _recognizerenglish.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandshighscoreform.txt")));
+                gb.Culture = new CultureInfo("en-GB");
+                Grammar g = new Grammar(gb);
+                _recognizerenglish.LoadGrammar(g);
+                _recognizerenglish.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultEnglish_SpeechRecognized);
+                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+             //   elw.WriteErrorLog(ex.Message);
+            }
+        }
+        public void DefaultGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
             if (speech == "Bestätigen")
@@ -54,7 +93,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 this.Close();
             }
-            if(speech=="Der erste Spieler")
+            if (speech == "Der erste Spieler")
             {
                 lsvScores.SelectedItems.Clear();
                 value = 0;
@@ -72,7 +111,7 @@ namespace MOVE.Server.Debug.Formular
                 value = 2;
                 lsvScores.Items[value].Selected = true;
             }
-            if (speech=="Ein Spieler weiter")
+            if (speech == "Ein Spieler weiter")
             {
                 if (lsvScores.SelectedItems.Count > 0)
                 {
@@ -89,8 +128,55 @@ namespace MOVE.Server.Debug.Formular
                     com.SpeakAsync("Sie sind bereits beim letzten Spieler angekommen");
                 }
             }
-
         }
+            public void DefaultEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+            {
+                string speech = e.Result.Text;
+                if (speech == "Confirm")
+                {
+                    Bestätige();
+                }
+                if (speech == "exit")
+                {
+                    this.Close();
+                }
+                if (speech == "the first player")
+                {
+                    lsvScores.SelectedItems.Clear();
+                    value = 0;
+                    lsvScores.Items[value].Selected = true;
+                }
+                if (speech == "the second player")
+                {
+                    lsvScores.SelectedItems.Clear();
+                    value = 1;
+                    lsvScores.Items[value].Selected = true;
+                }
+                if (speech == "the third player")
+                {
+                    lsvScores.SelectedItems.Clear();
+                    value = 2;
+                    lsvScores.Items[value].Selected = true;
+                }
+                if (speech == "one player further")
+                {
+                    if (lsvScores.SelectedItems.Count > 0)
+                    {
+                        value = lsvScores.Items.IndexOf(lsvScores.SelectedItems[0]) + 1;
+                    }
+                    if (value < lsvScores.Items.Count)
+                    {
+                        lsvScores.SelectedItems.Clear();
+                        lsvScores.Items[value].Selected = true;
+                    }
+                    else
+                    {
+                        value--;
+                        com.SpeakAsync("You have already arrived at the last player");
+                    }
+                }
+
+            }
         #endregion
         public void SetPlayerScore(int playerscore)
         {

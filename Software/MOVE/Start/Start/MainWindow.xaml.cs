@@ -36,9 +36,9 @@ namespace Start
         Settings s = new Settings();
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
-        #region 
+        #region Variablen
         int speechvalue;
-        #endregion
+        #endregion 
         #region klassengenerierte Methoden
         public MainWindow()
         {

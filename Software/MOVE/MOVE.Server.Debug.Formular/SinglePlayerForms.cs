@@ -29,7 +29,6 @@ namespace MOVE.Server.Debug.Formular
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
         SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
-        HighscoreForms hf = new HighscoreForms();
         ErrorLogWriter elw = new ErrorLogWriter();
         private static Random rnd = new Random();
         private static double audioValueMax = 0;
@@ -354,6 +353,7 @@ namespace MOVE.Server.Debug.Formular
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
             Ball.Left += speed_left;
             Ball.Top += speed_top;
 
@@ -572,6 +572,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (lifes == 0)
                 {
+                    HighscoreForms hf = new HighscoreForms();
                     hf.SetPlayerScore(playerScore);
                     hf.ShowDialog();
                     this.Close();
