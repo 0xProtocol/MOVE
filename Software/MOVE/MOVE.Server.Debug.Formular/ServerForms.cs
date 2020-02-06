@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Net;
 using System.Speech.Recognition;
@@ -22,7 +23,8 @@ namespace MOVE.Server.Debug.Formular
         TcpService ts;
         Client c;
         FrequenzInput fi = new FrequenzInput();
-        SpeechRecognitionEngine _recognizerserver = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizerservergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizerserverenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         FirewallSettings fs = new FirewallSettings();
         NetworkDiscovery nd = new NetworkDiscovery();
@@ -62,6 +64,7 @@ namespace MOVE.Server.Debug.Formular
         List<int> auswertungsWerte = new List<int>();
         double player = 0;
         int speechmodulevalue = 1;
+        int speechvalue;
         #endregion
         #region klassengenerierte Methoden
         public ServerForms()
@@ -86,7 +89,14 @@ namespace MOVE.Server.Debug.Formular
             speechmodulevalue = Convert.ToInt32(speechmodule);
             if (speechmodulevalue == 1)
             {
-                ServerListener();
+                if (speechvalue == 0)
+                {
+                    DefaultListenerGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DefaultListenerEnglish();
+                }
             }
             else
             {
@@ -179,18 +189,32 @@ namespace MOVE.Server.Debug.Formular
         {
             if (speechmodulevalue == 1)
             {
-                ActivateServerListener();
+                if (speechvalue == 0)
+                {
+                    ActivateDefaultGermanListener();
+                }
+                else if(speechvalue==1)
+                {
+                    CancelDefaultEnglishListener();
+                }
             }
             else
             {
-
+                CancelDefaultGermanListener();
             }
         }
         private void ServerForms_Deactivate(object sender, EventArgs e)
         {
             if (speechmodulevalue == 1)
             {
-                CancelServerListener();
+                if (speechvalue == 0)
+                {
+                    CancelDefaultGermanListener();
+                }
+                else if( speechvalue==1 )
+                {
+                    CancelDefaultEnglishListener();
+                }
             }
             else
             {
@@ -407,21 +431,42 @@ namespace MOVE.Server.Debug.Formular
         #endregion
         #endregion
         #region Speech Recognition
-        public void ServerListener()
+        public void DefaultListenerGerman()
         {
             try
             {
-            _recognizerserver.SetInputToDefaultAudioDevice();
-            _recognizerserver.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserver.txt")))));
-            _recognizerserver.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
-            _recognizerserver.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerservergerman.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserver.txt")));
+                gb.Culture = new CultureInfo("de-DE");
+                Grammar g = new Grammar(gb);
+                _recognizerservergerman.LoadGrammar(g);
+                _recognizerservergerman.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultServerGerman_SpeechRecognized);
+                _recognizerservergerman.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.ToString());
+                elw.WriteErrorLog(ex.Message);
             }
         }
-        private void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+
+        public void DefaultListenerEnglish()
+        {
+            try
+            {
+                _recognizerserverenglish.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserver.txt")));
+                gb.Culture = new CultureInfo("en-GB");
+                Grammar g = new Grammar(gb);
+                _recognizerserverenglish.LoadGrammar(g);
+                _recognizerserverenglish.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultServerEnglish_SpeechRecognized);
+                _recognizerserverenglish.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+        private void DefaultServerGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
 
@@ -497,22 +542,51 @@ namespace MOVE.Server.Debug.Formular
                 CloseWindow();
             }
         }
-        public void ActivateServerListener()
+        public void CancelDefaultGermanListener()
         {
             try
             {
-                _recognizerserver.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerservergerman.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
                 elw.WriteErrorLog(ex.ToString());
             }
         }
-        public void CancelServerListener()
+
+        private void DefaultServerEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+
+        }
+            public void ActivateDefaultGermanListener()
         {
             try
             {
-                _recognizerserver.RecognizeAsyncCancel();
+                _recognizerservergerman.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+        public void CancelDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerserverenglish.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        public void ActivateDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerserverenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
