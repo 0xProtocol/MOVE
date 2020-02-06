@@ -24,7 +24,7 @@ namespace MOVE.Server.Debug.Formular
         Client c;
         FrequenzInput fi = new FrequenzInput();
         SpeechRecognitionEngine _recognizerservergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
-        SpeechRecognitionEngine _recognizerserverenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
+        //SpeechRecognitionEngine _recognizerserverenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         FirewallSettings fs = new FirewallSettings();
         NetworkDiscovery nd = new NetworkDiscovery();
@@ -95,7 +95,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (speechvalue == 1)
                 {
-                    DefaultListenerEnglish();
+                    //DefaultListenerEnglish();
                 }
             }
             else
@@ -325,15 +325,24 @@ namespace MOVE.Server.Debug.Formular
         }
         private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
         {
+            rbKeyboard.Checked = true;
             if (e.KeyCode == Keys.Right)
             {
                 WertXlocal += 25;
+                if (WertXlocal > 1350)
+                {
+                    WertXlocal = 1350;
+                }
                 pbx_downlocal.Location = new Point(WertXlocal, (int)player);
 
             }
             if (e.KeyCode == Keys.Left)
             {
                 WertXlocal -= 25;
+                if (WertXlocal < 70)
+                {
+                    WertXlocal = 70;
+                }
                 pbx_downlocal.Location = new Point(WertXlocal, (int)player);
             }
         }
@@ -449,7 +458,7 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        public void DefaultListenerEnglish()
+        /*public void DefaultListenerEnglish()
         {
             try
             {
@@ -465,7 +474,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 elw.WriteErrorLog(ex.Message);
             }
-        }
+        }*/
         private void DefaultServerGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
@@ -574,7 +583,7 @@ namespace MOVE.Server.Debug.Formular
         {
             try
             {
-                _recognizerserverenglish.RecognizeAsyncStop();
+                //_recognizerserverenglish.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -586,7 +595,7 @@ namespace MOVE.Server.Debug.Formular
         {
             try
             {
-                _recognizerserverenglish.RecognizeAsync(RecognizeMode.Multiple);
+                //_recognizerserverenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {

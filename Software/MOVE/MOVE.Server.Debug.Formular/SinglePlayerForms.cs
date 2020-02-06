@@ -27,7 +27,7 @@ namespace MOVE.Server.Debug.Formular
     {
         #region Variablen
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
-        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
+        //SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
         private static Random rnd = new Random();
@@ -44,6 +44,7 @@ namespace MOVE.Server.Debug.Formular
         int average;
         int mod;
         int summe = 0;
+        int WertXLocal = 70;
         public int speed_left = 4;
         public int speed_top = 4;
         double player = 0;
@@ -81,7 +82,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (speechvalue == 1)
                 {
-                    DefaultListenerEnglish();
+                    //DefaultListenerEnglish();
                 }
             }
             else
@@ -107,7 +108,7 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        public void DefaultListenerEnglish()
+        /*public void DefaultListenerEnglish()
         {
             try
             {
@@ -123,7 +124,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 elw.WriteErrorLog(ex.Message);
             }
-        }
+        }*/
         public void DefaultSinglePlayerFormGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
@@ -261,11 +262,6 @@ namespace MOVE.Server.Debug.Formular
             timer2.Enabled = true;
         }
 
-        private void lblGlaettung_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbGlaettung_Scroll(object sender, EventArgs e)
         {
 
@@ -300,52 +296,55 @@ namespace MOVE.Server.Debug.Formular
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            double frac = audioValueLast / audioValueMax;
-            if (ss.tbempfindlichkeit.Value == 1)
+            if (rBSound.Checked == true)
             {
-                positionValue = (int)(((frac * 3) * 668)) - 2;
-                lblFineTuning.Text = "Empfindlichkeit: wenig";
+                double frac = audioValueLast / audioValueMax;
+                if (ss.tbempfindlichkeit.Value == 1)
+                {
+                    positionValue = (int)(((frac * 3) * 668)) - 2;
+                    lblFineTuning.Text = "Empfindlichkeit: wenig";
 
-            }
-            if (ss.tbempfindlichkeit.Value == 2)
-            {
-                positionValue = (int)(((frac * 5) * 668)) - 3;
-                lblFineTuning.Text = "Empfindlichkeit: mittel";
+                }
+                if (ss.tbempfindlichkeit.Value == 2)
+                {
+                    positionValue = (int)(((frac * 5) * 668)) - 3;
+                    lblFineTuning.Text = "Empfindlichkeit: mittel";
 
-            }
-            if (ss.tbempfindlichkeit.Value == 3)
-            {
-                positionValue = (int)(((frac * 8) * 668)) - 5;
-                lblFineTuning.Text = "Empfindlichkeit: hoch";
+                }
+                if (ss.tbempfindlichkeit.Value == 3)
+                {
+                    positionValue = (int)(((frac * 8) * 668)) - 5;
+                    lblFineTuning.Text = "Empfindlichkeit: hoch";
 
-            }
+                }
 
-            if (ss.tbGlättung.Value == 1)
-            {
-                wertGlaettung = 3;
-                Glaettung(wertGlaettung);
-                lblGlaettung.Text = "Glättungsstufe: 1";
-            }
-            if (ss.tbGlättung.Value == 2)
-            {
-                wertGlaettung = 4;
-                Glaettung(wertGlaettung);
-                lblGlaettung.Text = "Glättungsstufe: 2";
-            }
-            if (ss.tbGlättung.Value == 3)
-            {
-                wertGlaettung = 6;
-                Glaettung(wertGlaettung);
-                lblGlaettung.Text = "Glättungsstufe: 3";
-            }
-            //double newfrac = Math.Round(frac, 0, MidpointRounding.AwayFromZero);
-            if (positionValue < 0)
-            {
-                positionValue = 0;
-            }
-            if (positionValue > 1300)
-            {
-                positionValue = 1300;
+                if (ss.tbGlättung.Value == 1)
+                {
+                    wertGlaettung = 3;
+                    Glaettung(wertGlaettung);
+                    lblGlaettung.Text = "Glättungsstufe: 1";
+                }
+                if (ss.tbGlättung.Value == 2)
+                {
+                    wertGlaettung = 4;
+                    Glaettung(wertGlaettung);
+                    lblGlaettung.Text = "Glättungsstufe: 2";
+                }
+                if (ss.tbGlättung.Value == 3)
+                {
+                    wertGlaettung = 6;
+                    Glaettung(wertGlaettung);
+                    lblGlaettung.Text = "Glättungsstufe: 3";
+                }
+                //double newfrac = Math.Round(frac, 0, MidpointRounding.AwayFromZero);
+                if (positionValue < 70)
+                {
+                    positionValue = 70;
+                }
+                if (positionValue > 1300)
+                {
+                    positionValue = 1300;
+                }
             }
             savedValues.Add(positionValue);
             Glaettung(wertGlaettung);
@@ -566,7 +565,7 @@ namespace MOVE.Server.Debug.Formular
                 lblLifes.Text = "Leben: " + lifes.ToString();
                 if (lifes != 0)
                 {
-                    Ball.Location = new Point(179, 134);
+                    Ball.Location = new Point(179, 154);
                     Ball.Visible = true;
                     timer1.Enabled = true;
                 }
@@ -595,6 +594,7 @@ namespace MOVE.Server.Debug.Formular
             timer1.Enabled = true;
             timer2.Enabled = true;
             lifes = 5;
+
         }
         private void Settings()
         {
@@ -625,27 +625,7 @@ namespace MOVE.Server.Debug.Formular
         {
 
         }
-        private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
-        {
-            try
-            {
-                if (e.KeyCode == Keys.Right)
-                {
-                    timer2.Enabled = false;
-                    pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
-                }
-                if (e.KeyCode == Keys.Left)
-                {
-                    timer2.Enabled = false;
-                    pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
-                }
-            }
-            catch (Exception ex)
-            {
-                //elw.WriteErrorLog(ex.ToString());
-            }
 
-        }
         private void points2_Click(object sender, EventArgs e)
         {
 
@@ -678,7 +658,7 @@ namespace MOVE.Server.Debug.Formular
         {
             try
             {
-                _recognizerenglish.RecognizeAsyncStop();
+                //_recognizerenglish.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -690,7 +670,7 @@ namespace MOVE.Server.Debug.Formular
         {
             try
             {
-                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
+                //_recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
@@ -721,31 +701,39 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        private void dgv_playfieldclient_KeyDown_1(object sender, KeyEventArgs e)
+        private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
         {
+            rbKeyboard.Checked = true;
             try
             {
-
+                
                 if (e.KeyCode == Keys.Right)
                 {
                     timer2.Enabled = false;
-                    pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
+                    WertXLocal += 25;
+                    if (WertXLocal > 1350)
+                    {
+                        WertXLocal = 1350;
+                    }
+                    pbx_downlocal.Location = new Point(WertXLocal, (int)player);
                 }
+
                 if (e.KeyCode == Keys.Left)
                 {
                     timer2.Enabled = false;
-                    pbx_downlocal.Location = new Point((average - mod) + 30, (int)player);
+                    WertXLocal -= 25;
+                    if (WertXLocal < 70)
+                    {
+                        WertXLocal = 70;
+                    }
+                    pbx_downlocal.Location = new Point(WertXLocal, (int)player);
                 }
             }
             catch (Exception ex)
             {
-
-                elw.WriteErrorLog(ex.ToString()); ;
+                //elw.WriteErrorLog(ex.ToString());
             }
         }
 
-        private void rbKeyboard_CheckedChanged(object sender, EventArgs e)
-        {
-        }
     }
 }

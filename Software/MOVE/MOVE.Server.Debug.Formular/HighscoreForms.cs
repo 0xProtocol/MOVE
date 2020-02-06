@@ -19,7 +19,7 @@ namespace MOVE.Server.Debug.Formular
     {
         ScoreManager sm = ScoreManager.GetInstance();
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
-        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
+        //SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         #region Variablen
         int value = 0;
@@ -42,7 +42,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (speechvalue == 1)
                 {
-                    DefaultListenerEnglish();
+                    //DefaultListenerEnglish();
                 }
             }
         }
@@ -65,7 +65,7 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        public void DefaultListenerEnglish()
+        /*public void DefaultListenerEnglish()
         {
             try
             {
@@ -81,7 +81,7 @@ namespace MOVE.Server.Debug.Formular
             {
              //   elw.WriteErrorLog(ex.Message);
             }
-        }
+        }*/
         public void DefaultGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;

@@ -267,48 +267,31 @@ namespace MOVE.Client.Debug.Formular
         {
            
         }
-        private void rbKeyboard_KeyDown(object sender, KeyEventArgs e)
-        {
-            try
-            {
-
-            if (e.KeyCode == Keys.Right)
-            {
-                WertXlocal += 25;
-                pbx_uplocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
-              c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
-
-
-            }
-            if (e.KeyCode == Keys.Left)
-            {
-                WertXlocal -= 25;
-                pbx_uplocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
-                c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
-            }
-            }
-            catch (Exception ex)
-            {
-
-                elw.WriteErrorLog(ex.ToString()); ;
-            }
-        }
 
         private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
         {
+            rbKeyboard.Checked = true;
             try
             {
-            if (e.KeyCode == Keys.Right)
+                if (e.KeyCode == Keys.Right)
             {
-                WertXlocal += 25;
-                pbx_uplocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
-                c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X)); 
+                    WertXlocal += 25;
+                    if (WertXlocal > 1350)
+                    {
+                        WertXlocal = 1350;
+                    }
+                        pbx_uplocal.Location = new Point(WertXlocal, 65);
+                        c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
 
             }
             if (e.KeyCode == Keys.Left)
             {
-                WertXlocal -= 25;
-                pbx_uplocal.Location = new Point(WertXlocal, (int)yourcomputerheightvalue);
+                    WertXlocal -= 25;
+                    if (WertXlocal < 70)
+                    {
+                        WertXlocal = 70;
+                    }
+                pbx_uplocal.Location = new Point(WertXlocal, 65);
                 c.Send("move:\\" + "l" + "|" + Convert.ToString(pbx_uplocal.Location.X));
             }
             }

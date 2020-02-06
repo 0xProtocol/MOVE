@@ -73,7 +73,7 @@
             this.dgv_playfieldclient.BackgroundColor = System.Drawing.Color.Black;
             this.dgv_playfieldclient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_playfieldclient.Location = new System.Drawing.Point(68, 50);
-            this.dgv_playfieldclient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_playfieldclient.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_playfieldclient.Name = "dgv_playfieldclient";
             this.dgv_playfieldclient.Size = new System.Drawing.Size(1689, 652);
             this.dgv_playfieldclient.TabIndex = 1;
@@ -93,7 +93,7 @@
             this.lblSchwierigkeit.BackColor = System.Drawing.SystemColors.Control;
             this.lblSchwierigkeit.Font = new System.Drawing.Font("Courier New", 13.2F, System.Drawing.FontStyle.Bold);
             this.lblSchwierigkeit.ForeColor = System.Drawing.Color.Coral;
-            this.lblSchwierigkeit.Location = new System.Drawing.Point(1301, 827);
+            this.lblSchwierigkeit.Location = new System.Drawing.Point(992, 827);
             this.lblSchwierigkeit.Name = "lblSchwierigkeit";
             this.lblSchwierigkeit.Size = new System.Drawing.Size(311, 25);
             this.lblSchwierigkeit.TabIndex = 49;
@@ -106,7 +106,7 @@
             this.lblGlaettung.BackColor = System.Drawing.SystemColors.Control;
             this.lblGlaettung.Font = new System.Drawing.Font("Courier New", 13.2F, System.Drawing.FontStyle.Bold);
             this.lblGlaettung.ForeColor = System.Drawing.Color.Coral;
-            this.lblGlaettung.Location = new System.Drawing.Point(1065, 827);
+            this.lblGlaettung.Location = new System.Drawing.Point(992, 777);
             this.lblGlaettung.Name = "lblGlaettung";
             this.lblGlaettung.Size = new System.Drawing.Size(233, 25);
             this.lblGlaettung.TabIndex = 47;
@@ -120,7 +120,7 @@
             this.lblBallSpeed.BackColor = System.Drawing.SystemColors.Control;
             this.lblBallSpeed.Font = new System.Drawing.Font("Courier New", 13.2F, System.Drawing.FontStyle.Bold);
             this.lblBallSpeed.ForeColor = System.Drawing.Color.Coral;
-            this.lblBallSpeed.Location = new System.Drawing.Point(1301, 852);
+            this.lblBallSpeed.Location = new System.Drawing.Point(992, 873);
             this.lblBallSpeed.Name = "lblBallSpeed";
             this.lblBallSpeed.Size = new System.Drawing.Size(402, 25);
             this.lblBallSpeed.TabIndex = 41;
@@ -134,7 +134,7 @@
             this.lblFineTuning.BackColor = System.Drawing.SystemColors.Control;
             this.lblFineTuning.Font = new System.Drawing.Font("Courier New", 13.2F, System.Drawing.FontStyle.Bold);
             this.lblFineTuning.ForeColor = System.Drawing.Color.Coral;
-            this.lblFineTuning.Location = new System.Drawing.Point(1065, 852);
+            this.lblFineTuning.Location = new System.Drawing.Point(1521, 873);
             this.lblFineTuning.Name = "lblFineTuning";
             this.lblFineTuning.Size = new System.Drawing.Size(233, 25);
             this.lblFineTuning.TabIndex = 39;
@@ -175,7 +175,7 @@
             this.btn_Connect.BackColor = System.Drawing.Color.Yellow;
             this.btn_Connect.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Connect.Location = new System.Drawing.Point(611, 710);
-            this.btn_Connect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Connect.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Connect.Name = "btn_Connect";
             this.btn_Connect.Size = new System.Drawing.Size(249, 44);
             this.btn_Connect.TabIndex = 55;
@@ -189,7 +189,7 @@
             this.btn_Start.BackColor = System.Drawing.Color.Orange;
             this.btn_Start.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Start.Location = new System.Drawing.Point(333, 710);
-            this.btn_Start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Start.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.Size = new System.Drawing.Size(269, 44);
             this.btn_Start.TabIndex = 60;
@@ -203,7 +203,7 @@
             this.btnStart.BackColor = System.Drawing.Color.Green;
             this.btnStart.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.Location = new System.Drawing.Point(997, 710);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(251, 44);
             this.btnStart.TabIndex = 69;
@@ -217,7 +217,7 @@
             this.lsb_Information.FormattingEnabled = true;
             this.lsb_Information.ItemHeight = 16;
             this.lsb_Information.Location = new System.Drawing.Point(76, 777);
-            this.lsb_Information.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lsb_Information.Margin = new System.Windows.Forms.Padding(4);
             this.lsb_Information.Name = "lsb_Information";
             this.lsb_Information.Size = new System.Drawing.Size(311, 100);
             this.lsb_Information.TabIndex = 66;
@@ -255,7 +255,7 @@
             this.btnSettings.BackColor = System.Drawing.Color.Red;
             this.btnSettings.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btnSettings.Location = new System.Drawing.Point(76, 710);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(249, 44);
             this.btnSettings.TabIndex = 74;
@@ -275,7 +275,7 @@
             this.rBFrequenz.BackColor = System.Drawing.Color.Purple;
             this.rBFrequenz.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rBFrequenz.Location = new System.Drawing.Point(1397, 716);
-            this.rBFrequenz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBFrequenz.Margin = new System.Windows.Forms.Padding(4);
             this.rBFrequenz.Name = "rBFrequenz";
             this.rBFrequenz.Size = new System.Drawing.Size(171, 35);
             this.rBFrequenz.TabIndex = 82;
@@ -290,7 +290,7 @@
             this.rBSound.BackColor = System.Drawing.Color.Blue;
             this.rBSound.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rBSound.Location = new System.Drawing.Point(1263, 716);
-            this.rBSound.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBSound.Margin = new System.Windows.Forms.Padding(4);
             this.rBSound.Name = "rBSound";
             this.rBSound.Size = new System.Drawing.Size(120, 35);
             this.rBSound.TabIndex = 81;
@@ -305,7 +305,7 @@
             this.rbKeyboard.BackColor = System.Drawing.Color.Pink;
             this.rbKeyboard.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rbKeyboard.Location = new System.Drawing.Point(1584, 716);
-            this.rbKeyboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbKeyboard.Margin = new System.Windows.Forms.Padding(4);
             this.rbKeyboard.Name = "rbKeyboard";
             this.rbKeyboard.Size = new System.Drawing.Size(171, 35);
             this.rbKeyboard.TabIndex = 83;
@@ -409,7 +409,7 @@
             this.pbx_downlocal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbx_downlocal.BackColor = System.Drawing.Color.Lime;
             this.pbx_downlocal.Location = new System.Drawing.Point(93, 636);
-            this.pbx_downlocal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbx_downlocal.Margin = new System.Windows.Forms.Padding(4);
             this.pbx_downlocal.Name = "pbx_downlocal";
             this.pbx_downlocal.Size = new System.Drawing.Size(247, 33);
             this.pbx_downlocal.TabIndex = 4;
@@ -419,7 +419,7 @@
             // 
             this.pbx_upnetwork.BackColor = System.Drawing.Color.Blue;
             this.pbx_upnetwork.Location = new System.Drawing.Point(93, 71);
-            this.pbx_upnetwork.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbx_upnetwork.Margin = new System.Windows.Forms.Padding(4);
             this.pbx_upnetwork.Name = "pbx_upnetwork";
             this.pbx_upnetwork.Size = new System.Drawing.Size(247, 33);
             this.pbx_upnetwork.TabIndex = 3;
@@ -460,7 +460,7 @@
             this.Controls.Add(this.pbx_downlocal);
             this.Controls.Add(this.pbx_upnetwork);
             this.Controls.Add(this.dgv_playfieldclient);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ServerForms";
             this.Text = "Server";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

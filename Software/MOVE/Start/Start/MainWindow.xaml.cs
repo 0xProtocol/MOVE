@@ -53,7 +53,7 @@ namespace Start
             }
             if(speechvalue==1)
             {
-                si.DefaultListenerEnglish();
+                //si.DefaultListenerEnglish();
             }
             this.Focus();
         }

@@ -23,7 +23,7 @@ namespace Start
     public class SpeechControl
     {
       #region Klasseninstanzierungen
-        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
+        //SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
@@ -46,7 +46,7 @@ namespace Start
                 elw.WriteErrorLog(ex.Message);
             }
         }
-        public void DefaultListenerEnglish()
+       /* public void DefaultListenerEnglish()
         {
             try
             {
@@ -62,7 +62,7 @@ namespace Start
             {
                 elw.WriteErrorLog(ex.Message);
             }
-        }
+        }*/
       
         public void DefaultGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
@@ -190,7 +190,7 @@ namespace Start
         {
             try
             {
-                _recognizerenglish.RecognizeAsyncStop();
+                //_recognizerenglish.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -202,7 +202,7 @@ namespace Start
         {
             try
             {
-                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
+                //_recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {

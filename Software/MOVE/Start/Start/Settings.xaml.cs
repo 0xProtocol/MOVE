@@ -28,7 +28,7 @@ namespace Start
     {
         #region Klasseninstanzierungen
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
-        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
+        //SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         SpeechControl si = new SpeechControl();
         ErrorLogWriter elw = new ErrorLogWriter();
@@ -67,7 +67,7 @@ namespace Start
             }
             else if (speechvalue == 1)
             {
-                ActivateDefaultListenerSettingsEnglish();
+                //ActivateDefaultListenerSettingsEnglish();
             }
         }
 
@@ -400,7 +400,7 @@ namespace Start
         {
             try
             {
-                _recognizerenglish.RecognizeAsyncStop();
+                //_recognizerenglish.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -408,7 +408,7 @@ namespace Start
             }
         }
 
-        public void ActivateDefaultListenerSettingsEnglish()
+       /* public void ActivateDefaultListenerSettingsEnglish()
         {
             if (counter < 1)
             {
@@ -441,7 +441,7 @@ namespace Start
                     elw.WriteErrorLog(ex.ToString());
                 }
             }
-        }
+        }*/
         #endregion
 
 
