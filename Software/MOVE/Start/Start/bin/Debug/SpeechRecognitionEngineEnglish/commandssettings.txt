@@ -1,0 +1,12 @@
+sensitivity one
+sensitivity two
+sensitivity three
+smoothing one
+smoothing two
+smoothing three
+save
+speechmodule active
+deactivate speechmodule
+set language to german
+set language to english
+exit

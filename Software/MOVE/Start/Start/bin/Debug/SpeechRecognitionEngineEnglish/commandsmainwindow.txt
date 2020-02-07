@@ -1,0 +1,6 @@
+Start Server
+Start Client
+Information
+Settings
+Practice Mode
+Exit the game

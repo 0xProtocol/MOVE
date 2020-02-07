@@ -94,7 +94,7 @@ namespace MOVE.Server.Debug.Formular
             try
             {
                 _recognizergerman.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssingleplayerform.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineGerman\commandssingleplayerform.txt")));
                 gb.Culture = new CultureInfo("de-DE");
                 Grammar g = new Grammar(gb);
                 _recognizergerman.LoadGrammar(g);
@@ -112,7 +112,7 @@ namespace MOVE.Server.Debug.Formular
             try
             {
                 _recognizerenglish.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandssingleplayerformEnglish.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineEnglish\commandssingleplayerform.txt")));
                 gb.Culture = new CultureInfo("en-GB");
                 Grammar g = new Grammar(gb);
                 _recognizerenglish.LoadGrammar(g);

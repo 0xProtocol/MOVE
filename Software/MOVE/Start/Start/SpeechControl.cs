@@ -34,7 +34,7 @@ namespace Start
             try
             {
                 _recognizergerman.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsmainwindow.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineGerman\commandsmainwindow.txt")));
                 gb.Culture = new CultureInfo("de-DE");
                 Grammar g = new Grammar(gb);
                 _recognizergerman.LoadGrammar(g);
@@ -51,7 +51,7 @@ namespace Start
             try
             {
                 _recognizerenglish.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsmainwindow.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineEnglish\commandsmainwindow.txt")));
                 gb.Culture = new CultureInfo("en-GB"); 
                 Grammar g = new Grammar(gb);
                 _recognizerenglish.LoadGrammar(g);
@@ -91,7 +91,7 @@ namespace Start
                 OpenÜbung();
             }
             
-            if(speech== "Abbrechen")
+            if(speech== "Schließe das Fenster")
             {
                 ExitGame();
             }

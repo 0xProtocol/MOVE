@@ -1,7 +1,0 @@
-start
-settings
-sound
-frequency
-keyboard
-disable menu
-activate menu

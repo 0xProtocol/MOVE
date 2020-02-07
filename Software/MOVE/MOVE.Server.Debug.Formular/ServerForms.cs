@@ -445,7 +445,7 @@ namespace MOVE.Server.Debug.Formular
             try
             {
                 _recognizerservergerman.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserver.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineGerman\commandsserver.txt")));
                 gb.Culture = new CultureInfo("de-DE");
                 Grammar g = new Grammar(gb);
                 _recognizerservergerman.LoadGrammar(g);
@@ -463,7 +463,7 @@ namespace MOVE.Server.Debug.Formular
             try
             {
                 _recognizerserverenglish.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserverenglish.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineEnglish\commandsserver.txt")));
                 gb.Culture = new CultureInfo("en-GB");
                 Grammar g = new Grammar(gb);
                 _recognizerserverenglish.LoadGrammar(g);

@@ -52,7 +52,7 @@ namespace MOVE.Server.Debug.Formular
             try
             {
                 _recognizergerman.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandshighscoreform.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineGerman\commandshighscoreform.txt")));
                 gb.Culture = new CultureInfo("de-DE");
                 Grammar g = new Grammar(gb);
                 _recognizergerman.LoadGrammar(g);
@@ -70,7 +70,7 @@ namespace MOVE.Server.Debug.Formular
             try
             {
                 _recognizerenglish.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandshighscoreform.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineEnglish\commandshighscoreform.txt")));
                 gb.Culture = new CultureInfo("en-GB");
                 Grammar g = new Grammar(gb);
                 _recognizerenglish.LoadGrammar(g);

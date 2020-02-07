@@ -1,0 +1,6 @@
+Starte Server
+Starte Client
+Informationen
+Spieleinstellungen
+Übungsmodus
+Schließe das Fenster
