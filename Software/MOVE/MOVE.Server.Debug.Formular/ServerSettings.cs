@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Speech.Recognition;
@@ -21,7 +22,8 @@ namespace MOVE.Server.Debug.Formular
         #region Klasseninstanzierungen
         NetworkDiscovery nd = new NetworkDiscovery();
         FirewallSettings fs = new FirewallSettings();
-        SpeechRecognitionEngine _recognizersettings = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizerserversettingsgerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizerserversettingsenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
@@ -30,6 +32,7 @@ namespace MOVE.Server.Debug.Formular
         int counter;
         int speechmodulevalue = 1;
         int calState = 0;
+        int speechvalue;
         #endregion
         #region klassengenerierte Methoden
         public ServerSettings()
@@ -39,6 +42,8 @@ namespace MOVE.Server.Debug.Formular
             tbempfindlichkeit.Value = Convert.ToInt32(emp);
             string glät = ConfigurationManager.AppSettings["smoothing"];
             tbGlättung.Value = Convert.ToInt32(glät);
+            string language = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(language);
             string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
             speechmodulevalue = Convert.ToInt32(speechmodule);
             this.Focus();
@@ -84,13 +89,19 @@ namespace MOVE.Server.Debug.Formular
         }
         private void ServerSettings_Activated(object sender, EventArgs e)
         {
-            if(speechmodulevalue==1)
+            if (speechmodulevalue == 1)
             {
-                StartthisListener();
+                if (speechvalue == 0)
+                {
+                    StartthisListenerGerman();
+                }
+                else if (speechvalue == 1)
+                {
+                    StartthisListenerEnglish();
+                }
             }
             else
             {
-                //
             }
 
         }
@@ -98,12 +109,17 @@ namespace MOVE.Server.Debug.Formular
         {
             if (speechmodulevalue == 1)
             {
-                CancelServerListener();
+                if (speechvalue == 0)
+                {
+                    CancelDefaultGermanListener();
+                }
+                else if (speechvalue == 1)
+                {
+                    CancelDefaultEnglishListener();
+                }
             }
-
             else
             {
-                //
             }
         }
         private void clientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,21 +142,241 @@ namespace MOVE.Server.Debug.Formular
         }
         #endregion
         #region Speech Recognition
-        private void ServerSettingsListener()
+        public void DefaultListenerGerman()
         {
             try
             {
-            _recognizersettings.SetInputToDefaultAudioDevice();
-            _recognizersettings.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserversettings.txt")))));
-            _recognizersettings.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultSettings_SpeechRecognized);
-            _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerserversettingsgerman.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineGerman\commandsserversettings.txt")));
+                gb.Culture = new CultureInfo("de-DE");
+                Grammar g = new Grammar(gb);
+                _recognizerserversettingsgerman.LoadGrammar(g);
+                _recognizerserversettingsgerman.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultServerSettingsGerman_SpeechRecognized);
+                _recognizerserversettingsgerman.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.ToString());
+                elw.WriteErrorLog(ex.Message);
             }
         }
-        public void DefaultSettings_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+
+        public void DefaultListenerEnglish()
+        {
+            try
+            {
+                _recognizerserversettingsenglish.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineEnglish\commandsserversettings.txt")));
+                gb.Culture = new CultureInfo("en-GB");
+                Grammar g = new Grammar(gb);
+                _recognizerserversettingsenglish.LoadGrammar(g);
+                _recognizerserversettingsenglish.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultServerSettingsEnglish_SpeechRecognized);
+                _recognizerserversettingsenglish.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+        public void DefaultServerSettingsEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+            if (tabControl1.SelectedTab == tabControl1.TabPages[0])
+            {
+                if (speech == "sensitivity one")
+                {
+                    tbempfindlichkeit.Value = 1;
+                }
+                if (speech == "sensitivity two")
+                {
+                    tbempfindlichkeit.Value = 2;
+                }
+                if (speech == "sensitivity three")
+                {
+                    tbempfindlichkeit.Value = 3;
+                }
+                if (speech == "smoothinglevel one")
+                {
+                    tbGlättung.Value = 1;
+                }
+                if (speech == "smoothinglevel two")
+                {
+                    tbGlättung.Value = 2;
+                }
+                if (speech == "smoothinglevel three")
+                {
+                    tbGlättung.Value = 3;
+                }
+            }
+            if (tabControl1.SelectedTab == tabControl1.TabPages[1])
+            {
+                if (speech == "bass")
+                {
+                    rBBass.Checked = true;
+                }
+                if (speech == "bariton")
+                {
+                    rBBartion.Checked = true;
+                }
+                if (speech == "tenor")
+                {
+                    rBTenor.Checked = true;
+                }
+                if (speech == "männeralt")
+                {
+                    rBMaenneralt.Checked = true;
+                }
+                if (speech == "mezzosopran")
+                {
+                    rBMezzosopran.Checked = true;
+                }
+                if (speech == "sopran")
+                {
+                    rBSopran.Checked = true;
+                }
+                if (speech == "whistle")
+                {
+                    rBPfeifen.Checked = true;
+                }
+            }
+            if (tabControl1.SelectedTab == tabControl1.TabPages[3])
+            {
+                if (speech == "start deepsearch")
+                {
+                    if (nd.isworking == false)
+                    {
+                        Discover("1");
+                    }
+                    else
+                    {
+                        com.SpeakAsync("Warten Sie, Vorgang noch nicht beendet!");
+                    }
+                }
+                if (speech == "start quicksearch")
+                {
+                    if (nd.isworking == false)
+                    {
+                        Discover("0");
+                    }
+                    else
+                    {
+                        com.SpeakAsync("Warten Sie, Vorgang noch nicht beendet!");
+                    }
+                }
+                if (speech == "activate firewall")
+                {
+                    ActivateFirewall();
+                }
+                if (speech == "deactivate firewall")
+                {
+                    DeactivateFirewall();
+                }
+                if (speech == "the first adapter")
+                {
+                    SelectFirstAdapter();
+                }
+                if (speech == "the second adapter")
+                {
+                    SelectSecondAdapter();
+                }
+                if (speech == "the third adapter")
+                {
+                    SelectThirdAdapter();
+
+                }
+                if (speech == "the fourth adapter")
+                {
+                    SelectFourthAdapter();
+                }
+                if (speech == "one adapter further")
+                {
+                    try
+                    {
+                        lsb_networkadapter.SelectedIndex++;
+                        GiveSelectedAdapterinTextBox();
+                    }
+                    catch (Exception ex)
+                    {
+                        elw.WriteErrorLog(ex.ToString());
+                    }
+                }
+                if (speech == "one adapter further")
+                {
+                    SelectFirstAddress();
+                }
+                if (speech == "the second address")
+                {
+                    SelectSecondAddress();
+                }
+                if (speech == "the third address")
+                {
+                    SelectThirdAddress();
+                }
+                if (speech == "the fourth address")
+                {
+                    SelectFourhtAddress();
+                }
+                if (speech == "the fifth address")
+                {
+                    SelectFifthAddress();
+                }
+                if (speech == "one address further")
+                {
+                    try
+                    {
+                        lsb_discover.SelectedIndex++;
+                        ShowMessageBox();
+                    }
+                    catch (Exception ex)
+                    {
+                        elw.WriteErrorLog(ex.ToString());
+                    }
+                }
+                if (speech == "five addresses further")
+                {
+                    try
+                    {
+                        lsb_discover.SelectedIndex += 5;
+                        ShowMessageBox();
+                    }
+                    catch (Exception ex)
+                    {
+                        elw.WriteErrorLog(ex.ToString());
+                    }
+                }
+                if (speech == "address for server")
+                {
+                    GiveSelectedIPinIPConfigurationServer();
+                    com.SpeakAsync("Adresse wurde dem Server zugewiesen");
+                }
+                if (speech == "address for client")
+                {
+                    GiveSelectedIPinIPConfigurationClient();
+                    com.SpeakAsync("Adresse wurde dem Client zugewiesen");
+                }
+            }
+            if (speech == "settings")
+            {
+                tabControl1.SelectedIndex = 0;
+            }
+            if (speech == "frequency")
+            {
+                tabControl1.SelectedIndex = 1;
+            }
+            if (speech == "address configuration")
+            {
+                tabControl1.SelectedIndex = 2;
+            }
+            if (speech == "network discovery")
+            {
+                tabControl1.SelectedIndex = 3;
+            }
+            if (speech == "exit")
+            {
+                CloseWindow();
+            }
+        }
+
+        public void DefaultServerSettingsGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
             if (tabControl1.SelectedTab == tabControl1.TabPages[0])
@@ -203,7 +439,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (tabControl1.SelectedTab == tabControl1.TabPages[3])
             {
-                if (speech == "Starte Deepsearch")
+                if (speech == "Starte Tiefsuche")
                 {
                     if (nd.isworking == false)
                     {
@@ -225,11 +461,11 @@ namespace MOVE.Server.Debug.Formular
                         com.SpeakAsync("Warten Sie, Vorgang noch nicht beendet!");
                     }
                 }
-                if (speech == "Activate Firewall")
+                if (speech == "Aktiviere die Firewall")
                 {
                     ActivateFirewall();
                 }
-                if (speech == "Deactivate Firewall")
+                if (speech == "Deaktiviere die Firewall")
                 {
                     DeactivateFirewall();
                 }
@@ -333,43 +569,79 @@ namespace MOVE.Server.Debug.Formular
             {
                 tabControl1.SelectedIndex = 3;
             }
-            if (speech == "exit")
+            if (speech == "Schließen")
             {
                 CloseWindow();
             }
         }
-        public void ActivateServerListener()
+        public void CancelDefaultGermanListener()
         {
             try
             {
-                _recognizersettings.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerserversettingsgerman.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
                 elw.WriteErrorLog(ex.ToString());
             }
         }
-        public void CancelServerListener()
+
+        public void ActivateDefaultGermanListener()
         {
             try
             {
-                _recognizersettings.RecognizeAsyncCancel();
+                _recognizerserversettingsgerman.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
                 elw.WriteErrorLog(ex.ToString());
             }
         }
-        private void StartthisListener()
+        public void CancelDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerserversettingsenglish.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        public void ActivateDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerserversettingsenglish.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+        private void StartthisListenerGerman()
         {
             if (counter < 1)
             {
-                ServerSettingsListener();
+                DefaultListenerGerman();
                 counter++;
             }
             else
             {
-                ActivateServerListener();
+                ActivateDefaultGermanListener();
+            }
+        }
+        private void StartthisListenerEnglish()
+        {
+            if (counter < 1)
+            {
+                DefaultListenerEnglish();
+                counter++;
+            }
+            else
+            {
+                ActivateDefaultEnglishListener();
             }
         }
         #endregion

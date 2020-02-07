@@ -11,14 +11,14 @@ Männeralt
 Mezzosopran
 Sopran
 Pfeifen
-Starte Deepsearch
-Starte Quicksearch
-Activate Firewall
-Deactivate Firewall
+Starte Tiefsuche
+Starte Schnellsuche
+Aktiviere die Firewall
+Deaktiviere die Firewall
 Spieleinstellungen
 Frequenztuning
 Adresseinstellungen
-Network Discovery
+Netzwerkerkennung
 Der erste Adapter
 Der zweite Adapter
 Der dritte Adapter
@@ -33,4 +33,4 @@ Eine Adresse weiter
 Fünf Adressen weiter
 Adresse für Server
 Adresse für Client
-exit
+Schließen

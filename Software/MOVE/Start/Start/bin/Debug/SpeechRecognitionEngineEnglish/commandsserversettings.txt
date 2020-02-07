@@ -1,0 +1,36 @@
+sensitivity one
+sensitivity two
+sensitivity three
+smoothinglevel one
+smoothinglevel two
+smoothinglevel three
+bass
+bariton
+tenor
+männeralt
+mezzosopran
+sopran
+whistle
+start deepsearch
+start quicksearch
+activate firewall
+deactivate firewall
+settings
+frequency
+address configuration
+network discovery
+the first adapter
+the second adapter
+the third adapter
+the fourth adapter
+one adapter further
+the first address
+the second address
+the third address
+the fourth address
+the fifth address
+one address further
+five addresses further
+address for server
+address for client
+exit 
