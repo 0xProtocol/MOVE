@@ -472,12 +472,14 @@ namespace MOVE.Client.Debug.Formular
                 if (counterstartserver < 1)
                 {
                     Start();
-                    com.SpeakAsync("Server wurde gestartet");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Server starting");
                     counterstartserver++;
                 }
                 else
                 {
-                    com.SpeakAsync("Server wurde bereits gestartet");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Server has already been started");
                 }
             }
 
@@ -486,12 +488,14 @@ namespace MOVE.Client.Debug.Formular
                 if (counterconnectserver < 1)
                 {
                     Connect();
-                    com.SpeakAsync("Verbindung zum Server wurde hergestellt");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Connection to the server has been established");
                     counterconnectserver++;
                 }
                 else
                 {
-                    com.SpeakAsync("Verbindung zum Server wurde bereits hergestellt");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Connection to the server has already been established");
                 }
             }
 
@@ -504,7 +508,8 @@ namespace MOVE.Client.Debug.Formular
                 }
                 else
                 {
-                    com.SpeakAsync("Spiel wurde bereits gestartet");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Game has already been started");
                 }
             }
             if (speech == "settings")

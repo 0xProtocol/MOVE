@@ -183,7 +183,7 @@ namespace Start
             if (speech == "save")
             {
                 Save();
-
+                com.SelectVoice("Microsoft Hazel Desktop");
                 com.SpeakAsync("The settings were saved");
             }
             if (speech == "speechmodule active")

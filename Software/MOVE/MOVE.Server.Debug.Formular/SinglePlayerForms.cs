@@ -28,7 +28,6 @@ namespace MOVE.Server.Debug.Formular
         #region Variablen
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
         SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
-        SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
         private static Random rnd = new Random();
         private static double audioValueMax = 0;

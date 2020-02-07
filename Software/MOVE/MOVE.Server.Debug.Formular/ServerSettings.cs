@@ -76,7 +76,15 @@ namespace MOVE.Server.Debug.Formular
             }
             else
             {
-                com.SpeakAsync("Der Vorgang ist bereits gestartet worden, warten Sie bitte!");
+                if (speechvalue == 0)
+                {
+                    com.SpeakAsync("Der Vorgang ist bereits gestartet worden, warten Sie bitte!");
+                }
+                if(speechvalue == 1 )
+                {
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("The process has already started, please wait!");
+                }
             }
         }
         private void btn_ActivateFirewall_Click(object sender, EventArgs e)
@@ -248,7 +256,8 @@ namespace MOVE.Server.Debug.Formular
                     }
                     else
                     {
-                        com.SpeakAsync("Warten Sie, Vorgang noch nicht beendet!");
+                        com.SelectVoice("Microsoft Hazel Desktop");
+                        com.SpeakAsync("Wait, process not yet finished!");
                     }
                 }
                 if (speech == "start quicksearch")
@@ -259,7 +268,8 @@ namespace MOVE.Server.Debug.Formular
                     }
                     else
                     {
-                        com.SpeakAsync("Warten Sie, Vorgang noch nicht beendet!");
+                        com.SelectVoice("Microsoft Hazel Desktop");
+                        com.SpeakAsync("Wait, process not yet finished!");
                     }
                 }
                 if (speech == "activate firewall")
@@ -299,7 +309,7 @@ namespace MOVE.Server.Debug.Formular
                         elw.WriteErrorLog(ex.ToString());
                     }
                 }
-                if (speech == "one adapter further")
+                if (speech == "the first address")
                 {
                     SelectFirstAddress();
                 }
@@ -346,12 +356,14 @@ namespace MOVE.Server.Debug.Formular
                 if (speech == "address for server")
                 {
                     GiveSelectedIPinIPConfigurationServer();
-                    com.SpeakAsync("Adresse wurde dem Server zugewiesen");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Address was assigned to the server");
                 }
                 if (speech == "address for client")
                 {
                     GiveSelectedIPinIPConfigurationClient();
-                    com.SpeakAsync("Adresse wurde dem Client zugewiesen");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Address was assigned to the client");
                 }
             }
             if (speech == "settings")
@@ -784,7 +796,15 @@ namespace MOVE.Server.Debug.Formular
 
         private void ShowMessageBox()
         {
-            com.SpeakAsync("Wollen Sie die Adresse dem Server oder dem Cleient zuweisen?");
+            if (speechvalue == 0)
+            {
+                com.SpeakAsync("Wollen Sie die Adresse dem Server oder dem Client zuweisen?");
+            }
+            if(speechvalue==1)
+            {
+                com.SelectVoice("Microsoft Hazel Desktop");
+                com.SpeakAsync("Do you want to assign the address to the server or the client?");
+            }
         }
 
         private void GiveSelectedAdapterinTextBox()

@@ -172,7 +172,8 @@ namespace MOVE.Server.Debug.Formular
                     else
                     {
                         value--;
-                        com.SpeakAsync("You have already arrived at the last player");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("You have already arrived at the last player");
                     }
                 }
 

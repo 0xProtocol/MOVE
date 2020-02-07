@@ -561,12 +561,14 @@ namespace MOVE.Server.Debug.Formular
                 if (counterstartserver < 1)
                 {
                     Start();
-                    com.SpeakAsync("Server wurde gestartet");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Server starting");
                     counterstartserver++;
                 }
                 else
                 {
-                    com.SpeakAsync("Server wurde bereits gestartet");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Server has already been started");
                 }
             }
 
@@ -575,12 +577,14 @@ namespace MOVE.Server.Debug.Formular
                 if (counterconnectserver < 1)
                 {
                     Connect();
-                    com.SpeakAsync("Verbindung zum Server wurde hergestellt");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Connection to the server has been established");
                     counterconnectserver++;
                 }
                 else
                 {
-                    com.SpeakAsync("Verbindung zum Server wurde bereits hergestellt");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Connection to the server has already been established");
                 }
             }
 
@@ -593,7 +597,8 @@ namespace MOVE.Server.Debug.Formular
                 }
                 else
                 {
-                    com.SpeakAsync("Spiel wurde bereits gestartet");
+                    com.SelectVoice("Microsoft Hazel Desktop");
+                    com.SpeakAsync("Game has already been started");
                 }
             }
             if (speech == "settings")
@@ -676,8 +681,6 @@ namespace MOVE.Server.Debug.Formular
         }
         #endregion
         #region Methoden
-
-
         double screenheightvalue;
         double yourcomputerheightvalue;
         double yourcomputerheightvalue2;
@@ -720,39 +723,7 @@ namespace MOVE.Server.Debug.Formular
             int bottomvaluedgv = dgv_playfieldclient.Bottom;
             yourcomputerheightvalue = bottomvaluedgv - 35;
         }
-        /*/ 
-      private void GetScreenScaling()
-      {
-          float dpiX, dpiY;
-          Graphics graphics = this.CreateGraphics();
-          dpiX = graphics.DpiX;
-          dpiY = graphics.DpiY;
-          if(dpiX == 96 && dpiY == 96)
-          {
-              screenScalingValue = 1;
-          }
-          else if(dpiX == 120 && dpiY == 120)
-          {
-              screenScalingValue = 0.875;
-          }
-          else if (dpiX == 144 && dpiY == 144)
-          {
-              screenScalingValue = 0.75;
-          }
-      }
-        /*/
-        /*/
-          private void PhysicalSize()
-            {
-                var searcher = new ManagementObjectSearcher("\\root\\wmi", "SELECT * FROM WmiMonitorBasicDisplayParams");
-
-                foreach (ManagementObject mo in searcher.Get())
-                {
-                    double width = (byte)mo["MaxHorizontalImageSize"] / 2.54;
-                    double height = (byte)mo["MaxVerticalImageSize"] / 2.54;
-                    diagonal = Math.Sqrt(width * width + height * height);
-                }
-            }  /*/
+      
         private void Settings()
         {
             ss.ShowDialog();

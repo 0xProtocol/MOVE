@@ -25,7 +25,6 @@ namespace Start
       #region Klasseninstanzierungen
         SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
-        SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
         #region Speech Recognition
