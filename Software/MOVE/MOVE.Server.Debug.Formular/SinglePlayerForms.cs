@@ -27,7 +27,7 @@ namespace MOVE.Server.Debug.Formular
     {
         #region Variablen
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
-        //SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
+        SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         ErrorLogWriter elw = new ErrorLogWriter();
         private static Random rnd = new Random();
@@ -68,7 +68,6 @@ namespace MOVE.Server.Debug.Formular
             waveIn.DataAvailable += OnDataAvailable;
             waveIn.BufferMilliseconds = (int)((double)BUFFER_SAMPLES / (double)RATE * 1000.0);
             waveIn.StartRecording();
-            //this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             lblLifes.Text = "Leben: " + lifes.ToString();
             string language = ConfigurationManager.AppSettings["language"];
             speechvalue = Convert.ToInt32(language);
@@ -82,7 +81,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (speechvalue == 1)
                 {
-                    //DefaultListenerEnglish();
+                    DefaultListenerEnglish();
                 }
             }
             else
@@ -108,7 +107,7 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        /*public void DefaultListenerEnglish()
+        public void DefaultListenerEnglish()
         {
             try
             {
@@ -124,7 +123,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 elw.WriteErrorLog(ex.Message);
             }
-        }*/
+        }
         public void DefaultSinglePlayerFormGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
@@ -658,7 +657,7 @@ namespace MOVE.Server.Debug.Formular
         {
             try
             {
-                //_recognizerenglish.RecognizeAsyncStop();
+                _recognizerenglish.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -670,7 +669,7 @@ namespace MOVE.Server.Debug.Formular
         {
             try
             {
-                //_recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {

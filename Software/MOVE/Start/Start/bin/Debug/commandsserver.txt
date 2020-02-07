@@ -1,11 +1,10 @@
-Settings
 Starte Server
 Verbinde zum Server
-Move it
 Starte das Spiel
+Einstellungen
 Sound
 Tonfrequenz
 Tastatur
 Menü ausblenden
 Menü einblenden
-exit
+Schließe das Spiel

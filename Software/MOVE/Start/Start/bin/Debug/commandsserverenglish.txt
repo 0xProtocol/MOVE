@@ -1,0 +1,10 @@
+start server
+connect to server
+move it
+settings
+sound
+frequency
+keyboard
+disable menu
+activate menu
+exit the game

@@ -24,7 +24,7 @@ namespace MOVE.Server.Debug.Formular
         Client c;
         FrequenzInput fi = new FrequenzInput();
         SpeechRecognitionEngine _recognizerservergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
-        //SpeechRecognitionEngine _recognizerserverenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
+        SpeechRecognitionEngine _recognizerserverenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         FirewallSettings fs = new FirewallSettings();
         NetworkDiscovery nd = new NetworkDiscovery();
@@ -85,6 +85,8 @@ namespace MOVE.Server.Debug.Formular
             waveIn.StartRecording();
             this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             fi.Start();
+            string language = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(language);
             string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
             speechmodulevalue = Convert.ToInt32(speechmodule);
             if (speechmodulevalue == 1)
@@ -95,7 +97,7 @@ namespace MOVE.Server.Debug.Formular
                 }
                 if (speechvalue == 1)
                 {
-                    //DefaultListenerEnglish();
+                    DefaultListenerEnglish();
                 }
             }
             else
@@ -195,12 +197,11 @@ namespace MOVE.Server.Debug.Formular
                 }
                 else if(speechvalue==1)
                 {
-                    CancelDefaultEnglishListener();
+                    ActivateDefaultEnglishListener();
                 }
             }
             else
             {
-                CancelDefaultGermanListener();
             }
         }
         private void ServerForms_Deactivate(object sender, EventArgs e)
@@ -218,7 +219,6 @@ namespace MOVE.Server.Debug.Formular
             }
             else
             {
-
             }
         }
         private void btnSettings_Click(object sender, EventArgs e)
@@ -458,12 +458,12 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        /*public void DefaultListenerEnglish()
+        public void DefaultListenerEnglish()
         {
             try
             {
                 _recognizerserverenglish.SetInputToDefaultAudioDevice();
-                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserver.txt")));
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsserverenglish.txt")));
                 gb.Culture = new CultureInfo("en-GB");
                 Grammar g = new Grammar(gb);
                 _recognizerserverenglish.LoadGrammar(g);
@@ -474,7 +474,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 elw.WriteErrorLog(ex.Message);
             }
-        }*/
+        }
         private void DefaultServerGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
@@ -520,7 +520,7 @@ namespace MOVE.Server.Debug.Formular
                 }
             }
 
-            if (speech == "Settings")
+            if (speech == "Einstellungen")
             {
                 Settings();
             }
@@ -546,10 +546,87 @@ namespace MOVE.Server.Debug.Formular
             {
                 Enablemenu();
             }
-            if(speech=="exit")
+            if(speech=="Schließe das Spiel")
             {
                 CloseWindow();
             }
+        }
+     
+        private void DefaultServerEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+
+            if (speech == "start server")
+            {
+                if (counterstartserver < 1)
+                {
+                    Start();
+                    com.SpeakAsync("Server wurde gestartet");
+                    counterstartserver++;
+                }
+                else
+                {
+                    com.SpeakAsync("Server wurde bereits gestartet");
+                }
+            }
+
+            if (speech == "connect to server")
+            {
+                if (counterconnectserver < 1)
+                {
+                    Connect();
+                    com.SpeakAsync("Verbindung zum Server wurde hergestellt");
+                    counterconnectserver++;
+                }
+                else
+                {
+                    com.SpeakAsync("Verbindung zum Server wurde bereits hergestellt");
+                }
+            }
+
+            if (speech == "move it")
+            {
+                if (counterstartgame < 1)
+                {
+                    StartGame();
+                    counterstartgame++;
+                }
+                else
+                {
+                    com.SpeakAsync("Spiel wurde bereits gestartet");
+                }
+            }
+            if (speech == "settings")
+            {
+                Settings();
+            }
+            if (speech == "sound")
+            {
+                EnableSound();
+            }
+            if (speech == "frequency")
+            {
+                EnableFrequenz();
+            }
+            if (speech == "keyboard")
+            {
+                EnableTastatur();
+                dgv_playfieldclient.Focus();
+            }
+
+            if (speech == "disable menu")
+            {
+                Disablemenu();
+            }
+            if (speech == "activate menu")
+            {
+                Enablemenu();
+            }
+            if (speech == "exit the game")
+            {
+                CloseWindow();
+            }
+
         }
         public void CancelDefaultGermanListener()
         {
@@ -563,12 +640,7 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        private void DefaultServerEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
-        {
-            string speech = e.Result.Text;
-
-        }
-            public void ActivateDefaultGermanListener()
+        public void ActivateDefaultGermanListener()
         {
             try
             {
@@ -583,7 +655,7 @@ namespace MOVE.Server.Debug.Formular
         {
             try
             {
-                //_recognizerserverenglish.RecognizeAsyncStop();
+                _recognizerserverenglish.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -595,7 +667,7 @@ namespace MOVE.Server.Debug.Formular
         {
             try
             {
-                //_recognizerserverenglish.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerserverenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
@@ -605,8 +677,7 @@ namespace MOVE.Server.Debug.Formular
         #endregion
         #region Methoden
 
-        //double screenScalingValue = 0;
-        //double diagonal = 0;
+
         double screenheightvalue;
         double yourcomputerheightvalue;
         double yourcomputerheightvalue2;
