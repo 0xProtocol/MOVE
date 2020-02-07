@@ -38,22 +38,33 @@ namespace Start
         #endregion
         #region Variablen
         int speechvalue;
+        int speechmodulevalue;
         #endregion 
         #region klassengenerierte Methoden
         public MainWindow()
         {
             InitializeComponent();
-            string speechmodule = ConfigurationManager.AppSettings["language"];
-            speechvalue = Convert.ToInt32(speechmodule);
+            string language = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(language);
+            string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
+            speechmodulevalue = Convert.ToInt32(speechmodule);
 
-            if (speechvalue == 0)
+            if (speechmodulevalue == 1)
             {
-                si.DefaultListenerGerman();
-                logolabel.Foreground= new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#660066"));
+
+                if (speechvalue == 0)
+                {
+                    si.DefaultListenerGerman();
+                    logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#660066"));
+                }
+                if (speechvalue == 1)
+                {
+                    si.DefaultListenerEnglish();
+                }
             }
-            if(speechvalue==1)
+            else
             {
-                si.DefaultListenerEnglish();
+
             }
             this.Focus();
         }

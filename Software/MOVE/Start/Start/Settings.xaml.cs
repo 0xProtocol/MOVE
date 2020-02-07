@@ -34,13 +34,16 @@ namespace Start
         ErrorLogWriter elw = new ErrorLogWriter();
         int counter = 0;
         int speechvalue;
+        int speechmodulevalue;
         #endregion
         #region klassengenerierte Methoden
         public Settings()
         {
             InitializeComponent();
-            string speechmodule = ConfigurationManager.AppSettings["language"];
-            speechvalue = Convert.ToInt32(speechmodule);
+            string language = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(language);
+            string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
+            speechmodulevalue = Convert.ToInt32(speechmodule);
             this.Focus();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -61,25 +64,39 @@ namespace Start
         }
         private void Window_Activated(object sender, EventArgs e)
         {
-            if (speechvalue == 0)
+            if (speechmodulevalue == 1)
             {
-                ActivateDefaultListenerSettingsGerman();
+                if (speechvalue == 0)
+                {
+                    ActivateDefaultListenerSettingsGerman();
+                }
+                else if (speechvalue == 1)
+                {
+                    ActivateDefaultListenerSettingsEnglish();
+                }
             }
-            else if (speechvalue == 1)
+            else
             {
-                ActivateDefaultListenerSettingsEnglish();
+                //
             }
         }
 
         private void Window_Deactivated(object sender, EventArgs e)
         {
-            if (speechvalue == 0)
+            if (speechmodulevalue == 1)
             {
-                CancelDefaultListenerSettingsGerman();
+                if (speechvalue == 0)
+                {
+                    CancelDefaultListenerSettingsGerman();
+                }
+                else if (speechvalue == 1)
+                {
+                    CancelDefaultListenerSettingsEnglish();
+                }
             }
-            else if (speechvalue == 1)
+            else
             {
-                CancelDefaultListenerSettingsEnglish();
+                //
             }
         }
         #endregion
@@ -314,19 +331,23 @@ namespace Start
         }
         public void RadioButtonIsChecked3()
         {
-            if (rb_speechmoduleactivated.IsChecked == true)
+            if (rb_speechmoduleactivated.IsChecked == true && speechmodulevalue==0)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 config.AppSettings.Settings["speechmodule"].Value = "1";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
+                Application.Current.Shutdown();
+                System.Windows.Forms.Application.Restart();
             }
-            if (rb_speechmoduledeactivated.IsChecked == true)
+            if (rb_speechmoduledeactivated.IsChecked == true && speechmodulevalue == 1)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
                 config.AppSettings.Settings["speechmodule"].Value = "0";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
+                Application.Current.Shutdown();
+                System.Windows.Forms.Application.Restart();
             }
         }
         public void RadioButtonIsChecked4()

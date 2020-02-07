@@ -34,19 +34,29 @@ namespace Start
         ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
         int speechvalue;
+        int speechmodulevalue;
         #region klassengenerierte Methoden
         public Info()
         {
             InitializeComponent();
-            string speechmodule = ConfigurationManager.AppSettings["language"];
-            speechvalue = Convert.ToInt32(speechmodule);
-            if (speechvalue == 0)
+            string language = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(language);
+            string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
+            speechmodulevalue = Convert.ToInt32(speechmodule);
+            if (speechmodulevalue == 1)
             {
-                DefaultListenerGerman();
+                if (speechvalue == 0)
+                {
+                    DefaultListenerGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DefaultListenerEnglish();
+                }
             }
-            if (speechvalue == 1)
+            else
             {
-                DefaultListenerEnglish();
+                //
             }
             this.Focus();
         }
