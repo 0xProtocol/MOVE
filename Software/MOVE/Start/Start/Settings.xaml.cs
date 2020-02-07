@@ -337,8 +337,9 @@ namespace Start
                 config.AppSettings.Settings["speechmodule"].Value = "1";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
-                Application.Current.Shutdown();
-                System.Windows.Forms.Application.Restart();
+                //Application.Current.Shutdown();
+                //System.Windows.Forms.Application.Restart();
+                WarningWindow();
             }
             if (rb_speechmoduledeactivated.IsChecked == true && speechmodulevalue == 1)
             {
@@ -346,8 +347,9 @@ namespace Start
                 config.AppSettings.Settings["speechmodule"].Value = "0";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
-                Application.Current.Shutdown();
-                System.Windows.Forms.Application.Restart();
+                //Application.Current.Shutdown();
+                //System.Windows.Forms.Application.Restart();
+                WarningWindow();
             }
         }
         public void RadioButtonIsChecked4()
@@ -358,8 +360,9 @@ namespace Start
                 config.AppSettings.Settings["language"].Value = "1";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
-                Application.Current.Shutdown();
-                System.Windows.Forms.Application.Restart();
+                //Application.Current.Shutdown();
+                //System.Windows.Forms.Application.Restart();
+                WarningWindow();
             }
             if (rb_speechmodulegerman.IsChecked == true && speechvalue == 1)
             {
@@ -367,9 +370,15 @@ namespace Start
                 config.AppSettings.Settings["language"].Value = "0";
                 config.Save(ConfigurationSaveMode.Modified);
                 ConfigurationManager.RefreshSection("appSettings");
-                Application.Current.Shutdown();
-                System.Windows.Forms.Application.Restart();
+                //Application.Current.Shutdown();
+                //System.Windows.Forms.Application.Restart();
+                WarningWindow();
             }
+        }
+        private void WarningWindow()
+        {
+            Warning w = new Warning();
+            w.ShowDialog();
         }
         public void CancelDefaultListenerSettingsGerman()
         {

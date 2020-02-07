@@ -60,11 +60,12 @@ namespace Start
                 if (speechvalue == 1)
                 {
                     si.DefaultListenerEnglish();
+                    logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#db00cd"));
                 }
             }
             else
             {
-
+                logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#515251"));
             }
             this.Focus();
         }
