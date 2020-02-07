@@ -16,7 +16,7 @@ Starte Schnellsuche
 Aktiviere die Firewall
 Deaktiviere die Firewall
 Spieleinstellungen
-Frequenztuning
+Frequenzeinstellungen
 Adresseinstellungen
 Netzwerkerkennung
 Der erste Adapter

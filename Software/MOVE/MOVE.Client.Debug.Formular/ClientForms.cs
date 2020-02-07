@@ -23,6 +23,7 @@ using MOVE.AudioLayer;
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
 using System.Configuration;
+using System.Globalization;
 
 namespace MOVE.Client.Debug.Formular
 {
@@ -33,7 +34,8 @@ namespace MOVE.Client.Debug.Formular
         TcpService tcp;
         SoundInput si = new SoundInput();
         FrequenzInput fi = new FrequenzInput();
-        SpeechRecognitionEngine _recognizerclient = new SpeechRecognitionEngine(); // new System.Globalization.CultureInfo("en-GB"));
+        SpeechRecognitionEngine _recognizerclientgerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
+        SpeechRecognitionEngine _recognizerclientenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         SpeechSynthesizer com = new SpeechSynthesizer();
         ClientSettings cs = new ClientSettings();
         ErrorLogWriter elw = new ErrorLogWriter();
@@ -62,6 +64,7 @@ namespace MOVE.Client.Debug.Formular
         int counter = -2;
         double player = 0;
         int speechmodulevalue = 1;
+        int speechvalue;
         #endregion
         #region klassengenerierte Methoden
         public ClientForms()
@@ -76,11 +79,20 @@ namespace MOVE.Client.Debug.Formular
             System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = false;
             si.Loading();
             fi.Start();
+            string language = ConfigurationManager.AppSettings["language"];
+            speechvalue = Convert.ToInt32(language);
             string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
             speechmodulevalue = Convert.ToInt32(speechmodule);
             if (speechmodulevalue == 1)
             {
-                ClientListener();
+                if (speechvalue == 0)
+                {
+                    DefaultListenerGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DefaultListenerEnglish();
+                }
             }
             else
             {
@@ -305,11 +317,17 @@ namespace MOVE.Client.Debug.Formular
         {
             if (speechmodulevalue == 1)
             {
-                ActivateClientListener();
+                if (speechvalue == 0)
+                {
+                    ActivateDefaultGermanListener();
+                }
+                else if (speechvalue == 1)
+                {
+                    ActivateDefaultEnglishListener();
+                }
             }
             else
             {
-                //
             }
         }
 
@@ -317,31 +335,58 @@ namespace MOVE.Client.Debug.Formular
         {
             if (speechmodulevalue == 1)
             {
-                CancelClientListener();
+                if (speechvalue == 0)
+                {
+                    CancelDefaultGermanListener();
+                }
+                else if (speechvalue == 1)
+                {
+                    CancelDefaultEnglishListener();
+                }
             }
             else
             {
-                //
             }
         }
         #endregion
         #region Speech Recognition
-        public void ClientListener()
+        public void DefaultListenerGerman()
         {
             try
             {
-                _recognizerclient.SetInputToDefaultAudioDevice();
-                _recognizerclient.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"commandsclient.txt")))));
-                _recognizerclient.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(Default_SpeechRecognized);
-                _recognizerclient.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerclientgerman.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineGerman\commandsclient.txt")));
+                gb.Culture = new CultureInfo("de-DE");
+                Grammar g = new Grammar(gb);
+                _recognizerclientgerman.LoadGrammar(g);
+                _recognizerclientgerman.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultClientGerman_SpeechRecognized);
+                _recognizerclientgerman.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
-                elw.WriteErrorLog(ex.ToString());
+                elw.WriteErrorLog(ex.Message);
             }
         }
 
-        private void Default_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        public void DefaultListenerEnglish()
+        {
+            try
+            {
+                _recognizerclientenglish.SetInputToDefaultAudioDevice();
+                GrammarBuilder gb = new GrammarBuilder(new Choices(File.ReadAllLines(@"SpeechRecognitionEngineEnglish\commandsclient.txt")));
+                gb.Culture = new CultureInfo("en-GB");
+                Grammar g = new Grammar(gb);
+                _recognizerclientenglish.LoadGrammar(g);
+                _recognizerclientenglish.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(DefaultClientEnglish_SpeechRecognized);
+                _recognizerclientenglish.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+
+        private void DefaultClientGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
 
@@ -386,7 +431,7 @@ namespace MOVE.Client.Debug.Formular
                 }
             }
 
-            if (speech == "Settings")
+            if (speech == "Einstellungen")
             {
                 Settings();
             }
@@ -403,16 +448,102 @@ namespace MOVE.Client.Debug.Formular
                 EnableTastatur();
                 dgv_playfieldclient.Focus();
             }
+
             if (speech == "Menü ausblenden")
             {
                 Disablemenu();
             }
+            if (speech == "Menü einblenden")
+            {
+                Enablemenu();
+            }
+            if (speech == "Schließe das Spiel")
+            {
+                this.Close();
+            }
         }
-        public void ActivateClientListener()
+
+        private void DefaultClientEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            string speech = e.Result.Text;
+
+            if (speech == "start server")
+            {
+                if (counterstartserver < 1)
+                {
+                    Start();
+                    com.SpeakAsync("Server wurde gestartet");
+                    counterstartserver++;
+                }
+                else
+                {
+                    com.SpeakAsync("Server wurde bereits gestartet");
+                }
+            }
+
+            if (speech == "connect to server")
+            {
+                if (counterconnectserver < 1)
+                {
+                    Connect();
+                    com.SpeakAsync("Verbindung zum Server wurde hergestellt");
+                    counterconnectserver++;
+                }
+                else
+                {
+                    com.SpeakAsync("Verbindung zum Server wurde bereits hergestellt");
+                }
+            }
+
+            if (speech == "move it")
+            {
+                if (counterstartgame < 1)
+                {
+                    StartGame();
+                    counterstartgame++;
+                }
+                else
+                {
+                    com.SpeakAsync("Spiel wurde bereits gestartet");
+                }
+            }
+            if (speech == "settings")
+            {
+                Settings();
+            }
+            if (speech == "sound")
+            {
+                EnableSound();
+            }
+            if (speech == "frequency")
+            {
+                EnableFrequenz();
+            }
+            if (speech == "keyboard")
+            {
+                EnableTastatur();
+                dgv_playfieldclient.Focus();
+            }
+
+            if (speech == "disable menu")
+            {
+                Disablemenu();
+            }
+            if (speech == "activate menu")
+            {
+                Enablemenu();
+            }
+            if (speech == "exit the game")
+            {
+                this.Close();
+            }
+
+        }
+        public void CancelDefaultGermanListener()
         {
             try
             {
-                _recognizerclient.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizerclientgerman.RecognizeAsyncStop();
             }
             catch (Exception ex)
             {
@@ -420,11 +551,34 @@ namespace MOVE.Client.Debug.Formular
             }
         }
 
-        public void CancelClientListener()
+        public void ActivateDefaultGermanListener()
         {
             try
             {
-                _recognizerclient.RecognizeAsyncCancel();
+                _recognizerclientgerman.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+        public void CancelDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerclientenglish.RecognizeAsyncStop();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        public void ActivateDefaultEnglishListener()
+        {
+            try
+            {
+                _recognizerclientenglish.RecognizeAsync(RecognizeMode.Multiple);
             }
             catch (Exception ex)
             {
@@ -458,6 +612,10 @@ namespace MOVE.Client.Debug.Formular
         private void Disablemenu()
         {
             cbAusblenden.Checked = true;
+        }
+        private void Enablemenu()
+        {
+            cbAusblenden.Checked = false;
         }
         public void Glaettung(int anzahl)
         {

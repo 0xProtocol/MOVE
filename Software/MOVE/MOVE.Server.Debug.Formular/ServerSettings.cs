@@ -450,7 +450,7 @@ namespace MOVE.Server.Debug.Formular
                         com.SpeakAsync("Warten Sie, Vorgang noch nicht beendet!");
                     }
                 }
-                if (speech == "Starte Quicksearch")
+                if (speech == "Starte Schnellsuche")
                 {
                     if (nd.isworking == false)
                     {
@@ -557,7 +557,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 tabControl1.SelectedIndex = 0;
             }
-            if (speech == "Frequenztuning")
+            if (speech == "Frequenzeinstellungen")
             {
                 tabControl1.SelectedIndex = 1;
             }
@@ -565,7 +565,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 tabControl1.SelectedIndex = 2;
             }
-            if (speech == "Network Discovery")
+            if (speech == "Netzwerkerkennung")
             {
                 tabControl1.SelectedIndex = 3;
             }
