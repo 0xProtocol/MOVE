@@ -160,6 +160,12 @@ namespace MOVE.Server.Debug.Formular
             {
                 cbAusblenden.Checked = false;
             }
+            if (speech == "Welche Befehle gibt es?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandssingleplayerform.txt");
+                h.ShowDialog();
+            }
 
         }
     
@@ -199,6 +205,12 @@ namespace MOVE.Server.Debug.Formular
             if (speech == "activate menu")
             {
                 cbAusblenden.Checked = false;
+            }
+            if (speech == "Which commands are avaiable?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandssingleplayerform.txt");
+                h.ShowDialog();
             }
         }
     private void OnDataAvailable(object sender, WaveInEventArgs args)

@@ -162,6 +162,12 @@ namespace Start
                 CloseWindow();
                 CancelDefaultListenerSettingsGerman();
             }
+            if (speech == "Welche Befehle gibt es?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandssettings.txt");
+                h.ShowDialog();
+            }
         }
 
         private void DefaultSettingsEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
@@ -223,6 +229,12 @@ namespace Start
             {
                 CloseWindow();
                 CancelDefaultListenerSettingsGerman();
+            }
+            if (speech == "Which commands are avaiable?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandssettings.txt");
+                h.ShowDialog();
             }
         }
         #endregion

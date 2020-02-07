@@ -3,4 +3,5 @@ Starte Client
 Informationen
 Spieleinstellungen
 Übungsmodus
-Schließe das Fenster
+Schließe das Spiel
+Welche Befehle gibt es?

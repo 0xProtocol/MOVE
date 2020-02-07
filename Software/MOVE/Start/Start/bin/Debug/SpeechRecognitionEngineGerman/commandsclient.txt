@@ -8,3 +8,4 @@ Tastatur
 Menü ausblenden
 Menü einblenden
 Schließe das Spiel
+Welche Befehle gibt es?

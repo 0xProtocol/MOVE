@@ -128,6 +128,12 @@ namespace Start
             {
                 CloseWindow();
             }
+            if (speech == "Welche Befehle gibt es?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsinfo.txt");
+                h.ShowDialog();
+            }
         }
         private void DefaultInfoEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
@@ -136,6 +142,12 @@ namespace Start
             if (speech == "Exit")
             {
                 CloseWindow();
+            }
+            if (speech == "Which commands are avaiable?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandsinfo.txt");
+                h.ShowDialog();
             }
         }
         #endregion

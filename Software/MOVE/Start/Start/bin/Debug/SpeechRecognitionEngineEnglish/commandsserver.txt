@@ -8,3 +8,4 @@ keyboard
 disable menu
 activate menu
 exit the game
+Which commands are avaiable?

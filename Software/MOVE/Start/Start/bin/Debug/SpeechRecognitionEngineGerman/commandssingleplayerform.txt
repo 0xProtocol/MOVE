@@ -5,10 +5,4 @@ Frequenz
 Tastatur
 Menü ausblenden
 Menü einblenden
-start
-settings
-sound
-frequency
-keyboard
-disable menu
-activate menu
+Welche Befehle gibt es?

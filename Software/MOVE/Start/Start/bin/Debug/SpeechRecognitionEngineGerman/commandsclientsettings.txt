@@ -34,3 +34,4 @@ Fünf Adressen weiter
 Adresse für Server
 Adresse für Client
 Schließen
+Welche Befehle gibt es?

@@ -104,3 +104,5 @@ D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CoreCo
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CopyComplete
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.Help.resources
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.GenerateResource.cache

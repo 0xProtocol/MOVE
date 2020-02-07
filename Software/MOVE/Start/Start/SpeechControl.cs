@@ -90,9 +90,15 @@ namespace Start
                 OpenÜbung();
             }
             
-            if(speech== "Schließe das Fenster")
+            if(speech== "Schließe das Spiel")
             {
                 ExitGame();
+            }
+            if(speech=="Welche Befehle gibt es?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsmainwindow.txt");
+                h.ShowDialog();
             }
         }
         public void DefaultEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
@@ -125,6 +131,12 @@ namespace Start
             if (speech == "Exit the game")
             {
                 ExitGame();
+            }
+            if(speech=="Which commands are avaiable?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandsmainwindow.txt");
+                h.ShowDialog();
             }
         }
         #endregion

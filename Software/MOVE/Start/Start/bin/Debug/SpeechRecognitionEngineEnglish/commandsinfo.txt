@@ -1,1 +1,2 @@
 Exit
+Which commands are avaiable?

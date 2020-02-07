@@ -10,3 +10,4 @@ Deaktiviere Sprachmodul
 Stelle Sprache auf Deutsch
 Stelle Sprache auf Englisch
 Schließe das Fenster
+Welche Befehle gibt es?

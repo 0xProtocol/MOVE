@@ -5,3 +5,4 @@ frequency
 keyboard
 disable menu
 activate menu
+Which commands are avaiable?

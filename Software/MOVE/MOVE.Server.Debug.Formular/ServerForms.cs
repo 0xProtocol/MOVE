@@ -550,6 +550,12 @@ namespace MOVE.Server.Debug.Formular
             {
                 CloseWindow();
             }
+            if (speech == "Welche Befehle gibt es?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsserver.txt");
+                h.ShowDialog();
+            }
         }
      
         private void DefaultServerEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
@@ -630,6 +636,12 @@ namespace MOVE.Server.Debug.Formular
             if (speech == "exit the game")
             {
                 CloseWindow();
+            }
+            if (speech == "Which commands are avaiable?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandsserver.txt");
+                h.ShowDialog();
             }
 
         }

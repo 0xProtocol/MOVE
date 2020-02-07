@@ -4,3 +4,4 @@ Information
 Settings
 Practice Mode
 Exit the game
+Which commands are avaiable?

@@ -10,3 +10,4 @@ deactivate speechmodule
 set language to german
 set language to english
 exit
+Which commands are avaiable?

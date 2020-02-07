@@ -390,6 +390,12 @@ namespace MOVE.Client.Debug.Formular
             {
                 CloseWindow();
             }
+            if (speech == "Which commands are avaiable?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandsclientsettings.txt");
+                h.ShowDialog();
+            }
         }
 
         public void DefaultClientSettingsGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
@@ -588,6 +594,12 @@ namespace MOVE.Client.Debug.Formular
             if (speech == "Schließen")
             {
                 CloseWindow();
+            }
+            if (speech == "Welche Befehle gibt es?")
+            {
+                MOVE.Shared.Help h = new MOVE.Shared.Help();
+                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsclientsettings.txt");
+                h.ShowDialog();
             }
         }
         public void CancelDefaultGermanListener()

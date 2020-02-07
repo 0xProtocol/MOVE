@@ -4,3 +4,4 @@ the first player
 the second player
 the third player
 one player further
+Which commands are avaiable?

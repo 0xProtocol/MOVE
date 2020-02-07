@@ -34,3 +34,4 @@ five addresses further
 address for server
 address for client
 exit 
+Which commands are avaiable?
