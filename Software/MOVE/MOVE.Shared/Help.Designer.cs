@@ -48,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(299, 620);
             this.Controls.Add(this.helpbox);
             this.Name = "Help";
+            this.Opacity = 0.9D;
             this.Text = "Help";
             this.Load += new System.EventHandler(this.Help_Load);
             this.ResumeLayout(false);

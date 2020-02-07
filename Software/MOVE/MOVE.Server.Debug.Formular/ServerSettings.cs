@@ -356,8 +356,10 @@ namespace MOVE.Server.Debug.Formular
                 if (speech == "address for server")
                 {
                     GiveSelectedIPinIPConfigurationServer();
+                   // this.Cursor = new Cursor(System.AppDomain.CurrentDomain.BaseDirectory + "\\MOVECursor.cur");
                     com.SelectVoice("Microsoft Hazel Desktop");
                     com.SpeakAsync("Address was assigned to the server");
+                  //  this.Cursor = new Cursor(System.AppDomain.CurrentDomain.BaseDirectory + "\\SuccessCursor.cur");
                 }
                 if (speech == "address for client")
                 {

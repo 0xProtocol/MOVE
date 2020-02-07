@@ -24,7 +24,13 @@ namespace MOVE.Shared
         {
 
         }
-
+        protected override bool ShowWithoutActivation
+        {
+            get
+            {
+                return true;
+            }
+        }
         public void FillHelpResults(string commands)
         {
             helpbox.Items.Clear();
@@ -48,6 +54,7 @@ namespace MOVE.Shared
 
         private void Help_Load(object sender, EventArgs e)
         {
+
             timer.Interval = 10000;
             timer.Tick += new EventHandler(timer_Tick);
             timer.Start();

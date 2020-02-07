@@ -206,8 +206,10 @@ namespace Start
             if (speech == "save")
             {
                 Save();
+                //this.Cursor = new Cursor(System.AppDomain.CurrentDomain.BaseDirectory + "\\MOVECursor.cur");
                 com.SelectVoice("Microsoft Hazel Desktop");
                 com.SpeakAsync("The settings were saved");
+               // this.Cursor = new Cursor(System.AppDomain.CurrentDomain.BaseDirectory + "\\SuccessCursor.cur");
             }
             if (speech == "speechmodule active")
             {
