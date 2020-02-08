@@ -45,6 +45,14 @@ namespace Start
             string speechmodule = ConfigurationManager.AppSettings["speechmodule"];
             speechmodulevalue = Convert.ToInt32(speechmodule);
             this.Focus();
+            if (speechvalue == 0)
+            {
+                DesignChangesGerman();
+            }
+            if (speechvalue == 1)
+            {
+                DesignChangesEnglish();
+            }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -244,6 +252,28 @@ namespace Start
         private void CloseWindow()
         {
             this.Close();
+        }
+        private void DesignChangesGerman()
+        {
+
+        }
+        private void DesignChangesEnglish()
+        {
+            rb_einfach.Content = "one";
+            rb_mittel.Content = "two";
+            rb_schwer.Content = "three";
+            rb_modell1.Content = "one";
+            rb_modell2.Content = "two";
+            rb_modell3.Content = "three";
+            rb_speechmoduleactivated.Content = "activate";
+            rb_speechmoduledeactivated.Content = "deactivate";
+            rb_speechmodulegerman.Content = "German";
+            rb_speechmoduleenglish.Content = "English";
+            lblemp.Content = "Sensitivity";
+            lblg.Content = "Smoothinglevel";
+            lbls.Content = "Language";
+            lblsm.Content = "Speechmodule";
+            btn_save.Content = "save";
         }
         private void Save()
         {

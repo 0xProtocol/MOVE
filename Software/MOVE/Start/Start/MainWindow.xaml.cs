@@ -55,17 +55,25 @@ namespace Start
                 if (speechvalue == 0)
                 {
                     si.DefaultListenerGerman();
-                    logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#660066"));
+                    DesignChangesGerman();
                 }
                 if (speechvalue == 1)
                 {
                     si.DefaultListenerEnglish();
-                    logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#db00cd"));
+                    DesignChangesEnglish();
                 }
             }
             else
             {
                 logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#515251"));
+                if (speechvalue == 0)
+                {
+                    DesignChangesGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DesignChangesEnglish();
+                }
             }
             this.Focus();
         }
@@ -97,6 +105,18 @@ namespace Start
         {
             Settings winsettings = new Settings();
             winsettings.Show();
+        }
+
+        private void DesignChangesGerman()
+        {
+            logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#660066"));
+        }
+        private void DesignChangesEnglish()
+        {
+            logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#db00cd"));
+            btn_Uebung.Content = "Practice";
+            btn_info.Content = "Information";
+            btn_Settings.Content = "Settings";
         }
         private void Window_Activated(object sender, EventArgs e)
         {

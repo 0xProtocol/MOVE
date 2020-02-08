@@ -696,7 +696,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 CheckActiveTabControl();
                 MOVE.Shared.Help h = new MOVE.Shared.Help();
-                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsserversettings.txt");
+                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsserversettings.txt",helpvalue);
                 h.ShowDialog();
             }
         }
