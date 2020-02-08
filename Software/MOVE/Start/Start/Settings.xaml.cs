@@ -59,7 +59,6 @@ namespace Start
             RadioButtonIsChecked();
             RadioButtonIsChecked2();
             RadioButtonIsChecked3();
-            RadioButtonIsChecked4();
         }
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
@@ -280,7 +279,6 @@ namespace Start
             RadioButtonIsChecked();
             RadioButtonIsChecked2();
             RadioButtonIsChecked3();
-            RadioButtonIsChecked4();
         }
         private void SetEmpfindlichkeitleicht()
         {
@@ -375,6 +373,8 @@ namespace Start
         }
         public void RadioButtonIsChecked3()
         {
+
+            Warning w = new Warning();
             if (rb_speechmoduleactivated.IsChecked == true && speechmodulevalue==0)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
@@ -383,7 +383,7 @@ namespace Start
                 ConfigurationManager.RefreshSection("appSettings");
                 //Application.Current.Shutdown();
                 //System.Windows.Forms.Application.Restart();
-                WarningWindow();
+                w.ShowDialog();
             }
             if (rb_speechmoduledeactivated.IsChecked == true && speechmodulevalue == 1)
             {
@@ -393,11 +393,9 @@ namespace Start
                 ConfigurationManager.RefreshSection("appSettings");
                 //Application.Current.Shutdown();
                 //System.Windows.Forms.Application.Restart();
-                WarningWindow();
+                w.ShowDialog();
             }
-        }
-        public void RadioButtonIsChecked4()
-        {
+
             if (rb_speechmoduleenglish.IsChecked == true && speechvalue==0)
             {
                 var config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
@@ -406,7 +404,7 @@ namespace Start
                 ConfigurationManager.RefreshSection("appSettings");
                 //Application.Current.Shutdown();
                 //System.Windows.Forms.Application.Restart();
-                WarningWindow();
+                w.ShowDialog();
             }
             if (rb_speechmodulegerman.IsChecked == true && speechvalue == 1)
             {
@@ -416,14 +414,11 @@ namespace Start
                 ConfigurationManager.RefreshSection("appSettings");
                 //Application.Current.Shutdown();
                 //System.Windows.Forms.Application.Restart();
-                WarningWindow();
+                w.ShowDialog();
             }
         }
-        private void WarningWindow()
-        {
-            Warning w = new Warning();
-            w.ShowDialog();
-        }
+       
+      
         public void CancelDefaultListenerSettingsGerman()
         {
             try
