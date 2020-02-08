@@ -101,36 +101,36 @@
             this.serverToolStripMenuItem,
             this.selectAdapterToolStripMenuItem});
             this.cms.Name = "cms";
-            this.cms.Size = new System.Drawing.Size(177, 76);
+            this.cms.Size = new System.Drawing.Size(151, 70);
             // 
             // clientToolStripMenuItem
             // 
             this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
-            this.clientToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.clientToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.clientToolStripMenuItem.Text = "Client";
             this.clientToolStripMenuItem.Click += new System.EventHandler(this.clientToolStripMenuItem_Click);
             // 
             // serverToolStripMenuItem
             // 
             this.serverToolStripMenuItem.Name = "serverToolStripMenuItem";
-            this.serverToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.serverToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.serverToolStripMenuItem.Text = "Server";
             this.serverToolStripMenuItem.Click += new System.EventHandler(this.serverToolStripMenuItem_Click);
             // 
             // selectAdapterToolStripMenuItem
             // 
             this.selectAdapterToolStripMenuItem.Name = "selectAdapterToolStripMenuItem";
-            this.selectAdapterToolStripMenuItem.Size = new System.Drawing.Size(176, 24);
+            this.selectAdapterToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.selectAdapterToolStripMenuItem.Text = "Select Adapter";
             this.selectAdapterToolStripMenuItem.Click += new System.EventHandler(this.selectAdapterToolStripMenuItem_Click);
             // 
             // tbx_IPClient
             // 
             this.tbx_IPClient.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.tbx_IPClient.Location = new System.Drawing.Point(99, 277);
-            this.tbx_IPClient.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbx_IPClient.Location = new System.Drawing.Point(74, 225);
+            this.tbx_IPClient.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbx_IPClient.Name = "tbx_IPClient";
-            this.tbx_IPClient.Size = new System.Drawing.Size(303, 46);
+            this.tbx_IPClient.Size = new System.Drawing.Size(228, 39);
             this.tbx_IPClient.TabIndex = 73;
             this.tbx_IPClient.Text = "127.0.0.1";
             // 
@@ -138,10 +138,10 @@
             // 
             this.lbl_IPServer.AutoSize = true;
             this.lbl_IPServer.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.lbl_IPServer.Location = new System.Drawing.Point(11, 286);
-            this.lbl_IPServer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_IPServer.Location = new System.Drawing.Point(8, 232);
+            this.lbl_IPServer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_IPServer.Name = "lbl_IPServer";
-            this.lbl_IPServer.Size = new System.Drawing.Size(45, 37);
+            this.lbl_IPServer.Size = new System.Drawing.Size(37, 31);
             this.lbl_IPServer.TabIndex = 74;
             this.lbl_IPServer.Text = "IP";
             // 
@@ -149,10 +149,10 @@
             // 
             this.lbl_ServerStart.AutoSize = true;
             this.lbl_ServerStart.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.lbl_ServerStart.Location = new System.Drawing.Point(91, 236);
-            this.lbl_ServerStart.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_ServerStart.Location = new System.Drawing.Point(68, 192);
+            this.lbl_ServerStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ServerStart.Name = "lbl_ServerStart";
-            this.lbl_ServerStart.Size = new System.Drawing.Size(110, 37);
+            this.lbl_ServerStart.Size = new System.Drawing.Size(89, 31);
             this.lbl_ServerStart.TabIndex = 76;
             this.lbl_ServerStart.Text = "Client";
             // 
@@ -160,10 +160,10 @@
             // 
             this.lbl_IPClient.AutoSize = true;
             this.lbl_IPClient.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.lbl_IPClient.Location = new System.Drawing.Point(447, 286);
-            this.lbl_IPClient.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_IPClient.Location = new System.Drawing.Point(335, 232);
+            this.lbl_IPClient.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_IPClient.Name = "lbl_IPClient";
-            this.lbl_IPClient.Size = new System.Drawing.Size(45, 37);
+            this.lbl_IPClient.Size = new System.Drawing.Size(37, 31);
             this.lbl_IPClient.TabIndex = 78;
             this.lbl_IPClient.Text = "IP";
             // 
@@ -171,20 +171,20 @@
             // 
             this.lbl_PortClient.AutoSize = true;
             this.lbl_PortClient.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.lbl_PortClient.Location = new System.Drawing.Point(415, 334);
-            this.lbl_PortClient.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_PortClient.Location = new System.Drawing.Point(311, 271);
+            this.lbl_PortClient.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_PortClient.Name = "lbl_PortClient";
-            this.lbl_PortClient.Size = new System.Drawing.Size(79, 37);
+            this.lbl_PortClient.Size = new System.Drawing.Size(63, 31);
             this.lbl_PortClient.TabIndex = 79;
             this.lbl_PortClient.Text = "Port";
             // 
             // tbx_PortServer
             // 
             this.tbx_PortServer.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.tbx_PortServer.Location = new System.Drawing.Point(501, 331);
-            this.tbx_PortServer.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbx_PortServer.Location = new System.Drawing.Point(376, 269);
+            this.tbx_PortServer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbx_PortServer.Name = "tbx_PortServer";
-            this.tbx_PortServer.Size = new System.Drawing.Size(303, 46);
+            this.tbx_PortServer.Size = new System.Drawing.Size(228, 39);
             this.tbx_PortServer.TabIndex = 80;
             this.tbx_PortServer.Text = "4712";
             // 
@@ -192,30 +192,30 @@
             // 
             this.lbl_ClientConnect.AutoSize = true;
             this.lbl_ClientConnect.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.lbl_ClientConnect.Location = new System.Drawing.Point(495, 236);
-            this.lbl_ClientConnect.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_ClientConnect.Location = new System.Drawing.Point(371, 192);
+            this.lbl_ClientConnect.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ClientConnect.Name = "lbl_ClientConnect";
-            this.lbl_ClientConnect.Size = new System.Drawing.Size(119, 37);
+            this.lbl_ClientConnect.Size = new System.Drawing.Size(95, 31);
             this.lbl_ClientConnect.TabIndex = 77;
             this.lbl_ClientConnect.Text = "Server";
             // 
             // tbx_IPServer
             // 
             this.tbx_IPServer.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.tbx_IPServer.Location = new System.Drawing.Point(501, 277);
-            this.tbx_IPServer.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbx_IPServer.Location = new System.Drawing.Point(376, 225);
+            this.tbx_IPServer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbx_IPServer.Name = "tbx_IPServer";
-            this.tbx_IPServer.Size = new System.Drawing.Size(303, 46);
+            this.tbx_IPServer.Size = new System.Drawing.Size(228, 39);
             this.tbx_IPServer.TabIndex = 81;
             this.tbx_IPServer.Text = "127.0.0.1";
             // 
             // tbx_PortClient
             // 
             this.tbx_PortClient.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.tbx_PortClient.Location = new System.Drawing.Point(99, 334);
-            this.tbx_PortClient.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbx_PortClient.Location = new System.Drawing.Point(74, 271);
+            this.tbx_PortClient.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbx_PortClient.Name = "tbx_PortClient";
-            this.tbx_PortClient.Size = new System.Drawing.Size(303, 46);
+            this.tbx_PortClient.Size = new System.Drawing.Size(228, 39);
             this.tbx_PortClient.TabIndex = 72;
             this.tbx_PortClient.Text = "4711";
             // 
@@ -223,20 +223,20 @@
             // 
             this.lbl_PortServer.AutoSize = true;
             this.lbl_PortServer.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.lbl_PortServer.Location = new System.Drawing.Point(11, 334);
-            this.lbl_PortServer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lbl_PortServer.Location = new System.Drawing.Point(8, 271);
+            this.lbl_PortServer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_PortServer.Name = "lbl_PortServer";
-            this.lbl_PortServer.Size = new System.Drawing.Size(79, 37);
+            this.lbl_PortServer.Size = new System.Drawing.Size(63, 31);
             this.lbl_PortServer.TabIndex = 75;
             this.lbl_PortServer.Text = "Port";
             // 
             // btn_ActivateFirewall
             // 
             this.btn_ActivateFirewall.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.btn_ActivateFirewall.Location = new System.Drawing.Point(448, 198);
-            this.btn_ActivateFirewall.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btn_ActivateFirewall.Location = new System.Drawing.Point(336, 161);
+            this.btn_ActivateFirewall.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_ActivateFirewall.Name = "btn_ActivateFirewall";
-            this.btn_ActivateFirewall.Size = new System.Drawing.Size(349, 49);
+            this.btn_ActivateFirewall.Size = new System.Drawing.Size(262, 40);
             this.btn_ActivateFirewall.TabIndex = 85;
             this.btn_ActivateFirewall.Text = "Activate Firewall";
             this.btn_ActivateFirewall.UseVisualStyleBackColor = true;
@@ -245,10 +245,10 @@
             // btn_deactivatefirewall
             // 
             this.btn_deactivatefirewall.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.btn_deactivatefirewall.Location = new System.Drawing.Point(448, 255);
-            this.btn_deactivatefirewall.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btn_deactivatefirewall.Location = new System.Drawing.Point(336, 207);
+            this.btn_deactivatefirewall.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_deactivatefirewall.Name = "btn_deactivatefirewall";
-            this.btn_deactivatefirewall.Size = new System.Drawing.Size(349, 49);
+            this.btn_deactivatefirewall.Size = new System.Drawing.Size(262, 40);
             this.btn_deactivatefirewall.TabIndex = 86;
             this.btn_deactivatefirewall.Text = "Deactivate Firewall";
             this.btn_deactivatefirewall.UseVisualStyleBackColor = true;
@@ -257,10 +257,10 @@
             // btn_Discover
             // 
             this.btn_Discover.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.btn_Discover.Location = new System.Drawing.Point(448, 313);
-            this.btn_Discover.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btn_Discover.Location = new System.Drawing.Point(336, 254);
+            this.btn_Discover.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Discover.Name = "btn_Discover";
-            this.btn_Discover.Size = new System.Drawing.Size(349, 50);
+            this.btn_Discover.Size = new System.Drawing.Size(262, 41);
             this.btn_Discover.TabIndex = 83;
             this.btn_Discover.Text = "Start Discovery";
             this.btn_Discover.UseVisualStyleBackColor = true;
@@ -270,29 +270,29 @@
             // 
             this.pbnetwork.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pbnetwork.ForeColor = System.Drawing.Color.Lime;
-            this.pbnetwork.Location = new System.Drawing.Point(448, 370);
-            this.pbnetwork.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.pbnetwork.Location = new System.Drawing.Point(336, 301);
+            this.pbnetwork.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pbnetwork.Name = "pbnetwork";
-            this.pbnetwork.Size = new System.Drawing.Size(349, 22);
+            this.pbnetwork.Size = new System.Drawing.Size(262, 18);
             this.pbnetwork.TabIndex = 89;
             this.pbnetwork.Click += new System.EventHandler(this.pbnetwork_Click);
             // 
             // tbx_Discovery
             // 
-            this.tbx_Discovery.Location = new System.Drawing.Point(13, 356);
-            this.tbx_Discovery.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbx_Discovery.Location = new System.Drawing.Point(10, 289);
+            this.tbx_Discovery.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbx_Discovery.Name = "tbx_Discovery";
-            this.tbx_Discovery.Size = new System.Drawing.Size(425, 23);
+            this.tbx_Discovery.Size = new System.Drawing.Size(320, 20);
             this.tbx_Discovery.TabIndex = 84;
             // 
             // cbQuickSearch
             // 
             this.cbQuickSearch.AutoSize = true;
             this.cbQuickSearch.Font = new System.Drawing.Font("Rockwell", 17.8F);
-            this.cbQuickSearch.Location = new System.Drawing.Point(230, 138);
-            this.cbQuickSearch.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.cbQuickSearch.Location = new System.Drawing.Point(172, 112);
+            this.cbQuickSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbQuickSearch.Name = "cbQuickSearch";
-            this.cbQuickSearch.Size = new System.Drawing.Size(215, 39);
+            this.cbQuickSearch.Size = new System.Drawing.Size(175, 31);
             this.cbQuickSearch.TabIndex = 87;
             this.cbQuickSearch.Text = "QuickSearch";
             this.cbQuickSearch.UseVisualStyleBackColor = true;
@@ -301,10 +301,10 @@
             // 
             this.cbDeepSearch.AutoSize = true;
             this.cbDeepSearch.Font = new System.Drawing.Font("Rockwell", 17.8F);
-            this.cbDeepSearch.Location = new System.Drawing.Point(13, 138);
-            this.cbDeepSearch.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.cbDeepSearch.Location = new System.Drawing.Point(10, 112);
+            this.cbDeepSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbDeepSearch.Name = "cbDeepSearch";
-            this.cbDeepSearch.Size = new System.Drawing.Size(207, 39);
+            this.cbDeepSearch.Size = new System.Drawing.Size(169, 31);
             this.cbDeepSearch.TabIndex = 88;
             this.cbDeepSearch.Text = "DeepSearch";
             this.cbDeepSearch.UseVisualStyleBackColor = true;
@@ -313,11 +313,11 @@
             // 
             this.lsb_discover.ContextMenuStrip = this.cms;
             this.lsb_discover.FormattingEnabled = true;
-            this.lsb_discover.ItemHeight = 16;
-            this.lsb_discover.Location = new System.Drawing.Point(13, 183);
-            this.lsb_discover.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lsb_discover.ItemHeight = 12;
+            this.lsb_discover.Location = new System.Drawing.Point(10, 149);
+            this.lsb_discover.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.lsb_discover.Name = "lsb_discover";
-            this.lsb_discover.Size = new System.Drawing.Size(425, 164);
+            this.lsb_discover.Size = new System.Drawing.Size(320, 124);
             this.lsb_discover.TabIndex = 82;
             this.lsb_discover.Click += new System.EventHandler(this.lsb_discover_Click);
             this.lsb_discover.SelectedIndexChanged += new System.EventHandler(this.lsb_discover_SelectedIndexChanged);
@@ -325,12 +325,12 @@
             // tbGlättung
             // 
             this.tbGlättung.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.tbGlättung.Location = new System.Drawing.Point(13, 236);
-            this.tbGlättung.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbGlättung.Location = new System.Drawing.Point(10, 192);
+            this.tbGlättung.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbGlättung.Maximum = 3;
             this.tbGlättung.Minimum = 1;
             this.tbGlättung.Name = "tbGlättung";
-            this.tbGlättung.Size = new System.Drawing.Size(801, 56);
+            this.tbGlättung.Size = new System.Drawing.Size(601, 45);
             this.tbGlättung.TabIndex = 1;
             this.tbGlättung.Value = 1;
             this.tbGlättung.Scroll += new System.EventHandler(this.tbGlättung_Scroll);
@@ -338,12 +338,12 @@
             // tbempfindlichkeit
             // 
             this.tbempfindlichkeit.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.tbempfindlichkeit.Location = new System.Drawing.Point(16, 59);
-            this.tbempfindlichkeit.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbempfindlichkeit.Location = new System.Drawing.Point(12, 48);
+            this.tbempfindlichkeit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbempfindlichkeit.Maximum = 3;
             this.tbempfindlichkeit.Minimum = 1;
             this.tbempfindlichkeit.Name = "tbempfindlichkeit";
-            this.tbempfindlichkeit.Size = new System.Drawing.Size(799, 56);
+            this.tbempfindlichkeit.Size = new System.Drawing.Size(599, 45);
             this.tbempfindlichkeit.TabIndex = 0;
             this.tbempfindlichkeit.Value = 1;
             this.tbempfindlichkeit.Scroll += new System.EventHandler(this.tbempfindlichkeit_Scroll);
@@ -355,12 +355,12 @@
             this.tabControl1.Controls.Add(this.tcIPConfiguration);
             this.tabControl1.Controls.Add(this.tcNetworkDicovery);
             this.tabControl1.Font = new System.Drawing.Font("Rockwell", 7.8F);
-            this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(821, 443);
+            this.tabControl1.Size = new System.Drawing.Size(616, 360);
             this.tabControl1.TabIndex = 90;
             // 
             // tcGameSettings
@@ -371,11 +371,11 @@
             this.tcGameSettings.Controls.Add(this.pbTrackBar);
             this.tcGameSettings.Controls.Add(this.tbempfindlichkeit);
             this.tcGameSettings.Controls.Add(this.tbGlättung);
-            this.tcGameSettings.Location = new System.Drawing.Point(4, 25);
-            this.tcGameSettings.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tcGameSettings.Location = new System.Drawing.Point(4, 21);
+            this.tcGameSettings.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tcGameSettings.Name = "tcGameSettings";
-            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tcGameSettings.Size = new System.Drawing.Size(813, 414);
+            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tcGameSettings.Size = new System.Drawing.Size(608, 335);
             this.tcGameSettings.TabIndex = 0;
             this.tcGameSettings.Text = "Game Settings";
             this.tcGameSettings.Click += new System.EventHandler(this.tcGameSettings_Click);
@@ -386,9 +386,10 @@
             this.lblGlättungsstufe.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lblGlättungsstufe.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.lblGlättungsstufe.ForeColor = System.Drawing.Color.Brown;
-            this.lblGlättungsstufe.Location = new System.Drawing.Point(291, 194);
+            this.lblGlättungsstufe.Location = new System.Drawing.Point(218, 158);
+            this.lblGlättungsstufe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGlättungsstufe.Name = "lblGlättungsstufe";
-            this.lblGlättungsstufe.Size = new System.Drawing.Size(238, 37);
+            this.lblGlättungsstufe.Size = new System.Drawing.Size(191, 31);
             this.lblGlättungsstufe.TabIndex = 11;
             this.lblGlättungsstufe.Text = "Glättungsstufe";
             // 
@@ -398,19 +399,20 @@
             this.lblEmpfindlichkeit.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lblEmpfindlichkeit.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.lblEmpfindlichkeit.ForeColor = System.Drawing.Color.Brown;
-            this.lblEmpfindlichkeit.Location = new System.Drawing.Point(280, 18);
+            this.lblEmpfindlichkeit.Location = new System.Drawing.Point(210, 15);
+            this.lblEmpfindlichkeit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmpfindlichkeit.Name = "lblEmpfindlichkeit";
-            this.lblEmpfindlichkeit.Size = new System.Drawing.Size(262, 37);
+            this.lblEmpfindlichkeit.Size = new System.Drawing.Size(210, 31);
             this.lblEmpfindlichkeit.TabIndex = 10;
             this.lblEmpfindlichkeit.Text = "Empfindlichkeit";
             // 
             // pbTrackBar
             // 
             this.pbTrackBar.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.track_and_status_controls_trackbar_programming_radtrackbar020;
-            this.pbTrackBar.Location = new System.Drawing.Point(171, 281);
-            this.pbTrackBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbTrackBar.Location = new System.Drawing.Point(128, 228);
+            this.pbTrackBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbTrackBar.Name = "pbTrackBar";
-            this.pbTrackBar.Size = new System.Drawing.Size(464, 122);
+            this.pbTrackBar.Size = new System.Drawing.Size(348, 99);
             this.pbTrackBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbTrackBar.TabIndex = 9;
             this.pbTrackBar.TabStop = false;
@@ -431,11 +433,11 @@
             this.tabPage1.Controls.Add(this.rBTenor);
             this.tabPage1.Controls.Add(this.rBBartion);
             this.tabPage1.Controls.Add(this.rBBass);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(813, 414);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(608, 335);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "Frequenztuning";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -443,10 +445,10 @@
             // btnStopCal
             // 
             this.btnStopCal.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.btnStopCal.Location = new System.Drawing.Point(357, 352);
-            this.btnStopCal.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnStopCal.Location = new System.Drawing.Point(268, 286);
+            this.btnStopCal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnStopCal.Name = "btnStopCal";
-            this.btnStopCal.Size = new System.Drawing.Size(111, 49);
+            this.btnStopCal.Size = new System.Drawing.Size(83, 40);
             this.btnStopCal.TabIndex = 87;
             this.btnStopCal.Text = "Stop";
             this.btnStopCal.UseVisualStyleBackColor = true;
@@ -455,10 +457,10 @@
             // btnStartCal
             // 
             this.btnStartCal.Font = new System.Drawing.Font("Rockwell", 19.8F);
-            this.btnStartCal.Location = new System.Drawing.Point(237, 352);
-            this.btnStartCal.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnStartCal.Location = new System.Drawing.Point(178, 286);
+            this.btnStartCal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnStartCal.Name = "btnStartCal";
-            this.btnStartCal.Size = new System.Drawing.Size(111, 49);
+            this.btnStartCal.Size = new System.Drawing.Size(83, 40);
             this.btnStartCal.TabIndex = 86;
             this.btnStartCal.Text = "Start";
             this.btnStartCal.UseVisualStyleBackColor = true;
@@ -468,10 +470,10 @@
             // 
             this.rBkalibrieren.AutoSize = true;
             this.rBkalibrieren.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBkalibrieren.Location = new System.Drawing.Point(7, 358);
-            this.rBkalibrieren.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rBkalibrieren.Location = new System.Drawing.Point(5, 291);
+            this.rBkalibrieren.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rBkalibrieren.Name = "rBkalibrieren";
-            this.rBkalibrieren.Size = new System.Drawing.Size(185, 41);
+            this.rBkalibrieren.Size = new System.Drawing.Size(149, 35);
             this.rBkalibrieren.TabIndex = 14;
             this.rBkalibrieren.Text = "Kalibriert";
             this.rBkalibrieren.UseVisualStyleBackColor = true;
@@ -482,32 +484,35 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(363, 11);
+            this.label1.Location = new System.Drawing.Point(272, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 37);
+            this.label1.Size = new System.Drawing.Size(246, 31);
             this.label1.TabIndex = 13;
             this.label1.Text = "Aufnahmeschwelle";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // tbThreshold
             // 
             this.tbThreshold.BackColor = System.Drawing.Color.Silver;
             this.tbThreshold.LargeChange = 1;
-            this.tbThreshold.Location = new System.Drawing.Point(357, 57);
-            this.tbThreshold.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tbThreshold.Location = new System.Drawing.Point(268, 46);
+            this.tbThreshold.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbThreshold.Maximum = 9;
             this.tbThreshold.Minimum = 1;
             this.tbThreshold.Name = "tbThreshold";
-            this.tbThreshold.Size = new System.Drawing.Size(447, 56);
+            this.tbThreshold.Size = new System.Drawing.Size(335, 45);
             this.tbThreshold.TabIndex = 12;
             this.tbThreshold.Value = 1;
+            this.tbThreshold.Scroll += new System.EventHandler(this.TbThreshold_Scroll);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.Move;
-            this.pictureBox1.Location = new System.Drawing.Point(536, 155);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(402, 126);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 246);
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -517,10 +522,10 @@
             this.rBPfeifen.AutoSize = true;
             this.rBPfeifen.Checked = true;
             this.rBPfeifen.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBPfeifen.Location = new System.Drawing.Point(7, 309);
-            this.rBPfeifen.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rBPfeifen.Location = new System.Drawing.Point(5, 251);
+            this.rBPfeifen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rBPfeifen.Name = "rBPfeifen";
-            this.rBPfeifen.Size = new System.Drawing.Size(144, 41);
+            this.rBPfeifen.Size = new System.Drawing.Size(116, 35);
             this.rBPfeifen.TabIndex = 9;
             this.rBPfeifen.TabStop = true;
             this.rBPfeifen.Text = "Pfeifen";
@@ -530,10 +535,10 @@
             // 
             this.rBSopran.AutoSize = true;
             this.rBSopran.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBSopran.Location = new System.Drawing.Point(7, 258);
-            this.rBSopran.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rBSopran.Location = new System.Drawing.Point(5, 210);
+            this.rBSopran.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rBSopran.Name = "rBSopran";
-            this.rBSopran.Size = new System.Drawing.Size(147, 41);
+            this.rBSopran.Size = new System.Drawing.Size(118, 35);
             this.rBSopran.TabIndex = 8;
             this.rBSopran.Text = "Sopran";
             this.rBSopran.UseVisualStyleBackColor = true;
@@ -542,10 +547,10 @@
             // 
             this.rBMezzosopran.AutoSize = true;
             this.rBMezzosopran.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBMezzosopran.Location = new System.Drawing.Point(7, 208);
-            this.rBMezzosopran.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rBMezzosopran.Location = new System.Drawing.Point(5, 169);
+            this.rBMezzosopran.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rBMezzosopran.Name = "rBMezzosopran";
-            this.rBMezzosopran.Size = new System.Drawing.Size(241, 41);
+            this.rBMezzosopran.Size = new System.Drawing.Size(194, 35);
             this.rBMezzosopran.TabIndex = 7;
             this.rBMezzosopran.Text = "Mezzosopran";
             this.rBMezzosopran.UseVisualStyleBackColor = true;
@@ -554,10 +559,10 @@
             // 
             this.rBMaenneralt.AutoSize = true;
             this.rBMaenneralt.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBMaenneralt.Location = new System.Drawing.Point(7, 158);
-            this.rBMaenneralt.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rBMaenneralt.Location = new System.Drawing.Point(5, 128);
+            this.rBMaenneralt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rBMaenneralt.Name = "rBMaenneralt";
-            this.rBMaenneralt.Size = new System.Drawing.Size(194, 41);
+            this.rBMaenneralt.Size = new System.Drawing.Size(156, 35);
             this.rBMaenneralt.TabIndex = 6;
             this.rBMaenneralt.Text = "Männeralt";
             this.rBMaenneralt.UseVisualStyleBackColor = true;
@@ -566,10 +571,10 @@
             // 
             this.rBTenor.AutoSize = true;
             this.rBTenor.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBTenor.Location = new System.Drawing.Point(7, 107);
-            this.rBTenor.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rBTenor.Location = new System.Drawing.Point(5, 87);
+            this.rBTenor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rBTenor.Name = "rBTenor";
-            this.rBTenor.Size = new System.Drawing.Size(128, 41);
+            this.rBTenor.Size = new System.Drawing.Size(103, 35);
             this.rBTenor.TabIndex = 5;
             this.rBTenor.Text = "Tenor";
             this.rBTenor.UseVisualStyleBackColor = true;
@@ -578,10 +583,10 @@
             // 
             this.rBBartion.AutoSize = true;
             this.rBBartion.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBBartion.Location = new System.Drawing.Point(7, 57);
-            this.rBBartion.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rBBartion.Location = new System.Drawing.Point(5, 46);
+            this.rBBartion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rBBartion.Name = "rBBartion";
-            this.rBBartion.Size = new System.Drawing.Size(147, 41);
+            this.rBBartion.Size = new System.Drawing.Size(119, 35);
             this.rBBartion.TabIndex = 4;
             this.rBBartion.Text = "Bariton";
             this.rBBartion.UseVisualStyleBackColor = true;
@@ -591,10 +596,10 @@
             // 
             this.rBBass.AutoSize = true;
             this.rBBass.Font = new System.Drawing.Font("Rockwell", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rBBass.Location = new System.Drawing.Point(7, 6);
-            this.rBBass.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rBBass.Location = new System.Drawing.Point(5, 5);
+            this.rBBass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rBBass.Name = "rBBass";
-            this.rBBass.Size = new System.Drawing.Size(105, 41);
+            this.rBBass.Size = new System.Drawing.Size(86, 35);
             this.rBBass.TabIndex = 1;
             this.rBBass.Text = "Bass";
             this.rBBass.UseVisualStyleBackColor = true;
@@ -613,11 +618,11 @@
             this.tcIPConfiguration.Controls.Add(this.lbl_IPClient);
             this.tcIPConfiguration.Controls.Add(this.lbl_PortClient);
             this.tcIPConfiguration.Controls.Add(this.tbx_IPServer);
-            this.tcIPConfiguration.Location = new System.Drawing.Point(4, 25);
-            this.tcIPConfiguration.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tcIPConfiguration.Location = new System.Drawing.Point(4, 21);
+            this.tcIPConfiguration.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tcIPConfiguration.Name = "tcIPConfiguration";
-            this.tcIPConfiguration.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tcIPConfiguration.Size = new System.Drawing.Size(813, 414);
+            this.tcIPConfiguration.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tcIPConfiguration.Size = new System.Drawing.Size(608, 335);
             this.tcIPConfiguration.TabIndex = 1;
             this.tcIPConfiguration.Text = "IP-Configuration";
             this.tcIPConfiguration.Click += new System.EventHandler(this.tcIPConfiguration_Click);
@@ -625,10 +630,10 @@
             // pbNet2
             // 
             this.pbNet2.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.World2;
-            this.pbNet2.Location = new System.Drawing.Point(329, 20);
-            this.pbNet2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbNet2.Location = new System.Drawing.Point(247, 16);
+            this.pbNet2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbNet2.Name = "pbNet2";
-            this.pbNet2.Size = new System.Drawing.Size(205, 190);
+            this.pbNet2.Size = new System.Drawing.Size(154, 154);
             this.pbNet2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbNet2.TabIndex = 82;
             this.pbNet2.TabStop = false;
@@ -647,11 +652,11 @@
             this.tcNetworkDicovery.Controls.Add(this.btn_ActivateFirewall);
             this.tcNetworkDicovery.Controls.Add(this.cbQuickSearch);
             this.tcNetworkDicovery.Controls.Add(this.btn_deactivatefirewall);
-            this.tcNetworkDicovery.Location = new System.Drawing.Point(4, 25);
-            this.tcNetworkDicovery.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.tcNetworkDicovery.Location = new System.Drawing.Point(4, 21);
+            this.tcNetworkDicovery.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tcNetworkDicovery.Name = "tcNetworkDicovery";
-            this.tcNetworkDicovery.Padding = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tcNetworkDicovery.Size = new System.Drawing.Size(813, 414);
+            this.tcNetworkDicovery.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tcNetworkDicovery.Size = new System.Drawing.Size(608, 335);
             this.tcNetworkDicovery.TabIndex = 2;
             this.tcNetworkDicovery.Text = "NetworkDiscovery";
             this.tcNetworkDicovery.Click += new System.EventHandler(this.TcNetworkDicovery_Click_1);
@@ -660,11 +665,11 @@
             // 
             this.lsb_networkadapter.ContextMenuStrip = this.cms;
             this.lsb_networkadapter.FormattingEnabled = true;
-            this.lsb_networkadapter.ItemHeight = 16;
-            this.lsb_networkadapter.Location = new System.Drawing.Point(13, 13);
-            this.lsb_networkadapter.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lsb_networkadapter.ItemHeight = 12;
+            this.lsb_networkadapter.Location = new System.Drawing.Point(10, 11);
+            this.lsb_networkadapter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.lsb_networkadapter.Name = "lsb_networkadapter";
-            this.lsb_networkadapter.Size = new System.Drawing.Size(425, 116);
+            this.lsb_networkadapter.Size = new System.Drawing.Size(320, 88);
             this.lsb_networkadapter.TabIndex = 92;
             this.lsb_networkadapter.Click += new System.EventHandler(this.lsb_networkadapter_Click);
             this.lsb_networkadapter.SelectedIndexChanged += new System.EventHandler(this.lsb_networkadapter_SelectedIndexChanged);
@@ -672,30 +677,30 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 385);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.textBox1.Location = new System.Drawing.Point(10, 313);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(425, 23);
+            this.textBox1.Size = new System.Drawing.Size(320, 20);
             this.textBox1.TabIndex = 91;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pbGlasses2
             // 
             this.pbGlasses2.Image = global::MOVE.Server.Debug.Formular.Properties.Resources.lupe_ani1_optlins_aus;
-            this.pbGlasses2.Location = new System.Drawing.Point(565, 47);
-            this.pbGlasses2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbGlasses2.Location = new System.Drawing.Point(424, 38);
+            this.pbGlasses2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbGlasses2.Name = "pbGlasses2";
-            this.pbGlasses2.Size = new System.Drawing.Size(232, 134);
+            this.pbGlasses2.Size = new System.Drawing.Size(174, 109);
             this.pbGlasses2.TabIndex = 90;
             this.pbGlasses2.TabStop = false;
             // 
             // ServerSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 484);
+            this.ClientSize = new System.Drawing.Size(647, 393);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ServerSettings";
             this.Text = "ServerSettings";
             this.Activated += new System.EventHandler(this.ServerSettings_Activated);

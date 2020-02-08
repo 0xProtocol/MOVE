@@ -1,9 +1,17 @@
+settings
+frequency
+address configuration
+network discovery
+exit 
+Which commands are avaiable?
+---
 sensitivity one
 sensitivity two
 sensitivity three
 smoothinglevel one
 smoothinglevel two
 smoothinglevel three
+---
 bass
 bariton
 tenor
@@ -11,14 +19,23 @@ männeralt
 mezzosopran
 sopran
 whistle
+calibrated
+start calibration
+stop calibration
+set recording threshold to one
+set recording threshold to two
+set recording threshold to three
+set recording threshold to four
+set recording threshold to five
+set recording threshold to six
+set recording threshold to seven
+set recording threshold to eight
+set recording threshold to nine
+---
 start deepsearch
 start quicksearch
 activate firewall
 deactivate firewall
-settings
-frequency
-address configuration
-network discovery
 the first adapter
 the second adapter
 the third adapter
@@ -33,5 +50,3 @@ one address further
 five addresses further
 address for server
 address for client
-exit 
-Which commands are avaiable?

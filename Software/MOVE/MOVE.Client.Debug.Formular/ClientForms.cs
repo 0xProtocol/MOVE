@@ -544,7 +544,7 @@ namespace MOVE.Client.Debug.Formular
             {
                 Enablemenu();
             }
-            if (speech == "exit the game")
+            if (speech == "exit the window")
             {
                 this.Close();
             }

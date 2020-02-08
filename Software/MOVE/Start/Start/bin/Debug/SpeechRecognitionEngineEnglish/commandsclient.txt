@@ -7,5 +7,5 @@ frequency
 keyboard
 disable menu
 activate menu
-exit the game
+exit the window
 Which commands are avaiable?

@@ -633,7 +633,7 @@ namespace MOVE.Server.Debug.Formular
             {
                 Enablemenu();
             }
-            if (speech == "exit the game")
+            if (speech == "exit the window")
             {
                 CloseWindow();
             }

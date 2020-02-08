@@ -1,9 +1,17 @@
+Spieleinstellungen
+Frequenzeinstellungen
+Adresseinstellungen
+Netzwerkerkennung
+Schließen
+Welche Befehle gibt es?
+---
 Empfindlichkeit eins
 Empfindlichkeit zwei
 Empfindlichkeit drei
 Glättungsstufe eins
 Glättungsstufe zwei
 Glättungsstufe drei
+---
 Bass
 Bariton
 Tenor
@@ -11,14 +19,23 @@ Männeralt
 Mezzosopran
 Sopran
 Pfeifen
+Kalibriert
+Starte Kalibrierung
+Stoppe Kalibrierung
+Setze Aufnahmeschwelle auf eins
+Setze Aufnahmeschwelle auf zwei
+Setze Aufnahmeschwelle auf drei
+Setze Aufnahmeschwelle auf vier
+Setze Aufnahmeschwelle auf fünf
+Setze Aufnahmeschwelle auf sechs
+Setze Aufnahmeschwelle auf sieben
+Setze Aufnahmeschwelle auf acht
+Setze Aufnahmeschwelle auf neun
+---
 Starte Tiefsuche
 Starte Schnellsuche
 Aktiviere die Firewall
 Deaktiviere die Firewall
-Spieleinstellungen
-Frequenzeinstellungen
-Adresseinstellungen
-Netzwerkerkennung
 Der erste Adapter
 Der zweite Adapter
 Der dritte Adapter
@@ -33,5 +50,3 @@ Eine Adresse weiter
 Fünf Adressen weiter
 Adresse für Server
 Adresse für Client
-Schließen
-Welche Befehle gibt es?

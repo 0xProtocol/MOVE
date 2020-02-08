@@ -33,6 +33,7 @@ namespace MOVE.Server.Debug.Formular
         int speechmodulevalue = 1;
         int calState = 0;
         int speechvalue;
+        int helpvalue = 1;
         #endregion
         #region klassengenerierte Methoden
         public ServerSettings()
@@ -245,6 +246,55 @@ namespace MOVE.Server.Debug.Formular
                 {
                     rBPfeifen.Checked = true;
                 }
+                if (speech == "calibrated")
+                {
+                    rBkalibrieren.Checked = true;
+                }
+                if (speech == "start calibration")
+                {
+                    StartCal();
+                }
+                if (speech == "stop calibration")
+                {
+                    StopCal();
+                }
+                if (speech == "set recording threshold to one")
+                {
+                    tbThreshold.Value = 1;
+                }
+                if (speech == "set recording threshold to two")
+                {
+                    tbThreshold.Value = 2;
+                }
+                if (speech == "set recording threshold to three")
+                {
+                    tbThreshold.Value = 3;
+                }
+                if (speech == "set recording threshold to four")
+                {
+                    tbThreshold.Value = 4;
+                }
+                if (speech == "set recording threshold to five")
+                {
+                    tbThreshold.Value = 5;
+                }
+                if (speech == "set recording threshold to six")
+                {
+                    tbThreshold.Value = 6;
+                }
+                if (speech == "set recording threshold to seven")
+                {
+                    tbThreshold.Value = 7;
+                }
+                if (speech == "set recording threshold to eight")
+                {
+                    tbThreshold.Value = 8;
+                }
+                if (speech == "set recording threshold to nine")
+                {
+                    tbThreshold.Value = 9;
+                }
+
             }
             if (tabControl1.SelectedTab == tabControl1.TabPages[3])
             {
@@ -390,8 +440,9 @@ namespace MOVE.Server.Debug.Formular
             }
             if (speech == "Which commands are avaiable?")
             {
+                CheckActiveTabControl();
                 MOVE.Shared.Help h = new MOVE.Shared.Help();
-                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandsserversettings.txt");
+                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandsserversettings.txt",helpvalue);
                 h.ShowDialog();
             }
         }
@@ -455,6 +506,54 @@ namespace MOVE.Server.Debug.Formular
                 if (speech == "Pfeifen")
                 {
                     rBPfeifen.Checked = true;
+                }
+                if (speech == "Kalibriert")
+                {
+                    rBkalibrieren.Checked = true;
+                }
+                if (speech == "Starte Kalibrierung")
+                {
+                    StartCal();
+                }
+                if (speech == "Stoppe Kalibrierung")
+                {
+                    StopCal();
+                }
+                if (speech == "Setze Aufnahmeschwelle auf eins")
+                {
+                    tbThreshold.Value = 1;
+                }
+                if (speech == "Setze Aufnahmeschwelle auf zwei")
+                {
+                    tbThreshold.Value = 2;
+                }
+                if (speech == "Setze Aufnahmeschwelle auf drei")
+                {
+                    tbThreshold.Value = 3;
+                }
+                if (speech == "Setze Aufnahmeschwelle auf vier")
+                {
+                    tbThreshold.Value = 4;
+                }
+                if (speech == "Setze Aufnahmeschwelle auf fünf")
+                {
+                    tbThreshold.Value = 5;
+                }
+                if (speech == "Setze Aufnahmeschwelle auf sechs")
+                {
+                    tbThreshold.Value = 6;
+                }
+                if (speech == "Setze Aufnahmeschwelle auf sieben")
+                {
+                    tbThreshold.Value = 7;
+                }
+                if (speech == "Setze Aufnahmeschwelle auf acht")
+                {
+                    tbThreshold.Value = 8;
+                }
+                if (speech == "Setze Aufnahmeschwelle auf neun")
+                {
+                    tbThreshold.Value = 9;
                 }
             }
             if (tabControl1.SelectedTab == tabControl1.TabPages[3])
@@ -595,6 +694,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (speech == "Welche Befehle gibt es?")
             {
+                CheckActiveTabControl();
                 MOVE.Shared.Help h = new MOVE.Shared.Help();
                 h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsserversettings.txt");
                 h.ShowDialog();
@@ -644,6 +744,26 @@ namespace MOVE.Server.Debug.Formular
             catch (Exception ex)
             {
                 elw.WriteErrorLog(ex.ToString());
+            }
+        }
+
+        private void CheckActiveTabControl()
+        {
+            if (tabControl1.SelectedTab == tabControl1.TabPages[0])
+            {
+                helpvalue = 1;
+            }
+            if (tabControl1.SelectedTab == tabControl1.TabPages[1])
+            {
+                helpvalue = 2;
+            }
+            if (tabControl1.SelectedTab == tabControl1.TabPages[2])
+            {
+                helpvalue = 0;
+            }
+            if (tabControl1.SelectedTab == tabControl1.TabPages[3])
+            {
+                helpvalue = 3;
             }
         }
         private void StartthisListenerGerman()
@@ -890,13 +1010,23 @@ namespace MOVE.Server.Debug.Formular
 
         private void btnStartCal_Click(object sender, EventArgs e)
         {
+            StartCal();
+        }
+
+        private void StartCal()
+        {
             calState = 1;
+        }
+
+        private void StopCal()
+        {
+            calState = 2;
+            rBkalibrieren.Checked = true;
         }
 
         private void btnStopCal_Click(object sender, EventArgs e)
         {
-            calState = 2;
-            rBkalibrieren.Checked = true;
+            StopCal();
         }
 
         public int GetCalSate()
@@ -1061,6 +1191,16 @@ namespace MOVE.Server.Debug.Formular
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TbThreshold_Scroll(object sender, EventArgs e)
         {
 
         }
