@@ -106,3 +106,8 @@ D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.Help.resources
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.GenerateResource.cache
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.dll
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.xml
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.Help.resources
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.GenerateResource.Cache

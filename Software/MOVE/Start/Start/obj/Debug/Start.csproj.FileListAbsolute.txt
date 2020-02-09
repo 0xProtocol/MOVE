@@ -1393,3 +1393,5 @@ D:\GitHubMove\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.exe
 D:\GitHubMove\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.pdb
 D:\GitHubMove\MOVE\Software\MOVE\Start\Start\obj\Debug\Warning.g.cs
 D:\GitHubMove\MOVE\Software\MOVE\Start\Start\obj\Debug\Warning.baml
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\Warning.g.cs
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\Warning.baml

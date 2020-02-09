@@ -6,9 +6,55 @@
         xmlns:local="clr-namespace:Start"
         mc:Ignorable="d"
          Icon="logo (2).jpeg"
-        Title="Info" Height="450" Width="800" Background="Black" Activated="Window_Activated" Deactivated="Window_Deactivated">
+        Title="Info" Height="469.2" Width="844.8" Background="Black" Activated="Window_Activated" Deactivated="Window_Deactivated">
     <Grid>
-        <TextBlock Foreground="White" RenderTransformOrigin="0.509,4.062" Margin="0" HorizontalAlignment="Center" Width="626" VerticalAlignment="Center" Height="308" Cursor="None" FontSize="20"><Run Text="@ 2018 - 2020 3EIC. Alle Rechte vorbehalten."/><LineBreak/><Run/><LineBreak/><Run Text="Das MOVE Logo und sämtliche verwendete Bilder sind Eigentum von 3EIC. "/><LineBreak/><Run/><LineBreak/><Run Text="Teammitglieder:"/><LineBreak/><Run Text="Julian Rampala"/><LineBreak/><Run Text="Christoph Oprawill"/><LineBreak/><Run Text="Markus Mayer"/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock Foreground="White" RenderTransformOrigin="0.509,4.062" Margin="0" HorizontalAlignment="Center" Width="626" VerticalAlignment="Center" Height="308" Cursor="None" FontSize="18"><Run Text="@ 2018 - 2020 3EIC. Alle Rechte vorbehalten."/><LineBreak/><Run/><LineBreak/><Run Text="Das MOVE Logo und sämtliche verwendete Bilder sind Eigentum von 3EIC. "/><LineBreak/><Run/><LineBreak/><Run Text="Teammitglieder:"/><LineBreak/><Run Text="Julian Rampala"/><LineBreak/><Run Text="Christoph Oprawill"/><LineBreak/><Run Text="Markus Mayer"/><LineBreak/><Run Text=""/></TextBlock>
+        <Label x:Name="label2" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="794" Background="Yellow" Height="8" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label3" Content="" HorizontalAlignment="Left" Margin="12,400,0,0" VerticalAlignment="Top" Width="794" Background="Red" Height="8" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label3_Copy" Content="" HorizontalAlignment="Left" Margin="7,10,0,0" VerticalAlignment="Top" Width="8" Background="Yellow" Height="399" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label3_Copy1" Content="" HorizontalAlignment="Left" Margin="797,10,0,0" VerticalAlignment="Top" Width="8" Background="Red" Height="395" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5"
+>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label2_Copy" Content="" HorizontalAlignment="Left" Margin="25,25,0,0" VerticalAlignment="Top" Width="794" Background="Yellow" Height="8" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label3_Copy2" Content="" HorizontalAlignment="Left" Margin="26,415,0,0" VerticalAlignment="Top" Width="794" Background="Red" Height="8" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label3_Copy3" Content="" HorizontalAlignment="Left" Margin="23,25,0,0" VerticalAlignment="Top" Width="8" Background="Yellow" Height="399" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label3_Copy4" Content="" HorizontalAlignment="Left" Margin="812,25,0,0" VerticalAlignment="Top" Width="8" Background="Red" Height="392" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5"
+>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
 
     </Grid>
 </Window>

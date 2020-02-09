@@ -65,7 +65,7 @@ namespace Start
             }
             else
             {
-                logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#515251"));
+                logolabel2.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#515251"));
                 if (speechvalue == 0)
                 {
                     DesignChangesGerman();
@@ -109,11 +109,11 @@ namespace Start
 
         private void DesignChangesGerman()
         {
-            logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#660066"));
+            logolabel2.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#660066"));
         }
         private void DesignChangesEnglish()
         {
-            logolabel.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#db00cd"));
+            logolabel2.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#db00cd"));
             btn_Uebung.Content = "Practice";
             btn_info.Content = "Information";
             btn_Settings.Content = "Settings";
@@ -150,6 +150,15 @@ namespace Start
         private void Window_FocusableChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
 
+        }
+
+        private void button_Click_3(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

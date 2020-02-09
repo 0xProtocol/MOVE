@@ -195,3 +195,5 @@ D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csproj.CoreCompil
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.dll
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Core\bin\Debug\NAudio.dll
+C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\MOVE.Core\bin\Debug\NAudio.xml

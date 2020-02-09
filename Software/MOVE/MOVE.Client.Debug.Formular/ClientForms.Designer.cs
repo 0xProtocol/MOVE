@@ -60,6 +60,9 @@
             this.lblGlaettung = new System.Windows.Forms.Label();
             this.lblBallSpeed = new System.Windows.Forms.Label();
             this.lblFineTuning = new System.Windows.Forms.Label();
+            this.lblSchrittDrei = new System.Windows.Forms.Label();
+            this.lblSchrittEins = new System.Windows.Forms.Label();
+            this.lblSchrittZwei = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_downnetwork)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_uplocal)).BeginInit();
@@ -233,6 +236,7 @@
             this.cbAusblenden.TabIndex = 106;
             this.cbAusblenden.Text = "Menü Ausblenden";
             this.cbAusblenden.UseVisualStyleBackColor = true;
+            this.cbAusblenden.CheckedChanged += new System.EventHandler(this.cbAusblenden_CheckedChanged_1);
             // 
             // lbl_Client
             // 
@@ -425,6 +429,39 @@
             this.lblFineTuning.TabIndex = 50;
             this.lblFineTuning.Text = "Empfindlichkeit: ";
             // 
+            // lblSchrittDrei
+            // 
+            this.lblSchrittDrei.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblSchrittDrei.AutoSize = true;
+            this.lblSchrittDrei.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSchrittDrei.Location = new System.Drawing.Point(394, 829);
+            this.lblSchrittDrei.Name = "lblSchrittDrei";
+            this.lblSchrittDrei.Size = new System.Drawing.Size(258, 18);
+            this.lblSchrittDrei.TabIndex = 125;
+            this.lblSchrittDrei.Text = "Übertragung der Schlägerkoordinaten:";
+            // 
+            // lblSchrittEins
+            // 
+            this.lblSchrittEins.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblSchrittEins.AutoSize = true;
+            this.lblSchrittEins.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSchrittEins.Location = new System.Drawing.Point(394, 775);
+            this.lblSchrittEins.Name = "lblSchrittEins";
+            this.lblSchrittEins.Size = new System.Drawing.Size(240, 18);
+            this.lblSchrittEins.TabIndex = 124;
+            this.lblSchrittEins.Text = "Korrektes IP-Netzwerk ausgewählt:";
+            // 
+            // lblSchrittZwei
+            // 
+            this.lblSchrittZwei.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblSchrittZwei.AutoSize = true;
+            this.lblSchrittZwei.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSchrittZwei.Location = new System.Drawing.Point(394, 802);
+            this.lblSchrittZwei.Name = "lblSchrittZwei";
+            this.lblSchrittZwei.Size = new System.Drawing.Size(223, 18);
+            this.lblSchrittZwei.TabIndex = 123;
+            this.lblSchrittZwei.Text = "Verbindung zu Server hergestellt:";
+            // 
             // ClientForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -432,6 +469,9 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.lblSchrittDrei);
+            this.Controls.Add(this.lblSchrittEins);
+            this.Controls.Add(this.lblSchrittZwei);
             this.Controls.Add(this.lblSchwierigkeit);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.lblGlaettung);
@@ -508,6 +548,9 @@
         private System.Windows.Forms.Label lblGlaettung;
         private System.Windows.Forms.Label lblBallSpeed;
         private System.Windows.Forms.Label lblFineTuning;
+        private System.Windows.Forms.Label lblSchrittDrei;
+        private System.Windows.Forms.Label lblSchrittEins;
+        private System.Windows.Forms.Label lblSchrittZwei;
     }
 }
 

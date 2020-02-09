@@ -102,7 +102,14 @@ namespace MOVE.Client.Debug.Formular
         #region Service/Request
         public void LogServiceinformation(string message)
         {
-
+            if (message.Contains("Waiting for connection"))
+            {
+                lblSchrittEins.Text = "Korrektes IP-Netzwerk ausgewählt: ✓";
+            }
+            if (message.Contains("wird gesendet an"))
+            {
+                lblSchrittZwei.Text = "Verbindung zu Server hergestellt: ✓";
+            }
             if (lsb_Information.InvokeRequired)
             {
                 lsb_Information.Invoke(logServiceInformation, message);
@@ -120,7 +127,10 @@ namespace MOVE.Client.Debug.Formular
             string xs = msg[2];
             string pointsBlue1 = msg[4];
             string pointsGreen1 = msg[3];
-
+            if (message.Contains("|"))
+            {
+                lblSchrittDrei.Text = "Übertragung der Schlägerkoordinaten: ✓";
+            }
             if (pbx_uplocal.InvokeRequired)
             {
                 pbx_downnetwork.Invoke(logRequestInformation, message);
@@ -242,32 +252,7 @@ namespace MOVE.Client.Debug.Formular
         }
         private void cbAusblenden_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbAusblenden.Checked == true)
-            {
-
-                lblFineTuning.Visible = false;
-                lblGlaettung.Visible = false;
-
-                lsb_Information.Visible = false;
-
-                lblSchwierigkeit.Visible = false;
-                btn_Start.Visible = false;
-                btn_Connect.Visible = false;
-                btnStart.Visible = false;
-            }
-            if (cbAusblenden.Checked == false)
-            {
-
-                lblFineTuning.Visible = true;
-                lblGlaettung.Visible = true;
-
-                lsb_Information.Visible = true;
-
-                lblSchwierigkeit.Visible = true;
-                btn_Start.Visible = true;
-                btn_Connect.Visible = true;
-                btnStart.Visible = true;
-            }
+            
         }
 
         private void btnWerteAufzeichnen_Click(object sender, EventArgs e)
@@ -810,6 +795,44 @@ namespace MOVE.Client.Debug.Formular
         private void rbKeyboard_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbAusblenden_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (cbAusblenden.Checked == true)
+            {
+
+                lblFineTuning.Visible = false;
+                lblGlaettung.Visible = false;
+
+                lsb_Information.Visible = false;
+                btnSettings.Visible = false;
+                lblSchwierigkeit.Visible = false;
+                btn_Start.Visible = false;
+                btn_Connect.Visible = false;
+                btnStart.Visible = false;
+                lblSchrittEins.Visible = false;
+                lblSchrittZwei.Visible = false;
+                lblSchrittDrei.Visible = false;
+                lblBallSpeed.Visible = false;
+            }
+            if (cbAusblenden.Checked == false)
+            {
+
+                lblFineTuning.Visible = true;
+                lblGlaettung.Visible = true;
+
+                lsb_Information.Visible = true;
+                btnSettings.Visible = true;
+                lblSchwierigkeit.Visible = true;
+                btn_Start.Visible = true;
+                btn_Connect.Visible = true;
+                btnStart.Visible = true;
+                lblSchrittEins.Visible = true;
+                lblSchrittZwei.Visible = true;
+                lblSchrittDrei.Visible = true;
+                lblBallSpeed.Visible = true;
+            }
         }
     }
 }

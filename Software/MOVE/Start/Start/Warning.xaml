@@ -5,16 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Start"
         mc:Ignorable="d"
-        Title="Warning" Height="200" Width="400">
+        Title="Warning" Height="225.63" Width="403.051">
     <Grid Width="400" Height="200">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FF720808" Offset="1"/>
+                <GradientStop Color="#FF720508" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button Content="Neustart" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="312,144,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="124,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="157" Text="Für die neuen Einstellungen ist ein Neustart der Applikation erforderlich" Foreground="Red"/>
+        <Button Content="Neustart" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Background="#FF0FFF00"/>
+        <Button Content="Abbrechen" HorizontalAlignment="Left" Margin="292,150,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Background="Red"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="61" Width="157" Text="Für die neuen Einstellungen ist ein Neustart der Applikation erforderlich" Foreground="White"/>
+        <Label x:Name="label2" Content="" HorizontalAlignment="Left" Margin="11,4,0,0" VerticalAlignment="Top" Width="376" Background="#FF0FFF00" Height="6" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy" Content="" HorizontalAlignment="Left" Margin="21,14,0,0" VerticalAlignment="Top" Width="357" Background="Red" Height="6" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy1" Content="" HorizontalAlignment="Left" Margin="21,174,0,0" VerticalAlignment="Top" Width="357" Background="Red" Height="6" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy2" Content="" HorizontalAlignment="Left" Margin="11,184,0,0" VerticalAlignment="Top" Width="376" Background="#FF0FFF00" Height="6" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy3" Content="" HorizontalAlignment="Left" Margin="11,4,0,0" VerticalAlignment="Top" Width="6" Background="#FF0FFF00" Height="186" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy4" Content="" HorizontalAlignment="Left" Margin="21,15,0,0" VerticalAlignment="Top" Width="6" Background="Red" Height="165" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy5" Content="" HorizontalAlignment="Left" Margin="371,20,0,0" VerticalAlignment="Top" Width="6" Background="Red" Height="160" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy6" Content="" HorizontalAlignment="Left" Margin="381,4,0,0" VerticalAlignment="Top" Width="6" Background="#FF0FFF00" Height="186" FontSize="20" FontWeight="Bold"/>
     </Grid>
 </Window>

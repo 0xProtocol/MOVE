@@ -132,7 +132,9 @@ namespace MOVE.Server.Debug.Formular
                 lblSchwierigkeit.Visible = false;
                 btn_Start.Visible = false;
                 btn_Connect.Visible = false;
-
+                lblSchrittEins.Visible = false;
+                lblSchrittZwei.Visible = false;
+                lblSchrittDrei.Visible = false;
                 lblBallSpeed.Visible = false;
 
                 btnStart.Visible = false;
@@ -148,6 +150,9 @@ namespace MOVE.Server.Debug.Formular
                 btnSettings.Visible = true;
                 lblBallSpeed.Visible = true;
                 btnStart.Visible = true;
+                lblSchrittEins.Visible = true;
+                lblSchrittZwei.Visible = true;
+                lblSchrittDrei.Visible = true;
             }
         }
         private void btn_Start_Click_1(object sender, EventArgs e)
@@ -355,20 +360,18 @@ namespace MOVE.Server.Debug.Formular
 
             if (pbx_downlocal.Bounds.IntersectsWith(Ball.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y - 5);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y - 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                Console.Beep(2350, 50);
             }
 
             if (pbx_upnetwork.Bounds.IntersectsWith(Ball.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 5);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
-                Console.Beep(2350, 50);
             }
             if (Ball.Left < dgv_playfieldclient.Left)
             {
@@ -412,6 +415,18 @@ namespace MOVE.Server.Debug.Formular
         #region Service/Request
         public void LogServiceinformation(string message)
         {
+            if (message.Contains("Waiting for connection"))
+            {
+                lblSchrittEins.Text = "Korrektes IP-Netzwerk ausgewählt: ✓";
+            }
+            if (message.Contains("wird gesendet an"))
+            {
+                lblSchrittZwei.Text = "Verbindung zu Client hergestellt: ✓";
+            }
+            if (lsb_Information.InvokeRequired)
+            {
+                lsb_Information.Invoke(logServiceInformation, message);
+            }
             if (lsb_Information.InvokeRequired)
             {
                 lsb_Information.Invoke(logServiceInformation, message);
@@ -426,7 +441,10 @@ namespace MOVE.Server.Debug.Formular
         {
             string[] msg = message.Split('|');
             string x = msg[1];
-
+            if (message.Contains("l|"))
+            {
+                lblSchrittDrei.Text = "Übertragung der Schlägerkoordinaten: ✓";
+            }
             if (pbx_downlocal.InvokeRequired)
             {
                 pbx_upnetwork.Invoke(logRequestInformation, message);

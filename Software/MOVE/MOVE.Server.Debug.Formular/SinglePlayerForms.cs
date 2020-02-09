@@ -30,11 +30,11 @@ namespace MOVE.Server.Debug.Formular
         SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         ErrorLogWriter elw = new ErrorLogWriter();
         private static Random rnd = new Random();
-        private static double audioValueMax = 0;
-        private static double audioValueLast = 0;
+        private static double soundValueOne = 0;
+        private static double soundValueTwo = 0;
         private static int audioCount = 0;
-        private static int RATE = 44100;
-        private static int BUFFER_SAMPLES = 2048;
+        private static int samplingRate = 44100;
+        private static int bufferSize = 2048;
         const int yValue = 663;
         List<int> savedValues = new List<int>();
         int positionValue = 0;
@@ -63,9 +63,9 @@ namespace MOVE.Server.Debug.Formular
             Control.CheckForIllegalCrossThreadCalls = false;
             var waveIn = new WaveInEvent();
             waveIn.DeviceNumber = 0;
-            waveIn.WaveFormat = new NAudio.Wave.WaveFormat(RATE, 1);
+            waveIn.WaveFormat = new NAudio.Wave.WaveFormat(samplingRate, 1);
             waveIn.DataAvailable += OnDataAvailable;
-            waveIn.BufferMilliseconds = (int)((double)BUFFER_SAMPLES / (double)RATE * 1000.0);
+            waveIn.BufferMilliseconds = (int)((double)bufferSize / (double)samplingRate * 1000.0);
             waveIn.StartRecording();
             lblLifes.Text = "Leben: " + lifes.ToString();
             string language = ConfigurationManager.AppSettings["language"];
@@ -229,11 +229,11 @@ namespace MOVE.Server.Debug.Formular
             }
 
             // calculate what fraction this peak is of previous peaks
-            if (max > audioValueMax)
+            if (max > soundValueOne)
             {
-                audioValueMax = (double)max;
+                soundValueOne = (double)max;
             }
-            audioValueLast = max;
+            soundValueTwo = max;
             audioCount += 1;
         }
         public void Glaettung(int anzahl)
@@ -281,34 +281,14 @@ namespace MOVE.Server.Debug.Formular
 
         private void cbAusblenden_CheckedChanged_1(object sender, EventArgs e)
         {
-            if (cbAusblenden.Checked == true)
-            {
-
-                lblFineTuning.Visible = false;
-                lblGlaettung.Visible = false;
-
-                lblSchwierigkeit.Visible = false;
-                btn_Start.Visible = false;
-
-                lblBallSpeed.Visible = false;
-
-            }
-            if (cbAusblenden.Checked == false)
-            {
-                lblFineTuning.Visible = true;
-                lblGlaettung.Visible = true;
-                lblSchwierigkeit.Visible = true;
-                btn_Start.Visible = true;
-
-                lblBallSpeed.Visible = true;
-            }
+            
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
             if (rBSound.Checked == true)
             {
-                double frac = audioValueLast / audioValueMax;
+                double frac = soundValueTwo / soundValueOne;
                 if (ss.tbempfindlichkeit.Value == 1)
                 {
                     positionValue = (int)(((frac * 3) * 668)) - 2;
@@ -745,5 +725,29 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
+        private void cbAusblenden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbAusblenden.Checked == true)
+            {
+
+                lblFineTuning.Visible = false;
+                lblGlaettung.Visible = false;
+                btnSettings.Visible = false;
+                lblSchwierigkeit.Visible = false;
+                btn_Start.Visible = false;
+
+                lblBallSpeed.Visible = false;
+
+            }
+            if (cbAusblenden.Checked == false)
+            {
+                lblFineTuning.Visible = true;
+                lblGlaettung.Visible = true;
+                lblSchwierigkeit.Visible = true;
+                btn_Start.Visible = true;
+                btnSettings.Visible = true;
+                lblBallSpeed.Visible = true;
+            }
+        }
     }
 }
