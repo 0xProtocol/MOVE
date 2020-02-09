@@ -201,7 +201,7 @@
             this.Ball.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Ball.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Ball.Location = new System.Drawing.Point(1053, 183);
-            this.Ball.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Ball.Margin = new System.Windows.Forms.Padding(2);
             this.Ball.Name = "Ball";
             this.Ball.Size = new System.Drawing.Size(38, 41);
             this.Ball.TabIndex = 126;
@@ -301,7 +301,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.Red;
             this.panel8.Location = new System.Drawing.Point(35, 24);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1293, 8);
             this.panel8.TabIndex = 145;
@@ -312,7 +312,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.Red;
             this.panel4.Location = new System.Drawing.Point(11, 11);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1343, 8);
             this.panel4.TabIndex = 143;
@@ -321,7 +321,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.Red;
             this.panel5.Location = new System.Drawing.Point(11, 13);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(8, 727);
             this.panel5.TabIndex = 146;
@@ -330,7 +330,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Red;
             this.panel6.Location = new System.Drawing.Point(23, 13);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(8, 727);
             this.panel6.TabIndex = 144;
@@ -339,7 +339,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Red;
             this.panel7.Location = new System.Drawing.Point(35, 13);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(8, 727);
             this.panel7.TabIndex = 142;
@@ -373,7 +373,7 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Red;
             this.panel1.Location = new System.Drawing.Point(1324, 20);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(8, 720);
             this.panel1.TabIndex = 149;
@@ -383,7 +383,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.Location = new System.Drawing.Point(1336, 20);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(8, 720);
             this.panel2.TabIndex = 148;
@@ -393,7 +393,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Red;
             this.panel3.Location = new System.Drawing.Point(1348, 12);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(8, 728);
             this.panel3.TabIndex = 147;
@@ -426,6 +426,7 @@
             this.rBFrequenz.TabStop = true;
             this.rBFrequenz.Text = "Frequenz";
             this.rBFrequenz.UseVisualStyleBackColor = false;
+            this.rBFrequenz.CheckedChanged += new System.EventHandler(this.rBFrequenz_CheckedChanged);
             // 
             // rBSound
             // 
@@ -537,7 +538,7 @@
             this.Controls.Add(this.points2);
             this.Controls.Add(this.pbx_downlocal);
             this.Controls.Add(this.dgv_playfieldclient);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SinglePlayerForms";
             this.Text = "SinglePlayerForms";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

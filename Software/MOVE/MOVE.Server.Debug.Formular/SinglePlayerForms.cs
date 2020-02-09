@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MOVE.Shared;
+using MOVE.AudioLayer;
 using MOVE.Core;
 using System.Net;
 using System.Net.NetworkInformation;
@@ -29,6 +30,7 @@ namespace MOVE.Server.Debug.Formular
         SpeechRecognitionEngine _recognizergerman = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("de-DE"));
         SpeechRecognitionEngine _recognizerenglish = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-GB"));
         ErrorLogWriter elw = new ErrorLogWriter();
+        FrequenzInput fi = new FrequenzInput();
         private static Random rnd = new Random();
         private static double soundValueOne = 0;
         private static double soundValueTwo = 0;
@@ -67,6 +69,7 @@ namespace MOVE.Server.Debug.Formular
             waveIn.DataAvailable += OnDataAvailable;
             waveIn.BufferMilliseconds = (int)((double)bufferSize / (double)samplingRate * 1000.0);
             waveIn.StartRecording();
+            fi.Start();
             lblLifes.Text = "Leben: " + lifes.ToString();
             string language = ConfigurationManager.AppSettings["language"];
             speechvalue = Convert.ToInt32(language);
@@ -295,6 +298,23 @@ namespace MOVE.Server.Debug.Formular
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+            if (rBFrequenz.Checked == true)
+            {
+                fi.CalculateData(ss.GetCalSate());
+
+                positionValue = fi.CalculatePaddleLocationX(ss.FrequenzSetting(), ss.FrequenzThreshold());
+
+                if (positionValue < 0)
+                {
+                    positionValue = 0;
+                }
+                if (positionValue > 1350)
+                {
+                    positionValue = 1350;
+                }
+
+                pbx_downlocal.Location = new Point(positionValue + 60, (int)player);
+            }
             if (rBSound.Checked == true)
             {
                 double frac = soundValueTwo / soundValueOne;
@@ -344,9 +364,10 @@ namespace MOVE.Server.Debug.Formular
                 {
                     positionValue = 1300;
                 }
+                savedValues.Add(positionValue);
+                Glaettung(wertGlaettung);
             }
-            savedValues.Add(positionValue);
-            Glaettung(wertGlaettung);
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -754,30 +775,35 @@ namespace MOVE.Server.Debug.Formular
         {
 
         }
+
+        private void rBFrequenz_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
         /*/
 private void cbAusblenden_CheckedChanged(object sender, EventArgs e)
 {
-   if (cbAusblenden.Checked == true)
-   {
+if (cbAusblenden.Checked == true)
+{
 
-       lblFineTuning.Visible = false;
-       lblGlaettung.Visible = false;
-       btnSettings.Visible = false;
-       lblSchwierigkeit.Visible = false;
-       btn_Start.Visible = false;
+lblFineTuning.Visible = false;
+lblGlaettung.Visible = false;
+btnSettings.Visible = false;
+lblSchwierigkeit.Visible = false;
+btn_Start.Visible = false;
 
-       lblBallSpeed.Visible = false;
+lblBallSpeed.Visible = false;
 
-   }
-   if (cbAusblenden.Checked == false)
-   {
-       lblFineTuning.Visible = true;
-       lblGlaettung.Visible = true;
-       lblSchwierigkeit.Visible = true;
-       btn_Start.Visible = true;
-       btnSettings.Visible = true;
-       lblBallSpeed.Visible = true;
-   }
+}
+if (cbAusblenden.Checked == false)
+{
+lblFineTuning.Visible = true;
+lblGlaettung.Visible = true;
+lblSchwierigkeit.Visible = true;
+btn_Start.Visible = true;
+btnSettings.Visible = true;
+lblBallSpeed.Visible = true;
+}
 }
 /*/
     }

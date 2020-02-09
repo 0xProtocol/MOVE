@@ -64,9 +64,13 @@ namespace MOVE.AudioLayer
             bwp.Read(audioBytes, 0, bufferSamples);
 
             if (audioBytes.Length == 0)
+            {
                 return;
+            }
             if (audioBytes[bufferSamples - 2] == 0)
+            {
                 return;
+            }
 
             int lenght = bufferSamples / 2;
 
@@ -107,27 +111,27 @@ namespace MOVE.AudioLayer
             {
                 if (setting == 1)
                 {
-                    xValue = maxIndex * 192 - 2 * 192;
+                    xValue = maxIndex * 225 - 2 * 225;
                 }
                 if (setting == 2)
                 {
-                    xValue = maxIndex * 165 - 2 * 165;
+                    xValue = maxIndex * 193 - 2 * 193;
                 }
                 if (setting == 3)
                 {
-                    xValue = maxIndex * 165 - 3 * 165;
+                    xValue = maxIndex * 193 - 3 * 193;
                 }
                 if (setting == 4)
                 {
-                    xValue = maxIndex * 105 - 4 * 105;
+                    xValue = maxIndex * 123 - 4 * 123;
                 }
                 if (setting == 5)
                 {
-                    xValue = maxIndex * 105 - 5 * 105;
+                    xValue = maxIndex * 123 - 5 * 123;
                 }
                 if (setting == 6)
                 {
-                    xValue = maxIndex * 83 - 6 * 83;
+                    xValue = maxIndex * 97 - 6 * 97;
                 }
                 if (setting == 7)
                 {

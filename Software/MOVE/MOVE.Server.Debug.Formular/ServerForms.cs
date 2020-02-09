@@ -941,6 +941,11 @@ namespace MOVE.Server.Debug.Formular
         {
 
         }
+
+        private void rBFrequenz_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 #endregion
