@@ -223,13 +223,14 @@ namespace MOVE.Server.Debug.Formular
         {
             Bestätige();            
         }
+
         private void Bestätige()
         {
-
             btnInsert.Enabled = false;
             if (tbxName.Text == "")
             {
-                MessageBox.Show("Bitte geben Sie einen Spielernamen ein");
+                //MessageBox.Show("Bitte geben Sie einen Spielernamen ein");
+                lblHighscoreMessage.Text = "Bitte geben Sie einen Spielernamen ein!";
                 btnInsert.Enabled = true;
                 panel2.BackColor = Color.Orange;
                 panel3.BackColor = Color.Orange;
@@ -239,10 +240,12 @@ namespace MOVE.Server.Debug.Formular
                 panel7.BackColor = Color.Orange;
                 panel8.BackColor = Color.Orange;
                 panel9.BackColor = Color.Orange;
+                lblHighscoreMessage.BackColor = Color.Orange;
             }
             else if (tbxName.Text.Contains(';') == true)
             {
-                MessageBox.Show("Bitte geben Sie einen Spielernamen ohne ';' ein");
+                //MessageBox.Show("Bitte geben Sie einen Spielernamen ohne ';' ein");
+                lblHighscoreMessage.Text = "Bitte geben Sie einen Spielernamen ohne ';' ein!";
                 btnInsert.Enabled = true;
                 panel2.BackColor = Color.Orange;
                 panel3.BackColor = Color.Orange;
@@ -252,11 +255,13 @@ namespace MOVE.Server.Debug.Formular
                 panel7.BackColor = Color.Orange;
                 panel8.BackColor = Color.Orange;
                 panel9.BackColor = Color.Orange;
+                lblHighscoreMessage.BackColor = Color.Orange;
             }
             else
             {
                 sm.SaveScoreToCSV(tbxName.Text, Convert.ToInt32(tbxScore.Text));
                 LoadScore();
+                lblHighscoreMessage.Text = "Highscore eingetragen!";
                 panel2.BackColor = Color.Green;
                 panel3.BackColor = Color.Green;
                 panel4.BackColor = Color.Green;
@@ -265,6 +270,7 @@ namespace MOVE.Server.Debug.Formular
                 panel7.BackColor = Color.Green;
                 panel8.BackColor = Color.Green;
                 panel9.BackColor = Color.Green;
+                lblHighscoreMessage.BackColor = Color.Green;
             }
         }
         //sm.SaveScoreToDB(tbxName.Text, tbxScore.Text);

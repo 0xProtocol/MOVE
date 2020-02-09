@@ -444,6 +444,7 @@
             // 
             // btnStopCal
             // 
+            this.btnStopCal.Enabled = false;
             this.btnStopCal.Font = new System.Drawing.Font("Rockwell", 19.8F);
             this.btnStopCal.Location = new System.Drawing.Point(268, 286);
             this.btnStopCal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

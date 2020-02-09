@@ -45,13 +45,14 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.lblHighscoreMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 17F);
-            this.label1.Location = new System.Drawing.Point(34, 70);
+            this.label1.Location = new System.Drawing.Point(34, 112);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 26);
             this.label1.TabIndex = 0;
@@ -61,7 +62,7 @@
             // tbxScore
             // 
             this.tbxScore.Enabled = false;
-            this.tbxScore.Location = new System.Drawing.Point(129, 77);
+            this.tbxScore.Location = new System.Drawing.Point(129, 119);
             this.tbxScore.Name = "tbxScore";
             this.tbxScore.Size = new System.Drawing.Size(425, 20);
             this.tbxScore.TabIndex = 1;
@@ -74,9 +75,9 @@
             this.cdatum});
             this.lsvScores.Font = new System.Drawing.Font("Rockwell", 10F);
             this.lsvScores.HideSelection = false;
-            this.lsvScores.Location = new System.Drawing.Point(34, 104);
+            this.lsvScores.Location = new System.Drawing.Point(34, 143);
             this.lsvScores.Name = "lsvScores";
-            this.lsvScores.Size = new System.Drawing.Size(601, 382);
+            this.lsvScores.Size = new System.Drawing.Size(601, 343);
             this.lsvScores.TabIndex = 6;
             this.lsvScores.UseCompatibleStateImageBehavior = false;
             this.lsvScores.View = System.Windows.Forms.View.Details;
@@ -100,7 +101,7 @@
             // 
             // tbxName
             // 
-            this.tbxName.Location = new System.Drawing.Point(129, 44);
+            this.tbxName.Location = new System.Drawing.Point(129, 86);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(425, 20);
             this.tbxName.TabIndex = 7;
@@ -109,7 +110,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 17F);
-            this.label2.Location = new System.Drawing.Point(34, 36);
+            this.label2.Location = new System.Drawing.Point(34, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 26);
             this.label2.TabIndex = 8;
@@ -118,7 +119,7 @@
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Rockwell", 7.8F);
-            this.btnInsert.Location = new System.Drawing.Point(559, 44);
+            this.btnInsert.Location = new System.Drawing.Point(559, 86);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 51);
             this.btnInsert.TabIndex = 9;
@@ -130,7 +131,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Red;
             this.panel7.Location = new System.Drawing.Point(21, 18);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(8, 479);
             this.panel7.TabIndex = 116;
@@ -139,7 +140,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Red;
             this.panel2.Location = new System.Drawing.Point(21, 18);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(626, 8);
             this.panel2.TabIndex = 118;
@@ -148,7 +149,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Red;
             this.panel3.Location = new System.Drawing.Point(639, 19);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(8, 478);
             this.panel3.TabIndex = 118;
@@ -157,7 +158,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Red;
             this.panel4.Location = new System.Drawing.Point(23, 490);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(623, 8);
             this.panel4.TabIndex = 119;
@@ -166,7 +167,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.Red;
             this.panel5.Location = new System.Drawing.Point(651, 6);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(8, 501);
             this.panel5.TabIndex = 119;
@@ -175,7 +176,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Red;
             this.panel6.Location = new System.Drawing.Point(9, 6);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(646, 8);
             this.panel6.TabIndex = 119;
@@ -184,7 +185,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.Red;
             this.panel8.Location = new System.Drawing.Point(9, 501);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(649, 8);
             this.panel8.TabIndex = 120;
@@ -193,17 +194,27 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.Red;
             this.panel9.Location = new System.Drawing.Point(9, 9);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(8, 496);
             this.panel9.TabIndex = 118;
+            // 
+            // lblHighscoreMessage
+            // 
+            this.lblHighscoreMessage.AutoSize = true;
+            this.lblHighscoreMessage.Location = new System.Drawing.Point(36, 42);
+            this.lblHighscoreMessage.Name = "lblHighscoreMessage";
+            this.lblHighscoreMessage.Size = new System.Drawing.Size(176, 13);
+            this.lblHighscoreMessage.TabIndex = 121;
+            this.lblHighscoreMessage.Text = "Tragen Sie bitte ihren Highscore ein";
             // 
             // HighscoreForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(664, 514);
+            this.ClientSize = new System.Drawing.Size(664, 515);
+            this.Controls.Add(this.lblHighscoreMessage);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel6);
@@ -245,5 +256,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label lblHighscoreMessage;
     }
 }

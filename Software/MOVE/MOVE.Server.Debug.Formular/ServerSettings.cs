@@ -1043,7 +1043,16 @@ namespace MOVE.Server.Debug.Formular
 
         private void btnStartCal_Click(object sender, EventArgs e)
         {
+            btnStartCal.Enabled = false;
             StartCal();
+            btnStopCal.Enabled = true;
+        }
+
+        private void btnStopCal_Click(object sender, EventArgs e)
+        {
+            btnStopCal.Enabled = false;
+            StopCal();
+            btnStartCal.Enabled = true;
         }
 
         private void StartCal()
@@ -1056,12 +1065,7 @@ namespace MOVE.Server.Debug.Formular
             calState = 2;
             rBkalibrieren.Checked = true;
         }
-
-        private void btnStopCal_Click(object sender, EventArgs e)
-        {
-            StopCal();
-        }
-
+                
         public int GetCalSate()
         {
             return calState;
