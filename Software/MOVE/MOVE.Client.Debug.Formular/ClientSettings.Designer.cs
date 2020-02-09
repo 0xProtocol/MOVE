@@ -54,11 +54,11 @@
             this.cbDeepSearch = new System.Windows.Forms.CheckBox();
             this.pbnetwork = new System.Windows.Forms.ProgressBar();
             this.tcsettings = new System.Windows.Forms.TabControl();
-            this.Spieleinstellungen = new System.Windows.Forms.TabPage();
+            this.tcGameSettings = new System.Windows.Forms.TabPage();
             this.pbTrackBar = new System.Windows.Forms.PictureBox();
             this.lblGlättungsstufe = new System.Windows.Forms.Label();
             this.lblEmpfindlichkeit = new System.Windows.Forms.Label();
-            this.Frequenzeinstellungen = new System.Windows.Forms.TabPage();
+            this.tcFrequency = new System.Windows.Forms.TabPage();
             this.btnStopCal = new System.Windows.Forms.Button();
             this.btnStartCal = new System.Windows.Forms.Button();
             this.rBkalibrieren = new System.Windows.Forms.RadioButton();
@@ -72,9 +72,9 @@
             this.rBTenor = new System.Windows.Forms.RadioButton();
             this.rBBartion = new System.Windows.Forms.RadioButton();
             this.rBBass = new System.Windows.Forms.RadioButton();
-            this.Adresseinstellungen = new System.Windows.Forms.TabPage();
+            this.tcAddress = new System.Windows.Forms.TabPage();
             this.pbNet = new System.Windows.Forms.PictureBox();
-            this.Netzwerkerkennung = new System.Windows.Forms.TabPage();
+            this.tcNetworkDiscovery = new System.Windows.Forms.TabPage();
             this.lsb_networkadapter = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pbGlasses = new System.Windows.Forms.PictureBox();
@@ -82,14 +82,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättungsstufe)).BeginInit();
             this.cms.SuspendLayout();
             this.tcsettings.SuspendLayout();
-            this.Spieleinstellungen.SuspendLayout();
+            this.tcGameSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).BeginInit();
-            this.Frequenzeinstellungen.SuspendLayout();
+            this.tcFrequency.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMelody)).BeginInit();
-            this.Adresseinstellungen.SuspendLayout();
+            this.tcAddress.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNet)).BeginInit();
-            this.Netzwerkerkennung.SuspendLayout();
+            this.tcNetworkDiscovery.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses)).BeginInit();
             this.SuspendLayout();
             // 
@@ -251,7 +251,7 @@
             this.btn_Discover.Name = "btn_Discover";
             this.btn_Discover.Size = new System.Drawing.Size(262, 41);
             this.btn_Discover.TabIndex = 42;
-            this.btn_Discover.Text = "Start Discovery";
+            this.btn_Discover.Text = "Starte Erkennung";
             this.btn_Discover.UseVisualStyleBackColor = true;
             this.btn_Discover.Click += new System.EventHandler(this.btn_Discover_Click);
             // 
@@ -335,10 +335,10 @@
             // 
             // tcsettings
             // 
-            this.tcsettings.Controls.Add(this.Spieleinstellungen);
-            this.tcsettings.Controls.Add(this.Frequenzeinstellungen);
-            this.tcsettings.Controls.Add(this.Adresseinstellungen);
-            this.tcsettings.Controls.Add(this.Netzwerkerkennung);
+            this.tcsettings.Controls.Add(this.tcGameSettings);
+            this.tcsettings.Controls.Add(this.tcFrequency);
+            this.tcsettings.Controls.Add(this.tcAddress);
+            this.tcsettings.Controls.Add(this.tcNetworkDiscovery);
             this.tcsettings.Font = new System.Drawing.Font("Rockwell", 7.8F);
             this.tcsettings.Location = new System.Drawing.Point(12, 12);
             this.tcsettings.Name = "tcsettings";
@@ -347,27 +347,27 @@
             this.tcsettings.TabIndex = 49;
             this.tcsettings.SelectedIndexChanged += new System.EventHandler(this.tcsettings_SelectedIndexChanged);
             // 
-            // Spieleinstellungen
+            // tcGameSettings
             // 
-            this.Spieleinstellungen.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.Spieleinstellungen.Controls.Add(this.pbTrackBar);
-            this.Spieleinstellungen.Controls.Add(this.lblGlättungsstufe);
-            this.Spieleinstellungen.Controls.Add(this.lblEmpfindlichkeit);
-            this.Spieleinstellungen.Controls.Add(this.tbEmpfindlichkeit);
-            this.Spieleinstellungen.Controls.Add(this.tbGlättungsstufe);
-            this.Spieleinstellungen.Location = new System.Drawing.Point(4, 21);
-            this.Spieleinstellungen.Name = "Spieleinstellungen";
-            this.Spieleinstellungen.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.Spieleinstellungen.Size = new System.Drawing.Size(615, 344);
-            this.Spieleinstellungen.TabIndex = 0;
-            this.Spieleinstellungen.Text = "Spieleinstellungen";
-            this.Spieleinstellungen.Click += new System.EventHandler(this.tabPage1_Click);
+            this.tcGameSettings.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.tcGameSettings.Controls.Add(this.pbTrackBar);
+            this.tcGameSettings.Controls.Add(this.lblGlättungsstufe);
+            this.tcGameSettings.Controls.Add(this.lblEmpfindlichkeit);
+            this.tcGameSettings.Controls.Add(this.tbEmpfindlichkeit);
+            this.tcGameSettings.Controls.Add(this.tbGlättungsstufe);
+            this.tcGameSettings.Location = new System.Drawing.Point(4, 21);
+            this.tcGameSettings.Name = "tcGameSettings";
+            this.tcGameSettings.Padding = new System.Windows.Forms.Padding(3);
+            this.tcGameSettings.Size = new System.Drawing.Size(615, 344);
+            this.tcGameSettings.TabIndex = 0;
+            this.tcGameSettings.Text = "Spieleinstellungen";
+            this.tcGameSettings.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // pbTrackBar
             // 
             this.pbTrackBar.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.track_and_status_controls_trackbar_programming_radtrackbar020;
             this.pbTrackBar.Location = new System.Drawing.Point(129, 228);
-            this.pbTrackBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbTrackBar.Margin = new System.Windows.Forms.Padding(2);
             this.pbTrackBar.Name = "pbTrackBar";
             this.pbTrackBar.Size = new System.Drawing.Size(348, 99);
             this.pbTrackBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -400,29 +400,29 @@
             this.lblEmpfindlichkeit.TabIndex = 6;
             this.lblEmpfindlichkeit.Text = "Empfindlichkeit";
             // 
-            // Frequenzeinstellungen
+            // tcFrequency
             // 
-            this.Frequenzeinstellungen.BackColor = System.Drawing.Color.Silver;
-            this.Frequenzeinstellungen.Controls.Add(this.btnStopCal);
-            this.Frequenzeinstellungen.Controls.Add(this.btnStartCal);
-            this.Frequenzeinstellungen.Controls.Add(this.rBkalibrieren);
-            this.Frequenzeinstellungen.Controls.Add(this.label1);
-            this.Frequenzeinstellungen.Controls.Add(this.tbThreshold);
-            this.Frequenzeinstellungen.Controls.Add(this.pbMelody);
-            this.Frequenzeinstellungen.Controls.Add(this.rBPfeifen);
-            this.Frequenzeinstellungen.Controls.Add(this.rBSopran);
-            this.Frequenzeinstellungen.Controls.Add(this.rBMezzosopran);
-            this.Frequenzeinstellungen.Controls.Add(this.rBMaenneralt);
-            this.Frequenzeinstellungen.Controls.Add(this.rBTenor);
-            this.Frequenzeinstellungen.Controls.Add(this.rBBartion);
-            this.Frequenzeinstellungen.Controls.Add(this.rBBass);
-            this.Frequenzeinstellungen.Location = new System.Drawing.Point(4, 21);
-            this.Frequenzeinstellungen.Name = "Frequenzeinstellungen";
-            this.Frequenzeinstellungen.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.Frequenzeinstellungen.Size = new System.Drawing.Size(615, 344);
-            this.Frequenzeinstellungen.TabIndex = 3;
-            this.Frequenzeinstellungen.Text = "Frequenzeinstellungen";
-            this.Frequenzeinstellungen.Click += new System.EventHandler(this.tcGameSettingsFreq_Click);
+            this.tcFrequency.BackColor = System.Drawing.Color.Silver;
+            this.tcFrequency.Controls.Add(this.btnStopCal);
+            this.tcFrequency.Controls.Add(this.btnStartCal);
+            this.tcFrequency.Controls.Add(this.rBkalibrieren);
+            this.tcFrequency.Controls.Add(this.label1);
+            this.tcFrequency.Controls.Add(this.tbThreshold);
+            this.tcFrequency.Controls.Add(this.pbMelody);
+            this.tcFrequency.Controls.Add(this.rBPfeifen);
+            this.tcFrequency.Controls.Add(this.rBSopran);
+            this.tcFrequency.Controls.Add(this.rBMezzosopran);
+            this.tcFrequency.Controls.Add(this.rBMaenneralt);
+            this.tcFrequency.Controls.Add(this.rBTenor);
+            this.tcFrequency.Controls.Add(this.rBBartion);
+            this.tcFrequency.Controls.Add(this.rBBass);
+            this.tcFrequency.Location = new System.Drawing.Point(4, 21);
+            this.tcFrequency.Name = "tcFrequency";
+            this.tcFrequency.Padding = new System.Windows.Forms.Padding(3);
+            this.tcFrequency.Size = new System.Drawing.Size(615, 344);
+            this.tcFrequency.TabIndex = 3;
+            this.tcFrequency.Text = "Frequenzeinstellungen";
+            this.tcFrequency.Click += new System.EventHandler(this.tcGameSettingsFreq_Click);
             // 
             // btnStopCal
             // 
@@ -486,7 +486,7 @@
             // 
             this.pbMelody.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.Move;
             this.pbMelody.Location = new System.Drawing.Point(403, 129);
-            this.pbMelody.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMelody.Margin = new System.Windows.Forms.Padding(2);
             this.pbMelody.Name = "pbMelody";
             this.pbMelody.Size = new System.Drawing.Size(200, 200);
             this.pbMelody.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -578,59 +578,59 @@
             this.rBBass.UseVisualStyleBackColor = true;
             this.rBBass.CheckedChanged += new System.EventHandler(this.rBBass_CheckedChanged);
             // 
-            // Adresseinstellungen
+            // tcAddress
             // 
-            this.Adresseinstellungen.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.Adresseinstellungen.Controls.Add(this.pbNet);
-            this.Adresseinstellungen.Controls.Add(this.tbx_IPClient);
-            this.Adresseinstellungen.Controls.Add(this.tbx_PortServer);
-            this.Adresseinstellungen.Controls.Add(this.tbx_IPServer);
-            this.Adresseinstellungen.Controls.Add(this.lbl_IPServer);
-            this.Adresseinstellungen.Controls.Add(this.lbl_PortServer);
-            this.Adresseinstellungen.Controls.Add(this.lbl_ServerStart);
-            this.Adresseinstellungen.Controls.Add(this.lbl_ClientConnect);
-            this.Adresseinstellungen.Controls.Add(this.tbx_PortClient);
-            this.Adresseinstellungen.Controls.Add(this.lbl_IPClient);
-            this.Adresseinstellungen.Controls.Add(this.lbl_PortClient);
-            this.Adresseinstellungen.Location = new System.Drawing.Point(4, 21);
-            this.Adresseinstellungen.Name = "Adresseinstellungen";
-            this.Adresseinstellungen.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.Adresseinstellungen.Size = new System.Drawing.Size(615, 344);
-            this.Adresseinstellungen.TabIndex = 1;
-            this.Adresseinstellungen.Text = "Adresseinstellungen";
+            this.tcAddress.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.tcAddress.Controls.Add(this.pbNet);
+            this.tcAddress.Controls.Add(this.tbx_IPClient);
+            this.tcAddress.Controls.Add(this.tbx_PortServer);
+            this.tcAddress.Controls.Add(this.tbx_IPServer);
+            this.tcAddress.Controls.Add(this.lbl_IPServer);
+            this.tcAddress.Controls.Add(this.lbl_PortServer);
+            this.tcAddress.Controls.Add(this.lbl_ServerStart);
+            this.tcAddress.Controls.Add(this.lbl_ClientConnect);
+            this.tcAddress.Controls.Add(this.tbx_PortClient);
+            this.tcAddress.Controls.Add(this.lbl_IPClient);
+            this.tcAddress.Controls.Add(this.lbl_PortClient);
+            this.tcAddress.Location = new System.Drawing.Point(4, 21);
+            this.tcAddress.Name = "tcAddress";
+            this.tcAddress.Padding = new System.Windows.Forms.Padding(3);
+            this.tcAddress.Size = new System.Drawing.Size(615, 344);
+            this.tcAddress.TabIndex = 1;
+            this.tcAddress.Text = "Adresseinstellungen";
             // 
             // pbNet
             // 
             this.pbNet.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.World2;
             this.pbNet.Location = new System.Drawing.Point(247, 16);
-            this.pbNet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbNet.Margin = new System.Windows.Forms.Padding(2);
             this.pbNet.Name = "pbNet";
             this.pbNet.Size = new System.Drawing.Size(154, 154);
             this.pbNet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbNet.TabIndex = 41;
             this.pbNet.TabStop = false;
             // 
-            // Netzwerkerkennung
+            // tcNetworkDiscovery
             // 
-            this.Netzwerkerkennung.BackColor = System.Drawing.Color.LawnGreen;
-            this.Netzwerkerkennung.Controls.Add(this.lsb_networkadapter);
-            this.Netzwerkerkennung.Controls.Add(this.textBox1);
-            this.Netzwerkerkennung.Controls.Add(this.pbGlasses);
-            this.Netzwerkerkennung.Controls.Add(this.cbQuickSearch);
-            this.Netzwerkerkennung.Controls.Add(this.lsb_discover);
-            this.Netzwerkerkennung.Controls.Add(this.pbnetwork);
-            this.Netzwerkerkennung.Controls.Add(this.btn_Discover);
-            this.Netzwerkerkennung.Controls.Add(this.cbDeepSearch);
-            this.Netzwerkerkennung.Controls.Add(this.tbx_Discovery);
-            this.Netzwerkerkennung.Controls.Add(this.btn_ActivateFirewall);
-            this.Netzwerkerkennung.Controls.Add(this.btn_deactivatefirewall);
-            this.Netzwerkerkennung.Location = new System.Drawing.Point(4, 21);
-            this.Netzwerkerkennung.Name = "Netzwerkerkennung";
-            this.Netzwerkerkennung.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.Netzwerkerkennung.Size = new System.Drawing.Size(615, 344);
-            this.Netzwerkerkennung.TabIndex = 2;
-            this.Netzwerkerkennung.Text = "Netzwerkerkennung";
-            this.Netzwerkerkennung.Click += new System.EventHandler(this.tc_Click);
+            this.tcNetworkDiscovery.BackColor = System.Drawing.Color.LawnGreen;
+            this.tcNetworkDiscovery.Controls.Add(this.lsb_networkadapter);
+            this.tcNetworkDiscovery.Controls.Add(this.textBox1);
+            this.tcNetworkDiscovery.Controls.Add(this.pbGlasses);
+            this.tcNetworkDiscovery.Controls.Add(this.cbQuickSearch);
+            this.tcNetworkDiscovery.Controls.Add(this.lsb_discover);
+            this.tcNetworkDiscovery.Controls.Add(this.pbnetwork);
+            this.tcNetworkDiscovery.Controls.Add(this.btn_Discover);
+            this.tcNetworkDiscovery.Controls.Add(this.cbDeepSearch);
+            this.tcNetworkDiscovery.Controls.Add(this.tbx_Discovery);
+            this.tcNetworkDiscovery.Controls.Add(this.btn_ActivateFirewall);
+            this.tcNetworkDiscovery.Controls.Add(this.btn_deactivatefirewall);
+            this.tcNetworkDiscovery.Location = new System.Drawing.Point(4, 21);
+            this.tcNetworkDiscovery.Name = "tcNetworkDiscovery";
+            this.tcNetworkDiscovery.Padding = new System.Windows.Forms.Padding(3);
+            this.tcNetworkDiscovery.Size = new System.Drawing.Size(615, 344);
+            this.tcNetworkDiscovery.TabIndex = 2;
+            this.tcNetworkDiscovery.Text = "Netzwerkerkennung";
+            this.tcNetworkDiscovery.Click += new System.EventHandler(this.tc_Click);
             // 
             // lsb_networkadapter
             // 
@@ -655,7 +655,7 @@
             // 
             this.pbGlasses.Image = global::MOVE.Client.Debug.Formular.Properties.Resources.lupe_ani1_optlins_aus1;
             this.pbGlasses.Location = new System.Drawing.Point(424, 38);
-            this.pbGlasses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbGlasses.Margin = new System.Windows.Forms.Padding(2);
             this.pbGlasses.Name = "pbGlasses";
             this.pbGlasses.Size = new System.Drawing.Size(174, 109);
             this.pbGlasses.TabIndex = 49;
@@ -676,18 +676,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.tbGlättungsstufe)).EndInit();
             this.cms.ResumeLayout(false);
             this.tcsettings.ResumeLayout(false);
-            this.Spieleinstellungen.ResumeLayout(false);
-            this.Spieleinstellungen.PerformLayout();
+            this.tcGameSettings.ResumeLayout(false);
+            this.tcGameSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).EndInit();
-            this.Frequenzeinstellungen.ResumeLayout(false);
-            this.Frequenzeinstellungen.PerformLayout();
+            this.tcFrequency.ResumeLayout(false);
+            this.tcFrequency.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMelody)).EndInit();
-            this.Adresseinstellungen.ResumeLayout(false);
-            this.Adresseinstellungen.PerformLayout();
+            this.tcAddress.ResumeLayout(false);
+            this.tcAddress.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbNet)).EndInit();
-            this.Netzwerkerkennung.ResumeLayout(false);
-            this.Netzwerkerkennung.PerformLayout();
+            this.tcNetworkDiscovery.ResumeLayout(false);
+            this.tcNetworkDiscovery.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbGlasses)).EndInit();
             this.ResumeLayout(false);
 
@@ -718,12 +718,12 @@
         private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem serverToolStripMenuItem;
         private System.Windows.Forms.TabControl tcsettings;
-        private System.Windows.Forms.TabPage Spieleinstellungen;
-        private System.Windows.Forms.TabPage Adresseinstellungen;
-        private System.Windows.Forms.TabPage Netzwerkerkennung;
+        private System.Windows.Forms.TabPage tcGameSettings;
+        private System.Windows.Forms.TabPage tcAddress;
+        private System.Windows.Forms.TabPage tcNetworkDiscovery;
         private System.Windows.Forms.Label lblGlättungsstufe;
         private System.Windows.Forms.Label lblEmpfindlichkeit;
-        private System.Windows.Forms.TabPage Frequenzeinstellungen;
+        private System.Windows.Forms.TabPage tcFrequency;
         private System.Windows.Forms.RadioButton rBPfeifen;
         private System.Windows.Forms.RadioButton rBSopran;
         private System.Windows.Forms.RadioButton rBMezzosopran;

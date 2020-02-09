@@ -58,7 +58,7 @@
             this.lblGlättungsstufe = new System.Windows.Forms.Label();
             this.lblEmpfindlichkeit = new System.Windows.Forms.Label();
             this.pbTrackBar = new System.Windows.Forms.PictureBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tcFrequency = new System.Windows.Forms.TabPage();
             this.btnStopCal = new System.Windows.Forms.Button();
             this.btnStartCal = new System.Windows.Forms.Button();
             this.rBkalibrieren = new System.Windows.Forms.RadioButton();
@@ -84,7 +84,7 @@
             this.tabControl1.SuspendLayout();
             this.tcGameSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.tcFrequency.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tcIPConfiguration.SuspendLayout();
@@ -262,7 +262,7 @@
             this.btn_Discover.Name = "btn_Discover";
             this.btn_Discover.Size = new System.Drawing.Size(262, 41);
             this.btn_Discover.TabIndex = 83;
-            this.btn_Discover.Text = "Start Discovery";
+            this.btn_Discover.Text = "Starte Erkennung";
             this.btn_Discover.UseVisualStyleBackColor = true;
             this.btn_Discover.Click += new System.EventHandler(this.btn_Discover_Click);
             // 
@@ -351,7 +351,7 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tcGameSettings);
-            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tcFrequency);
             this.tabControl1.Controls.Add(this.tcIPConfiguration);
             this.tabControl1.Controls.Add(this.tcNetworkDicovery);
             this.tabControl1.Font = new System.Drawing.Font("Rockwell", 7.8F);
@@ -417,30 +417,30 @@
             this.pbTrackBar.TabIndex = 9;
             this.pbTrackBar.TabStop = false;
             // 
-            // tabPage1
+            // tcFrequency
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Silver;
-            this.tabPage1.Controls.Add(this.btnStopCal);
-            this.tabPage1.Controls.Add(this.btnStartCal);
-            this.tabPage1.Controls.Add(this.rBkalibrieren);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.tbThreshold);
-            this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Controls.Add(this.rBPfeifen);
-            this.tabPage1.Controls.Add(this.rBSopran);
-            this.tabPage1.Controls.Add(this.rBMezzosopran);
-            this.tabPage1.Controls.Add(this.rBMaenneralt);
-            this.tabPage1.Controls.Add(this.rBTenor);
-            this.tabPage1.Controls.Add(this.rBBartion);
-            this.tabPage1.Controls.Add(this.rBBass);
-            this.tabPage1.Location = new System.Drawing.Point(4, 21);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(608, 335);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.Text = "Frequenzeinstellungen";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            this.tcFrequency.BackColor = System.Drawing.Color.Silver;
+            this.tcFrequency.Controls.Add(this.btnStopCal);
+            this.tcFrequency.Controls.Add(this.btnStartCal);
+            this.tcFrequency.Controls.Add(this.rBkalibrieren);
+            this.tcFrequency.Controls.Add(this.label1);
+            this.tcFrequency.Controls.Add(this.tbThreshold);
+            this.tcFrequency.Controls.Add(this.pictureBox1);
+            this.tcFrequency.Controls.Add(this.rBPfeifen);
+            this.tcFrequency.Controls.Add(this.rBSopran);
+            this.tcFrequency.Controls.Add(this.rBMezzosopran);
+            this.tcFrequency.Controls.Add(this.rBMaenneralt);
+            this.tcFrequency.Controls.Add(this.rBTenor);
+            this.tcFrequency.Controls.Add(this.rBBartion);
+            this.tcFrequency.Controls.Add(this.rBBass);
+            this.tcFrequency.Location = new System.Drawing.Point(4, 21);
+            this.tcFrequency.Margin = new System.Windows.Forms.Padding(2);
+            this.tcFrequency.Name = "tcFrequency";
+            this.tcFrequency.Padding = new System.Windows.Forms.Padding(2);
+            this.tcFrequency.Size = new System.Drawing.Size(608, 335);
+            this.tcFrequency.TabIndex = 3;
+            this.tcFrequency.Text = "Frequenzeinstellungen";
+            this.tcFrequency.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // btnStopCal
             // 
@@ -713,8 +713,8 @@
             this.tcGameSettings.ResumeLayout(false);
             this.tcGameSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrackBar)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tcFrequency.ResumeLayout(false);
+            this.tcFrequency.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbThreshold)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tcIPConfiguration.ResumeLayout(false);
@@ -758,7 +758,7 @@
         private System.Windows.Forms.PictureBox pbTrackBar;
         private System.Windows.Forms.Label lblGlättungsstufe;
         private System.Windows.Forms.Label lblEmpfindlichkeit;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tcFrequency;
         public System.Windows.Forms.RadioButton rBBass;
         public System.Windows.Forms.RadioButton rBMaenneralt;
         public System.Windows.Forms.RadioButton rBTenor;

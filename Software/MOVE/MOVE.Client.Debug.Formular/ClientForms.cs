@@ -88,15 +88,24 @@ namespace MOVE.Client.Debug.Formular
                 if (speechvalue == 0)
                 {
                     DefaultListenerGerman();
+                    DesignChangesGerman();
                 }
                 if (speechvalue == 1)
                 {
                     DefaultListenerEnglish();
+                    DesignChangesEnglish();
                 }
             }
             else
             {
-
+                if (speechvalue == 0)
+                {
+                    DesignChangesGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DesignChangesEnglish();
+                }
             }
         }
         #region Service/Request
@@ -181,38 +190,38 @@ namespace MOVE.Client.Debug.Formular
                     if (cs.tbEmpfindlichkeit.Value == 1)
                     {
                         positionValue = (int)(((frac * 3) * 668)) - 2;
-                        lblFineTuning.Text = "Empfindlichkeit: wenig";
+                        //lblFineTuning.Text = "Empfindlichkeit: wenig";
 
                     }
                     else if (cs.tbEmpfindlichkeit.Value == 2)
                     {
                         positionValue = (int)(((frac * 5) * 668)) - 3;
-                        lblFineTuning.Text = "Empfindlichkeit: mittel";
+                       // lblFineTuning.Text = "Empfindlichkeit: mittel";
 
                     }
                     else if (cs.tbEmpfindlichkeit.Value == 3)
                     {
                         positionValue = (int)(((frac * 8) * 668)) - 5;
-                        lblFineTuning.Text = "Empfindlichkeit: hoch";
+                        //lblFineTuning.Text = "Empfindlichkeit: hoch";
 
                     }
                     if (cs.tbGlättungsstufe.Value == 1)
                     {
                         wertGlaettung = 3;
                         Glaettung(wertGlaettung);
-                        lblGlaettung.Text = "Glättungsstufe: 1";
+                       // lblGlaettung.Text = "Glättungsstufe: 1";
                     }
                     if (cs.tbGlättungsstufe.Value == 2)
                     {
                         wertGlaettung = 4;
                         Glaettung(wertGlaettung);
-                        lblGlaettung.Text = "Glättungsstufe: 2";
+                        //lblGlaettung.Text = "Glättungsstufe: 2";
                     }
                     if (cs.tbGlättungsstufe.Value == 3)
                     {
                         wertGlaettung = 6;
                         Glaettung(wertGlaettung);
-                        lblGlaettung.Text = "Glättungsstufe: 3";
+                        //lblGlaettung.Text = "Glättungsstufe: 3";
                     }
                     //double newfrac = Math.Round(frac, 0, MidpointRounding.AwayFromZero);
                     if (positionValue < 0)
@@ -593,6 +602,21 @@ namespace MOVE.Client.Debug.Formular
         {
             cs.ShowDialog();
         }
+        private void DesignChangesGerman()
+        {
+
+        }
+
+        private void DesignChangesEnglish()
+        {
+            btnSettings.Text = "Settings";
+            rBSound.Text = "Sound";
+            rBFrequenz.Text = "Frequency";
+            rbKeyboard.Text = "Keyboard";
+            lblSchrittDrei.Text = "Transmission of the panel coordinates:";
+            lblSchrittZwei.Text = "Connection to client established:";
+            lblSchrittEins.Text = "Correct IP network selected:";
+        }
         private void EnableSound()
         {
             rBSound.Checked = true;
@@ -613,11 +637,11 @@ namespace MOVE.Client.Debug.Formular
         }
         private void Disablemenu()
         {
-            cbAusblenden.Checked = true;
+            //cbAusblenden.Checked = true;
         }
         private void Enablemenu()
         {
-            cbAusblenden.Checked = false;
+            //cbAusblenden.Checked = false;
         }
         public void Glaettung(int anzahl)
         {
@@ -796,7 +820,7 @@ namespace MOVE.Client.Debug.Formular
         {
 
         }
-
+        /*/
         private void cbAusblenden_CheckedChanged_1(object sender, EventArgs e)
         {
             if (cbAusblenden.Checked == true)
@@ -834,6 +858,7 @@ namespace MOVE.Client.Debug.Formular
                 lblBallSpeed.Visible = true;
             }
         }
+         /*/
     }
 }
 #endregion

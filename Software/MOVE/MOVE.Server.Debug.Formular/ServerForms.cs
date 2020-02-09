@@ -94,15 +94,24 @@ namespace MOVE.Server.Debug.Formular
                 if (speechvalue == 0)
                 {
                     DefaultListenerGerman();
+                    DesignChangesGerman();
                 }
                 if (speechvalue == 1)
                 {
                     DefaultListenerEnglish();
+                    DesignChangesEnglish();
                 }
             }
             else
             {
-
+                if (speechvalue == 0)
+                {
+                    DesignChangesGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DesignChangesEnglish();
+                }
             }
 
         }
@@ -119,7 +128,8 @@ namespace MOVE.Server.Debug.Formular
 
            
         }
-
+        
+        /*/
         private void cbAusblenden_CheckedChanged(object sender, EventArgs e)
         {
             if (cbAusblenden.Checked == true)
@@ -155,6 +165,7 @@ namespace MOVE.Server.Debug.Formular
                 lblSchrittDrei.Visible = true;
             }
         }
+        /*/
         private void btn_Start_Click_1(object sender, EventArgs e)
         {
             Start();
@@ -268,19 +279,19 @@ namespace MOVE.Server.Debug.Formular
                     if (ss.tbempfindlichkeit.Value == 1)
                     {
                         positionValue = (int)(((fractionValue * 3) * 668)) - 2;
-                        lblFineTuning.Text = "Empfindlichkeit: wenig";
+                      //  lblFineTuning.Text = "Empfindlichkeit: wenig";
 
                     }
                     if (ss.tbempfindlichkeit.Value == 2)
                     {
                         positionValue = (int)(((fractionValue * 5) * 668)) - 3;
-                        lblFineTuning.Text = "Empfindlichkeit: mittel";
+                        //lblFineTuning.Text = "Empfindlichkeit: mittel";
 
                     }
                     if (ss.tbempfindlichkeit.Value == 3)
                     {
                         positionValue = (int)(((fractionValue * 8) * 668)) - 5;
-                        lblFineTuning.Text = "Empfindlichkeit: hoch";
+                       // lblFineTuning.Text = "Empfindlichkeit: hoch";
 
                     }
 
@@ -288,19 +299,19 @@ namespace MOVE.Server.Debug.Formular
                     {
                         wertGlaettung = 3;
                         Glaettung(wertGlaettung);
-                        lblGlaettung.Text = "Glättungsstufe: 1";
+                       // lblGlaettung.Text = "Glättungsstufe: 1";
                     }
                     if (ss.tbGlättung.Value == 2)
                     {
                         wertGlaettung = 4;
                         Glaettung(wertGlaettung);
-                        lblGlaettung.Text = "Glättungsstufe: 2";
+                      //  lblGlaettung.Text = "Glättungsstufe: 2";
                     }
                     if (ss.tbGlättung.Value == 3)
                     {
                         wertGlaettung = 6;
                         Glaettung(wertGlaettung);
-                        lblGlaettung.Text = "Glättungsstufe: 3";
+                       // lblGlaettung.Text = "Glättungsstufe: 3";
                     }
 
                     if (positionValue < 0)
@@ -753,6 +764,22 @@ namespace MOVE.Server.Debug.Formular
             int bottomvaluedgv = dgv_playfieldclient.Bottom;
             yourcomputerheightvalue = bottomvaluedgv - 35;
         }
+
+        private void DesignChangesGerman()
+        {
+
+        }
+
+        private void DesignChangesEnglish()
+        {
+            btnSettings.Text = "Settings";
+            rBSound.Text = "Sound";
+            rBFrequenz.Text = "Frequency";
+            rbKeyboard.Text = "Keyboard";
+            lblSchrittDrei.Text = "Transmission of the panel coordinates:";
+            lblSchrittZwei.Text = "Connection to client established:";
+            lblSchrittEins.Text = "Correct IP network selected:";
+        }
       
         private void Settings()
         {
@@ -778,11 +805,11 @@ namespace MOVE.Server.Debug.Formular
         }
         private void Disablemenu()
         {
-            cbAusblenden.Checked = true;
+           // cbAusblenden.Checked = true;
         }
         private void Enablemenu()
         {
-            cbAusblenden.Checked = false;
+            //cbAusblenden.Checked = false;
         }
         private void CloseWindow()
         {

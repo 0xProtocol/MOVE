@@ -42,15 +42,24 @@ namespace Start
                 if (speechvalue == 0)
                 {
                     DefaultListenerGerman();
+                    DesignChangesGerman();
                 }
                 if (speechvalue == 1)
                 {
                     DefaultListenerEnglish();
+                    DesignChangesEnglish();
                 }
             }
             else
             {
-
+                if (speechvalue == 0)
+                {
+                    DesignChangesGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DesignChangesEnglish();
+                }
             }
         }
         public void DefaultListenerGerman()
@@ -136,6 +145,16 @@ namespace Start
         private void CloseWindow()
         {
             this.Close();
+        }
+        private void DesignChangesGerman()
+        {
+           
+        }
+        private void DesignChangesEnglish()
+        {
+            txtblock.Text = "A restart of the application is required for the new settings";
+            btn_Break.Content = "Back";
+            btn_restart.Content = "Restart";
         }
     }
 }

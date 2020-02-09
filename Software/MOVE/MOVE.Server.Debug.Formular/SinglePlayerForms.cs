@@ -77,15 +77,24 @@ namespace MOVE.Server.Debug.Formular
                 if (speechvalue == 0)
                 {
                     DefaultListenerGerman();
+                    DesignChangesGerman();
                 }
                 if (speechvalue == 1)
                 {
                     DefaultListenerEnglish();
+                    DesignChangesEnglish();
                 }
             }
             else
             {
-
+                if (speechvalue == 0)
+                {
+                    DesignChangesGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DesignChangesEnglish();
+                }
             }
         }
         public void DefaultListenerGerman()
@@ -154,11 +163,11 @@ namespace MOVE.Server.Debug.Formular
             }
             if(speech=="Menü ausblenden")
             {
-                cbAusblenden.Checked = true;
+                //cbAusblenden.Checked = true;
             }
             if (speech == "Menü einblenden")
             {
-                cbAusblenden.Checked = false;
+                //cbAusblenden.Checked = false;
             }
             if (speech == "Welche Befehle gibt es?")
             {
@@ -200,11 +209,11 @@ namespace MOVE.Server.Debug.Formular
             }
             if (speech == "disable menu")
             {
-                cbAusblenden.Checked = true;
+                //cbAusblenden.Checked = true;
             }
             if (speech == "activate menu")
             {
-                cbAusblenden.Checked = false;
+               //cbAusblenden.Checked = false;
             }
             if (speech == "Which commands are avaiable?")
             {
@@ -586,6 +595,22 @@ namespace MOVE.Server.Debug.Formular
             lifes = 5;
 
         }
+        private void DesignChangesGerman()
+        {
+
+        }
+        private void DesignChangesEnglish()
+        {
+            btnSettings.Text = "Settings";
+            btn_Start.Text = "Start";
+            rBSound.Text = "Sound";
+            rBFrequenz.Text = "Frequency";
+            rbKeyboard.Text = "Keyboard";
+            lblLifes.Text = "Lives";
+            lblGlaettung.Text = "Smoothing level";
+            lblFineTuning.Text = "sensitivity";
+            lbl_Gamer.Text = "Singleplayer";
+        }
         private void Settings()
         {
             ss.ShowDialog();
@@ -725,29 +750,35 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        private void cbAusblenden_CheckedChanged(object sender, EventArgs e)
+        private void Lbl_Gamer_Click(object sender, EventArgs e)
         {
-            if (cbAusblenden.Checked == true)
-            {
 
-                lblFineTuning.Visible = false;
-                lblGlaettung.Visible = false;
-                btnSettings.Visible = false;
-                lblSchwierigkeit.Visible = false;
-                btn_Start.Visible = false;
-
-                lblBallSpeed.Visible = false;
-
-            }
-            if (cbAusblenden.Checked == false)
-            {
-                lblFineTuning.Visible = true;
-                lblGlaettung.Visible = true;
-                lblSchwierigkeit.Visible = true;
-                btn_Start.Visible = true;
-                btnSettings.Visible = true;
-                lblBallSpeed.Visible = true;
-            }
         }
+        /*/
+private void cbAusblenden_CheckedChanged(object sender, EventArgs e)
+{
+   if (cbAusblenden.Checked == true)
+   {
+
+       lblFineTuning.Visible = false;
+       lblGlaettung.Visible = false;
+       btnSettings.Visible = false;
+       lblSchwierigkeit.Visible = false;
+       btn_Start.Visible = false;
+
+       lblBallSpeed.Visible = false;
+
+   }
+   if (cbAusblenden.Checked == false)
+   {
+       lblFineTuning.Visible = true;
+       lblGlaettung.Visible = true;
+       lblSchwierigkeit.Visible = true;
+       btn_Start.Visible = true;
+       btnSettings.Visible = true;
+       lblBallSpeed.Visible = true;
+   }
+}
+/*/
     }
 }

@@ -39,10 +39,23 @@ namespace MOVE.Server.Debug.Formular
                 if (speechvalue == 0)
                 {
                     DefaultListenerGerman();
+                    DesignChangesGerman();
                 }
                 if (speechvalue == 1)
                 {
                     DefaultListenerEnglish();
+                    DesignChangesEnglish();
+                }
+            }
+            else
+            {
+                if (speechvalue == 0)
+                {
+                    DesignChangesGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DesignChangesEnglish();
                 }
             }
         }
@@ -282,6 +295,21 @@ namespace MOVE.Server.Debug.Formular
             
         }
 
+        private void DesignChangesGerman()
+        {
+
+        }
+
+        private void DesignChangesEnglish()
+        {
+            label2.Text = "Player:";
+            label1.Text = "Score:";
+            btnInsert.Text = "Confirm";
+            //Objekte noch bennenn im listview
+            cdatum.Text = "Date";
+            cSpielername.Text = "Playername";
+            cPunkte.Text = "Score";
+        }
         private void lsvScores_Click(object sender, EventArgs e)
         {
             

@@ -103,14 +103,25 @@ namespace MOVE.Server.Debug.Formular
                 if (speechvalue == 0)
                 {
                     StartthisListenerGerman();
+                    DesignChangesGerman();
+
                 }
                 else if (speechvalue == 1)
                 {
                     StartthisListenerEnglish();
+                    DesignChangesEnglish();
                 }
             }
             else
             {
+                if (speechvalue == 0)
+                {
+                    DesignChangesGerman();
+                }
+                if (speechvalue == 1)
+                {
+                    DesignChangesEnglish();
+                }
             }
 
         }
@@ -765,6 +776,28 @@ namespace MOVE.Server.Debug.Formular
             {
                 helpvalue = 3;
             }
+        }
+
+        private void DesignChangesGerman()
+        {
+
+        }
+        private void DesignChangesEnglish()
+        {
+            tcGameSettings.Text = "Game Settings";
+            tcFrequency.Text = "Frequency Settings";
+            tcIPConfiguration.Text = "Adressconfiguartion";
+            tcNetworkDicovery.Text = "Network Discovery";
+            lblEmpfindlichkeit.Text = "Sensitivity";
+            lblGlättungsstufe.Text = "Smoothing level";
+            label1.Text = "Admission threshold";
+            rBPfeifen.Text = "Whistle";
+            cbDeepSearch.Text = "Deep Search";
+            cbQuickSearch.Text = "Quick Search";
+            btn_Discover.Text = "Start Discovery";
+            btn_ActivateFirewall.Text = "Activate Firewall";
+            btn_deactivatefirewall.Text = "Deactivate Firewall";
+            rBkalibrieren.Text = "Calibrated";
         }
         private void StartthisListenerGerman()
         {
