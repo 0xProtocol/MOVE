@@ -22,6 +22,7 @@ using System.Threading;
 using System.Configuration;
 using MOVE.AudioLayer;
 using MOVE.Shared;
+using System.Windows.Threading;
 
 namespace Start
 {
