@@ -44,6 +44,14 @@ namespace Start
         public MainWindow()
         {
             InitializeComponent();
+            try
+            {
+                this.MouseDown += delegate { DragMove(); };
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
             string language = ConfigurationManager.AppSettings["language"];
             speechvalue = Convert.ToInt32(language);
             string speechmodule = ConfigurationManager.AppSettings["speechmodule"];

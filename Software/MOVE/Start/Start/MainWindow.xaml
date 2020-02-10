@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Start"
         mc:Ignorable="d"
         Icon="logo (2).jpeg"
-        Title="MOVE ControlCenter" Height="450" Width="818.479" ResizeMode="CanMinimize" Activated="Window_Activated" Deactivated="Window_Deactivated" Background="Black">
+        Title="MOVE ControlCenter" Height="450" Width="818.479" ResizeMode="CanMinimize" Activated="Window_Activated" Deactivated="Window_Deactivated" WindowStyle="None" Background="Black">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -26,7 +26,7 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Image x:Name="img_background" Grid.ColumnSpan="10" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Margin="0,0,0.281,-29" Loaded="Img_background_Loaded">
+        <Image x:Name="img_background" Grid.ColumnSpan="10" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Margin="-5,42,6,-71" Loaded="Img_background_Loaded">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="top.png"/>
             </Image.OpacityMask>
@@ -39,12 +39,12 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="img_top" Grid.ColumnSpan="10" HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="792" Source="top.png" StretchDirection="UpOnly" Stretch="Fill" IsHitTestVisible="False">
+        <Image x:Name="img_top" Grid.ColumnSpan="8" HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="792" Source="top.png" StretchDirection="UpOnly" Stretch="Fill" IsHitTestVisible="False" Margin="-10,38,0,0">
             <Image.OpacityMask>
                 <ImageBrush TileMode="FlipX"/>
             </Image.OpacityMask>
         </Image>
-        <Button x:Name="button1" Content="Server" Grid.Column="1" HorizontalAlignment="Center" Margin="20,31,398.078,83" VerticalAlignment="Center" Width="100" Height="26" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5" MinHeight="3" MinWidth="1" Grid.ColumnSpan="4" Background="#FF1FE400" FontFamily="Rockwell">
+        <Button x:Name="button1" Content="Server" Grid.Column="1" HorizontalAlignment="Center" Margin="20,69,0,55" VerticalAlignment="Center" Width="100" Height="26" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5" MinHeight="3" MinWidth="1" Grid.ColumnSpan="3" Background="#FF1FE400" FontFamily="Rockwell">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -54,7 +54,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btn_Uebung" Content="Übung" Grid.Column="4" HorizontalAlignment="Center" Margin="62.816,49,245.199,63" VerticalAlignment="Center" Width="100" Height="28" Click="ButtonÜbung_Click" RenderTransformOrigin="0.5,0.5" Background="Orange" FontFamily="Rockwell">
+        <Button x:Name="btn_Uebung" Content="Übung" Grid.Column="4" HorizontalAlignment="Center" Margin="57,87,263,35" VerticalAlignment="Center" Width="100" Height="28" Click="ButtonÜbung_Click" RenderTransformOrigin="0.5,0.5" Background="Orange" FontFamily="Rockwell">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -64,7 +64,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btn_Settings" Content="Einstellungen" Grid.Column="4" HorizontalAlignment="Center" Margin="398.816,49,144.081,63" VerticalAlignment="Center" Width="100" Height="28" Click="ButtonSettings_Click" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="4" Background="Red" FontFamily="Rockwell">
+        <Button x:Name="btn_Settings" Content="Einstellungen" Grid.Column="4" HorizontalAlignment="Center" Margin="397,87,9,35" VerticalAlignment="Center" Width="100" Height="28" Click="ButtonSettings_Click" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3" Background="Red" FontFamily="Rockwell">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -74,7 +74,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btn_info" Content="Info" Grid.Column="7" HorizontalAlignment="Center" Margin="61.632,30,17.568,82" VerticalAlignment="Center" Width="100" Height="28" Click="Button_Click" RenderTransformOrigin="0.096,0.565" Grid.ColumnSpan="2" Background="#FFF4FF00" FontFamily="Rockwell">
+        <Button x:Name="btn_info" Content="Info" Grid.Column="7" HorizontalAlignment="Center" Margin="51,68,5,54" VerticalAlignment="Center" Width="100" Height="28" Click="Button_Click" RenderTransformOrigin="0.096,0.565" Background="#FFF4FF00" FontFamily="Rockwell">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -84,12 +84,12 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Image gif:ImageBehavior.AnimatedSource="p.gif" Grid.ColumnSpan="4" HorizontalAlignment="Center" Height="285" Margin="18.988,115,70.678,20" VerticalAlignment="Center" Width="569" Grid.RowSpan="3" Grid.Column="4"/>
-        <Label x:Name="label" Content="Label" Grid.Column="4" HorizontalAlignment="Left" Margin="30.988,115,0,0" VerticalAlignment="Top" Width="530" Grid.ColumnSpan="4" Background="Black" Height="25"/>
-        <Button Content="Client" Grid.Column="1" HorizontalAlignment="Center" Margin="20,65,398.078,49" VerticalAlignment="Center" Width="100" Grid.ColumnSpan="4" Height="26" Background="#FF0046FF" Click="Button_Click_2" FontFamily="Rockwell"/>
-        <Label x:Name="label2" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="782" Background="Lime" Height="9" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="8"/>
-        <Label x:Name="label3" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="9,120,0,0" VerticalAlignment="Top" Width="789" Background="Blue" Height="9" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="9" Grid.Row="2"/>
-        <Label x:Name="label3_Copy" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="9,10,0,0" VerticalAlignment="Top" Width="8" Background="Lime" Height="394" FontSize="20" FontWeight="Bold" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5">
+        <Image gif:ImageBehavior.AnimatedSource="p.gif" Grid.ColumnSpan="5" HorizontalAlignment="Center" Height="285" Margin="16,0,98,15" VerticalAlignment="Center" Width="568" Grid.RowSpan="2" Grid.Column="3" Grid.Row="1"/>
+        <Label x:Name="label" Content="Label" Grid.Column="4" HorizontalAlignment="Left" Margin="20,148,0,0" VerticalAlignment="Top" Width="530" Grid.ColumnSpan="4" Background="Black" Height="25" Grid.RowSpan="2"/>
+        <Button Content="Client" Grid.Column="1" HorizontalAlignment="Center" Margin="20,103,0,21" VerticalAlignment="Center" Width="100" Grid.ColumnSpan="3" Height="26" Background="#FF0046FF" Click="Button_Click_2" FontFamily="Rockwell"/>
+        <Label x:Name="label2" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="4,45,0,0" VerticalAlignment="Top" Width="782" Background="Lime" Height="9" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="8"/>
+        <Label x:Name="label3" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="7,129,0,0" VerticalAlignment="Top" Width="789" Background="Blue" Height="9" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="8" Grid.Row="2"/>
+        <Label x:Name="label3_Copy" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="-2,43,0,0" VerticalAlignment="Top" Width="8" Background="Lime" Height="394" FontSize="20" FontWeight="Bold" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>
@@ -100,7 +100,7 @@
             </Label.RenderTransform>
         </Label>
 
-        <Label x:Name="label3_Copy1" Content="" Grid.Column="8" HorizontalAlignment="Left" Margin="20.232,10,0,0" VerticalAlignment="Top" Width="9" Background="Blue" Height="392" FontSize="20" FontWeight="Bold" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"
+        <Label x:Name="label3_Copy1" Content="" Grid.Column="8" HorizontalAlignment="Left" Margin="2,44,0,0" VerticalAlignment="Top" Width="9" Background="Blue" Height="392" FontSize="20" FontWeight="Bold" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5"
 >
             <Label.RenderTransform>
                 <TransformGroup>
@@ -111,8 +111,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="btnClose" Content="Verlassen" Grid.Column="7" HorizontalAlignment="Left" Margin="61.632,64,0,0" VerticalAlignment="Top" Width="100" Background="#FFA200FF" Click="btnClose_Click" FontFamily="Rockwell" Grid.ColumnSpan="2" Height="27"/>
-        <Label x:Name="logolabel2" Content="MOVE" Grid.Column="4" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="194.988,27,0,0" VerticalAlignment="Top" Width="178" Background="Black" Height="50" FontSize="30" FontWeight="Bold" Foreground="Magenta" BorderThickness="0" FontFamily="Magneto"/>
-        <Label x:Name="label1_Copy" Content="a product from 3EIC" Grid.Column="4" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="194.988,63,0,0" VerticalAlignment="Top" Width="178" Background="Black" Height="50" FontSize="15" FontWeight="Bold" Foreground="White" BorderThickness="0" FontFamily="white"/>
+        <Button x:Name="btnClose" Content="Verlassen" Grid.Column="7" HorizontalAlignment="Left" Margin="50,105,0,0" VerticalAlignment="Top" Width="100" Background="#FFA200FF" Click="btnClose_Click" FontFamily="Rockwell" Height="27"/>
+        <Label x:Name="logolabel2" Content="MOVE" Grid.Column="4" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="184,60,0,0" VerticalAlignment="Top" Width="178" Background="Black" Height="50" FontSize="30" FontWeight="Bold" Foreground="Magenta" BorderThickness="0" FontFamily="Magneto"/>
+        <Label x:Name="label1_Copy" Content="a product from 3EIC" Grid.Column="4" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="184,96,0,0" VerticalAlignment="Top" Width="178" Background="Black" Height="50" FontSize="15" FontWeight="Bold" Foreground="White" BorderThickness="0" FontFamily="white"/>
     </Grid>
 </Window>

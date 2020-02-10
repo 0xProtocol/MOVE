@@ -118,6 +118,7 @@ namespace MOVE.Shared
         {
 
         }
+        /*/
         protected override bool ShowWithoutActivation
         {
             get
@@ -125,6 +126,7 @@ namespace MOVE.Shared
                 return true;
             }
         }
+        /*/
         public void FillHelpResults(string commands)
         {
             helpbox.Items.Clear();
