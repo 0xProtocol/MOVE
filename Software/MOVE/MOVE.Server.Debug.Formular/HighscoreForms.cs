@@ -315,6 +315,7 @@ namespace MOVE.Server.Debug.Formular
             cdatum.Text = "Date";
             cSpielername.Text = "Playername";
             cPunkte.Text = "Score";
+            lblHighscoreMessage.Text = "Please enter your highscore";
         }
         private void lsvScores_Click(object sender, EventArgs e)
         {

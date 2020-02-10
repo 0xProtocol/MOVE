@@ -204,9 +204,9 @@
             this.lblHighscoreMessage.AutoSize = true;
             this.lblHighscoreMessage.Location = new System.Drawing.Point(36, 42);
             this.lblHighscoreMessage.Name = "lblHighscoreMessage";
-            this.lblHighscoreMessage.Size = new System.Drawing.Size(176, 13);
+            this.lblHighscoreMessage.Size = new System.Drawing.Size(177, 13);
             this.lblHighscoreMessage.TabIndex = 121;
-            this.lblHighscoreMessage.Text = "Tragen Sie bitte ihren Highscore ein";
+            this.lblHighscoreMessage.Text = "Tragen Sie bitte Ihren Highscore ein";
             // 
             // HighscoreForms
             // 
