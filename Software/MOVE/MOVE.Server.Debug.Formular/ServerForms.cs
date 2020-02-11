@@ -434,18 +434,6 @@ namespace MOVE.Server.Debug.Formular
             {
                 lblSchrittZwei.Text = "Verbindung zu Client hergestellt: ✓";
             }
-            if (lsb_Information.InvokeRequired)
-            {
-                lsb_Information.Invoke(logServiceInformation, message);
-            }
-            if (lsb_Information.InvokeRequired)
-            {
-                lsb_Information.Invoke(logServiceInformation, message);
-            }
-            else
-            {
-                lsb_Information.Items.Add(message);
-            }
         }
 
         public void LogRequestInformation(string message)

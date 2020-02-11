@@ -113,6 +113,16 @@ namespace MOVE.Server.Debug.Formular.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rainbow {
+            get {
+                object obj = ResourceManager.GetObject("Rainbow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap track_and_status_controls_trackbar_programming_radtrackbar020 {
             get {
                 object obj = ResourceManager.GetObject("track-and-status-controls-trackbar-programming-radtrackbar020", resourceCulture);

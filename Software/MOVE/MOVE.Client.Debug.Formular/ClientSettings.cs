@@ -766,7 +766,7 @@ namespace MOVE.Client.Debug.Formular
         {
             tcGameSettings.Text = "Game Settings";
             tcFrequency.Text = "Frequency Settings";
-            tcAddress.Text = "Adressconfiguartion";
+            tcAddress.Text = "Adressconfiguration";
             tcNetworkDiscovery.Text = "Network Discovery";
             lblEmpfindlichkeit.Text = "Sensitivity";
             lblGlättungsstufe.Text = "Smoothing level";

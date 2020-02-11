@@ -27,7 +27,7 @@ namespace MOVE.AudioLayer
         int calValue = 0;
         #endregion
         #region Methoden
-
+        
         public void Start()
         {
             StartMicrofoneRecording();

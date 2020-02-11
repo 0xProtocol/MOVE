@@ -119,14 +119,6 @@ namespace MOVE.Client.Debug.Formular
             {
                 lblSchrittZwei.Text = "Verbindung zu Server hergestellt: ✓";
             }
-            if (lsb_Information.InvokeRequired)
-            {
-                lsb_Information.Invoke(logServiceInformation, message);
-            }
-            else
-            {
-                lsb_Information.Items.Add(message);
-            }
         }
         public void LogRequestInformation(string message)
         {
@@ -820,45 +812,50 @@ namespace MOVE.Client.Debug.Formular
         {
 
         }
-        /*/
-        private void cbAusblenden_CheckedChanged_1(object sender, EventArgs e)
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            if (cbAusblenden.Checked == true)
-            {
 
-                lblFineTuning.Visible = false;
-                lblGlaettung.Visible = false;
-
-                lsb_Information.Visible = false;
-                btnSettings.Visible = false;
-                lblSchwierigkeit.Visible = false;
-                btn_Start.Visible = false;
-                btn_Connect.Visible = false;
-                btnStart.Visible = false;
-                lblSchrittEins.Visible = false;
-                lblSchrittZwei.Visible = false;
-                lblSchrittDrei.Visible = false;
-                lblBallSpeed.Visible = false;
-            }
-            if (cbAusblenden.Checked == false)
-            {
-
-                lblFineTuning.Visible = true;
-                lblGlaettung.Visible = true;
-
-                lsb_Information.Visible = true;
-                btnSettings.Visible = true;
-                lblSchwierigkeit.Visible = true;
-                btn_Start.Visible = true;
-                btn_Connect.Visible = true;
-                btnStart.Visible = true;
-                lblSchrittEins.Visible = true;
-                lblSchrittZwei.Visible = true;
-                lblSchrittDrei.Visible = true;
-                lblBallSpeed.Visible = true;
-            }
         }
-         /*/
+        /*/
+private void cbAusblenden_CheckedChanged_1(object sender, EventArgs e)
+{
+   if (cbAusblenden.Checked == true)
+   {
+
+       lblFineTuning.Visible = false;
+       lblGlaettung.Visible = false;
+
+       lsb_Information.Visible = false;
+       btnSettings.Visible = false;
+       lblSchwierigkeit.Visible = false;
+       btn_Start.Visible = false;
+       btn_Connect.Visible = false;
+       btnStart.Visible = false;
+       lblSchrittEins.Visible = false;
+       lblSchrittZwei.Visible = false;
+       lblSchrittDrei.Visible = false;
+       lblBallSpeed.Visible = false;
+   }
+   if (cbAusblenden.Checked == false)
+   {
+
+       lblFineTuning.Visible = true;
+       lblGlaettung.Visible = true;
+
+       lsb_Information.Visible = true;
+       btnSettings.Visible = true;
+       lblSchwierigkeit.Visible = true;
+       btn_Start.Visible = true;
+       btn_Connect.Visible = true;
+       btnStart.Visible = true;
+       lblSchrittEins.Visible = true;
+       lblSchrittZwei.Visible = true;
+       lblSchrittDrei.Visible = true;
+       lblBallSpeed.Visible = true;
+   }
+}
+/*/
     }
 }
 #endregion

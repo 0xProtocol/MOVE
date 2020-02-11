@@ -176,5 +176,8 @@
   <ItemGroup>
     <None Include="Resources\lupe_ani1_optlins_aus.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rainbow.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
