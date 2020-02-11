@@ -115,7 +115,11 @@
         <Button x:Name="btnClose" Content="Verlassen" Grid.Column="8" HorizontalAlignment="Left" Margin="49.6,105,0,0" VerticalAlignment="Top" Width="100" Background="#FFA200FF" Click="btnClose_Click" FontFamily="Rockwell" Height="27"/>
         <Label x:Name="logolabel2" Content="MOVE" Grid.Column="5" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="157.633,60,0,0" VerticalAlignment="Top" Width="178" Background="Black" Height="50" FontSize="30" FontWeight="Bold" Foreground="Magenta" BorderThickness="0" FontFamily="Magneto"/>
         <Label x:Name="label1_Copy" Content="a product from 3EIC" Grid.Column="5" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="157.633,96,0,0" VerticalAlignment="Top" Width="178" Background="Black" Height="50" FontSize="15" FontWeight="Bold" Foreground="White" BorderThickness="0" FontFamily="white"/>
-        <Image x:Name="Rainbow2" gif:ImageBehavior.AnimatedSource="rainbow2.gif" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="72" Margin="29,-15,6,93" VerticalAlignment="Center" Width="146" Grid.Column="8"/>
+        <Image x:Name="Rainbow2_Copy3" gif:ImageBehavior.AnimatedSource="rainbow2.gif" HorizontalAlignment="Center" Height="72" Margin="49,-15,345.8,92.6" VerticalAlignment="Center" Width="146" Grid.Column="1" Grid.ColumnSpan="5"/>
+        <Image x:Name="Rainbow2_Copy2" gif:ImageBehavior.AnimatedSource="rainbow2.gif" HorizontalAlignment="Center" Height="72" Margin="49.4,-15,199.8,92.6" VerticalAlignment="Center" Width="146" Grid.Column="5"/>
+        <Image x:Name="Rainbow2_Copy1" gif:ImageBehavior.AnimatedSource="rainbow2.gif" HorizontalAlignment="Center" Height="72" Margin="194.4,-15,54.8,92.6" VerticalAlignment="Center" Width="146" Grid.Column="5"/>
+        <Image x:Name="Rainbow2_Copy" gif:ImageBehavior.AnimatedSource="rainbow2.gif" Grid.ColumnSpan="4" HorizontalAlignment="Center" Height="72" Margin="339.4,-15,152.2,92.6" VerticalAlignment="Center" Width="146" Grid.Column="5"/>
+        <Image x:Name="Rainbow2" gif:ImageBehavior.AnimatedSource="rainbow2.gif" HorizontalAlignment="Center" Height="72" Margin="3.8,-15,6.2,92.6" VerticalAlignment="Center" Width="146" Grid.Column="8"/>
 
     </Grid>
 </Window>
