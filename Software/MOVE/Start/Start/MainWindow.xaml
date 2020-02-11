@@ -27,7 +27,7 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <Image x:Name="img_background" Grid.ColumnSpan="11" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Margin="-5,42,6.4,-71.4" Loaded="Img_background_Loaded">
+        <Image x:Name="img_background" Grid.ColumnSpan="7" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3" Margin="-56,108,45,-76" Loaded="Img_background_Loaded">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="top.png"/>
             </Image.OpacityMask>
@@ -115,6 +115,7 @@
         <Button x:Name="btnClose" Content="Verlassen" Grid.Column="8" HorizontalAlignment="Left" Margin="49.6,105,0,0" VerticalAlignment="Top" Width="100" Background="#FFA200FF" Click="btnClose_Click" FontFamily="Rockwell" Height="27"/>
         <Label x:Name="logolabel2" Content="MOVE" Grid.Column="5" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="157.633,60,0,0" VerticalAlignment="Top" Width="178" Background="Black" Height="50" FontSize="30" FontWeight="Bold" Foreground="Magenta" BorderThickness="0" FontFamily="Magneto"/>
         <Label x:Name="label1_Copy" Content="a product from 3EIC" Grid.Column="5" HorizontalAlignment="Left" HorizontalContentAlignment="center" Margin="157.633,96,0,0" VerticalAlignment="Top" Width="178" Background="Black" Height="50" FontSize="15" FontWeight="Bold" Foreground="White" BorderThickness="0" FontFamily="white"/>
+        <Image x:Name="Rainbow2" gif:ImageBehavior.AnimatedSource="rainbow2.gif" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="72" Margin="29,-15,6,93" VerticalAlignment="Center" Width="146" Grid.Column="8"/>
 
     </Grid>
 </Window>

@@ -154,5 +154,8 @@
   <ItemGroup>
     <None Include="Resources\Rainbow.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainbow2.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

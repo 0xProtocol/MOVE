@@ -99,7 +99,6 @@ D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.dll
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.dll
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.xml
-D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csprojAssemblyReference.cache
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CoreCompileInputs.cache
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CopyComplete
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll

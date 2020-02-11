@@ -6,3 +6,9 @@
    bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
    bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
    bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+11-02-2020 08:01:28 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+11-02-2020 08:03:56 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in D:\GitHubMove\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
