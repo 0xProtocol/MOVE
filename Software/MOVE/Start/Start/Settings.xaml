@@ -7,37 +7,79 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com" x:Class="Start.Settings"
         mc:Ignorable="d"
          Icon="logo (2).jpeg"
-        Title="Settings" Height="450" Width="800" Activated="Window_Activated" Deactivated="Window_Deactivated">
-    <Grid Background="Black">
-        <Image gif:ImageBehavior.AnimatedSource="giphy.gif" Opacity="0.505" ScrollViewer.CanContentScroll="True" Margin="384,-19,-15,-38">
+        Title="Settings" Height="509.206" Width="879.139" Activated="Window_Activated" Deactivated="Window_Deactivated">
+    <Grid Background="Black" Margin="0,-2,-0.2,2">
+        <Image gif:ImageBehavior.AnimatedSource="giphy.gif" Opacity="0.505" ScrollViewer.CanContentScroll="True" Margin="452,22,18,29.8">
             <Image.Effect>
                 <BlurEffect/>
             </Image.Effect>
         </Image>
-        <Image gif:ImageBehavior.AnimatedSource="giphy.gif" Opacity="0.505" ScrollViewer.CanContentScroll="True" Margin="-9,-19,384,-23">
+        <Image gif:ImageBehavior.AnimatedSource="giphy.gif" Opacity="0.505" ScrollViewer.CanContentScroll="True" Margin="10,22,440.6,30.2">
             <Image.Effect>
                 <BlurEffect/>
             </Image.Effect>
         </Image>
-        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="0,73,0,0" VerticalAlignment="Top" Width="167" Background="Black"/>
-        <RadioButton x:Name="rb_einfach" Content="Leicht" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="se"/>
-        <Label Name="lblemp" Content="Empfindlichkeit" HorizontalAlignment="Left" Margin="0,73,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
-        <RadioButton x:Name="rb_schwer" Content="Stark" HorizontalAlignment="Left" Margin="10,159,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="se"/>
-        <RadioButton x:Name="rb_mittel" Content="Mittel" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="se"/>
-        <Button Name="btn_save" Content="speichern" HorizontalAlignment="Left" Margin="697,379,0,0" VerticalAlignment="Top" Width="75" Background="#FFDDDDDD" Click="Button_Click"/>
-        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="609,73,0,0" VerticalAlignment="Top" Width="167" Background="Black"/>
-        <RadioButton x:Name="rb_modell1" Content="Leicht" HorizontalAlignment="Left" Margin="619,109,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell"/>
-        <Label Name="lblg" Content="Glättung" HorizontalAlignment="Left" Margin="609,73,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
-        <RadioButton x:Name="rb_modell3" Content="Stark" HorizontalAlignment="Left" Margin="619,159,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="modell"/>
-        <RadioButton x:Name="rb_modell2" Content="Mittel" HorizontalAlignment="Left" Margin="619,134,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell"/>
-        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="9,278,0,0" VerticalAlignment="Top" Width="167" Background="Black">
-            <RadioButton x:Name="rb_speechmoduledeactivated" Content="deaktiviert" HorizontalAlignment="Left" Margin="4,56,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sm"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="49,27,0,0" VerticalAlignment="Top" Width="167" Background="Black"/>
+        <RadioButton x:Name="rb_einfach" Content="Leicht" HorizontalAlignment="Left" Margin="59,63,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="se" FontFamily="Rockwell"/>
+        <Label Name="lblemp" Content="Empfindlichkeit" HorizontalAlignment="Left" Margin="49,27,0,0" VerticalAlignment="Top" Width="167" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="#FFFF0077" FontSize="16" FontFamily="Rockwell"/>
+        <RadioButton x:Name="rb_schwer" Content="Stark" HorizontalAlignment="Left" Margin="59,113,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="se" FontFamily="Rockwell"/>
+        <RadioButton x:Name="rb_mittel" Content="Mittel" HorizontalAlignment="Left" Margin="59,88,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="se" FontFamily="Rockwell"/>
+        <Button Name="btn_save" Content="speichern" HorizontalAlignment="Left" Margin="751,412,0,0" VerticalAlignment="Top" Width="75" Background="#FF00FFFA" Click="Button_Click" Height="29" FontFamily="Rockwell"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="481,28,0,0" VerticalAlignment="Top" Width="167" Background="Black"/>
+        <RadioButton x:Name="rb_modell1" Content="Leicht" HorizontalAlignment="Left" Margin="491,64,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell" FontFamily="Rockwell"/>
+        <Label Name="lblg" Content="Glättung" HorizontalAlignment="Left" Margin="481,28,0,0" VerticalAlignment="Top" Width="167" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="#FFFF0077" FontSize="16" FontFamily="Rockwell"/>
+        <RadioButton x:Name="rb_modell3" Content="Stark" HorizontalAlignment="Left" Margin="491,114,0,0" VerticalAlignment="Top" Height="33" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" RenderTransformOrigin="0.507,0.576" GroupName="modell" FontFamily="Rockwell"/>
+        <RadioButton x:Name="rb_modell2" Content="Mittel" HorizontalAlignment="Left" Margin="491,89,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="modell" FontFamily="Rockwell"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="226,288,0,0" VerticalAlignment="Top" Width="167" Background="Black">
+            <RadioButton x:Name="rb_speechmoduledeactivated" Content="deaktiviert" HorizontalAlignment="Left" Margin="4,56,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sm" FontFamily="Rockwell"/>
         </GroupBox>
-        <Label Name="lblsm" Content="Sprachmodul" HorizontalAlignment="Left" Margin="13,275,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
-        <RadioButton x:Name="rb_speechmoduleactivated" Content="aktiviert" HorizontalAlignment="Left" Margin="18,318,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sm"/>
-        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="608,258,0,0" VerticalAlignment="Top" Width="167" Background="Black"/>
-        <Label Name="lbls" Content="Sprache" HorizontalAlignment="Left" Margin="613,258,0,0" VerticalAlignment="Top" Width="142" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="Red" FontSize="16"/>
-        <RadioButton x:Name="rb_speechmodulegerman" Content="Deutsch" HorizontalAlignment="Left" Margin="617,303,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sp"/>
-        <RadioButton x:Name="rb_speechmoduleenglish" Content="Englisch" HorizontalAlignment="Left" Margin="616,330,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sp"/>
+        <Label Name="lblsm" Content="Sprachmodul" HorizontalAlignment="Left" Margin="226,285,0,0" VerticalAlignment="Top" Width="167" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="#FFFF0077" FontSize="16" FontFamily="Rockwell"/>
+        <RadioButton x:Name="rb_speechmoduleactivated" Content="aktiviert" HorizontalAlignment="Left" Margin="235,328,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sm" FontFamily="Rockwell"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="119" Margin="659,289,0,0" VerticalAlignment="Top" Width="167" Background="Black"/>
+        <Label Name="lbls" Content="Sprache" HorizontalAlignment="Left" Margin="658,283,0,0" VerticalAlignment="Top" Width="168" TextOptions.TextHintingMode="Fixed" Background="Black" Foreground="#FFFF0077" FontSize="16" FontFamily="Rockwell"/>
+        <RadioButton x:Name="rb_speechmodulegerman" Content="Deutsch" HorizontalAlignment="Left" Margin="662,328,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sp" FontFamily="Rockwell"/>
+        <RadioButton x:Name="rb_speechmoduleenglish" Content="Englisch" HorizontalAlignment="Left" Margin="661,355,0,0" VerticalAlignment="Top" Height="20" Width="142" Foreground="White" Checked="RadioButton_Checked_1" FontSize="14" GroupName="sp" FontFamily="Rockwell"/>
+        <Label x:Name="label2" Content="" HorizontalAlignment="Left" Margin="16,8,0,0" VerticalAlignment="Top" Width="835" Background="#FFFF0077" Height="9" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label2_Copy" Content="" HorizontalAlignment="Left" Margin="20,454,0,0" VerticalAlignment="Top" Width="835" Background="#FFFF0077" Height="9" FontSize="20" FontWeight="Bold"/>
+        <Label x:Name="label3_Copy" Content="" HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" Width="8" Background="#FFFF0077" Height="453" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label3_Copy1" Content="" HorizontalAlignment="Left" Margin="848,9,0,0" VerticalAlignment="Top" Width="8" Background="#FFFF0077" Height="453" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label3_Copy2" Content="" HorizontalAlignment="Left" Margin="412,12,0,0" VerticalAlignment="Top" Width="8" Background="#FFFF0077" Height="447" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label3_Copy3" Content="" HorizontalAlignment="Left" Margin="445,11,0,0" VerticalAlignment="Top" Width="8" Background="#FFFF0077" Height="447" FontSize="20" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
     </Grid>
 </Window>

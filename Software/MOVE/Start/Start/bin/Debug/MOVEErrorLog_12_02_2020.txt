@@ -1,0 +1,81 @@
+12-02-2020 07:46:50 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:03:24 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:10:32 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:11:57 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:12:26 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:14:40 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:15:48 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:16:13 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:16:56 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:17:26 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:18:28 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:18:48 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:19:18 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:19:30 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:20:06 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:20:36 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 08:20:41 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 09:56:31 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 09:57:21 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 09:57:47 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 10:00:04 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 10:01:51 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 10:02:08 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 10:02:40 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 10:02:51 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 10:03:06 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
+12-02-2020 10:03:08 	System.InvalidOperationException: Es muss mindestens eine Grammatik geladen sein, bevor eine Erkennung durchgeführt wird.
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\MOVE\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 193.
