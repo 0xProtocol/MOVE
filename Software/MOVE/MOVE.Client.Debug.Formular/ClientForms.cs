@@ -160,7 +160,7 @@ namespace MOVE.Client.Debug.Formular
             {
                 if (rBFrequenz.Checked == true)
                 {
-                    fi.CalculateData(cs.GetCalSate());
+                    fi.CalculateData(cs.GetCalState());
 
                     positionValue = fi.CalculatePaddleLocationX(cs.FrequenzSetting(), cs.FrequenzThreshold());
 
@@ -173,7 +173,25 @@ namespace MOVE.Client.Debug.Formular
                         positionValue = 1350;
                     }
 
-                    pbx_uplocal.Location = new Point(positionValue + 60, 65);
+                    if (cs.tbSmoothing.Value == 0)
+                    {
+                        pbx_uplocal.Location = new Point(positionValue + 60, 65);
+                    }
+                    if (cs.tbSmoothing.Value == 1)
+                    {
+                        savedValues.Add(positionValue);
+                        Glaettung(2);
+                    }
+                    if (cs.tbSmoothing.Value == 2)
+                    {
+                        savedValues.Add(positionValue);
+                        Glaettung(4);
+                    }
+                    if (cs.tbSmoothing.Value == 3)
+                    {
+                        savedValues.Add(positionValue);
+                        Glaettung(6);
+                    }
                 }
 
                 if (rBSound.Checked == true)

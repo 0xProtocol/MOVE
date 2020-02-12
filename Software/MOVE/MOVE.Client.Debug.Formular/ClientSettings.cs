@@ -1036,14 +1036,19 @@ namespace MOVE.Client.Debug.Formular
             double threshold = Convert.ToDouble(tbThreshold.Value) / 10;
             return threshold;
         }
+
         private void btnStartCal_Click_1(object sender, EventArgs e)
         {
+            btnStartCal.Enabled = false;
             StartCal();
+            btnStopCal.Enabled = true;
         }
 
         private void btnStopCal_Click_1(object sender, EventArgs e)
         {
+            btnStopCal.Enabled = false;
             StopCal();
+            btnStartCal.Enabled = true;
         }
         private void StartCal()
         {
@@ -1055,7 +1060,7 @@ namespace MOVE.Client.Debug.Formular
             calState = 2;
             rBkalibrieren.Checked = true;
         }
-        public int GetCalSate()
+        public int GetCalState()
         {
             return calState;
         }

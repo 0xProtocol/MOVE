@@ -1440,3 +1440,5 @@ C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.cs
 C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.csproj.CopyComplete
 C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.exe
 C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.pdb
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Warning.g.cs
+C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\Start\Start\obj\Debug\Warning.baml

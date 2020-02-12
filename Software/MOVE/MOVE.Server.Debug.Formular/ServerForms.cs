@@ -270,9 +270,26 @@ namespace MOVE.Server.Debug.Formular
                         positionValue = 1350;
                     }
 
-                    pbx_downlocal.Location = new Point(positionValue + 60, (int)player);
+                    if (ss.tbSmoothing.Value == 0)
+                    {
+                        pbx_downlocal.Location = new Point(positionValue + 60, (int)player);
+                    }
+                    if (ss.tbSmoothing.Value == 1)
+                    {
+                        savedValues.Add(positionValue);
+                        Glaettung(2);
+                    }
+                    if (ss.tbSmoothing.Value == 2)
+                    {
+                        savedValues.Add(positionValue);
+                        Glaettung(4);
+                    }
+                    if (ss.tbSmoothing.Value == 3)
+                    {
+                        savedValues.Add(positionValue);
+                        Glaettung(6);
+                    }
                 }
-
                 if (rBSound.Checked == true)
                 {
                     double fractionValue = soundValueTwo / soundValueOne;
