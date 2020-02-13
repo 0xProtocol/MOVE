@@ -715,6 +715,10 @@ namespace MOVE.Server.Debug.Formular
             {
                 ActivateDefaultEnglishListener();
             }
+            if (btn_Start.Enabled == false)
+            {
+                startBall();
+            }
         }
 
         private void SinglePlayerForms_Deactivate(object sender, EventArgs e)
@@ -727,6 +731,17 @@ namespace MOVE.Server.Debug.Formular
             {
                 CancelDefaultEnglishListener();
             }
+            pauseBall();
+        }
+
+        private void pauseBall()
+        {
+            timer1.Stop();
+        }
+
+        private void startBall()
+        {
+            timer1.Start();
         }
 
         private void dgv_playfieldclient_KeyDown(object sender, KeyEventArgs e)
