@@ -836,49 +836,40 @@ namespace MOVE.Client.Debug.Formular
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void btnPause_Click(object sender, EventArgs e)
         {
-
+            if (btnPause.BackColor == System.Drawing.Color.Gold)
+            {
+                btnPause.BackColor = Color.Gray;
+                panel1.BackColor = Color.Gray;
+                panel2.BackColor = Color.Gray;
+                panel3.BackColor = Color.Gray;
+                panel4.BackColor = Color.Gray;
+                panel5.BackColor = Color.Gray;
+                panel6.BackColor = Color.Gray;
+                panel7.BackColor = Color.Gray;
+                panel8.BackColor = Color.Gray;
+                timer2.Stop();
+                c.Send("move:\\" + "l" + "|" + "FFFFFF");
+                return;
+            }
+            if (btnPause.BackColor == System.Drawing.Color.Gray)
+            {
+                btnPause.BackColor = Color.Gold;
+                panel1.BackColor = Color.Blue;
+                panel2.BackColor = Color.Purple;
+                panel3.BackColor = Color.Pink;
+                panel4.BackColor = Color.Blue;
+                panel5.BackColor = Color.Blue;
+                panel6.BackColor = Color.Purple;
+                panel7.BackColor = Color.Pink;
+                panel8.BackColor = Color.Pink;
+                timer2.Start();
+                c.Send("move:\\" + "l" + "|" + "TTTTTT");
+                return;
+            }
         }
-        /*/
-private void cbAusblenden_CheckedChanged_1(object sender, EventArgs e)
-{
-   if (cbAusblenden.Checked == true)
-   {
-
-       lblFineTuning.Visible = false;
-       lblGlaettung.Visible = false;
-
-       lsb_Information.Visible = false;
-       btnSettings.Visible = false;
-       lblSchwierigkeit.Visible = false;
-       btn_Start.Visible = false;
-       btn_Connect.Visible = false;
-       btnStart.Visible = false;
-       lblSchrittEins.Visible = false;
-       lblSchrittZwei.Visible = false;
-       lblSchrittDrei.Visible = false;
-       lblBallSpeed.Visible = false;
-   }
-   if (cbAusblenden.Checked == false)
-   {
-
-       lblFineTuning.Visible = true;
-       lblGlaettung.Visible = true;
-
-       lsb_Information.Visible = true;
-       btnSettings.Visible = true;
-       lblSchwierigkeit.Visible = true;
-       btn_Start.Visible = true;
-       btn_Connect.Visible = true;
-       btnStart.Visible = true;
-       lblSchrittEins.Visible = true;
-       lblSchrittZwei.Visible = true;
-       lblSchrittDrei.Visible = true;
-       lblBallSpeed.Visible = true;
-   }
-}
-/*/
+        
     }
 }
 #endregion

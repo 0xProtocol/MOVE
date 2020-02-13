@@ -461,6 +461,32 @@ namespace MOVE.Server.Debug.Formular
             {
                 lblSchrittDrei.Text = "Übertragung der Schlägerkoordinaten: ✓";
             }
+            if(message.Contains("FFFFFF"))
+            {
+                timer1.Stop();
+                timer2.Stop();
+                panel1.BackColor = Color.Gray;
+                panel2.BackColor = Color.Gray;
+                panel3.BackColor = Color.Gray;
+                panel4.BackColor = Color.Gray;
+                panel5.BackColor = Color.Gray;
+                panel6.BackColor = Color.Gray;
+                panel7.BackColor = Color.Gray;
+                panel8.BackColor = Color.Gray;
+            }
+            if (message.Contains("TTTTTT"))
+            {
+                timer1.Start();
+                timer2.Start();
+                panel1.BackColor = Color.Blue;
+                panel2.BackColor = Color.Purple;
+                panel3.BackColor = Color.Pink;
+                panel4.BackColor = Color.Blue;
+                panel5.BackColor = Color.Blue;
+                panel6.BackColor = Color.Purple;
+                panel7.BackColor = Color.Pink;
+                panel8.BackColor = Color.Pink;
+            }
             if (pbx_downlocal.InvokeRequired)
             {
                 pbx_upnetwork.Invoke(logRequestInformation, message);
