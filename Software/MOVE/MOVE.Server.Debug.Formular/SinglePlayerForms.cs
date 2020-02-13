@@ -321,19 +321,16 @@ namespace MOVE.Server.Debug.Formular
                 if (ss.tbempfindlichkeit.Value == 1)
                 {
                     positionValue = (int)(((frac * 3) * 668)) - 2;
-                    lblFineTuning.Text = "Empfindlichkeit: wenig";
 
                 }
                 if (ss.tbempfindlichkeit.Value == 2)
                 {
                     positionValue = (int)(((frac * 5) * 668)) - 3;
-                    lblFineTuning.Text = "Empfindlichkeit: mittel";
 
                 }
                 if (ss.tbempfindlichkeit.Value == 3)
                 {
                     positionValue = (int)(((frac * 8) * 668)) - 5;
-                    lblFineTuning.Text = "Empfindlichkeit: hoch";
 
                 }
 
@@ -341,19 +338,16 @@ namespace MOVE.Server.Debug.Formular
                 {
                     wertGlaettung = 3;
                     Glaettung(wertGlaettung);
-                    lblGlaettung.Text = "Glättungsstufe: 1";
                 }
                 if (ss.tbGlättung.Value == 2)
                 {
                     wertGlaettung = 4;
                     Glaettung(wertGlaettung);
-                    lblGlaettung.Text = "Glättungsstufe: 2";
                 }
                 if (ss.tbGlättung.Value == 3)
                 {
                     wertGlaettung = 6;
                     Glaettung(wertGlaettung);
-                    lblGlaettung.Text = "Glättungsstufe: 3";
                 }
                 //double newfrac = Math.Round(frac, 0, MidpointRounding.AwayFromZero);
                 if (positionValue < 70)
@@ -378,14 +372,14 @@ namespace MOVE.Server.Debug.Formular
 
             if (pbx_downlocal.Bounds.IntersectsWith(Ball.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y - 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y - 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject1.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -396,7 +390,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject2.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -407,7 +401,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject3.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -418,7 +412,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject4.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -429,7 +423,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject5.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -440,7 +434,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject6.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -451,7 +445,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject7.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -462,7 +456,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject8.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -473,7 +467,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject10.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -484,7 +478,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject11.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -495,7 +489,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject12.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -506,7 +500,7 @@ namespace MOVE.Server.Debug.Formular
             }
             if (Ball.Bounds.IntersectsWith(singlePlayerObject9.Bounds))
             {
-                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 10);
+                Ball.Location = new Point(Ball.Location.X, Ball.Location.Y + 13);
                 speed_top -= 0;
                 speed_left -= 0;
                 speed_top = -speed_top;
@@ -628,8 +622,6 @@ namespace MOVE.Server.Debug.Formular
             rBFrequenz.Text = "Frequency";
             rbKeyboard.Text = "Keyboard";
             lblLifes.Text = "Lives";
-            lblGlaettung.Text = "Smoothing level";
-            lblFineTuning.Text = "sensitivity";
             lbl_Gamer.Text = "Singleplayer";
         }
         private void Settings()
