@@ -272,6 +272,23 @@ namespace MOVE.Client.Debug.Formular
                 {
                     StopCal();
                 }
+                if(speech=="set smoothing level to one")
+                {
+                    tbSmoothing.Value = 0;
+                }
+                if (speech == "set smoothing level to two")
+                {
+                    tbSmoothing.Value = 1;
+
+                }
+                if (speech == "set smoothing level to three")
+                {
+                    tbSmoothing.Value = 2;
+                }
+                if (speech == "set smoothing level to four")
+                {
+                    tbSmoothing.Value = 3;
+                }
                 if (speech == "set recording threshold to one")
                 {
                     tbThreshold.Value = 1;
@@ -529,6 +546,23 @@ namespace MOVE.Client.Debug.Formular
                 if (speech == "Stoppe Kalibrierung")
                 {
                     StopCal();
+                }
+                if (speech == "Setze Glättungstufe auf eins")
+                {
+                    tbSmoothing.Value = 0;
+                }
+                if (speech == "Setze Glättungstufe auf zwei")
+                {
+                    tbSmoothing.Value = 1;
+
+                }
+                if (speech == "Setze Glättungstufe auf drei")
+                {
+                    tbSmoothing.Value = 2;
+                }
+                if (speech == "Setze Glättungstufe auf vier")
+                {
+                    tbSmoothing.Value = 3;
                 }
                 if (speech == "Setze Aufnahmeschwelle auf eins")
                 {

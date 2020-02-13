@@ -22,6 +22,10 @@ whistle
 calibrated
 start calibration
 stop calibration
+set smoothing level to one
+set smoothing level to two
+set smoothing level to three
+set smoothing level to four
 set recording threshold to one
 set recording threshold to two
 set recording threshold to three

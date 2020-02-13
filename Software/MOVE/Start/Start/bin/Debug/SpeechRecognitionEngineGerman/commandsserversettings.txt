@@ -22,6 +22,10 @@ Pfeifen
 Kalibriert
 Starte Kalibrierung
 Stoppe Kalibrierung
+Setze Glättungstufe auf eins
+Setze Glättungstufe auf zwei
+Setze Glättungstufe auf drei
+Setze Glättungstufe auf vier
 Setze Aufnahmeschwelle auf eins
 Setze Aufnahmeschwelle auf zwei
 Setze Aufnahmeschwelle auf drei

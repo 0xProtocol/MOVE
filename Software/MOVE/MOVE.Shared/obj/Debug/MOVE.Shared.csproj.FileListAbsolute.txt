@@ -114,3 +114,4 @@ C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.xm
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.Help.resources
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.GenerateResource.cache
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CopyComplete
+D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csprojAssemblyReference.cache
