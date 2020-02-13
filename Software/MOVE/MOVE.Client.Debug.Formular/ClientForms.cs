@@ -653,6 +653,11 @@ namespace MOVE.Client.Debug.Formular
         {
             //cbAusblenden.Checked = false;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="anzahl"></param>
         public void Glaettung(int anzahl)
         {
             int  summe = 0;

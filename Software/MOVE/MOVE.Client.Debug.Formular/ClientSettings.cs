@@ -164,6 +164,8 @@ namespace MOVE.Client.Debug.Formular
         }
         #endregion
         #region Speech Recognition
+
+
         public void DefaultListenerGerman()
         {
             try
@@ -1028,6 +1030,10 @@ namespace MOVE.Client.Debug.Formular
             tbx_IPServer.Text = splitzeile[0];
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public int FrequenzSetting()
         {
             if (rBBass.Checked == true)
