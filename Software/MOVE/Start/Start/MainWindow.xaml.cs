@@ -229,7 +229,6 @@ namespace Start
             }
             else
             {
-                logolabel2.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#515251"));
                 if (speechvalue == 0)
                 {
                     DesignChangesGerman();
@@ -238,6 +237,7 @@ namespace Start
                 {
                     DesignChangesEnglish();
                 }
+                logolabel2.Foreground = new System.Windows.Media.SolidColorBrush((Color)ColorConverter.ConvertFromString("#515251"));
             }
             this.Focus();
         }

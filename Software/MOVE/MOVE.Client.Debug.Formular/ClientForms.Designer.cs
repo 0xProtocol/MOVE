@@ -204,7 +204,7 @@
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(249, 44);
             this.btnSettings.TabIndex = 107;
-            this.btnSettings.Text = "Settings";
+            this.btnSettings.Text = "Einstellungen";
             this.btnSettings.UseVisualStyleBackColor = false;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
@@ -260,7 +260,7 @@
             this.btn_Connect.Name = "btn_Connect";
             this.btn_Connect.Size = new System.Drawing.Size(249, 44);
             this.btn_Connect.TabIndex = 101;
-            this.btn_Connect.Text = "Connect";
+            this.btn_Connect.Text = "Verbinden";
             this.btn_Connect.UseVisualStyleBackColor = false;
             this.btn_Connect.Click += new System.EventHandler(this.btn_Connect_Click_1);
             // 

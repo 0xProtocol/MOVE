@@ -246,7 +246,7 @@ namespace MOVE.Client.Debug.Formular
                 {
                     rBTenor.Checked = true;
                 }
-                if (speech == "männeralt")
+                if (speech == "men alto")
                 {
                     rBMaenneralt.Checked = true;
                 }
@@ -800,19 +800,23 @@ namespace MOVE.Client.Debug.Formular
         }
         private void DesignChangesEnglish()
         {
+             
             tcGameSettings.Text = "Game Settings";
             tcFrequency.Text = "Frequency Settings";
             tcAddress.Text = "Adressconfiguration";
             tcNetworkDiscovery.Text = "Network Discovery";
             lblEmpfindlichkeit.Text = "Sensitivity";
             lblGlättungsstufe.Text = "Smoothing level";
-            label1.Text = "Admission threshold";
+            label1.Text = "Recording threshold";
             rBPfeifen.Text = "Whistle";
             cbDeepSearch.Text = "Deep Search";
             cbQuickSearch.Text = "Quick Search";
             btn_Discover.Text = "Start Discovery";
             btn_ActivateFirewall.Text = "Activate Firewall";
             btn_deactivatefirewall.Text = "Deactivate Firewall";
+            label2.Text = "Smoothing level";
+            rBkalibrieren.Text = "Calibrated";
+            rBMaenneralt.Text = "Men alto";
         }
         private void StartthisListenerGerman()
         {
@@ -1255,6 +1259,11 @@ namespace MOVE.Client.Debug.Formular
         }
 
         private void btnStartCal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

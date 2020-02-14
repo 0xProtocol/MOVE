@@ -241,7 +241,7 @@ namespace MOVE.Server.Debug.Formular
                 {
                     rBTenor.Checked = true;
                 }
-                if (speech == "männeralt")
+                if (speech == "men alto")
                 {
                     rBMaenneralt.Checked = true;
                 }
@@ -823,7 +823,8 @@ namespace MOVE.Server.Debug.Formular
             tcNetworkDicovery.Text = "Network Discovery";
             lblEmpfindlichkeit.Text = "Sensitivity";
             lblGlättungsstufe.Text = "Smoothing level";
-            label1.Text = "Admission threshold";
+            label2.Text = "Smoothing level";
+            label1.Text = "Recording threshold";
             rBPfeifen.Text = "Whistle";
             cbDeepSearch.Text = "Deep Search";
             cbQuickSearch.Text = "Quick Search";
@@ -831,6 +832,7 @@ namespace MOVE.Server.Debug.Formular
             btn_ActivateFirewall.Text = "Activate Firewall";
             btn_deactivatefirewall.Text = "Deactivate Firewall";
             rBkalibrieren.Text = "Calibrated";
+            rBMaenneralt.Text = "Men alto";
         }
         private void StartthisListenerGerman()
         {
@@ -1271,6 +1273,11 @@ namespace MOVE.Server.Debug.Formular
         }
 
         private void TbThreshold_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

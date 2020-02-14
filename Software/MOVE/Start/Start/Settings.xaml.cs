@@ -201,7 +201,7 @@ namespace Start
                 SetGlättungleicht();
             }
 
-            if (speech == "Gsmoothing two")
+            if (speech == "smoothing two")
             {
                 SetGlättungmittel();
             }

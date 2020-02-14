@@ -620,6 +620,7 @@ namespace MOVE.Client.Debug.Formular
         private void DesignChangesEnglish()
         {
             btnSettings.Text = "Settings";
+            btn_Connect.Text = "Connect";
             rBSound.Text = "Sound";
             rBFrequenz.Text = "Frequency";
             rbKeyboard.Text = "Keyboard";

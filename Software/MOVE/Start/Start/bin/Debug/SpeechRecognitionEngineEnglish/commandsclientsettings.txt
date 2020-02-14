@@ -15,7 +15,7 @@ smoothinglevel three
 bass
 bariton
 tenor
-männeralt
+men alto
 mezzosopran
 sopran
 whistle
