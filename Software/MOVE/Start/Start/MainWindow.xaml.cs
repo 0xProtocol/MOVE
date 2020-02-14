@@ -325,6 +325,14 @@ namespace Start
         {
             Environment.Exit(0);
         }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.F1)
+            {
+                MessageBox.Show("Geister");
+            }
+        }
     }
 }
 #endregion

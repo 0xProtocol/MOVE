@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Start"
         mc:Ignorable="d"
         Icon="logo (2).jpeg"
-        Title="MOVE ControlCenter" Height="450" Width="818.479" ResizeMode="CanMinimize" Activated="Window_Activated" Deactivated="Window_Deactivated" WindowStyle="None" Background="Black">
+        Title="MOVE ControlCenter" Height="450" Width="818.479" ResizeMode="CanMinimize" Activated="Window_Activated" Deactivated="Window_Deactivated" WindowStyle="None" Background="Black" KeyDown="Window_KeyDown">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
