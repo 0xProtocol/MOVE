@@ -765,7 +765,36 @@ namespace MOVE.Server.Debug.Formular
 
         private void Lbl_Gamer_Click(object sender, EventArgs e)
         {
-
+            if (lbl_Gamer.ForeColor == System.Drawing.Color.Orange)
+            {
+                timer1.Enabled = false;
+                timer2.Enabled = false;
+                lbl_Gamer.ForeColor = System.Drawing.Color.Gray;
+                panel1.BackColor = System.Drawing.Color.Gray;
+                panel2.BackColor = System.Drawing.Color.Gray;
+                panel3.BackColor = System.Drawing.Color.Gray;
+                panel4.BackColor = System.Drawing.Color.Gray;
+                panel5.BackColor = System.Drawing.Color.Gray;
+                panel6.BackColor = System.Drawing.Color.Gray;
+                panel7.BackColor = System.Drawing.Color.Gray;
+                panel8.BackColor = System.Drawing.Color.Gray;
+                return;
+            }
+            if (lbl_Gamer.ForeColor == System.Drawing.Color.Gray)
+            {
+                timer1.Enabled = true;
+                timer2.Enabled = true;
+                lbl_Gamer.ForeColor = System.Drawing.Color.Orange;
+                panel1.BackColor = Color.Pink;
+                panel2.BackColor = Color.Purple;
+                panel3.BackColor = Color.Blue;
+                panel4.BackColor = Color.Blue;
+                panel5.BackColor = Color.Blue;
+                panel6.BackColor = Color.Purple;
+                panel7.BackColor = Color.Pink;
+                panel8.BackColor = Color.Pink;
+                return;
+            }
         }
 
         private void rBFrequenz_CheckedChanged(object sender, EventArgs e)
