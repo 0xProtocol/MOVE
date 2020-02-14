@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServerSettings));
             this.cms = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -463,7 +464,7 @@
             this.tbSmoothing.BackColor = System.Drawing.Color.Silver;
             this.tbSmoothing.LargeChange = 1;
             this.tbSmoothing.Location = new System.Drawing.Point(357, 122);
-            this.tbSmoothing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbSmoothing.Margin = new System.Windows.Forms.Padding(4);
             this.tbSmoothing.Maximum = 3;
             this.tbSmoothing.Name = "tbSmoothing";
             this.tbSmoothing.Size = new System.Drawing.Size(447, 56);
@@ -728,6 +729,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 484);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "ServerSettings";
             this.Text = "ServerSettings";

@@ -22248,3 +22248,87 @@ Objektname: "PictureBox".
    bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
    bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
    bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 202.
+14-02-2020 20:27:00 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 202.
+14-02-2020 20:27:04 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 728.
+14-02-2020 20:27:04 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 678.
+14-02-2020 20:27:09 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 728.
+14-02-2020 20:27:14 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 611.
+14-02-2020 20:27:21 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 728.
+14-02-2020 20:27:25 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 678.
+14-02-2020 20:27:33 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 678.
+14-02-2020 20:27:47 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.Info.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\Info.xaml.cs:Zeile 175.
+14-02-2020 20:28:13 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.Info.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\Info.xaml.cs:Zeile 175.
+14-02-2020 20:30:25 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 202.
+14-02-2020 20:30:27 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 611.
+14-02-2020 20:30:51 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 202.
+14-02-2020 20:30:53 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 611.
+14-02-2020 20:33:11 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 202.
+14-02-2020 20:34:01 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 202.
+14-02-2020 20:34:48 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.SpeechControl.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\SpeechControl.cs:Zeile 202.
+14-02-2020 20:34:52 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei Start.Info.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\Start\Start\Info.xaml.cs:Zeile 175.
+14-02-2020 20:34:58 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.SinglePlayerForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Server.Debug.Formular\SinglePlayerForms.cs:Zeile 678.
+14-02-2020 20:35:04 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Server.Debug.Formular.ServerForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Server.Debug.Formular\ServerForms.cs:Zeile 728.
+14-02-2020 20:35:07 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
+   bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
+   bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
+   bei MOVE.Client.Debug.Formular.ClientForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 611.

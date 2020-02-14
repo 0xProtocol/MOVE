@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HighscoreForms));
             this.label1 = new System.Windows.Forms.Label();
             this.tbxScore = new System.Windows.Forms.TextBox();
             this.lsvScores = new System.Windows.Forms.ListView();
@@ -64,7 +65,7 @@
             // 
             this.tbxScore.Enabled = false;
             this.tbxScore.Location = new System.Drawing.Point(172, 146);
-            this.tbxScore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxScore.Margin = new System.Windows.Forms.Padding(4);
             this.tbxScore.Name = "tbxScore";
             this.tbxScore.Size = new System.Drawing.Size(565, 22);
             this.tbxScore.TabIndex = 1;
@@ -78,7 +79,7 @@
             this.lsvScores.Font = new System.Drawing.Font("Rockwell", 10F);
             this.lsvScores.HideSelection = false;
             this.lsvScores.Location = new System.Drawing.Point(45, 176);
-            this.lsvScores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lsvScores.Margin = new System.Windows.Forms.Padding(4);
             this.lsvScores.Name = "lsvScores";
             this.lsvScores.Size = new System.Drawing.Size(800, 421);
             this.lsvScores.TabIndex = 6;
@@ -105,7 +106,7 @@
             // tbxName
             // 
             this.tbxName.Location = new System.Drawing.Point(172, 106);
-            this.tbxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxName.Margin = new System.Windows.Forms.Padding(4);
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(565, 22);
             this.tbxName.TabIndex = 7;
@@ -125,7 +126,7 @@
             // 
             this.btnInsert.Font = new System.Drawing.Font("Rockwell", 7.8F);
             this.btnInsert.Location = new System.Drawing.Point(745, 106);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInsert.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(100, 63);
             this.btnInsert.TabIndex = 9;
@@ -237,7 +238,8 @@
             this.Controls.Add(this.lsvScores);
             this.Controls.Add(this.tbxScore);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HighscoreForms";
             this.Text = "HighscoreForms";
             this.Load += new System.EventHandler(this.HighscoreForms_Load);

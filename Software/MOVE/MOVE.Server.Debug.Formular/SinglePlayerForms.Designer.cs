@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SinglePlayerForms));
             this.singlePlayerObject12 = new System.Windows.Forms.PictureBox();
             this.singlePlayerObject11 = new System.Windows.Forms.PictureBox();
             this.singlePlayerObject10 = new System.Windows.Forms.PictureBox();
@@ -84,7 +85,7 @@
             this.singlePlayerObject12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject12.BackColor = System.Drawing.Color.Blue;
             this.singlePlayerObject12.Location = new System.Drawing.Point(1367, 113);
-            this.singlePlayerObject12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject12.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject12.Name = "singlePlayerObject12";
             this.singlePlayerObject12.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject12.TabIndex = 138;
@@ -95,7 +96,7 @@
             this.singlePlayerObject11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject11.BackColor = System.Drawing.Color.Blue;
             this.singlePlayerObject11.Location = new System.Drawing.Point(1367, 73);
-            this.singlePlayerObject11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject11.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject11.Name = "singlePlayerObject11";
             this.singlePlayerObject11.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject11.TabIndex = 137;
@@ -107,7 +108,7 @@
             this.singlePlayerObject10.BackColor = System.Drawing.Color.LawnGreen;
             this.singlePlayerObject10.Enabled = false;
             this.singlePlayerObject10.Location = new System.Drawing.Point(1112, 113);
-            this.singlePlayerObject10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject10.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject10.Name = "singlePlayerObject10";
             this.singlePlayerObject10.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject10.TabIndex = 136;
@@ -118,7 +119,7 @@
             this.singlePlayerObject9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject9.BackColor = System.Drawing.Color.LawnGreen;
             this.singlePlayerObject9.Location = new System.Drawing.Point(1112, 73);
-            this.singlePlayerObject9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject9.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject9.Name = "singlePlayerObject9";
             this.singlePlayerObject9.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject9.TabIndex = 135;
@@ -129,7 +130,7 @@
             this.singlePlayerObject8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject8.BackColor = System.Drawing.Color.Red;
             this.singlePlayerObject8.Location = new System.Drawing.Point(856, 113);
-            this.singlePlayerObject8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject8.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject8.Name = "singlePlayerObject8";
             this.singlePlayerObject8.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject8.TabIndex = 134;
@@ -140,7 +141,7 @@
             this.singlePlayerObject7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject7.BackColor = System.Drawing.Color.Red;
             this.singlePlayerObject7.Location = new System.Drawing.Point(856, 73);
-            this.singlePlayerObject7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject7.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject7.Name = "singlePlayerObject7";
             this.singlePlayerObject7.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject7.TabIndex = 133;
@@ -152,7 +153,7 @@
             this.singlePlayerObject6.BackColor = System.Drawing.Color.Blue;
             this.singlePlayerObject6.Enabled = false;
             this.singlePlayerObject6.Location = new System.Drawing.Point(601, 113);
-            this.singlePlayerObject6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject6.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject6.Name = "singlePlayerObject6";
             this.singlePlayerObject6.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject6.TabIndex = 132;
@@ -163,7 +164,7 @@
             this.singlePlayerObject5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject5.BackColor = System.Drawing.Color.Blue;
             this.singlePlayerObject5.Location = new System.Drawing.Point(601, 73);
-            this.singlePlayerObject5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject5.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject5.Name = "singlePlayerObject5";
             this.singlePlayerObject5.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject5.TabIndex = 131;
@@ -174,7 +175,7 @@
             this.singlePlayerObject4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject4.BackColor = System.Drawing.Color.LawnGreen;
             this.singlePlayerObject4.Location = new System.Drawing.Point(347, 113);
-            this.singlePlayerObject4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject4.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject4.Name = "singlePlayerObject4";
             this.singlePlayerObject4.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject4.TabIndex = 130;
@@ -185,7 +186,7 @@
             this.singlePlayerObject3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject3.BackColor = System.Drawing.Color.LawnGreen;
             this.singlePlayerObject3.Location = new System.Drawing.Point(347, 73);
-            this.singlePlayerObject3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject3.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject3.Name = "singlePlayerObject3";
             this.singlePlayerObject3.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject3.TabIndex = 129;
@@ -197,7 +198,7 @@
             this.singlePlayerObject2.BackColor = System.Drawing.Color.Red;
             this.singlePlayerObject2.Enabled = false;
             this.singlePlayerObject2.Location = new System.Drawing.Point(91, 113);
-            this.singlePlayerObject2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject2.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject2.Name = "singlePlayerObject2";
             this.singlePlayerObject2.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject2.TabIndex = 128;
@@ -220,7 +221,7 @@
             this.btnSettings.BackColor = System.Drawing.Color.Red;
             this.btnSettings.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btnSettings.Location = new System.Drawing.Point(76, 709);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(261, 44);
             this.btnSettings.TabIndex = 125;
@@ -249,7 +250,7 @@
             this.btn_Start.BackColor = System.Drawing.Color.Orange;
             this.btn_Start.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Start.Location = new System.Drawing.Point(344, 710);
-            this.btn_Start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Start.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.Size = new System.Drawing.Size(249, 44);
             this.btn_Start.TabIndex = 122;
@@ -287,7 +288,7 @@
             this.pbx_downlocal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbx_downlocal.BackColor = System.Drawing.Color.Orange;
             this.pbx_downlocal.Location = new System.Drawing.Point(93, 635);
-            this.pbx_downlocal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbx_downlocal.Margin = new System.Windows.Forms.Padding(4);
             this.pbx_downlocal.Name = "pbx_downlocal";
             this.pbx_downlocal.Size = new System.Drawing.Size(247, 33);
             this.pbx_downlocal.TabIndex = 113;
@@ -301,7 +302,7 @@
             this.dgv_playfieldclient.BackgroundColor = System.Drawing.Color.Black;
             this.dgv_playfieldclient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_playfieldclient.Location = new System.Drawing.Point(68, 50);
-            this.dgv_playfieldclient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_playfieldclient.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_playfieldclient.Name = "dgv_playfieldclient";
             this.dgv_playfieldclient.Size = new System.Drawing.Size(1689, 652);
             this.dgv_playfieldclient.TabIndex = 112;
@@ -362,7 +363,7 @@
             this.singlePlayerObject1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.singlePlayerObject1.BackColor = System.Drawing.Color.Red;
             this.singlePlayerObject1.Location = new System.Drawing.Point(91, 73);
-            this.singlePlayerObject1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.singlePlayerObject1.Margin = new System.Windows.Forms.Padding(4);
             this.singlePlayerObject1.Name = "singlePlayerObject1";
             this.singlePlayerObject1.Size = new System.Drawing.Size(247, 33);
             this.singlePlayerObject1.TabIndex = 127;
@@ -418,7 +419,7 @@
             this.rbKeyboard.BackColor = System.Drawing.Color.Pink;
             this.rbKeyboard.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rbKeyboard.Location = new System.Drawing.Point(1584, 715);
-            this.rbKeyboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbKeyboard.Margin = new System.Windows.Forms.Padding(4);
             this.rbKeyboard.Name = "rbKeyboard";
             this.rbKeyboard.Size = new System.Drawing.Size(171, 35);
             this.rbKeyboard.TabIndex = 152;
@@ -434,7 +435,7 @@
             this.rBFrequenz.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rBFrequenz.ForeColor = System.Drawing.Color.White;
             this.rBFrequenz.Location = new System.Drawing.Point(1397, 715);
-            this.rBFrequenz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBFrequenz.Margin = new System.Windows.Forms.Padding(4);
             this.rBFrequenz.Name = "rBFrequenz";
             this.rBFrequenz.Size = new System.Drawing.Size(171, 35);
             this.rBFrequenz.TabIndex = 151;
@@ -450,7 +451,7 @@
             this.rBSound.BackColor = System.Drawing.Color.Blue;
             this.rBSound.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rBSound.Location = new System.Drawing.Point(1239, 715);
-            this.rBSound.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBSound.Margin = new System.Windows.Forms.Padding(4);
             this.rBSound.Name = "rBSound";
             this.rBSound.Size = new System.Drawing.Size(120, 35);
             this.rBSound.TabIndex = 150;
@@ -494,6 +495,7 @@
             this.Controls.Add(this.points2);
             this.Controls.Add(this.pbx_downlocal);
             this.Controls.Add(this.dgv_playfieldclient);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SinglePlayerForms";
             this.Text = "SinglePlayerForms";

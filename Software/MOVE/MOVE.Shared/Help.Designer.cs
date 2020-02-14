@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Help));
             this.helpbox = new System.Windows.Forms.ListBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -45,7 +46,7 @@
             this.helpbox.FormattingEnabled = true;
             this.helpbox.ItemHeight = 20;
             this.helpbox.Location = new System.Drawing.Point(38, 41);
-            this.helpbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.helpbox.Margin = new System.Windows.Forms.Padding(4);
             this.helpbox.Name = "helpbox";
             this.helpbox.Size = new System.Drawing.Size(309, 684);
             this.helpbox.TabIndex = 0;
@@ -138,7 +139,8 @@
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.helpbox);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Help";
             this.Opacity = 0.9D;
             this.Text = "Help";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServerForms));
             this.dgv_playfieldclient = new System.Windows.Forms.DataGridView();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.points2 = new System.Windows.Forms.Label();
@@ -412,6 +413,7 @@
             this.Controls.Add(this.pbx_upnetwork);
             this.Controls.Add(this.dgv_playfieldclient);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ServerForms";
             this.Text = "Server";

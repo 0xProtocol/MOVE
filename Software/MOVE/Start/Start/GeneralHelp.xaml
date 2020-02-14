@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Start"
         mc:Ignorable="d"
-        Title="GeneralHelp" Height="300" Width="300">
+        Title="GeneralHelp" Height="300" Width="300" Icon="logo (2).jpeg">
     <Grid>
         
     </Grid>
