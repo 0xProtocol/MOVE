@@ -56,6 +56,7 @@
             this.Ball = new System.Windows.Forms.PictureBox();
             this.pbx_downnetwork = new System.Windows.Forms.PictureBox();
             this.pbx_uplocal = new System.Windows.Forms.PictureBox();
+            this.cbSprachmodul = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_playfieldclient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_downnetwork)).BeginInit();
@@ -176,7 +177,7 @@
             this.rBFrequenz.TabStop = true;
             this.rBFrequenz.Text = "Frequenz";
             this.rBFrequenz.UseVisualStyleBackColor = false;
-            this.rBFrequenz.Click += new System.EventHandler(this.rBFrequenz_Click);
+         //   this.rBFrequenz.Click += new System.EventHandler(this.rBFrequenz_Click);
             // 
             // rBSound
             // 
@@ -372,6 +373,20 @@
             this.pbx_uplocal.TabIndex = 93;
             this.pbx_uplocal.TabStop = false;
             // 
+            // cbSprachmodul
+            // 
+            this.cbSprachmodul.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbSprachmodul.AutoSize = true;
+            this.cbSprachmodul.Checked = true;
+            this.cbSprachmodul.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbSprachmodul.Location = new System.Drawing.Point(76, 850);
+            this.cbSprachmodul.Name = "cbSprachmodul";
+            this.cbSprachmodul.Size = new System.Drawing.Size(166, 21);
+            this.cbSprachmodul.TabIndex = 126;
+            this.cbSprachmodul.Text = "Sprachmodul aktiviert";
+            this.cbSprachmodul.UseVisualStyleBackColor = true;
+           // this.cbSprachmodul.CheckedChanged += new System.EventHandler(this.cbSprachmodul_CheckedChanged);
+            // 
             // ClientForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -379,6 +394,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.cbSprachmodul);
             this.Controls.Add(this.lblSchrittDrei);
             this.Controls.Add(this.lblSchrittEins);
             this.Controls.Add(this.lblSchrittZwei);
@@ -448,6 +464,7 @@
         private System.Windows.Forms.Label lblSchrittDrei;
         private System.Windows.Forms.Label lblSchrittEins;
         private System.Windows.Forms.Label lblSchrittZwei;
+        private System.Windows.Forms.CheckBox cbSprachmodul;
     }
 }
 

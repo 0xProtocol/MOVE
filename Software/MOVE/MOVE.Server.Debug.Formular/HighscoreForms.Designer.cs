@@ -209,11 +209,11 @@
             // lblHighscoreMessage
             // 
             this.lblHighscoreMessage.AutoSize = true;
-            this.lblHighscoreMessage.Font = new System.Drawing.Font("Rockwell", 7.8F);
+            this.lblHighscoreMessage.Font = new System.Drawing.Font("Rockwell", 14F);
             this.lblHighscoreMessage.Location = new System.Drawing.Point(48, 52);
             this.lblHighscoreMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHighscoreMessage.Name = "lblHighscoreMessage";
-            this.lblHighscoreMessage.Size = new System.Drawing.Size(246, 17);
+            this.lblHighscoreMessage.Size = new System.Drawing.Size(423, 27);
             this.lblHighscoreMessage.TabIndex = 121;
             this.lblHighscoreMessage.Text = "Tragen Sie bitte Ihren Highscore ein:";
             // 

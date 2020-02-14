@@ -425,172 +425,177 @@ namespace MOVE.Client.Debug.Formular
         private void DefaultClientGerman_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
+            if (cbSprachmodul.Checked == true)
+            {
+                if (speech == "Starte Server")
+                {
+                    if (counterstartserver < 1)
+                    {
+                        Start();
+                        com.SpeakAsync("Server wurde gestartet");
+                        counterstartserver++;
+                    }
+                    else
+                    {
+                        com.SpeakAsync("Server wurde bereits gestartet");
+                    }
+                }
 
-            if (speech == "Starte Server")
-            {
-                if (counterstartserver < 1)
+                if (speech == "Verbinde zum Server")
                 {
-                    Start();
-                    com.SpeakAsync("Server wurde gestartet");
-                    counterstartserver++;
+                    if (counterconnectserver < 1)
+                    {
+                        Connect();
+                        com.SpeakAsync("Verbindung zum Server wurde hergestellt");
+                        counterconnectserver++;
+                    }
+                    else
+                    {
+                        com.SpeakAsync("Verbindung zum Server wurde bereits hergestellt");
+                    }
                 }
-                else
-                {
-                    com.SpeakAsync("Server wurde bereits gestartet");
-                }
-            }
 
-            if (speech == "Verbinde zum Server")
-            {
-                if (counterconnectserver < 1)
+                if (speech == "Starte das Spiel")
                 {
-                    Connect();
-                    com.SpeakAsync("Verbindung zum Server wurde hergestellt");
-                    counterconnectserver++;
+                    if (counterstartgame < 1)
+                    {
+                        StartGame();
+                        counterstartgame++;
+                        cbSprachmodul.Checked = false;
+                    }
+                    else
+                    {
+                        com.SpeakAsync("Spiel wurde bereits gestartet");
+                    }
                 }
-                else
-                {
-                    com.SpeakAsync("Verbindung zum Server wurde bereits hergestellt");
-                }
-            }
 
-            if (speech == "Starte das Spiel")
-            {
-                if (counterstartgame < 1)
+                if (speech == "Einstellungen")
                 {
-                    StartGame();
-                    counterstartgame++;
+                    Settings();
                 }
-                else
+                if (speech == "Sound")
                 {
-                    com.SpeakAsync("Spiel wurde bereits gestartet");
+                    EnableSound();
                 }
-            }
+                if (speech == "Tonfrequenz")
+                {
+                    EnableFrequenz();
+                }
+                if (speech == "Tastatur")
+                {
+                    EnableTastatur();
+                    dgv_playfieldclient.Focus();
+                }
 
-            if (speech == "Einstellungen")
-            {
-                Settings();
-            }
-            if (speech == "Sound")
-            {
-                EnableSound();
-            }
-            if (speech == "Tonfrequenz")
-            {
-                EnableFrequenz();
-            }
-            if (speech == "Tastatur")
-            {
-                EnableTastatur();
-                dgv_playfieldclient.Focus();
-            }
-
-            if (speech == "Menü ausblenden")
-            {
-                Disablemenu();
-            }
-            if (speech == "Menü einblenden")
-            {
-                Enablemenu();
-            }
-            if (speech == "Schließe das Spiel")
-            {
-                this.Close();
-            }
-            if (speech == "Welche Befehle gibt es?")
-            {
-                MOVE.Shared.Help h = new MOVE.Shared.Help();
-                h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsclient.txt");
-                h.ShowDialog();
+                if (speech == "Menü ausblenden")
+                {
+                    Disablemenu();
+                }
+                if (speech == "Menü einblenden")
+                {
+                    Enablemenu();
+                }
+                if (speech == "Schließe das Spiel")
+                {
+                    this.Close();
+                }
+                if (speech == "Welche Befehle gibt es?")
+                {
+                    MOVE.Shared.Help h = new MOVE.Shared.Help();
+                    h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsclient.txt");
+                    h.ShowDialog();
+                }
             }
         }
 
         private void DefaultClientEnglish_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             string speech = e.Result.Text;
+            if (cbSprachmodul.Checked == true)
+            {
+                if (speech == "start server")
+                {
+                    if (counterstartserver < 1)
+                    {
+                        Start();
+                        com.SelectVoice("Microsoft Hazel Desktop");
+                        com.SpeakAsync("Server starting");
+                        counterstartserver++;
+                    }
+                    else
+                    {
+                        com.SelectVoice("Microsoft Hazel Desktop");
+                        com.SpeakAsync("Server has already been started");
+                    }
+                }
 
-            if (speech == "start server")
-            {
-                if (counterstartserver < 1)
+                if (speech == "connect to server")
                 {
-                    Start();
-                    com.SelectVoice("Microsoft Hazel Desktop");
-                    com.SpeakAsync("Server starting");
-                    counterstartserver++;
+                    if (counterconnectserver < 1)
+                    {
+                        Connect();
+                        com.SelectVoice("Microsoft Hazel Desktop");
+                        com.SpeakAsync("Connection to the server has been established");
+                        counterconnectserver++;
+                    }
+                    else
+                    {
+                        com.SelectVoice("Microsoft Hazel Desktop");
+                        com.SpeakAsync("Connection to the server has already been established");
+                    }
                 }
-                else
-                {
-                    com.SelectVoice("Microsoft Hazel Desktop");
-                    com.SpeakAsync("Server has already been started");
-                }
-            }
 
-            if (speech == "connect to server")
-            {
-                if (counterconnectserver < 1)
+                if (speech == "move it")
                 {
-                    Connect();
-                    com.SelectVoice("Microsoft Hazel Desktop");
-                    com.SpeakAsync("Connection to the server has been established");
-                    counterconnectserver++;
+                    if (counterstartgame < 1)
+                    {
+                        StartGame();
+                        counterstartgame++;
+                        cbSprachmodul.Checked = false;
+                    }
+                    else
+                    {
+                        com.SelectVoice("Microsoft Hazel Desktop");
+                        com.SpeakAsync("Game has already been started");
+                    }
                 }
-                else
+                if (speech == "settings")
                 {
-                    com.SelectVoice("Microsoft Hazel Desktop");
-                    com.SpeakAsync("Connection to the server has already been established");
+                    Settings();
                 }
-            }
+                if (speech == "sound")
+                {
+                    EnableSound();
+                }
+                if (speech == "frequency")
+                {
+                    EnableFrequenz();
+                }
+                if (speech == "keyboard")
+                {
+                    EnableTastatur();
+                    dgv_playfieldclient.Focus();
+                }
 
-            if (speech == "move it")
-            {
-                if (counterstartgame < 1)
+                if (speech == "disable menu")
                 {
-                    StartGame();
-                    counterstartgame++;
+                    Disablemenu();
                 }
-                else
+                if (speech == "activate menu")
                 {
-                    com.SelectVoice("Microsoft Hazel Desktop");
-                    com.SpeakAsync("Game has already been started");
+                    Enablemenu();
+                }
+                if (speech == "exit the window")
+                {
+                    this.Close();
+                }
+                if (speech == "Which commands are avaiable?")
+                {
+                    MOVE.Shared.Help h = new MOVE.Shared.Help();
+                    h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandsclient.txt");
+                    h.ShowDialog();
                 }
             }
-            if (speech == "settings")
-            {
-                Settings();
-            }
-            if (speech == "sound")
-            {
-                EnableSound();
-            }
-            if (speech == "frequency")
-            {
-                EnableFrequenz();
-            }
-            if (speech == "keyboard")
-            {
-                EnableTastatur();
-                dgv_playfieldclient.Focus();
-            }
-
-            if (speech == "disable menu")
-            {
-                Disablemenu();
-            }
-            if (speech == "activate menu")
-            {
-                Enablemenu();
-            }
-            if (speech == "exit the window")
-            {
-                this.Close();
-            }
-            if (speech == "Which commands are avaiable?")
-            {
-                MOVE.Shared.Help h = new MOVE.Shared.Help();
-                h.FillHelpResults("SpeechRecognitionEngineEnglish\\commandsclient.txt");
-                h.ShowDialog();
-            }
-
         }
         public void CancelDefaultGermanListener()
         {
@@ -653,6 +658,15 @@ namespace MOVE.Client.Debug.Formular
         {
             btnSettings.Text = "Settings";
             btn_Connect.Text = "Connect";
+            if (cbSprachmodul.Checked == true)
+            {
+                cbSprachmodul.Text = "Speech module activated";
+
+            }
+            if (cbSprachmodul.Checked == false)
+            {
+                cbSprachmodul.Text = "Speech module deactivated";
+            }
             rBSound.Text = "Sound";
             rBFrequenz.Text = "Frequency";
             rbKeyboard.Text = "Keyboard";
@@ -739,14 +753,8 @@ namespace MOVE.Client.Debug.Formular
         {
             try
             {
-
-                string stringPort = cs.tbx_PortServer.Text;
-                string ip = cs.tbx_IPServer.Text;
-                stringPort = stringPort.Replace(" ", String.Empty);
-                ip = ip.Replace(" ", String.Empty);
-
-                int port = Convert.ToInt32(stringPort);
-                IPAddress ipaddress = IPAddress.Parse(ip);
+                int port = Convert.ToInt32(cs.tbx_PortServer.Text);
+                IPAddress ipaddress = IPAddress.Parse(cs.tbx_IPServer.Text);
                 tcp = new TcpService(port, this, ipaddress);
                 t1 = new Thread(tcp.Start)
                 {
@@ -765,14 +773,8 @@ namespace MOVE.Client.Debug.Formular
         {
             try
             {
-
-                string stringPort = cs.tbx_PortServer.Text;
-                string ip = cs.tbx_IPServer.Text;
-                stringPort = stringPort.Replace(" ", String.Empty);
-                ip = ip.Replace(" ", String.Empty);
-
-                int port = Convert.ToInt32(stringPort);
-                IPAddress ipaddress = IPAddress.Parse(ip);
+                int port = Convert.ToInt32(cs.tbx_PortClient.Text);
+                IPAddress ipaddress = IPAddress.Parse(cs.tbx_IPClient.Text);
                 c = new Client(port, ipaddress);
                 t2 = new Thread(c.Start)
                 {
@@ -878,6 +880,7 @@ namespace MOVE.Client.Debug.Formular
             panel7.BackColor = Color.Pink;
             panel8.BackColor = Color.Pink;
             StartGame();
+            cbSprachmodul.Checked = false;
         }
 
         private void dgv_playfieldclient_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -903,6 +906,19 @@ namespace MOVE.Client.Debug.Formular
         private void rBFrequenz_Click(object sender, EventArgs e)
         {
             savedValues.Clear();
+        }
+
+        private void cbSprachmodul_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbSprachmodul.Checked == true)
+            {
+                cbSprachmodul.Text = "Sprachmodul aktiviert";
+
+            }
+            if (cbSprachmodul.Checked == false)
+            {
+                cbSprachmodul.Text = "Sprachmodul deaktiviert";
+            }
         }
 
         /*/
