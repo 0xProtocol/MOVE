@@ -166,6 +166,7 @@
             this.lbl_Client.Size = new System.Drawing.Size(162, 54);
             this.lbl_Client.TabIndex = 72;
             this.lbl_Client.Text = "Server";
+            this.lbl_Client.Click += new System.EventHandler(this.lbl_Client_Click);
             // 
             // btnSettings
             // 
@@ -201,6 +202,7 @@
             this.rBFrequenz.Text = "Frequenz";
             this.rBFrequenz.UseVisualStyleBackColor = false;
             this.rBFrequenz.CheckedChanged += new System.EventHandler(this.rBFrequenz_CheckedChanged);
+            this.rBFrequenz.Click += new System.EventHandler(this.rBFrequenz_Click);
             // 
             // rBSound
             // 

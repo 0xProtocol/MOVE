@@ -965,6 +965,45 @@ namespace MOVE.Server.Debug.Formular
         {
 
         }
+
+        private void lbl_Client_Click(object sender, EventArgs e)
+        {
+            if (lbl_Client.ForeColor == System.Drawing.Color.Lime)
+            {
+                lbl_Client.ForeColor = Color.Gray;
+                panel1.BackColor = Color.Gray;
+                panel2.BackColor = Color.Gray;
+                panel3.BackColor = Color.Gray;
+                panel4.BackColor = Color.Gray;
+                panel5.BackColor = Color.Gray;
+                panel6.BackColor = Color.Gray;
+                panel7.BackColor = Color.Gray;
+                panel8.BackColor = Color.Gray;
+                timer1.Stop();
+                timer2.Stop();
+                return;
+            }
+            if (lbl_Client.ForeColor == System.Drawing.Color.Gray)
+            {
+                lbl_Client.ForeColor = Color.Lime;
+                panel1.BackColor = Color.Blue;
+                panel2.BackColor = Color.Purple;
+                panel3.BackColor = Color.Pink;
+                panel4.BackColor = Color.Blue;
+                panel5.BackColor = Color.Blue;
+                panel6.BackColor = Color.Purple;
+                panel7.BackColor = Color.Pink;
+                panel8.BackColor = Color.Pink;
+                timer1.Start();
+                timer2.Start();
+                return;
+            }
+        }
+
+        private void rBFrequenz_Click(object sender, EventArgs e)
+        {
+            savedValues.Clear();
+        }
     }
 }
 #endregion

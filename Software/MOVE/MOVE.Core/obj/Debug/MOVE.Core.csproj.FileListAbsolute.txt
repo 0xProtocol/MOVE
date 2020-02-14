@@ -208,3 +208,12 @@ C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.
 C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csproj.CopyComplete
 C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.dll
 C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.pdb
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Core.dll
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Core.pdb
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\bin\Debug\NAudio.dll
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\bin\Debug\NAudio.xml
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.dll
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\obj\Debug\MOVE.Core.pdb

@@ -854,43 +854,48 @@ namespace MOVE.Client.Debug.Formular
         {
 
         }
+
+        private void rBFrequenz_Click(object sender, EventArgs e)
+        {
+            savedValues.Clear();
+        }
         /*/
 private void cbAusblenden_CheckedChanged_1(object sender, EventArgs e)
 {
-   if (cbAusblenden.Checked == true)
-   {
+if (cbAusblenden.Checked == true)
+{
 
-       lblFineTuning.Visible = false;
-       lblGlaettung.Visible = false;
+lblFineTuning.Visible = false;
+lblGlaettung.Visible = false;
 
-       lsb_Information.Visible = false;
-       btnSettings.Visible = false;
-       lblSchwierigkeit.Visible = false;
-       btn_Start.Visible = false;
-       btn_Connect.Visible = false;
-       btnStart.Visible = false;
-       lblSchrittEins.Visible = false;
-       lblSchrittZwei.Visible = false;
-       lblSchrittDrei.Visible = false;
-       lblBallSpeed.Visible = false;
-   }
-   if (cbAusblenden.Checked == false)
-   {
+lsb_Information.Visible = false;
+btnSettings.Visible = false;
+lblSchwierigkeit.Visible = false;
+btn_Start.Visible = false;
+btn_Connect.Visible = false;
+btnStart.Visible = false;
+lblSchrittEins.Visible = false;
+lblSchrittZwei.Visible = false;
+lblSchrittDrei.Visible = false;
+lblBallSpeed.Visible = false;
+}
+if (cbAusblenden.Checked == false)
+{
 
-       lblFineTuning.Visible = true;
-       lblGlaettung.Visible = true;
+lblFineTuning.Visible = true;
+lblGlaettung.Visible = true;
 
-       lsb_Information.Visible = true;
-       btnSettings.Visible = true;
-       lblSchwierigkeit.Visible = true;
-       btn_Start.Visible = true;
-       btn_Connect.Visible = true;
-       btnStart.Visible = true;
-       lblSchrittEins.Visible = true;
-       lblSchrittZwei.Visible = true;
-       lblSchrittDrei.Visible = true;
-       lblBallSpeed.Visible = true;
-   }
+lsb_Information.Visible = true;
+btnSettings.Visible = true;
+lblSchwierigkeit.Visible = true;
+btn_Start.Visible = true;
+btn_Connect.Visible = true;
+btnStart.Visible = true;
+lblSchrittEins.Visible = true;
+lblSchrittZwei.Visible = true;
+lblSchrittDrei.Visible = true;
+lblBallSpeed.Visible = true;
+}
 }
 /*/
     }

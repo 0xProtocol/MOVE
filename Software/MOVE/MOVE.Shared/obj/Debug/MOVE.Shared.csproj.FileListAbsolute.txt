@@ -115,3 +115,12 @@ C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shar
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.GenerateResource.cache
 C:\Users\Marku\Desktop\GitHUB\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CopyComplete
 D:\GitHubMove\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csprojAssemblyReference.cache
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.dll
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.dll
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.xml
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csprojResolveAssemblyReference.cache
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.Help.resources
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.GenerateResource.Cache
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
+C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb

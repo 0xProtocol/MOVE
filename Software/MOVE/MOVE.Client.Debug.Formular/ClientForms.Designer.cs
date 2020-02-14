@@ -153,7 +153,7 @@
             this.rbKeyboard.BackColor = System.Drawing.Color.Pink;
             this.rbKeyboard.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rbKeyboard.Location = new System.Drawing.Point(1584, 715);
-            this.rbKeyboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbKeyboard.Margin = new System.Windows.Forms.Padding(4);
             this.rbKeyboard.Name = "rbKeyboard";
             this.rbKeyboard.Size = new System.Drawing.Size(171, 35);
             this.rbKeyboard.TabIndex = 111;
@@ -169,13 +169,14 @@
             this.rBFrequenz.BackColor = System.Drawing.Color.Purple;
             this.rBFrequenz.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rBFrequenz.Location = new System.Drawing.Point(1397, 715);
-            this.rBFrequenz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBFrequenz.Margin = new System.Windows.Forms.Padding(4);
             this.rBFrequenz.Name = "rBFrequenz";
             this.rBFrequenz.Size = new System.Drawing.Size(171, 35);
             this.rBFrequenz.TabIndex = 110;
             this.rBFrequenz.TabStop = true;
             this.rBFrequenz.Text = "Frequenz";
             this.rBFrequenz.UseVisualStyleBackColor = false;
+            this.rBFrequenz.Click += new System.EventHandler(this.rBFrequenz_Click);
             // 
             // rBSound
             // 
@@ -184,7 +185,7 @@
             this.rBSound.BackColor = System.Drawing.Color.Blue;
             this.rBSound.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.rBSound.Location = new System.Drawing.Point(1239, 715);
-            this.rBSound.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rBSound.Margin = new System.Windows.Forms.Padding(4);
             this.rBSound.Name = "rBSound";
             this.rBSound.Size = new System.Drawing.Size(120, 35);
             this.rBSound.TabIndex = 109;
@@ -199,7 +200,7 @@
             this.btnSettings.BackColor = System.Drawing.Color.Red;
             this.btnSettings.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btnSettings.Location = new System.Drawing.Point(76, 709);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(249, 44);
             this.btnSettings.TabIndex = 107;
@@ -227,7 +228,7 @@
             this.btnStart.BackColor = System.Drawing.Color.Green;
             this.btnStart.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.Location = new System.Drawing.Point(973, 709);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(251, 44);
             this.btnStart.TabIndex = 104;
@@ -241,7 +242,7 @@
             this.btn_Start.BackColor = System.Drawing.Color.Yellow;
             this.btn_Start.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Start.Location = new System.Drawing.Point(589, 709);
-            this.btn_Start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Start.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.Size = new System.Drawing.Size(269, 44);
             this.btn_Start.TabIndex = 102;
@@ -255,7 +256,7 @@
             this.btn_Connect.BackColor = System.Drawing.Color.Orange;
             this.btn_Connect.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_Connect.Location = new System.Drawing.Point(333, 709);
-            this.btn_Connect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Connect.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Connect.Name = "btn_Connect";
             this.btn_Connect.Size = new System.Drawing.Size(249, 44);
             this.btn_Connect.TabIndex = 101;
@@ -299,7 +300,7 @@
             this.dgv_playfieldclient.BackgroundColor = System.Drawing.Color.Black;
             this.dgv_playfieldclient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_playfieldclient.Location = new System.Drawing.Point(67, 49);
-            this.dgv_playfieldclient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_playfieldclient.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_playfieldclient.Name = "dgv_playfieldclient";
             this.dgv_playfieldclient.Size = new System.Drawing.Size(1689, 652);
             this.dgv_playfieldclient.TabIndex = 92;
@@ -360,7 +361,7 @@
             this.pbx_downnetwork.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbx_downnetwork.BackColor = System.Drawing.Color.Lime;
             this.pbx_downnetwork.Location = new System.Drawing.Point(93, 635);
-            this.pbx_downnetwork.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbx_downnetwork.Margin = new System.Windows.Forms.Padding(4);
             this.pbx_downnetwork.Name = "pbx_downnetwork";
             this.pbx_downnetwork.Size = new System.Drawing.Size(247, 33);
             this.pbx_downnetwork.TabIndex = 94;
@@ -370,7 +371,7 @@
             // 
             this.pbx_uplocal.BackColor = System.Drawing.Color.Blue;
             this.pbx_uplocal.Location = new System.Drawing.Point(93, 70);
-            this.pbx_uplocal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbx_uplocal.Margin = new System.Windows.Forms.Padding(4);
             this.pbx_uplocal.Name = "pbx_uplocal";
             this.pbx_uplocal.Size = new System.Drawing.Size(247, 33);
             this.pbx_uplocal.TabIndex = 93;
@@ -408,7 +409,7 @@
             this.Controls.Add(this.pbx_downnetwork);
             this.Controls.Add(this.pbx_uplocal);
             this.Controls.Add(this.dgv_playfieldclient);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ClientForms";
             this.Text = "Client";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
