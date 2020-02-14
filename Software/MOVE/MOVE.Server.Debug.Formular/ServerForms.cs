@@ -764,8 +764,14 @@ namespace MOVE.Server.Debug.Formular
 
         public void Start()
         {
-            int port = Convert.ToInt32(ss.tbx_PortServer.Text);
-            IPAddress ipaddress = IPAddress.Parse(ss.tbx_IPServer.Text);
+            
+            string stringPort = ss.tbx_PortServer.Text;
+            string ip = ss.tbx_IPServer.Text;
+            stringPort = stringPort.Replace(" ", String.Empty);
+            ip = ip.Replace(" ", String.Empty);
+
+            int port = Convert.ToInt32(stringPort);
+            IPAddress ipaddress = IPAddress.Parse(ip);
             ts = new TcpService(port, this, ipaddress);
             t1 = new Thread(ts.Start)
             {
@@ -774,12 +780,18 @@ namespace MOVE.Server.Debug.Formular
             t1.Start();
             btn_Start.Enabled = false;
         }
+       
         public void Connect()
         {
             try
             {
-                int port = Convert.ToInt32(ss.tbx_PortClient.Text);
-                IPAddress ipaddress = IPAddress.Parse(ss.tbx_IPClient.Text);
+                string stringPort = ss.tbx_PortServer.Text;
+                string ip = ss.tbx_IPServer.Text;
+                stringPort = stringPort.Replace(" ", String.Empty);
+                ip = ip.Replace(" ", String.Empty);
+
+                int port = Convert.ToInt32(stringPort);
+                IPAddress ipaddress = IPAddress.Parse(ip);
                 c = new Client(port, ipaddress);
                 t2 = new Thread(c.Start)
                 {
