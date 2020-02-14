@@ -4,4 +4,5 @@ Informationen
 Spieleinstellungen
 Übungsmodus
 Schließe das Spiel
+Zeige allgemeine Hilfe
 Welche Befehle gibt es?

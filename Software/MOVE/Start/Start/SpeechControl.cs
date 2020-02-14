@@ -94,7 +94,12 @@ namespace Start
             {
                 ExitGame();
             }
-            if(speech=="Welche Befehle gibt es?")
+            if (speech == "Zeige allgemeine Hilfe")
+            {
+                GeneralHelp gh = new GeneralHelp();
+                gh.ShowDialog();
+            }
+            if (speech=="Welche Befehle gibt es?")
             {
                 MOVE.Shared.Help h = new MOVE.Shared.Help();
                 h.FillHelpResults("SpeechRecognitionEngineGerman\\commandsmainwindow.txt");
@@ -127,7 +132,11 @@ namespace Start
             {
                 OpenÜbung();
             }
-
+            if (speech == "show general help")
+            {
+                GeneralHelp gh = new GeneralHelp();
+                gh.ShowDialog();
+            }
             if (speech == "Exit the game")
             {
                 ExitGame();

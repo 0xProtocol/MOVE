@@ -330,7 +330,8 @@ namespace Start
         {
             if (e.Key == Key.F1)
             {
-                MessageBox.Show("Geister");
+                GeneralHelp gh = new GeneralHelp();
+                gh.ShowDialog();
             }
         }
     }

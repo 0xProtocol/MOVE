@@ -67,6 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GeneralHelp.xaml.cs">
+      <DependentUpon>GeneralHelp.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -74,6 +77,10 @@
     <Compile Include="Warning.xaml.cs">
       <DependentUpon>Warning.xaml</DependentUpon>
     </Compile>
+    <Page Include="GeneralHelp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Info.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

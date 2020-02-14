@@ -4,4 +4,5 @@ Information
 Settings
 Practice Mode
 Exit the game
+show general help
 Which commands are avaiable?

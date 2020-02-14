@@ -233,15 +233,10 @@ namespace MOVE.Shared
         private void Help_Load(object sender, EventArgs e)
         {
 
-            timer.Interval = 100000;
-            timer.Tick += new EventHandler(timer_Tick);
-            timer.Start();
+            
         }
 
-        void timer_Tick(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
        
     }
