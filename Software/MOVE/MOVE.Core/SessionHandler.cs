@@ -29,7 +29,7 @@ namespace MOVE.Core
             {
                 SocketReader sr = new SocketReader(_clientsocket);
                 SocketWriter sw = new SocketWriter(_clientsocket);
-
+                
                 string request = sr.ReadBufferedString();
                 MOVERequestHandler regh = new MOVERequestHandler(request, _isl);
                 string req=regh.PerformAction();

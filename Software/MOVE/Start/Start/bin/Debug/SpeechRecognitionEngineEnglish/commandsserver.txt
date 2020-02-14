@@ -6,4 +6,6 @@ sound
 frequency
 keyboard
 exit the window
+pause
+continue
 Which commands are avaiable?

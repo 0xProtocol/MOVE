@@ -122,13 +122,45 @@ namespace MOVE.Client.Debug.Formular
         }
         public void LogRequestInformation(string message)
         {
+            if (message.Contains("s|"))
+            {
+                string[] pausemsg = message.Split('|');
+                string protocolcommand = pausemsg[0];
+                string command = pausemsg[1];
+
+                if (pausemsg[1] == "Pause")
+                {
+                    panel1.BackColor = Color.Gray;
+                    panel2.BackColor = Color.Gray;
+                    panel3.BackColor = Color.Gray;
+                    panel4.BackColor = Color.Gray;
+                    panel5.BackColor = Color.Gray;
+                    panel6.BackColor = Color.Gray;
+                    panel7.BackColor = Color.Gray;
+                    panel8.BackColor = Color.Gray;
+                    return;
+                }
+                else if ((pausemsg[1] == "Fortsetzen"))
+                {
+                    panel1.BackColor = Color.Blue;
+                    panel2.BackColor = Color.Purple;
+                    panel3.BackColor = Color.Pink;
+                    panel4.BackColor = Color.Blue;
+                    panel5.BackColor = Color.Blue;
+                    panel6.BackColor = Color.Purple;
+                    panel7.BackColor = Color.Pink;
+                    panel8.BackColor = Color.Pink;
+                    return;
+                }
+            } 
             string[] msg = message.Split('|');
             string xball = msg[0];
             string yball = msg[1];
             string xs = msg[2];
             string pointsBlue1 = msg[4];
             string pointsGreen1 = msg[3];
-            if (message.Contains("|"))
+           
+            if (message.Contains("lb|"))
             {
                 lblSchrittDrei.Text = "Übertragung der Schlägerkoordinaten: ✓";
             }
@@ -860,6 +892,7 @@ namespace MOVE.Client.Debug.Formular
         {
             savedValues.Clear();
         }
+
         /*/
 private void cbAusblenden_CheckedChanged_1(object sender, EventArgs e)
 {

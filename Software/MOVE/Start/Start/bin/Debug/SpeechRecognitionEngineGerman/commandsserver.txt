@@ -6,4 +6,6 @@ Sound
 Tonfrequenz
 Tastatur
 Schließe das Spiel
+Pause
+Fortfahren
 Welche Befehle gibt es?

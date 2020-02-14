@@ -49,7 +49,6 @@
             this.points2 = new System.Windows.Forms.Label();
             this.points1 = new System.Windows.Forms.Label();
             this.dgv_playfieldclient = new System.Windows.Forms.DataGridView();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblSchrittDrei = new System.Windows.Forms.Label();
             this.lblSchrittEins = new System.Windows.Forms.Label();
             this.lblSchrittZwei = new System.Windows.Forms.Label();
@@ -307,11 +306,6 @@
             this.dgv_playfieldclient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_playfieldclient_CellContentClick);
             this.dgv_playfieldclient.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgv_playfieldclient_KeyDown);
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // lblSchrittDrei
             // 
             this.lblSchrittDrei.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -449,7 +443,6 @@
         private System.Windows.Forms.PictureBox pbx_downnetwork;
         private System.Windows.Forms.PictureBox pbx_uplocal;
         private System.Windows.Forms.DataGridView dgv_playfieldclient;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblSchrittDrei;
         private System.Windows.Forms.Label lblSchrittEins;
         private System.Windows.Forms.Label lblSchrittZwei;

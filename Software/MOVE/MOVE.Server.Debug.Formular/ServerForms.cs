@@ -469,22 +469,22 @@ namespace MOVE.Server.Debug.Formular
 
         public void LogRequestInformation(string message)
         {
-            string[] msg = message.Split('|');
-            string x = msg[1];
-            if (message.Contains("l|"))
-            {
-                lblSchrittDrei.Text = "Übertragung der Schlägerkoordinaten: ✓";
+                string[] msg = message.Split('|');
+                string x = msg[1];
+                if (message.Contains("l|"))
+                {
+                    lblSchrittDrei.Text = "Übertragung der Schlägerkoordinaten: ✓";
+                }
+                if (pbx_downlocal.InvokeRequired)
+                {
+                    pbx_upnetwork.Invoke(logRequestInformation, message);
+                    WertXnetwork = Convert.ToInt32(msg[1]);
+                }
+                else
+                {
+                    pbx_upnetwork.Location = new Point(WertXnetwork, 65);
+                }
             }
-            if (pbx_downlocal.InvokeRequired)
-            {
-                pbx_upnetwork.Invoke(logRequestInformation, message);
-                WertXnetwork = Convert.ToInt32(msg[1]);
-            }
-            else
-            {
-                pbx_upnetwork.Location = new Point(WertXnetwork, 65);
-            }
-        }
         #endregion
         #endregion
         #region Speech Recognition
@@ -598,6 +598,14 @@ namespace MOVE.Server.Debug.Formular
             {
                 CloseWindow();
             }
+            if (speech == "Pause")
+            {
+                Pause();
+            }
+            if (speech == "Fortfahren")
+            {
+                Continue();
+            }
             if (speech == "Welche Befehle gibt es?")
             {
                 MOVE.Shared.Help h = new MOVE.Shared.Help();
@@ -684,6 +692,14 @@ namespace MOVE.Server.Debug.Formular
             if (speech == "exit the window")
             {
                 CloseWindow();
+            }
+            if (speech == "pause")
+            {
+                Pause();
+            }
+            if (speech == "continue")
+            {
+                Continue();
             }
             if (speech == "Which commands are avaiable?")
             {
@@ -971,33 +987,57 @@ namespace MOVE.Server.Debug.Formular
         {
             if (lbl_Client.ForeColor == System.Drawing.Color.Lime)
             {
-                lbl_Client.ForeColor = Color.Gray;
-                panel1.BackColor = Color.Gray;
-                panel2.BackColor = Color.Gray;
-                panel3.BackColor = Color.Gray;
-                panel4.BackColor = Color.Gray;
-                panel5.BackColor = Color.Gray;
-                panel6.BackColor = Color.Gray;
-                panel7.BackColor = Color.Gray;
-                panel8.BackColor = Color.Gray;
-                timer1.Stop();
-                timer2.Stop();
+                Pause();
                 return;
             }
             if (lbl_Client.ForeColor == System.Drawing.Color.Gray)
             {
-                lbl_Client.ForeColor = Color.Lime;
-                panel1.BackColor = Color.Blue;
-                panel2.BackColor = Color.Purple;
-                panel3.BackColor = Color.Pink;
-                panel4.BackColor = Color.Blue;
-                panel5.BackColor = Color.Blue;
-                panel6.BackColor = Color.Purple;
-                panel7.BackColor = Color.Pink;
-                panel8.BackColor = Color.Pink;
-                timer1.Start();
-                timer2.Start();
+                Continue();
                 return;
+            }
+        }
+        private void Pause()
+        {
+            try
+            {
+
+                lbl_Client.ForeColor = Color.Gray;
+            panel1.BackColor = Color.Gray;
+            panel2.BackColor = Color.Gray;
+            panel3.BackColor = Color.Gray;
+            panel4.BackColor = Color.Gray;
+            panel5.BackColor = Color.Gray;
+            panel6.BackColor = Color.Gray;
+            panel7.BackColor = Color.Gray;
+            panel8.BackColor = Color.Gray;
+            c.Send("move:\\" + "s" + "|" + "Pause");
+            timer1.Stop();
+            }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
+            }
+        }
+        private void Continue()
+        {
+            try
+            {
+
+            lbl_Client.ForeColor = Color.Lime;
+            panel1.BackColor = Color.Blue;
+            panel2.BackColor = Color.Purple;
+            panel3.BackColor = Color.Pink;
+            panel4.BackColor = Color.Blue;
+            panel5.BackColor = Color.Blue;
+            panel6.BackColor = Color.Purple;
+            panel7.BackColor = Color.Pink;
+            panel8.BackColor = Color.Pink;
+            c.Send("move:\\" + "s" + "|" + "Fortsetzen");
+            timer1.Start();
+        }
+            catch (Exception ex)
+            {
+                elw.WriteErrorLog(ex.Message);
             }
         }
 
