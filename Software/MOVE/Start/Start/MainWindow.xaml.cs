@@ -325,6 +325,7 @@ namespace Start
         {
             Environment.Exit(0);
         }
+<<<<<<< HEAD
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
@@ -334,6 +335,8 @@ namespace Start
                 gh.ShowDialog();
             }
         }
+=======
+>>>>>>> parent of 79d22c3... F1 hinzugefügt
     }
 }
 #endregion

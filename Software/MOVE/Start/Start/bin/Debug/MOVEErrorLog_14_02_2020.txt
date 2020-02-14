@@ -22150,6 +22150,7 @@ Objektname: "PictureBox".
    bei MOVE.Client.Debug.Formular.ClientForms.LogRequestInformation(String message) in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 159.
    bei MOVE.Core.SessionHandler.HandleSingleSession() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\SessionHandler.cs:Zeile 36.
    bei MOVE.Core.ClientHandler.Acceptclients() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Core\ClientHandler.cs:Zeile 39.
+<<<<<<< HEAD
 14-02-2020 20:06:46 	System.InvalidOperationException: Dieser Vorgang kann nicht ausgeführt werden, während das Erkennungsmodul eine Erkennung durchführt.
    bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
    bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
@@ -22332,3 +22333,5 @@ Objektname: "PictureBox".
    bei System.Speech.Recognition.RecognizerBase.RecognizeAsync(RecognizeMode mode)
    bei System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync(RecognizeMode mode)
    bei MOVE.Client.Debug.Formular.ClientForms.ActivateDefaultGermanListener() in C:\Users\Julian\Documents\GitHub\Software\MOVE\MOVE.Client.Debug.Formular\ClientForms.cs:Zeile 611.
+=======
+>>>>>>> parent of 79d22c3... F1 hinzugefügt
