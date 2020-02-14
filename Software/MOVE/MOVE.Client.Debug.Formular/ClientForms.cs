@@ -772,14 +772,28 @@ namespace MOVE.Client.Debug.Formular
         private void btnSettings_Click(object sender, EventArgs e)
         {
             cs.ShowDialog();
-            panel1.BackColor = Color.Orange;
-            panel2.BackColor = Color.Orange;
-            panel3.BackColor = Color.Orange;
-            panel4.BackColor = Color.Orange;
-            panel5.BackColor = Color.Orange;
-            panel6.BackColor = Color.Orange;
-            panel7.BackColor = Color.Orange;
-            panel8.BackColor = Color.Orange;
+            if (panel1.BackColor == Color.Red && panel2.BackColor == Color.Red)
+            {
+                panel1.BackColor = Color.Orange;
+                panel2.BackColor = Color.Orange;
+                panel3.BackColor = Color.Orange;
+                panel4.BackColor = Color.Orange;
+                panel5.BackColor = Color.Orange;
+                panel6.BackColor = Color.Orange;
+                panel7.BackColor = Color.Orange;
+                panel8.BackColor = Color.Orange;
+            }
+            if (panel1.BackColor == Color.Blue && panel2.BackColor == Color.Purple)
+            {
+                panel1.BackColor = Color.Blue;
+                panel2.BackColor = Color.Purple;
+                panel3.BackColor = Color.Pink;
+                panel4.BackColor = Color.Blue;
+                panel5.BackColor = Color.Blue;
+                panel6.BackColor = Color.Purple;
+                panel7.BackColor = Color.Pink;
+                panel8.BackColor = Color.Pink;
+            }
         }
 
         private void btn_Connect_Click_1(object sender, EventArgs e)

@@ -254,7 +254,7 @@
             this.points2.BackColor = System.Drawing.Color.Black;
             this.points2.Font = new System.Drawing.Font("Courier New", 60F);
             this.points2.ForeColor = System.Drawing.Color.Orange;
-            this.points2.Location = new System.Drawing.Point(1540, 564);
+            this.points2.Location = new System.Drawing.Point(1525, 564);
             this.points2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.points2.Name = "points2";
             this.points2.Size = new System.Drawing.Size(105, 107);
