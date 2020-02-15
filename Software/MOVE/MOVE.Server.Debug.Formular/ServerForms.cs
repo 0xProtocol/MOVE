@@ -480,7 +480,6 @@ namespace MOVE.Server.Debug.Formular
                 {
                     pbx_upnetwork.Invoke(logRequestInformation, message);
                     WertXnetwork = Convert.ToInt32(msg[1]);
-                label1.Text = WertXnetwork.ToString();
                 }
                 else
                 {
