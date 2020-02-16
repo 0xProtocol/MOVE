@@ -66,7 +66,7 @@ namespace MOVE.Server.Debug.Formular
             var waveIn = new WaveInEvent();
             waveIn.DeviceNumber = 0;
             waveIn.WaveFormat = new NAudio.Wave.WaveFormat(samplingRate, 1);
-            waveIn.DataAvailable += OnDataAvailable;
+            waveIn.DataAvailable += GetSoundValues;
             waveIn.BufferMilliseconds = (int)((double)bufferSize / (double)samplingRate * 1000.0);
             waveIn.StartRecording();
             fi.Start();
@@ -225,27 +225,27 @@ namespace MOVE.Server.Debug.Formular
                 h.ShowDialog();
             }
         }
-    private void OnDataAvailable(object sender, WaveInEventArgs args)
+    private void GetSoundValues(object sender, WaveInEventArgs args)
         {
 
-            float max = 0;
+            float tempSoundValue = 0;
 
             // interpret as 16 bit audio
             for (int index = 0; index < args.BytesRecorded; index += 2)
             {
                 short sample = (short)((args.Buffer[index + 1] << 8) |
                                         args.Buffer[index + 0]);
-                var sample32 = sample / 32768f; // to floating point
-                if (sample32 < 0) sample32 = -sample32; // absolute value 
-                if (sample32 > max) max = sample32; // is this the max value?
+                var audioSample = sample / 32768f; // to floating point
+                if (audioSample < 0) audioSample = -audioSample; // absolute value 
+                if (audioSample > tempSoundValue) tempSoundValue = audioSample; // is this the max value?
             }
 
             // calculate what fraction this peak is of previous peaks
-            if (max > soundValueOne)
+            if (tempSoundValue > soundValueOne)
             {
-                soundValueOne = (double)max;
+                soundValueOne = (double)tempSoundValue;
             }
-            soundValueTwo = max;
+            soundValueTwo = tempSoundValue;
             audioCount += 1;
         }
         public void Glaettung(int anzahl)

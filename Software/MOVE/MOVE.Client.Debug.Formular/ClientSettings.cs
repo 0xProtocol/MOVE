@@ -41,6 +41,8 @@ namespace MOVE.Client.Debug.Formular
         public ClientSettings()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             string emp = ConfigurationManager.AppSettings["sensitivity"];
             tbEmpfindlichkeit.Value = Convert.ToInt32(emp);
             string glät = ConfigurationManager.AppSettings["smoothing"];

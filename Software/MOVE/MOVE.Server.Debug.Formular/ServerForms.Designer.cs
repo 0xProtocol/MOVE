@@ -351,10 +351,10 @@
             // 
             this.lblSchrittDrei.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSchrittDrei.AutoSize = true;
-            this.lblSchrittDrei.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSchrittDrei.Font = new System.Drawing.Font("Rockwell", 8.25F);
             this.lblSchrittDrei.Location = new System.Drawing.Point(73, 823);
             this.lblSchrittDrei.Name = "lblSchrittDrei";
-            this.lblSchrittDrei.Size = new System.Drawing.Size(258, 18);
+            this.lblSchrittDrei.Size = new System.Drawing.Size(260, 17);
             this.lblSchrittDrei.TabIndex = 97;
             this.lblSchrittDrei.Text = "Übertragung der Schlägerkoordinaten:";
             // 
@@ -362,10 +362,10 @@
             // 
             this.lblSchrittEins.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSchrittEins.AutoSize = true;
-            this.lblSchrittEins.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSchrittEins.Font = new System.Drawing.Font("Rockwell", 8.25F);
             this.lblSchrittEins.Location = new System.Drawing.Point(73, 770);
             this.lblSchrittEins.Name = "lblSchrittEins";
-            this.lblSchrittEins.Size = new System.Drawing.Size(240, 18);
+            this.lblSchrittEins.Size = new System.Drawing.Size(233, 17);
             this.lblSchrittEins.TabIndex = 96;
             this.lblSchrittEins.Text = "Korrektes IP-Netzwerk ausgewählt:";
             // 
@@ -373,10 +373,10 @@
             // 
             this.lblSchrittZwei.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblSchrittZwei.AutoSize = true;
-            this.lblSchrittZwei.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblSchrittZwei.Font = new System.Drawing.Font("Rockwell", 8.25F);
             this.lblSchrittZwei.Location = new System.Drawing.Point(73, 795);
             this.lblSchrittZwei.Name = "lblSchrittZwei";
-            this.lblSchrittZwei.Size = new System.Drawing.Size(217, 18);
+            this.lblSchrittZwei.Size = new System.Drawing.Size(225, 17);
             this.lblSchrittZwei.TabIndex = 95;
             this.lblSchrittZwei.Text = "Verbindung zu Client hergestellt:";
             // 
@@ -386,9 +386,10 @@
             this.cbSprachmodul.AutoSize = true;
             this.cbSprachmodul.Checked = true;
             this.cbSprachmodul.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbSprachmodul.Font = new System.Drawing.Font("Rockwell", 8.25F);
             this.cbSprachmodul.Location = new System.Drawing.Point(76, 847);
             this.cbSprachmodul.Name = "cbSprachmodul";
-            this.cbSprachmodul.Size = new System.Drawing.Size(166, 21);
+            this.cbSprachmodul.Size = new System.Drawing.Size(172, 21);
             this.cbSprachmodul.TabIndex = 98;
             this.cbSprachmodul.Text = "Sprachmodul aktiviert";
             this.cbSprachmodul.UseVisualStyleBackColor = true;

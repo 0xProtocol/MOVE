@@ -29,6 +29,8 @@ namespace MOVE.Server.Debug.Formular
         public HighscoreForms()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             LoadScore();
             string language = ConfigurationManager.AppSettings["language"];
             speechvalue = Convert.ToInt32(language);

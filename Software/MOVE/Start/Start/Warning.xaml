@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Start"
         mc:Ignorable="d"
-        Title="Warning" Height="225.63" Width="403.051">
+        Title="Warning" Height="232.933" Width="415.466" ResizeMode="NoResize" Icon="logo (2).jpeg">
     <Grid Width="400" Height="200">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

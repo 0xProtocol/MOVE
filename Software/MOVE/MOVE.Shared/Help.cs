@@ -31,6 +31,8 @@ namespace MOVE.Shared
         public Help()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             string language = ConfigurationManager.AppSettings["language"];
             speechvalue = Convert.ToInt32(language);
             string speechmodule = ConfigurationManager.AppSettings["speechmodule"];

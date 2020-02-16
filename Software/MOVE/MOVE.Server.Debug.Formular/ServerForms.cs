@@ -38,8 +38,6 @@ namespace MOVE.Server.Debug.Formular
         Action<string> logServiceInformation;
         int WertXlocal = 15;
         int WertXnetwork = 15;
-        int WertYnetworkball = 15;
-        int WertXnetworkball = 15;
         int pointsClient = 0;
         int pointsServer = 0;
         int counterstartserver;
@@ -48,8 +46,8 @@ namespace MOVE.Server.Debug.Formular
         private static double soundValueOne = 0;
         private static double soundValueTwo = 0;
         private static int audioCount = 0;
-        private static int RATE = 44100;
-        private static int BUFFER_SAMPLES = 2048;
+        private static int samplingRate = 44100;
+        private static int bufferSize = 2048;
         const int yValue = 703;
         List<int> savedValues = new List<int>();
         int positionValue = 0;
@@ -57,7 +55,6 @@ namespace MOVE.Server.Debug.Formular
         int average;
         int mod;
         int summe = 0;
-        string output;
         public int speed_left = 5;
         public int speed_top = 5;
         int counter = 0;
@@ -79,9 +76,9 @@ namespace MOVE.Server.Debug.Formular
             Control.CheckForIllegalCrossThreadCalls = false;
             var waveIn = new WaveInEvent();
             waveIn.DeviceNumber = 0;
-            waveIn.WaveFormat = new NAudio.Wave.WaveFormat(RATE, 1);
-            waveIn.DataAvailable += OnDataAvailable;
-            waveIn.BufferMilliseconds = (int)((double)BUFFER_SAMPLES / (double)RATE * 1000.0);
+            waveIn.WaveFormat = new NAudio.Wave.WaveFormat(samplingRate, 1);
+            waveIn.DataAvailable += GetSoundValues;
+            waveIn.BufferMilliseconds = (int)((double)bufferSize / (double)samplingRate * 1000.0);
             waveIn.StartRecording();
             this.SetStyle(ControlStyles.UserPaint | ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer, true);
             fi.Start();
@@ -897,27 +894,27 @@ namespace MOVE.Server.Debug.Formular
             }
         }
 
-        private void OnDataAvailable(object sender, WaveInEventArgs args)
+        private void GetSoundValues(object sender, WaveInEventArgs args)
         {
 
-            float max = 0;
+            float tempSoundValue = 0;
 
             // interpret as 16 bit audio
             for (int index = 0; index < args.BytesRecorded; index += 2)
             {
                 short sample = (short)((args.Buffer[index + 1] << 8) |
                                         args.Buffer[index + 0]);
-                var sample32 = sample / 32768f; // to floating point
-                if (sample32 < 0) sample32 = -sample32; // absolute value 
-                if (sample32 > max) max = sample32; // is this the max value?
+                var audioSample = sample / 32768f; // to floating point
+                if (audioSample < 0) audioSample = -audioSample; // absolute value 
+                if (audioSample > tempSoundValue) tempSoundValue = audioSample; // is this the max value?
             }
 
             // calculate what fraction this peak is of previous peaks
-            if (max > soundValueOne)
+            if (tempSoundValue > soundValueOne)
             {
-                soundValueOne = (double)max;
+                soundValueOne = (double)tempSoundValue;
             }
-            soundValueTwo = max;
+            soundValueTwo = tempSoundValue;
             audioCount += 1;
         }
         public void Glaettung(int anzahl)
