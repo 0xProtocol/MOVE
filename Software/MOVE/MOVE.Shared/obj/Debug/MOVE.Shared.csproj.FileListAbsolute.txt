@@ -133,3 +133,14 @@ C:\Users\Julian\Documents\GitHub\Software\MOVE\Software\MOVE\MOVE.Shared\obj\Deb
 C:\Users\Julian\Documents\GitHub\Software\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.GenerateResource.Cache
 C:\Users\Julian\Documents\GitHub\Software\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
 C:\Users\Julian\Documents\GitHub\Software\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.dll
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\MOVE.Shared.pdb
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.dll
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\bin\Debug\NAudio.xml
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csprojAssemblyReference.cache
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.Help.resources
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.GenerateResource.cache
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.csproj.CopyComplete
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.dll
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\MOVE.Shared\obj\Debug\MOVE.Shared.pdb

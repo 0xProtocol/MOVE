@@ -1528,3 +1528,5 @@ C:\Users\Julian\Documents\GitHub\Software\MOVE\Software\MOVE\Start\Start\obj\Deb
 C:\Users\Julian\Documents\GitHub\Software\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.g.resources
 C:\Users\Julian\Documents\GitHub\Software\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.Properties.Resources.resources
 C:\Users\Julian\Documents\GitHub\Software\MOVE\Software\MOVE\Start\Start\obj\Debug\Start.csproj.GenerateResource.Cache
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\GeneralHelp.g.cs
+C:\Users\Markus\Desktop\GitHub\MOVE\Software\MOVE\Start\Start\obj\Debug\GeneralHelp.baml
