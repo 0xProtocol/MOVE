@@ -5,7 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Start"
         mc:Ignorable="d"
-<<<<<<< HEAD
         Title="GeneralHelp" Height="832.678" Width="900.806" Icon="logo (2).jpeg" ResizeMode="NoResize">
     <Grid>
         <Label x:Name="label2" Content="" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="879" Background="Gold" Height="6" FontSize="20" FontWeight="Bold"/>
@@ -18,10 +17,5 @@
         <Label x:Name="label2_Copy2" Content="" HorizontalAlignment="Left" Margin="5,788,0,0" VerticalAlignment="Top" Width="879" Background="Gold" Height="6" FontSize="20" FontWeight="Bold"/>
         <TextBox x:Name="tbContent" AcceptsReturn="True" HorizontalAlignment="Left" Height="745" Margin="27,27,0,0" TextWrapping="Wrap" Text="Text" VerticalScrollBarVisibility="Auto" VerticalAlignment="Top" Width="835" />
 
-=======
-        Title="GeneralHelp" Height="300" Width="300" Icon="logo (2).jpeg">
-    <Grid>
-        
->>>>>>> parent of 51d6d11... General Help implemented + design revolution
     </Grid>
 </Window>
