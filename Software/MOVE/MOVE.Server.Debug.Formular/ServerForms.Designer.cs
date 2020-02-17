@@ -58,6 +58,7 @@
             this.lblSchrittEins = new System.Windows.Forms.Label();
             this.lblSchrittZwei = new System.Windows.Forms.Label();
             this.cbSprachmodul = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_playfieldclient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx_downlocal)).BeginInit();
@@ -204,6 +205,7 @@
             this.rBFrequenz.Text = "Frequenz";
             this.rBFrequenz.UseVisualStyleBackColor = false;
             this.rBFrequenz.CheckedChanged += new System.EventHandler(this.rBFrequenz_CheckedChanged);
+          //  this.rBFrequenz.Click += new System.EventHandler(this.rBFrequenz_Click);
             // 
             // rBSound
             // 
@@ -393,6 +395,16 @@
             this.cbSprachmodul.TabIndex = 98;
             this.cbSprachmodul.Text = "Sprachmodul aktiviert";
             this.cbSprachmodul.UseVisualStyleBackColor = true;
+          //  this.cbSprachmodul.CheckedChanged += new System.EventHandler(this.cbSprachmodul_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(590, 770);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 99;
+            this.label1.Text = "label1";
             // 
             // ServerForms
             // 
@@ -401,6 +413,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cbSprachmodul);
             this.Controls.Add(this.lblSchrittDrei);
             this.Controls.Add(this.lblSchrittEins);
@@ -475,6 +488,7 @@
         private System.Windows.Forms.Label lblSchrittEins;
         private System.Windows.Forms.Label lblSchrittZwei;
         private System.Windows.Forms.CheckBox cbSprachmodul;
+        private System.Windows.Forms.Label label1;
     }
 }
 
